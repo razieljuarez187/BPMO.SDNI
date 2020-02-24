@@ -81,7 +81,7 @@
 	            url: '../Buscador.UI/VisorUI.aspx',
 	            xml: xml,
 	            guid: guid,
-	            btnSender: null,
+	            btnSender: $("#<%=btnResult.ClientID %>"),
 	            features: {
 	                dialogWidth: width,
 	                dialogHeight: '320px',
@@ -418,4 +418,6 @@
             <AlternatingRowStyle CssClass="GridAlternatingRow" />
         </asp:GridView>
     </div>
+    <%--Campos ocultos--%>
+    <asp:Button ID="btnResult" runat="server" Text="Button" CausesValidation="false" UseSubmitBehavior="false" Style="display: none;" />
 </asp:Content>

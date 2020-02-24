@@ -23,6 +23,10 @@
   <!--Excavadoras-->
   <Unidad ClaveUnidad="EXC" ID="7" Name="LV_EXCAVADORA" />
   <!--Excavadoras-->
+  
+  <!--Cargador Frontal-->
+  <Unidad ClaveUnidad="CFR" ID="8" Name="LV_SUBARRENDADO" />
+  <!--Cargador Frontal-->
 
   <!--TORRES DE LUZ-->
   <Unidad ClaveUnidad="TORRE" ID="9" Name="LV_TORRES_LUZ" />

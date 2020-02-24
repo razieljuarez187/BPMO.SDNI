@@ -1,0 +1,410 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E8DCBD22-011E-4A0E-98A1-7F853FC917A4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BPMO.SDNI</RootNamespace>
+    <AssemblyName>BPMO.SDNI.Vista</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BPMO.Basicos">
+      <HintPath>..\..\Comun\Bibliotecas\BPMO.Basicos.dll</HintPath>
+    </Reference>
+    <Reference Include="BPMO.eFacturacion.Procesos.BO, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Comun\Bibliotecas\BPMO.eFacturacion.Procesos.BO.dll</HintPath>
+    </Reference>
+    <Reference Include="BPMO.Patterns">
+      <HintPath>..\..\Comun\Bibliotecas\BPMO.Patterns.dll</HintPath>
+    </Reference>
+    <Reference Include="BPMO.Primitivos">
+      <HintPath>..\..\Comun\Bibliotecas\BPMO.Primitivos.dll</HintPath>
+    </Reference>
+    <Reference Include="BPMO.Security">
+      <HintPath>..\..\Comun\Bibliotecas\BPMO.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="BPMO.Servicio.Catalogos.BO">
+      <HintPath>..\..\Comun\Bibliotecas\BPMO.Servicio.Catalogos.BO.dll</HintPath>
+    </Reference>
+    <Reference Include="BPMO.Servicio.Procesos.BO">
+      <HintPath>..\..\..\BPMO.Librerias\BPMO.Servicio.Procesos.BO.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Buscador.VIS\IVisorReporteVIS.cs" />
+    <Compile Include="Comun.VIS\IConsultarAutorizadorVIS.cs" />
+    <Compile Include="Comun.VIS\IDetalleAutorizadorVIS.cs" />
+    <Compile Include="Comun.VIS\IEditarAutorizadorVIS.cs" />
+    <Compile Include="Comun.VIS\IEditarOperadorVIS.cs" />
+    <Compile Include="Comun.VIS\IDetalleOperadorVIS.cs" />
+    <Compile Include="Comun.VIS\IConsultarOperadorVIS.cs" />
+    <Compile Include="Comun.VIS\IRegistrarAutorizadorVIS.cs" />
+    <Compile Include="Comun.VIS\IRegistrarOperadorVIS.cs" />
+    <Compile Include="Comun.VIS\IConsultarCuentaClienteVIS.cs" />
+    <Compile Include="Comun.VIS\IDetalleCuentaClienteVIS.cs" />
+    <Compile Include="Comun.VIS\IEditarCuentaClienteVIS.cs" />
+    <Compile Include="Comun.VIS\IhdlrCatalogoDocumentosVIS.cs" />
+    <Compile Include="Comun.VIS\IRegistrarCuentaClienteVIS.cs" />
+    <Compile Include="Comun.VIS\IucAutorizadorVIS.cs" />
+    <Compile Include="Comun.VIS\IucCatalogoDocumentosVIS.cs" />
+    <Compile Include="Comun.VIS\IucDatosActaConstitutivaVIS.cs" />
+    <Compile Include="Comun.VIS\IucDatosObligadoSolidarioVIS.cs" />
+    <Compile Include="Comun.VIS\IucDatosRepresentanteLegalVIS.cs" />
+    <Compile Include="Comun.VIS\IucOperadorVIS.cs" />
+    <Compile Include="Contratos.FSL.Reportes.VIS\IContratosFSLRegistradosVIS.cs" />
+    <Compile Include="Contratos.FSL.VIS\IEditarLineasContratoFSLVIS.cs" />
+    <Compile Include="Contratos.FSL.VIS\IAgregarDocumentosContratoVIS.cs" />
+    <Compile Include="Contratos.FSL.VIS\ICerrarContratoFSLVIS.cs" />
+    <Compile Include="Contratos.FSL.VIS\IConsultarContratosFSLVIS.cs" />
+    <Compile Include="Contratos.FSL.VIS\IDetalleContratoFSLVIS.cs" />
+    <Compile Include="Contratos.FSL.VIS\IEditarContratoFSLVIS.cs" />
+    <Compile Include="Contratos.FSL.VIS\IucFinalizacionContratoFSLVIS.cs" />
+    <Compile Include="Contratos.FSL.VIS\IucClienteContratoVIS.cs" />
+    <Compile Include="Contratos.FSL.VIS\IucDatosAdicionalesAnexoVIS.cs" />
+    <Compile Include="Contratos.FSL.VIS\IucDatosRentaVIS.cs" />
+    <Compile Include="Contratos.FSL.VIS\IucHerramientasFSLVIS.cs" />
+    <Compile Include="Contratos.FSL.VIS\IucInformacionGeneralVIS.cs" />
+    <Compile Include="Contratos.FSL.VIS\IucInformacionPagoVIS.cs" />
+    <Compile Include="Contratos.FSL.VIS\IucLineaContratoFSLVIS.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Contratos.FSL.VIS\IRegistrarContratoFSLVIS.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Contratos.Mantto.Reportes.VIS\IContratosRegistradosManttoVIS.cs" />
+    <Compile Include="Contratos.Mantto.VIS\IAgregarDocumentosContratoVIS.cs" />
+    <Compile Include="Contratos.Mantto.VIS\ICancelarContratoManttoVIS.cs" />
+    <Compile Include="Contratos.Mantto.VIS\ICerrarContratoManttoVIS.cs" />
+    <Compile Include="Contratos.Mantto.VIS\IConsultarContratoManttoVIS.cs" />
+    <Compile Include="Contratos.Mantto.VIS\IDetalleContratoManttoVIS.cs" />
+    <Compile Include="Contratos.Mantto.VIS\IEditarContratoManttoVIS.cs" />
+    <Compile Include="Contratos.Mantto.VIS\IRegistrarContratoManttoVIS.cs" />
+    <Compile Include="Contratos.Mantto.VIS\IucContratoManttoVIS.cs" />
+    <Compile Include="Contratos.Mantto.VIS\IucHerramientasManttoVIS.cs" />
+    <Compile Include="Contratos.Mantto.VIS\IucLineaContratoManttoVIS.cs" />
+    <Compile Include="Contratos.PSL.Reportes.VIS\IDetalladoPSLSucursalVIS.cs" />
+    <Compile Include="Contratos.PSL.Reportes.VIS\IRentaGeneralPSLVIS.cs" />
+    <Compile Include="Contratos.PSL.VIS\IDetallePeriodoTarifarioPSLVIS.cs" />
+    <Compile Include="Contratos.PSL.VIS\IEditarPeriodoTarifarioPSLVIS.cs" />
+    <Compile Include="Contratos.PSL.VIS\IucPeriodoTarifarioPSLVIS.cs" />
+    <Compile Include="Contratos.PSL.VIS\IEditarConfiguracionDescuentoPSLVIS.cs" />
+    <Compile Include="Contratos.PSL.VIS\IRegistrarConfiguracionDescuentoPSLVIS.cs" />
+    <Compile Include="Contratos.PSL.VIS\IDetalleConfiguracionDescuentoPSLVIS.cs" />
+    <Compile Include="Contratos.PSL.VIS\ConsultarConfiuracionDescuentoPSLVIS.cs" />
+    <Compile Include="Contratos.PSL.VIS\ITarifaPersonalizadaPSLVIS.cs" />
+    <Compile Include="Contratos.PSL.VIS\ICancelarContratoPSLVIS.cs" />
+    <Compile Include="Contratos.PSL.VIS\IucCargosAdicionalesCierrePSLVIS.cs" />
+    <Compile Include="Contratos.PSL.VIS\IEditarContratoROCVIS.cs" />
+    <Compile Include="Contratos.PSL.VIS\IRenovarContratoROCVIS.cs" />
+    <Compile Include="Contratos.PSL.VIS\ICerrarContratoPSLVIS.cs" />
+    <Compile Include="Contratos.PSL.VIS\IDetalleContratoROCVIS.cs" />
+    <Compile Include="Contratos.PSL.VIS\IEditarContratoROVIS.cs" />
+    <Compile Include="Contratos.PSL.VIS\IIntercambioUnidadPSLVIS.cs" />
+    <Compile Include="Contratos.PSL.VIS\IRegistrarContratoROCVIS.cs" />
+    <Compile Include="Contratos.PSL.VIS\IDetalleContratoROVIS.cs" />
+    <Compile Include="Contratos.PSL.VIS\IConsultarContratoROCVIS.cs" />
+    <Compile Include="Contratos.PSL.VIS\IConsultarListadoVerificacionPSLVIS.cs" />
+    <Compile Include="Contratos.PSL.VIS\IConsultarContratoROVIS.cs" />
+    <Compile Include="Contratos.PSL.VIS\IConsultarTarifaPSLVIS.cs" />
+    <Compile Include="Contratos.PSL.VIS\IDetalleTarifaPSLVIS.cs" />
+    <Compile Include="Contratos.PSL.VIS\IEditarTarifaPSLVIS.cs" />
+    <Compile Include="Contratos.PSL.VIS\IRegistrarEntregaPSLVIS.cs" />
+    <Compile Include="Contratos.PSL.VIS\IRegistrarRecepcionPSLVIS.cs" />
+    <Compile Include="Contratos.PSL.VIS\IucConfiguracionDescuentoPSLVIS.cs" />
+    <Compile Include="Contratos.PSL.VIS\IucPuntosVerificacionPlataformaTijerasPSLVIS.cs" />
+    <Compile Include="Contratos.PSL.VIS\IRenovarContratoROVIS.cs" />
+    <Compile Include="Contratos.PSL.VIS\IucPuntosVerificacionCompresoresPortatilesPSLVIS.cs" />
+    <Compile Include="Contratos.PSL.VIS\IucPuntosVerificacionMartilloHidraulicoPSLVIS.cs" />
+    <Compile Include="Contratos.PSL.VIS\IucPuntosVerificacionMiniCargadorPSLVIS.cs" />
+    <Compile Include="Contratos.PSL.VIS\IucPuntosVerificacionMontaCargaPSLVIS.cs" />
+    <Compile Include="Contratos.PSL.VIS\IucPuntosVerificacionMotoNiveladoraPSLVIS.cs" />
+    <Compile Include="Contratos.PSL.VIS\IucPuntosVerificacionPistolaNeumaticaPSLVIS.cs" />
+    <Compile Include="Contratos.PSL.VIS\IucPuntosVerificacionTorresLuzPSLVIS.cs" />
+    <Compile Include="Contratos.PSL.VIS\IucPuntosVerificacionUnidadesUsadasPSLVIS.cs" />
+    <Compile Include="Contratos.PSL.VIS\IucPuntosVerificacionVibroCompactadorPSLVIS.cs" />
+    <Compile Include="Contratos.PSL.VIS\IucPuntosVerificacionEntregaRecepcionPSLVIS.cs" />
+    <Compile Include="Contratos.PSL.VIS\IucPuntosVerificacionExcavadoraPSLVIS.cs" />
+    <Compile Include="Contratos.PSL.VIS\IRegistrarContratoROVIS.cs" />
+    <Compile Include="Contratos.PSL.VIS\IRegistrarTarifaPSLVIS.cs" />
+    <Compile Include="Contratos.PSL.VIS\IucLineaContratoPSLVIS.cs" />
+    <Compile Include="Contratos.PSL.VIS\IucContratoPSLVIS.cs" />
+    <Compile Include="Contratos.PSL.VIS\IucHerramientasPSLVIS.cs" />
+    <Compile Include="Contratos.PSL.VIS\IucPuntosVerificacionRetroExcavadoraPSLVIS.cs" />
+    <Compile Include="Contratos.PSL.VIS\IucPuntosVerificacionSubArrendadoPSLVIS.cs" />
+    <Compile Include="Contratos.PSL.VIS\IucResumenContratoPSLVIS.cs" />
+    <Compile Include="Contratos.PSL.VIS\IucTarifaPSLVIS.cs" />
+    <Compile Include="Contratos.RD.Reportes.VIS\IDetalladoRDSucursalVIS.cs" />
+    <Compile Include="Contratos.RD.Reportes.VIS\IPorcentajeUtilizacionRDVIS.cs" />
+    <Compile Include="Contratos.RD.VIS\IAgregarDocumentosContratoVIS.cs" />
+    <Compile Include="Contratos.RD.VIS\ICambiarFrecuenciaContratosRDVIS.cs" />
+    <Compile Include="Contratos.RD.VIS\ICancelarContratoRDVIS.cs" />
+    <Compile Include="Contratos.RD.VIS\ICerrarContratoRDVIS.cs" />
+    <Compile Include="Contratos.RD.VIS\IConsultarCambioFrecuenciaRDVIS.cs" />
+    <Compile Include="Contratos.RD.VIS\IConsultarContratoRDVIS.cs" />
+    <Compile Include="Contratos.RD.VIS\IConsultarReservacionRDVIS.cs" />
+    <Compile Include="Contratos.RD.VIS\IConsultarListadoVerificacionVIS.cs" />
+    <Compile Include="Contratos.RD.VIS\IConsultarTarifasRDVIS.cs" />
+    <Compile Include="Contratos.RD.VIS\IDetalleContratoRDVIS.cs" />
+    <Compile Include="Contratos.RD.VIS\IDetalleReservacionRDVIS.cs" />
+    <Compile Include="Contratos.RD.VIS\IDetalleTarifaRDVIS.cs" />
+    <Compile Include="Contratos.RD.VIS\IEditarContratoRDVIS.cs" />
+    <Compile Include="Contratos.RD.VIS\IEditarReservacionRDVIS.cs" />
+    <Compile Include="Contratos.RD.VIS\IEditarTarifaRDVIS.cs" />
+    <Compile Include="Contratos.RD.VIS\IRegistrarContratoRDVIS.cs" />
+    <Compile Include="Contratos.RD.VIS\IRegistrarRecepcionVIS.cs" />
+    <Compile Include="Contratos.RD.VIS\IRegistrarReservacionRDVIS.cs" />
+    <Compile Include="Contratos.RD.VIS\IRegistrarEntregaVIS.cs" />
+    <Compile Include="Contratos.RD.VIS\IRegistrarTarifaRDVIS.cs" />
+    <Compile Include="Contratos.RD.VIS\IucContratoRDVIS.cs" />
+    <Compile Include="Contratos.RD.VIS\IucHerramientasRDVIS.cs" />
+    <Compile Include="Contratos.RD.VIS\IucReservacionRDVIS.cs" />
+    <Compile Include="Contratos.RD.VIS\IucResumenContratoRDVIS.cs" />
+    <Compile Include="Contratos.RD.VIS\IucTarifaRDVIS.cs" />
+    <Compile Include="Contratos.VIS\ICambiarContratoSucursalVIS.cs" />
+    <Compile Include="Contratos.VIS\IConsultarContratoSucursalVIS.cs" />
+    <Compile Include="Contratos.VIS\IConsultarPlantillaVIS.cs" />
+    <Compile Include="Contratos.VIS\IhdlrDescargarPlantillaVIS.cs" />
+    <Compile Include="Contratos.VIS\IRegistrarPlantillaVIS.cs" />
+    <Compile Include="Contratos.VIS\IucListadoPlantillasVIS.cs" />
+    <Compile Include="Equipos.VIS\IConsultarEquipoAliadoVIS.cs" />
+    <Compile Include="Equipos.VIS\IConsultarLlantaVIS.cs" />
+    <Compile Include="Equipos.VIS\IConsultarOrdenServicioVIS.cs" />
+    <Compile Include="Equipos.VIS\IDetalleActaNacimientoVIS.cs" />
+    <Compile Include="Equipos.VIS\IDetalleEquipoAliadoVIS.cs" />
+    <Compile Include="Equipos.VIS\IDetalleLlantaVIS.cs" />
+    <Compile Include="Equipos.VIS\IEditarActaNacimientoVIS.cs" />
+    <Compile Include="Equipos.VIS\IEditarEquipoAliadoVIS.cs" />
+    <Compile Include="Equipos.VIS\IEliminarEquipoAliadoVIS.cs" />
+    <Compile Include="Equipos.VIS\IEliminarLlantaVIS.cs" />
+    <Compile Include="Equipos.VIS\IRegistrarEquipoAliadoVIS.cs" />
+    <Compile Include="Equipos.VIS\IRegistrarLlantaVIS.cs" />
+    <Compile Include="Equipos.VIS\IucActaNacimientoVIS.cs" />
+    <Compile Include="Equipos.VIS\IucAsignacionEquiposAliadosVIS.cs" />
+    <Compile Include="Contratos.FSL.VIS\ITarifasEquipoAliadoVIS.cs" />
+    <Compile Include="Contratos.FSL.VIS\IucCargosAdicionalesEquiposAliadosVIS.cs" />
+    <Compile Include="Equipos.VIS\IucAsignacionLlantasVIS.cs" />
+    <Compile Include="Equipos.VIS\IucDatosGeneralesVIS.cs" />
+    <Compile Include="Contratos.FSL.VIS\IucTarifasFSLVIS.cs" />
+    <Compile Include="Equipos.VIS\IucEquipoAliadoDetalleVIS.cs" />
+    <Compile Include="Equipos.VIS\IucEquipoAliadoVIS.cs" />
+    <Compile Include="Equipos.VIS\IucLlantaVIS.cs" />
+    <Compile Include="Equipos.VIS\IucDatosTecnicosVIS.cs" />
+    <Compile Include="Equipos.VIS\IEditarLlantaVIS.cs" />
+    <Compile Include="Equipos.VIS\IucNumerosSerieVIS.cs" />
+    <Compile Include="Equipos.VIS\IRegistrarActaNacimientoVIS.cs" />
+    <Compile Include="Equipos.VIS\IConsultarActaNacimientoVIS.cs" />
+    <Compile Include="Equipos.VIS\IucResumenActaNacimientoVIS.cs" />
+    <Compile Include="Facturacion.AplicacionesFacturacion.VIS\IReporteIngresoRentasVIS.cs" />
+    <Compile Include="Facturacion.AplicacionesFacturacion.VIS\IucCostosAdicionalesFacturaContratoVIS.cs" />
+    <Compile Include="Facturacion.AplicacionesFacturacion.VIS\IucLineasFacturaContratoPSLVIS.cs" />
+    <Compile Include="Facturacion.AplicacionesFacturacion.VIS\IucInformacionGeneralPSLVIS.cs" />
+    <Compile Include="Facturacion.AplicacionesFacturacion.VIS\IConfigurarFacturacionPSLVIS.cs" />
+    <Compile Include="Facturacion.AplicacionesFacturacion.VIS\ICargaMasivaContratosVIS.cs" />
+    <Compile Include="Facturacion.AplicacionesFacturacion.VIS\IConfigurarFacturacionVIS.cs" />
+    <Compile Include="Facturacion.AplicacionesFacturacion.VIS\IConsultarMasterFacturacionVIS.cs" />
+    <Compile Include="Facturacion.AplicacionesFacturacion.VIS\IConsultarPagosFacturarVIS.cs" />
+    <Compile Include="Facturacion.AplicacionesFacturacion.VIS\IConsultarPagosNoFacturadosVIS.cs" />
+    <Compile Include="Facturacion.AplicacionesFacturacion.VIS\IGenerarPagosAdicionalesVIS.cs" />
+    <Compile Include="Facturacion.AplicacionesFacturacion.VIS\IPagosBaseVIS.cs" />
+    <Compile Include="Facturacion.AplicacionesFacturacion.VIS\IPagosMasterVIS.cs" />
+    <Compile Include="Facturacion.AplicacionesFacturacion.VIS\IucCostosAdicionalesVIS.cs" />
+    <Compile Include="Facturacion.AplicacionesFacturacion.VIS\IucHerramientasPrefacturaVIS.cs" />
+    <Compile Include="Facturacion.AplicacionesFacturacion.VIS\IucInformacionAdicionalVIS.cs" />
+    <Compile Include="Facturacion.AplicacionesFacturacion.VIS\IucInformacionCabeceraVIS.cs" />
+    <Compile Include="Facturacion.AplicacionesFacturacion.VIS\IucLineasFacturaVIS.cs" />
+    <Compile Include="Facturacion.AplicacionesPago.VIS\IVerPagosContratoVIS.cs" />
+    <Compile Include="Facturacion.MonitoreoPagos.VIS\IConsultarConfigurarAlertaVIS.cs" />
+    <Compile Include="Facturacion.MonitoreoPagos.VIS\IDetalleConfigurarAlertaVIS.cs" />
+    <Compile Include="Facturacion.MonitoreoPagos.VIS\IEditarConfigurarAlertaVIS.cs" />
+    <Compile Include="Facturacion.MonitoreoPagos.VIS\IRegistrarConfigurarAlertaVIS.cs" />
+    <Compile Include="Facturacion.MonitoreoPagos.VIS\IucConfigurarAlertaVIS.cs" />
+    <Compile Include="Flota.Reportes.VIS\IDollarUtilizationVIS.cs" />
+    <Compile Include="Flota.Reportes.VIS\IAniejamientoFlotaVIS.cs" />
+    <Compile Include="Flota.Reportes.VIS\IFlotaActivaRDVIS.cs" />
+    <Compile Include="Flota.Reportes.VIS\IDiasRentaVIS.cs" />
+    <Compile Include="Flota.Reportes.VIS\IFlotaActivaVIS.cs" />
+    <Compile Include="Flota.Reportes.VIS\IRentaDiariaGeneralVIS.cs" />
+    <Compile Include="Flota.VIS\ICambiarAsignacionEquipoAliadoVIS.cs" />
+    <Compile Include="Flota.VIS\ICambiarDepartamentoUnidadVIS.cs" />
+    <Compile Include="Flota.VIS\ICambiarSucursalEquipoAliadoVIS.cs" />
+    <Compile Include="Flota.VIS\ICambiarSucursalUnidadVIS.cs" />
+    <Compile Include="Flota.Reportes.VIS\IConsultarControlRentasPSLVIS.cs" />
+    <Compile Include="Flota.VIS\IConsultarFlotaVIS.cs" />
+    <Compile Include="Flota.VIS\IConsultarSeguimientoFlotaVIS.cs" />
+    <Compile Include="Flota.VIS\IConsultarTableroRDVIS.cs" />
+    <Compile Include="Flota.VIS\IDetalleExpedienteUnidadVIS.cs" />
+    <Compile Include="Flota.VIS\IDetalleFlotaVIS.cs" />
+    <Compile Include="Flota.VIS\IRegistrarAltaUnidadVIS.cs" />
+    <Compile Include="Flota.VIS\IRegistrarBajaUnidadVIS.cs" />
+    <Compile Include="Flota.VIS\IRegistrarReactivacionUnidadVIS.cs" />
+    <Compile Include="Flota.VIS\IucDatosGeneralesElementoVIS.cs" />
+    <Compile Include="Flota.VIS\IucEquiposAliadosUnidadVIS.cs" />
+    <Compile Include="Mantenimiento.Reportes.VIS\IComparativoMantenimientoVIS.cs" />
+    <Compile Include="Mantenimiento.Reportes.VIS\IConsultarCalcomaniaVIS.cs" />
+    <Compile Include="Mantenimiento.Reportes.VIS\IMantenimientoRealizadoContraProgramadoVIS.cs" />
+    <Compile Include="Mantenimiento.Reportes.VIS\IMantenimientoRealizadoVIS.cs" />
+    <Compile Include="Mantenimiento.Reportes.VIS\IReporteAuditoriasRealizadasVIS.cs" />
+    <Compile Include="Mantenimiento.Reportes.VIS\IReporteRendimientoUnidadVIS.cs" />
+    <Compile Include="Mantenimiento.Reportes.VIS\ISistemasRevisadosVIS.cs" />
+    <Compile Include="Mantenimiento.Reportes.VIS\IUpTimeVIS.cs" />
+    <Compile Include="Mantenimiento.VIS\IConsultarAuditoriaVIS.cs" />
+    <Compile Include="Mantenimiento.VIS\IConsultarConfiguracionParametroMantenimientoVIS.cs" />
+    <Compile Include="Mantenimiento.VIS\IConsultarConfiguracionParametrosAuditoriaVIS.cs" />
+    <Compile Include="Mantenimiento.VIS\IConsultarConfiguracionSistemaUnidadVIS.cs" />
+    <Compile Include="Mantenimiento.VIS\IConsultarContactoClienteVIS.cs" />
+    <Compile Include="Mantenimiento.VIS\IConsultarMantenimientoVIS.cs" />
+    <Compile Include="Mantenimiento.VIS\IConsultarTareaPendienteVIS.cs" />
+    <Compile Include="Mantenimiento.VIS\IDetalleAuditoriaVIS.cs" />
+    <Compile Include="Mantenimiento.VIS\IDetalleConfiguracionParametroMantenimientoVIS.cs" />
+    <Compile Include="Mantenimiento.VIS\IDetalleConfiguracionParametrosAuditoriaVIS.cs" />
+    <Compile Include="Mantenimiento.VIS\IDetalleConfiguracionSistemaUnidadVIS.cs" />
+    <Compile Include="Mantenimiento.VIS\IDetalleContactoClienteVIS.cs" />
+    <Compile Include="Mantenimiento.VIS\IDetalleMantenimientoVIS.cs" />
+    <Compile Include="Mantenimiento.VIS\IEditarConfiguracionParametroMantenimientoVIS.cs" />
+    <Compile Include="Mantenimiento.VIS\IEditarConfiguracionParametrosAuditoriaVIS.cs" />
+    <Compile Include="Mantenimiento.VIS\IEditarConfiguracionSistemaUnidadVIS.cs" />
+    <Compile Include="Mantenimiento.VIS\IEditarContactoClienteVIS.cs" />
+    <Compile Include="Mantenimiento.VIS\IEditarTareaPendienteVIS.cs" />
+    <Compile Include="Mantenimiento.VIS\IEliminarConfiguracionSistemaUnidadVIS.cs" />
+    <Compile Include="Mantenimiento.VIS\IEliminarContactoClienteVIS.cs" />
+    <Compile Include="Mantenimiento.VIS\IEnviarCorreoServicioRealizadoVIS.cs" />
+    <Compile Include="Mantenimiento.VIS\IFiltroContactoClienteVIS.cs" />
+    <Compile Include="Mantenimiento.VIS\IProgramarCitaMantenimientoVIS.cs" />
+    <Compile Include="Mantenimiento.VIS\IProgramarMantenimientosVIS.cs" />
+    <Compile Include="Mantenimiento.VIS\IRealizarAuditoriaMantenimientoVIS.cs" />
+    <Compile Include="Mantenimiento.VIS\IRegisitrarUnidadVIS.cs" />
+    <Compile Include="Mantenimiento.VIS\IRegistrarConfiguracionParametroMantenimientoVIS.cs" />
+    <Compile Include="Mantenimiento.VIS\IRegistrarConfiguracionParametrosAuditoriaVIS.cs" />
+    <Compile Include="Mantenimiento.VIS\IRegistrarConfiguracionSistemaUnidadVIS.cs" />
+    <Compile Include="Mantenimiento.VIS\IRegistrarContactoClienteVIS.cs" />
+    <Compile Include="Mantenimiento.VIS\IRegistrarTareaPendienteVIS.cs" />
+    <Compile Include="Mantenimiento.VIS\IReprogramarCitaMantenimientoVIS.cs" />
+    <Compile Include="Mantenimiento.VIS\IucConfiguracionParametrosAuditoriaVIS.cs" />
+    <Compile Include="Mantenimiento.VIS\IucContactoClienteVIS.cs" />
+    <Compile Include="Mantenimiento.VIS\IucDatosCitaMantenimientoVIS.cs" />
+    <Compile Include="Mantenimiento.VIS\IucTareaPendienteVIS.cs" />
+    <Compile Include="MapaSitio.VIS\IMenuPrincipalVIS.cs" />
+    <Compile Include="Reportes.VIS\IReporteVIS.cs" />
+    <Compile Include="Reportes.VIS\IReportPageVIS.cs" />
+    <Compile Include="Seguridad.Acceso.VIS\IConfiguracionAccesoVIS.cs" />
+    <Compile Include="Seguridad.Acceso.VIS\ILoginVIS.cs" />
+    <Compile Include="MapaSitio.VIS\IMasterPageVIS.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tramites.VIS\IConsultarSeguroVIS.cs" />
+    <Compile Include="Tramites.VIS\IConsultarTramitesVIS.cs" />
+    <Compile Include="Tramites.VIS\IDetalleSeguroVIS.cs" />
+    <Compile Include="Tramites.VIS\IDetalleTramitesVIS.cs" />
+    <Compile Include="Tramites.VIS\IEditarSeguroVIS.cs" />
+    <Compile Include="Tramites.VIS\IEditarTramitesVIS.cs" />
+    <Compile Include="Tramites.VIS\IRegistrarSeguroVIS.cs" />
+    <Compile Include="Tramites.VIS\IRegistrarTramitesVIS.cs" />
+    <Compile Include="Tramites.VIS\IucDeducibleSeguroVIS.cs" />
+    <Compile Include="Tramites.VIS\IucEndosoSeguroVIS.cs" />
+    <Compile Include="Tramites.VIS\IucSeguroDetalleVIS.cs" />
+    <Compile Include="Tramites.VIS\IucSeguroVIS.cs" />
+    <Compile Include="Tramites.VIS\IucSiniestroSeguroVIS.cs" />
+    <Compile Include="Tramites.VIS\IucTramiteFiltroAKVIS.cs" />
+    <Compile Include="Tramites.VIS\IucTramiteGPSVIS.cs" />
+    <Compile Include="Tramites.VIS\IucTramitePlacaVIS.cs" />
+    <Compile Include="Tramites.VIS\IucTramitesActivosVIS.cs" />
+    <Compile Include="Tramites.VIS\IucTramiteTenenciaVIS.cs" />
+    <Compile Include="Tramites.VIS\IucTramiteVerificacionVIS.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\..\BPMO.Facade\BPMO.Facade.SDNI.BO\BPMO.Facade.SDNI.BO.csproj">
+      <Project>{F0BDEA5B-E1DB-45E7-9889-E76D1C91BCF6}</Project>
+      <Name>BPMO.Facade.SDNI.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\BPMO.SDNI.Comun\BPMO.SDNI.Comun.BO\BPMO.SDNI.Comun.BO.csproj">
+      <Project>{ED641CFB-B3D3-471A-A585-1760434F5F6B}</Project>
+      <Name>BPMO.SDNI.Comun.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\BPMO.SDNI.Contratos\BPMO.SDNI.Contratos.BO\BPMO.SDNI.Contratos.BO.csproj">
+      <Project>{48798ACA-6BCB-425F-93AE-7CE9F5B5C7CF}</Project>
+      <Name>BPMO.SDNI.Contratos.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\BPMO.SDNI.Contratos\BPMO.SDNI.Contratos.FSL.BO\BPMO.SDNI.Contratos.FSL.BO.csproj">
+      <Project>{401FC003-0FF9-4979-BABF-643837AF26E5}</Project>
+      <Name>BPMO.SDNI.Contratos.FSL.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\BPMO.SDNI.Contratos\BPMO.SDNI.Contratos.Mantto.BO\BPMO.SDNI.Contratos.Mantto.BO.csproj">
+      <Project>{E73513A0-81A2-4227-AAFC-3574D32C1674}</Project>
+      <Name>BPMO.SDNI.Contratos.Mantto.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\BPMO.SDNI.Contratos\BPMO.SDNI.Contratos.PSL.BO\BPMO.SDNI.Contratos.PSL.BO.csproj">
+      <Project>{E498EB8B-AC7C-4526-BDDC-967FBEDEC012}</Project>
+      <Name>BPMO.SDNI.Contratos.PSL.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\BPMO.SDNI.Contratos\BPMO.SDNI.Contratos.RD.BO\BPMO.SDNI.Contratos.RD.BO.csproj">
+      <Project>{A79DA316-A8C5-460B-B01D-15C4D3919AF4}</Project>
+      <Name>BPMO.SDNI.Contratos.RD.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\BPMO.SDNI.Equipos\BPMO.SDNI.Equipos.BO\BPMO.SDNI.Equipos.BO.csproj">
+      <Project>{5C782134-37F3-4402-9D24-A99D4C6F7B20}</Project>
+      <Name>BPMO.SDNI.Equipos.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\BPMO.SDNI.Facturacion\BPMO.SDNI.Facturacion.InfraestructuraPagos.BO\BPMO.SDNI.Facturacion.InfraestructuraPagos.BO.csproj">
+      <Project>{364DDD0A-9482-4EEE-926E-8458B5A2B459}</Project>
+      <Name>BPMO.SDNI.Facturacion.InfraestructuraPagos.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\BPMO.SDNI.Facturacion\BPMO.SDNI.Facturacion.MonitoreoPagos.BO\BPMO.SDNI.Facturacion.MonitoreoPagos.BO.csproj">
+      <Project>{E9016B2F-1B3C-46BD-B98C-EE8C6AA55A02}</Project>
+      <Name>BPMO.SDNI.Facturacion.MonitoreoPagos.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\BPMO.SDNI.Flota\BPMO.SDNI.Flota.BO\BPMO.SDNI.Flota.BO.csproj">
+      <Project>{3CAA037B-8DB5-4CC0-A61D-20C697140EAC}</Project>
+      <Name>BPMO.SDNI.Flota.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\BPMO.SDNI.Mantenimiento\BPMO.SDNI.Mantenimiento.BO\BPMO.SDNI.Mantenimiento.BO.csproj">
+      <Project>{32541E88-7F7C-48D8-BEA8-9C8342C82191}</Project>
+      <Name>BPMO.SDNI.Mantenimiento.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\BPMO.SDNI.Tramites\BPMO.SDNI.Tramites.BO\BPMO.SDNI.Tramites.BO.csproj">
+      <Project>{3B76A879-F7E8-4390-9443-267101660C58}</Project>
+      <Name>BPMO.SDNI.Tramites.BO</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

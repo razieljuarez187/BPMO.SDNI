@@ -47,11 +47,14 @@ namespace BPMO.SDNI.Contratos.PSL.RPT {
                 if (contrato != null) {
                     if (contrato.Sucursal != null)
                         if (contrato.Sucursal.DireccionesSucursal != null && contrato.Sucursal.DireccionesSucursal.Count > 0)
-                            xrlDireccionEmpresa.Text = string.Format("{0} {1} {2} {3} CP. {4}", contrato.Sucursal.DireccionesSucursal[0].Calle.ToUpper(),
-                                                                                                contrato.Sucursal.DireccionesSucursal[0].Colonia.ToUpper(),
-                                                                                                contrato.Sucursal.DireccionesSucursal[0].Ubicacion.Municipio.Codigo.ToUpper(),
-                                                                                                contrato.Sucursal.DireccionesSucursal[0].Ubicacion.Estado.Codigo.ToUpper(), 
-                                                                                                contrato.Sucursal.DireccionesSucursal[0].CodigoPostal);
+                            xrlDireccionEmpresa.Text = string.Format("{0} {1} {2} {3} CP. {4}",
+                                contrato.Sucursal.DireccionesSucursal[0].Calle ?? string.Empty,
+                                contrato.Sucursal.DireccionesSucursal[0].Colonia ?? string.Empty,
+                                contrato.Sucursal.DireccionesSucursal[0].Ubicacion.Municipio.Codigo ?? string.Empty,
+                                contrato.Sucursal.DireccionesSucursal[0].Ubicacion.Estado.Codigo ?? string.Empty, 
+                                contrato.Sucursal.DireccionesSucursal[0].CodigoPostal ?? string.Empty
+                                ).ToUpper();
+
                     lblUbicacion.Text = !string.IsNullOrEmpty(contrato.DestinoAreaOperacion) ? contrato.DestinoAreaOperacion : string.Empty;
                 }
                 #endregion

@@ -12,14 +12,6 @@
     <AssemblyName>BPMO.SDNI.Presentador</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <SccProjectName>
-    </SccProjectName>
-    <SccLocalPath>
-    </SccLocalPath>
-    <SccAuxPath>
-    </SccAuxPath>
-    <SccProvider>
-    </SccProvider>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -40,37 +32,39 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="BPMO.Basicos">
-      <HintPath>..\..\..\..\BPMO.Librerias\BPMO.Basicos.dll</HintPath>
+      <HintPath>..\..\Comun\Bibliotecas\BPMO.Basicos.dll</HintPath>
     </Reference>
-    <Reference Include="BPMO.eFacturacion.Procesos.BO">
-      <HintPath>..\..\..\..\BPMO.Librerias\BPMO.eFacturacion.Procesos.BO.dll</HintPath>
+    <Reference Include="BPMO.eFacturacion.Procesos.BO, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Comun\Bibliotecas\BPMO.eFacturacion.Procesos.BO.dll</HintPath>
     </Reference>
     <Reference Include="BPMO.Generales.BR">
-      <HintPath>..\..\..\..\BPMO.Librerias\BPMO.Generales.BR.dll</HintPath>
+      <HintPath>..\..\BPMO.Librerias\IDLS\BPMO.Generales.BR.dll</HintPath>
     </Reference>
     <Reference Include="BPMO.Patterns">
-      <HintPath>..\..\..\..\BPMO.Librerias\BPMO.Patterns.dll</HintPath>
+      <HintPath>..\..\Comun\Bibliotecas\BPMO.Patterns.dll</HintPath>
     </Reference>
     <Reference Include="BPMO.Primitivos">
-      <HintPath>..\..\..\..\BPMO.Librerias\BPMO.Primitivos.dll</HintPath>
+      <HintPath>..\..\Comun\Bibliotecas\BPMO.Primitivos.dll</HintPath>
     </Reference>
     <Reference Include="BPMO.Security">
-      <HintPath>..\..\..\..\BPMO.Librerias\BPMO.Security.dll</HintPath>
+      <HintPath>..\..\Comun\Bibliotecas\BPMO.Security.dll</HintPath>
     </Reference>
-    <Reference Include="BPMO.Seguridad.BO">
-      <HintPath>..\..\..\..\BPMO.Librerias\BPMO.Seguridad.BO.dll</HintPath>
+    <Reference Include="BPMO.Seguridad.BO, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Comun\Bibliotecas\BPMO.Seguridad.BO.dll</HintPath>
     </Reference>
     <Reference Include="BPMO.Servicio.Catalogos.BO">
-      <HintPath>..\..\..\..\BPMO.Librerias\BPMO.Servicio.Catalogos.BO.dll</HintPath>
+      <HintPath>..\..\Comun\Bibliotecas\BPMO.Servicio.Catalogos.BO.dll</HintPath>
     </Reference>
     <Reference Include="BPMO.Servicio.Catalogos.BR">
-      <HintPath>..\..\..\..\BPMO.Librerias\BPMO.Servicio.Catalogos.BR.dll</HintPath>
+      <HintPath>..\..\BPMO.Librerias\BPMO.Servicio.Catalogos.BR.dll</HintPath>
     </Reference>
     <Reference Include="BPMO.Servicio.Procesos.BO">
-      <HintPath>..\..\..\..\BPMO.Librerias\BPMO.Servicio.Procesos.BO.dll</HintPath>
+      <HintPath>..\..\BPMO.Librerias\IDLS\BPMO.Servicio.Procesos.BO.dll</HintPath>
     </Reference>
     <Reference Include="BPMO.Servicio.Procesos.BR">
-      <HintPath>..\..\..\..\BPMO.Librerias\BPMO.Servicio.Procesos.BR.dll</HintPath>
+      <HintPath>..\..\BPMO.Librerias\IDLS\BPMO.Servicio.Procesos.BR.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.Data.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <Private>True</Private>
@@ -296,7 +290,7 @@
     <Compile Include="Facturacion.AplicacionesFacturacion.PRE\ConsultarPagosFacturarPRE.cs" />
     <Compile Include="Facturacion.AplicacionesFacturacion.PRE\ConsultarPagosNoFacturadosPRE.cs" />
     <Compile Include="Facturacion.AplicacionesFacturacion.PRE\ConfigurarFacturacionPSLPRE.cs" />
-    <Compile Include="Facturacion.AplicacionesFacturacion.PRE\ReporteIngresoRentasPRE.cs" />
+   <Compile Include="Facturacion.AplicacionesFacturacion.PRE\ReporteIngresoRentasPRE.cs" />
     <Compile Include="Facturacion.AplicacionesFacturacion.PRE\ucCostosAdicionalesFacturaContratoPRE.cs" />
     <Compile Include="Facturacion.AplicacionesFacturacion.PRE\ucLineasFacturaContratoPSLPRE.cs" />
     <Compile Include="Facturacion.AplicacionesFacturacion.PRE\ucInformacionGeneralPSLPRE.cs" />
@@ -406,6 +400,7 @@
     <Compile Include="Tramites.PRE\ucTramiteTenenciaPRE.cs" />
     <Compile Include="Tramites.PRE\ucTramiteVerificacionPRE.cs" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\..\BPMO.Facade\BPMO.Facade.SDNI.BO\BPMO.Facade.SDNI.BO.csproj">
       <Project>{F0BDEA5B-E1DB-45E7-9889-E76D1C91BCF6}</Project>
@@ -557,7 +552,7 @@
     </ProjectReference>
     <ProjectReference Include="..\..\BPMO.SDNI.Mantenimiento\BPMO.SDNI.Mantenimiento\BPMO.SDNI.Mantenimiento.csproj">
       <Project>{60EA0AF3-3129-4CD6-ADA2-44D54C953CB4}</Project>
-      <Name>BPMO.SDNI.Mantenimiento %28BPMO.SDNI.Mantenimiento\BPMO.SDNI.Mantenimiento%29</Name>
+      <Name>BPMO.SDNI.Mantenimiento</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\BPMO.SDNI.Tramites\BPMO.SDNI.Tramites.BO\BPMO.SDNI.Tramites.BO.csproj">
       <Project>{3B76A879-F7E8-4390-9443-267101660C58}</Project>
@@ -576,7 +571,6 @@
       <Name>BPMO.SDNI.Vista</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
