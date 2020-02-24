@@ -1,0 +1,25 @@
+﻿#MenuSecundario { float: left; height: 64px; }
+#BarraHerramientas { width: 835px; float: right; }   
+.GroupBody
+{
+    display: inline-table;
+    float: right;
+    margin-right: 38px;
+    margin-top: 10px;
+}
+.GroupHeader { width: 100%; }
+  
+.CampoFecha { width:80px; }
+.Grid { width: 95%; margin: 10px auto; }
+
+.dvOpciones
+{
+	text-align: right;
+	margin-right: 30px;
+}
+
+fieldset
+{
+    width:98%;
+    margin: 0px auto 20px auto;
+}

@@ -1,0 +1,230 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="BPMO.SDNI.MapaSitio.UI.Site" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title><asp:Literal ID="ltTitle" runat="server" Text="Sistema de Negocio de Idealease"></asp:Literal></title>
+	<!-- hojas de estilo-->
+	<asp:Literal ID="ltEstilo" runat="server" Text="<link href='~/Contenido/Estilos/EstiloDesarrollo.css' rel='Stylesheet' type='text/css' />"></asp:Literal>
+	<link href="<%= Page.ResolveUrl("~/Contenido/Estilos/Tema.JqueryUI/jquery.ui.all.css") %>" rel="stylesheet" type="text/css" />
+	<link href="<%= Page.ResolveUrl("~/Contenido/Estilos/Tema.JqueryUI/jquery-ui-1.9.1.custom.css")%>" rel="stylesheet" type="text/css" />
+	<link href="<%= Page.ResolveUrl("~/Contenido/Estilos/Tema.JqueryUI/jquery.ui.tooltip.css")%>" rel="stylesheet" type="text/css" />    
+	<!--Funcionalidad javascript-->
+	<script src="<%= Page.ResolveUrl("../Contenido/Scripts/jquery-1.8.2.js") %>" type="text/javascript"></script>
+	<script src="<%= Page.ResolveUrl("../Contenido/Scripts/jquery-ui-1.9.1.custom.min.js") %>" type="text/javascript"></script>
+	<script src="<%= Page.ResolveUrl("../Contenido/Scripts/jquery.format.1.05.js") %>" type="text/javascript"></script>
+	<script src="<%= Page.ResolveUrl("../Contenido/Scripts/jquery.tooltip.min.js") %>" type="text/javascript"></script>
+	<script src="<%= Page.ResolveUrl("../Contenido/Scripts/jquery.ui.datepicker-es.js") %>" type="text/javascript"></script>         
+      
+	<!-- JS para activar el mensajes GrowUI y Bloqueo de la UI-->
+	<script src="<%= Page.ResolveUrl("../Contenido/Scripts/jquery.blockUI.js") %>" type="text/javascript"></script>
+	<!--Funcionalidad del buscador-->
+	<script src="<%= Page.ResolveUrl("../Contenido/Scripts/jconfigBuscadorWeb.js") %>" type="text/javascript"></script>
+    <!--Funcionalidad Deshabilitar Enter en cajas de texto-->
+    <script src="<%= Page.ResolveUrl("../Contenido/Scripts/jidealease.extension.js") %>" type="text/javascript"></script>
+	<script language="javascript" type="text/javascript">
+	    $(document).ready(function () {
+	        initClient();
+
+	        Contador($("#<%=hdnContadorSession.ClientID %>").selector, $("#<%=hdnIniContFinSession.ClientID %>").selector);
+
+	        $('ul.MenuEstiloEstatico > li').click(function (event) {
+	            var evento = event.target;
+	            var texto = $(this).find('a.MenuEstiloElementoEstatico');
+	            if (texto.attr('href') != '#') {
+	                window.location = texto.attr('href') + '?MenuSeleccionado=' + texto.text();
+	                return false;
+	            }
+	            if (this != evento) {
+	                if ($(evento).is('a')) {
+	                    window.location = $(evento).attr('href') + '?MenuSeleccionado=' + texto.text();
+	                }
+	                return false;
+	            }
+	        });
+
+	        SeleccionarMenu();
+	    });
+	</script>
+	<script language="javascript" type="text/javascript">
+	    function initClient() {
+	        if ($("#<%=hdnTipoMensaje.ClientID %>").val() == "1") {
+	            mostrarMensaje("1");
+	        }
+	        if ($("#<%=hdnTipoMensaje.ClientID %>").val() == "2") {
+	            mostrarMensaje("2");
+	        }
+	        if ($("#<%=hdnTipoMensaje.ClientID %>").val() == "3") {
+	            MensajeError($("#<%=hdnMensaje.ClientID %>").val(), $("#<%=hdnDetalle.ClientID %>").val());
+	        }
+	        if ($("#<%=hdnTipoMensaje.ClientID %>").val() == "4") {
+	            mostrarMensaje("4");
+	        }
+	        function Contador() { }
+	        $('.CampoNumero').format({ precision: 4, allow_negative: false, autofix: true });
+	        $('.CampoMoneda').format({ precision: 4, allow_negative: false, autofix: true });
+	        $('.CampoMonedaDosDecimales').format({ precision: 2, allow_negative: false, autofix: true });
+	        $('.CampoPorcentaje').format({ precision: 2, allow_negative: false, autofix: true, decimal: '.', affixes_stay: true });
+	        $('.CampoNumeroEntero').format({ precision: 0, allow_negative: false, autofix: true });
+
+	        initBuscador();
+	    }
+	</script>
+	<script language="javascript" type="text/javascript">
+	    //Mensaje GrowUI
+	    function mostrarMensaje(tipo) {
+	        var message = $("#<%=hdnMensaje.ClientID %>").val();
+	        MensajeGrowUI(message, tipo);
+	    }
+
+	    //Limpiar Hidden de Mensajes
+	    function LimpiarHdn() {
+	        $("#<%= hdnTipoMensaje.ClientID %>").val("0");
+	        $("#<%= hdnMensaje.ClientID %>").val("");
+	        $("#<%= hdnDetalle.ClientID %>").val("");
+	    }
+
+	    function ObtenerHora() {
+	        var Fecha = new Date();
+	        var hora = Fecha.getHours();
+	        var minutos = parseFloat(Fecha.getMinutes()) < 10 ? '0' + Fecha.getMinutes().toString() : Fecha.getMinutes();
+	        var segundos = parseFloat(Fecha.getSeconds()) < 10 ? '0' + Fecha.getSeconds().toString() : Fecha.getSeconds();
+	        $('#<%= lblHora.ClientID %>').html(hora + ':' + minutos + ':' + segundos);
+	    }
+	    window.setInterval('ObtenerHora()', '100');
+
+	    function SeleccionarMenu() {
+	        var menuSeleccionado = $('#<%= hdnMenuSeleccionado.ClientID %>').val();
+	        if (menuSeleccionado != '') {
+	            var colorFondo = $('#dvDatosSesion').css('backgroundColor');
+	            $('a.MenuEstiloElementoEstatico').filter(function () {
+	                return $(this).text() == menuSeleccionado;
+	            }).css({ 'backgroundColor': colorFondo, 'color': 'white' }).addClass('MenuPrincipalSeleccionado');
+	        }
+	    }
+	</script>
+	<script language="javascript" type="text/javascript">
+	    function checkText(campo, maxlength) {
+	        if (campo.value.length >= maxlength) {
+	            campo.value = campo.value.substring(0, maxlength);
+	            return false;
+	        }
+	    }
+	</script>
+	<asp:ContentPlaceHolder ID="head" runat="server">
+	</asp:ContentPlaceHolder>
+</head>
+<body>
+	<form id="form1" runat="server">
+	<!-- Para el uso de UpdatePanel-->
+	<asp:ScriptManager runat="server" ID="smScriptManejador" EnableScriptGlobalization="true"
+		AsyncPostBackTimeout="1080" AsyncPostBackErrorMessage="Se perdió la conexión con el servidor.">
+	</asp:ScriptManager>
+    <script language="javascript" type="text/javascript">
+        Sys.WebForms.PageRequestManager.getInstance().add_endRequest(function (sender, args) {
+            var error = args.get_error();
+            if (error !== undefined && error !== null) {
+                var details = error.message;
+                var errorMsg = details;
+                var indexSeparator = errorMsg.indexOf(":");
+                if (indexSeparator != -1) {
+                    errorMsg = errorMsg.substring(indexSeparator + 1);
+                }
+
+                MensajeError(errorMsg, details);
+                args.set_errorHandled(true);
+            }
+        });       
+    </script>
+	<script type="text/javascript" src="<%= Page.ResolveUrl("~/Contenido/Scripts/jIdealease.Base.js") %>"></script>
+	<div id="dvContenedorPrincipal">
+		<!-- Encabezado -->
+		<div id="dvEncabezado">
+            <div id="menuResponsive" class="menuBstrp navbar navbar-default navbar-fixed-top">
+				<div class="container">
+					<div class="navbar-header">
+						<a href="." class="navbar-brand" id="navbar-title"></a>
+						<button type="button" class="btn navbar-toggle" data-toggle="collapse" data-target="#navbar-main">
+							<span style="color: black;">MENÚ</span>
+						</button>
+					</div>
+					<div class="navbar-collapse collapse" id="navbar-main"></div>
+				</div>
+            </div>
+              <div class="dvContenedorEncabezado">
+                    <asp:Image ID="imgLogo" runat="Server" ImageUrl="~/Contenido/Imagenes/LogoBepensaMotriz.png"
+                        Width="186px" Height="90px" Style="float: left"/>
+                <div>
+				    <div id="dvDatosSesion">
+					    <asp:Label ID="lblNombre" runat="server" Text=""></asp:Label>
+					    <br />
+					    <asp:LinkButton ID="lkbCerrarSesion" runat="server" ToolTip="Cerrar esta sesión"
+						    OnClick="lkbCerrarSesion_Click">Cerrar Sesión</asp:LinkButton>
+				    </div>
+				    <div id="dvAdscripcionTitulo">
+					    <asp:Label ID="lblAdscripcion" runat="server" CssClass="AdscripcionTitulo"></asp:Label>
+				    </div>
+				    <div id="dvHora">
+					    <asp:Image ID="imgRelog" runat="server" ImageUrl="~/Contenido/Imagenes/imgReloj.png" />
+					    <asp:Label ID="lblHora" runat="server"></asp:Label>
+				    </div>
+                    <div class="hrLineaDivisoraEncabezado">
+                        <span></span>
+                    </div>
+                </div>
+			</div>
+                <div id="dvDatosEncabezado" class="reponsive-menu">
+				    <!--Navegacion-->
+				    <div id="dvNavegacion">
+					    <!--Menu principal-->
+					    <asp:Menu ID="mnuPrincipal" runat="server" CssClass="menuPrincipal" Orientation="Horizontal"
+						    ForeColor="White" IncludeStyleBlock="false">
+						    <DynamicMenuItemStyle CssClass="MenuElementoDinamico" />
+						    <DynamicMenuStyle CssClass="MenuEstiloDinamico" />
+						    <StaticMenuItemStyle CssClass="MenuEstiloElementoEstatico" />
+						    <StaticMenuStyle CssClass="MenuEstiloEstatico" />
+					    </asp:Menu>
+					    &nbsp;
+					    <!-- fin del menu -->
+				    </div>
+				<!--fin de la navegación-->
+                </div>
+		</div>
+		<!-- Cuerpo -->
+		<div id="dvCuerpo">
+			<asp:UpdatePanel ID="updContenedor" runat="server">
+				<ContentTemplate>
+					<asp:ContentPlaceHolder ID="MainContent" runat="server">
+					</asp:ContentPlaceHolder>
+				</ContentTemplate>
+			</asp:UpdatePanel>
+		</div>
+		<!-- Pié de Página -->
+		<div id="dvPie">
+            <asp:Button runat="server" ID="btnCheckListQuick" Text="CheckList" ToolTip="ACCESO RÁPIDO AL CHECK LIST DE UNIDADES" 
+                CssClass="btnComandoAccesoRapido" OnClick="btnCheckListQuick_Click"/>
+		</div>
+	</div>
+	<!-- Campos Ocultos -->
+	<asp:UpdatePanel ID="updMensaje" runat="server">
+		<ContentTemplate>
+			<asp:HiddenField runat="server" ID="hdnDetalle" />
+			<asp:HiddenField runat="server" ID="hdnMensaje" />
+			<asp:HiddenField runat="server" ID="hdnTipoMensaje" Value="0" />
+			<asp:HiddenField runat="server" ID="hdnMostrarMenu" Value="True" />
+			<asp:HiddenField runat="server" ID="hdnContadorSession" Value="" />
+			<asp:HiddenField runat="server" ID="hdnIniContFinSession" Value="" />
+			<asp:HiddenField runat="server" ID="hdnSessionKey" Value="" />
+			<asp:HiddenField runat="server" ID="hdnMenuSeleccionado" Value="Inicio" />
+			<asp:HiddenField runat="server" ID="hdnShowBuscador" value="0"/>
+		</ContentTemplate>
+	</asp:UpdatePanel>
+	<!-- Ventana de Diálogo para mostrar los mensajes de: Información, Advertencia y Éxito -->
+	<div id="dialog-confirm" title="Confirmación" style="display: none;">
+		<div id="dMensajeConfirmacion">
+		</div>
+	</div>
+	</form>
+</body>
+</html>

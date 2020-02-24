@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FormatoCorreo>
+  <Cuerpo>
+    <![CDATA[
+		<tr>
+		<td style='width: 200px; text-align: left; padding-right: 5px;'>
+		<b>Unidad:</b> {unidad}
+		<br />
+		<b>Horómetro:</b> {horometro}
+		<br />
+		<b>Origen Sucursal:</b> {origenSucursal}
+		<br />
+		<b>Destino Sucursal:</b> {destinoSucursal}
+		<br />
+		<b>Tipo de Servicio:</b> {tipoServicio}
+		<br />
+		<b>Descripción de Servicio:</b> {descripcionServicio}
+		<br />
+		</td>
+		</tr>
+		AUT_CLAVE
+		<tr><td>&nbsp;</td></tr>
+	]]>
+  </Cuerpo>
+</FormatoCorreo>

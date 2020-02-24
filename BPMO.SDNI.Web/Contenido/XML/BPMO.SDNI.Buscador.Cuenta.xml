@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Buscador xsi:schemaLocation="http://www.w3schools.com Buscador.Schema.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.w3schools.com">
+  <Class TitleUI="Cuentas" Assembly="BPMO.Facade.SDNI" NameClass="FacadeBR" Method="ConsultarCuentaClienteCompleto" >
+    <GridView AllowPaging="True" PageSize="5" AllowSorting="True" />
+    <Property NameProperty="Id" Header="Id" Key="True" Width="50" FilterEnabled="True"/>
+    <Property NameProperty="Numero" Header="Número cuenta" Key="False" Width="100" FilterEnabled="True"/>
+    <Property NameProperty="Nombre" Header="Nombre" Key="False" Width="350" FilterEnabled="True" Wilcard="Both"/>
+    <Property NameProperty="Activo" Header="Activo"  Key="False" Width="100" FilterEnabled="True" DataType="Boolean"/>
+  </Class>
+</Buscador>

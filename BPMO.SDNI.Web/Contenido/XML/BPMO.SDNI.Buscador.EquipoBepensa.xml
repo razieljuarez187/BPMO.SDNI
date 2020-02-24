@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Buscador xsi:schemaLocation="http://www.w3schools.com ../XSD/Buscador.Schema.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.w3schools.com">
+	<Class Assembly="BPMO.Facade.SDNI" NameClass="FacadeBR" Method="ConsultarEquipoBepensa" TitleUI="Unidad + Activo">
+		<GridView AllowPaging="True" PageSize="5" AllowSorting="True" />
+		<Property NameProperty="NumeroSerie" Width="150" Header="Número Serie" Key="True" FilterEnabled="True" Wilcard="Both" Required="True" />
+		<Property NameProperty="ActivoFijo_NumeroActivo" Width="100" DataType="String" Header="Clave Oracle" Key="False" Required="False" FilterEnabled="True" />
+		<Property NameProperty="Unidad_Id" Width="100" DataType="Int32" Header="Clave Líder" FilterEnabled="False" Key="False" />
+		<Property NameProperty="Unidad_TipoUnidad_Nombre" Width="100" DataType="String" Header="Tipo Unidad" Key="False" FilterEnabled="False" />
+		<Property NameProperty="ActivoFijo_Descripcion" Width="100" DataType="String" FilterEnabled="False" Header="Descripción" Key="False" Required="False" />
+    <Property NameProperty="Unidad_ConfiguracionModeloMotorizacion_Modelo_Marca_Nombre" Width="100" DataType="String" FilterEnabled="False" Header="Marca" Key="False" Required="False" />
+		<Property NameProperty="Unidad_ConfiguracionModeloMotorizacion_Modelo_Nombre" Width="100" DataType="String" FilterEnabled="False" Header="Modelo" Key="False" Required="False" />
+	</Class>
+</Buscador>

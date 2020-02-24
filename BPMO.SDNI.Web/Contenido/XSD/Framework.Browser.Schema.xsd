@@ -1,0 +1,397 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://www.w3schools.com" targetNamespace="http://www.w3schools.com">
+  <xs:simpleType name ="ButtonType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Image" />
+      <xs:enumeration value="Normal" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name ="ActionType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Redirect" />
+      <xs:enumeration value="Dialog" />
+      <xs:enumeration value="Method" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name ="ResultType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="None" />
+      <xs:enumeration value="Query" />
+      <xs:enumeration value="RetrieveAction" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name ="BOType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Normal" />
+      <xs:enumeration value="Filter" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name ="DataType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Text" />
+      <xs:enumeration value="Date" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name ="ColumnType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Checkbox" />
+      <xs:enumeration value="Data" />
+      <xs:enumeration value="Button" />
+      <xs:enumeration value="Select" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name ="GridLines">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Both" />
+      <xs:enumeration value="Horizontal" />
+      <xs:enumeration value="Vertical" />
+      <xs:enumeration value="None" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name ="Position">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Both" />
+      <xs:enumeration value="Top" />
+      <xs:enumeration value="Bottom" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name ="HorizontalAlign">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Center" />
+      <xs:enumeration value="Justify" />
+      <xs:enumeration value="Left" />
+      <xs:enumeration value="Right" />
+      <xs:enumeration value="None" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name ="VerticalAlign">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Bottom" />
+      <xs:enumeration value="Middle" />
+      <xs:enumeration value="Top" />
+      <xs:enumeration value="None" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name ="Orientation">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Center" />
+      <xs:enumeration value="Left" />
+      <xs:enumeration value="Right" />
+      <xs:enumeration value="None" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="Browsers">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Browser">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Layers">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="BOs">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element maxOccurs="2" minOccurs="1" name="BO">
+                            <xs:complexType>
+                              <xs:attribute name="Type" use="required">
+                                <xs:simpleType>
+                                  <xs:list itemType="BOType" />
+                                </xs:simpleType>
+                              </xs:attribute>
+                              <xs:attribute name="Name" type="xs:string" use="required" />
+                              <xs:attribute name="Extention" type="xs:string" use="required" />
+                              <xs:attribute name="Namespace" type="xs:string" use="required" />
+                              <xs:attribute name="AssemblyName" type="xs:string" use="required" />
+                              <xs:attribute name="AssemblyDirectory" type="xs:string" use="required" />
+                              <xs:attribute name="UseTempAssembly" type="xs:boolean" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="Services">
+                      <xs:complexType>
+                        <xs:attribute name="Name" type="xs:string" use="required" />
+                        <xs:attribute name="Extention" type="xs:string" use="required" />
+                        <xs:attribute name="Namespace" type="xs:string" use="required" />
+                        <xs:attribute name="AssemblyName" type="xs:string" use="required" />
+                        <xs:attribute name="AssemblyDirectory" type="xs:string" use="required" />
+                        <xs:attribute name="UseTempAssembly" type="xs:boolean" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="ConnectionString">
+                <xs:complexType>
+                  <xs:attribute name="Name" type="xs:string" use="required" />
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Menu">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="InsertButton" minOccurs="0">
+                      <xs:complexType>
+                        <xs:attribute name="Type" use="required">
+                          <xs:simpleType>
+                            <xs:list itemType="ButtonType" />
+                          </xs:simpleType>
+                        </xs:attribute>
+                        <xs:attribute name="ImageURL" type="xs:string" use="optional" />
+                        <xs:attribute name="Text" type="xs:string" use="optional" />
+                        <xs:attribute name="ToolTip" type="xs:string" use="optional" />
+                        <xs:attribute name="CssClass" type="xs:string" use="optional" />
+                        <xs:attribute name="ActionType" use="required">
+                          <xs:simpleType>
+                            <xs:list itemType="ActionType" />
+                          </xs:simpleType>
+                        </xs:attribute>
+                        <xs:attribute name="ActionTarget" type="xs:string" use="required" />
+                        <xs:attribute name="ResultType" use="optional">
+                          <xs:simpleType>
+                            <xs:list itemType="ResultType" />
+                          </xs:simpleType>
+                        </xs:attribute>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="DeleteVariousButtom" minOccurs="0">
+                      <xs:complexType>
+                        <xs:attribute name="Type" use="required">
+                          <xs:simpleType>
+                            <xs:list itemType="ButtonType" />
+                          </xs:simpleType>
+                        </xs:attribute>
+                        <xs:attribute name="ImageURL" type="xs:string" use="optional" />
+                        <xs:attribute name="Text" type="xs:string" use="optional" />
+                        <xs:attribute name="ToolTip" type="xs:string" use="optional" />
+                        <xs:attribute name="CssClass" type="xs:string" use="optional" />
+                        <xs:attribute name="ActionType" use="required">
+                          <xs:simpleType>
+                            <xs:list itemType="ActionType" />
+                          </xs:simpleType>
+                        </xs:attribute>
+                        <xs:attribute name="ActionTarget" type="xs:string" use="required" />
+                        <xs:attribute name="ResultType" use="optional">
+                          <xs:simpleType>
+                            <xs:list itemType="ResultType" />
+                          </xs:simpleType>
+                        </xs:attribute>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="FilterButton" minOccurs="0">
+                      <xs:complexType>
+                        <xs:attribute name="Type" use="required">
+                          <xs:simpleType>
+                            <xs:list itemType="ButtonType" />
+                          </xs:simpleType>
+                        </xs:attribute>
+                        <xs:attribute name="ImageURL" type="xs:string" use="optional" />
+                        <xs:attribute name="Text" type="xs:string" use="optional" />
+                        <xs:attribute name="ToolTip" type="xs:string" use="optional" />
+                        <xs:attribute name="CssClass" type="xs:string" use="optional" />
+                        <xs:attribute name="ActionType" use="required">
+                          <xs:simpleType>
+                            <xs:list itemType="ActionType" />
+                          </xs:simpleType>
+                        </xs:attribute>
+                        <xs:attribute name="ActionTarget" type="xs:string" use="required" />
+                        <xs:attribute name="ResultType" use="optional">
+                          <xs:simpleType>
+                            <xs:list itemType="ResultType" />
+                          </xs:simpleType>
+                        </xs:attribute>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute name="Position" use="required">
+                    <xs:simpleType>
+                      <xs:list itemType="Position" />
+                    </xs:simpleType>
+                  </xs:attribute>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="FilterDialog">                
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="SearchAction">
+                      <xs:complexType>
+                        <xs:attribute name="Type" use="required">
+                          <xs:simpleType>
+                            <xs:list itemType="ActionType" />
+                          </xs:simpleType>
+                        </xs:attribute>
+                        <xs:attribute name="Target" type="xs:string" use="required" />
+                        <xs:attribute name="ResultType" use="required">
+                          <xs:simpleType>
+                            <xs:list itemType="ResultType" />
+                          </xs:simpleType>
+                        </xs:attribute>
+                        <xs:attribute name="SearchOnLoad" type="xs:boolean" use="optional" />
+                      </xs:complexType>
+                    </xs:element>  
+                    <xs:element name="SearchParameters" minOccurs="0">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element maxOccurs="unbounded" name="SearchParameter" minOccurs="0">
+                            <xs:complexType>
+                              <xs:attribute name="Label" type="xs:string" use="required" />
+                              <xs:attribute name="PropertyName" type="xs:string" use="required" />
+                              <xs:attribute name="DataType" use="required">
+                                <xs:simpleType>
+                                  <xs:list itemType="DataType" />
+                                </xs:simpleType>
+                              </xs:attribute>
+                              <xs:attribute name="Required" type="xs:boolean" use="optional" />
+                              <xs:attribute name="Regex" type="xs:string" use="optional" />
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="InitialFilters" minOccurs="0">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element maxOccurs="unbounded" name="InitialFilter" minOccurs="0">
+                            <xs:complexType>
+                              <xs:attribute name="PropertyName" type="xs:string" use="required" />
+                              <xs:attribute name="Value" type="xs:string" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute name="Title" type="xs:string" use="optional" />
+                  <xs:attribute name="HeaderListStyle" type="xs:string" use="optional" />
+                  <xs:attribute name="RowListStyle" type="xs:string" use="optional" />
+                  <xs:attribute name="AlternatingRowListStyle" type="xs:string" use="optional" />
+                  <xs:attribute name="RemoveParameterImageURL" type="xs:string" use="required" />
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Grid">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Columns">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element maxOccurs="unbounded" name="Column">
+                            <xs:complexType>
+                              <xs:attribute name="Type" use="required">
+                                <xs:simpleType>
+                                  <xs:list itemType="ColumnType" />
+                                </xs:simpleType>
+                              </xs:attribute>
+                              <xs:attribute name="HeaderText" type="xs:string" use="optional" />
+                              <xs:attribute name="Width" type="xs:unsignedShort" use="optional" />
+                              <xs:attribute name="DataField" type="xs:string" use="optional" />
+                              <xs:attribute name="Format" type="xs:string" use="optional" />
+                              <xs:attribute name="HeaderHorizontalAlign" use="optional">
+                                <xs:simpleType>
+                                  <xs:list itemType="HorizontalAlign" />
+                                </xs:simpleType>
+                              </xs:attribute>
+                              <xs:attribute name="HeaderVerticalAlign" use="optional">
+                                <xs:simpleType>
+                                  <xs:list itemType="VerticalAlign" />
+                                </xs:simpleType>
+                              </xs:attribute>
+                              <xs:attribute name="ItemHorizontalAlign" use="optional">
+                                <xs:simpleType>
+                                  <xs:list itemType="HorizontalAlign" />
+                                </xs:simpleType>
+                              </xs:attribute>
+                              <xs:attribute name="ItemVerticalAlign" use="optional">
+                                <xs:simpleType>
+                                  <xs:list itemType="VerticalAlign" />
+                                </xs:simpleType>
+                              </xs:attribute>
+                              <xs:attribute name="ID" type="xs:string" use="optional" />
+                              <xs:attribute name="ButtonType" use="optional">
+                                <xs:simpleType>
+                                  <xs:list itemType="ButtonType" />
+                                </xs:simpleType>
+                              </xs:attribute>
+                              <xs:attribute name="ImageURL" type="xs:string" use="optional" />
+                              <xs:attribute name="ToolTip" type="xs:string" use="optional" />
+                              <xs:attribute name="CssClass" type="xs:string" use="optional" />
+                              <xs:attribute name="ActionType" use="optional">
+                                <xs:simpleType>
+                                  <xs:list itemType="ActionType" />
+                                </xs:simpleType>
+                              </xs:attribute>
+                              <xs:attribute name="ActionTarget" type="xs:string" use="optional" />
+                              <xs:attribute name="ResultType" use="optional">
+                                <xs:simpleType>
+                                  <xs:list itemType="ResultType" />
+                                </xs:simpleType>
+                              </xs:attribute>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="Pager" minOccurs="0" maxOccurs="1">
+                      <xs:complexType>
+                        <xs:attribute name="Enabled" type="xs:boolean" use="required" />
+                        <xs:attribute name="PageSize" type="xs:unsignedByte" use="required" />
+                        <xs:attribute name="CssClass" type="xs:string" use="optional" />
+                        <xs:attribute name="Position" use="optional">
+                          <xs:simpleType>
+                            <xs:list itemType="Position" />
+                          </xs:simpleType>
+                        </xs:attribute>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="EmptyDataTemplate" minOccurs="0" maxOccurs="1">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute name="Enabled" type="xs:boolean" use="required" />
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute name="DataKeyName" type="xs:string" use="optional" />
+                  <xs:attribute name="GridLines" use="optional">
+                    <xs:simpleType>
+                      <xs:list itemType="GridLines" />
+                    </xs:simpleType>
+                  </xs:attribute>
+                  <xs:attribute name="Orientation" use="optional">
+                    <xs:simpleType>
+                      <xs:list itemType="Orientation" />
+                    </xs:simpleType>
+                  </xs:attribute>
+                  <xs:attribute name="CssClass" type="xs:string" use="optional" />
+                  <xs:attribute name="RowStyle" type="xs:string" use="optional" />
+                  <xs:attribute name="FooterStyle" type="xs:string" use="optional" />
+                  <xs:attribute name="SelectedRowStyle" type="xs:string" use="optional" />
+                  <xs:attribute name="HeaderStyle" type="xs:string" use="optional" />
+                  <xs:attribute name="AlternatingRowStyle" type="xs:string" use="optional" />
+                  <xs:attribute name="EditRowStyle" type="xs:string" use="optional" />
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="BackOnCall" minOccurs="0" maxOccurs="1">
+                <xs:complexType>
+                  <xs:attribute name="Type" use="required">
+                    <xs:simpleType>
+                      <xs:list itemType="ButtonType" />
+                    </xs:simpleType>
+                  </xs:attribute>
+                  <xs:attribute name="ImageURL" type="xs:string" use="optional" />
+                  <xs:attribute name="Text" type="xs:string" use="optional" />
+                  <xs:attribute name="ToolTip" type="xs:string" use="optional" />
+                  <xs:attribute name="CssClass" type="xs:string" use="optional" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="ID" type="xs:string" use="required" />
+            <xs:attribute name="Name" type="xs:string" use="required" />
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

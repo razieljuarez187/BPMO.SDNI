@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Buscador xsi:schemaLocation="http://www.w3schools.com Buscador.Schema.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.w3schools.com">
+  <Class TitleUI="Cliente" Assembly="BPMO.Facade.SDNI" NameClass="FacadeBR" Method="ConsultarCliente" >
+    <GridView AllowPaging="True" PageSize="5" AllowSorting="True" />
+    <Property NameProperty="Id" Header="Id" Key="True" Width="60" FilterEnabled="True"/>
+    <Property NameProperty="Nombre" Header="Nombre" Key="False" Width="350" Required="True" FilterEnabled="True" Wilcard="Both"/>
+    <Property NameProperty="RFC" Header="RFC"  Key="False" Width="180" FilterEnabled="True"/>
+  </Class>
+</Buscador>

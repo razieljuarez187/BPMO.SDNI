@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FormatoCorreo>
+  <Cabecera>
+    <![CDATA[
+			<html>
+	      <head>
+		      <title>CORREO ELECTR&Oacute;NICO SDNI</title>
+          <meta charset="utf-8">
+			    <meta charset="utf-8">
+	      </head>
+	      <body>
+		      <table width = '100%'>
+			      <tr>
+              <td width = '100%'>
+                <label><b>[Asunto]</b></label>
+				      </td>
+			      </tr>
+			]]>
+  </Cabecera>
+  <Cuerpo>
+    <![CDATA[
+							<tr>
+				        <td style='font-size:1.2em; text-align: right;'><b>INFORMACI&Oacute;N DEL VEH&Iacute;CULO</b></td>
+			        </tr>
+		]]>
+  </Cuerpo>
+  <Pie>
+    <![CDATA[
+			</table>
+	  </body>
+  </html>
+		]]>
+  </Pie>
+</FormatoCorreo>

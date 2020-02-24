@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Buscador xsi:schemaLocation="http://www.w3schools.com Buscador.Schema.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.w3schools.com">
+  <Class TitleUI="Unidad" Assembly="BPMO.Facade.SDNI" NameClass="FacadeBR" Method="ConsultarUnidadDetalle" >
+    <GridView AllowPaging="True" PageSize="5" AllowSorting="True" />
+    <Property NameProperty="Id"  Header="Id" Key="True" Width="50" FilterEnabled="True"/>
+    <Property NameProperty="NumeroSerie"  Header="Número Serie" Key="False" Width="90" FilterEnabled="True" Wilcard="Both"/>
+    <Property NameProperty="ConfiguracionModeloMotorizacion_Modelo_Marca_Nombre" Header="Marca" Key="False" FilterEnabled="True" Width="100" Wilcard="Both"/>
+    <Property NameProperty="ConfiguracionModeloMotorizacion_Modelo_Nombre" Header="Modelo" Key="False" FilterEnabled="True" Width="100" Wilcard="Both"/>
+    <Property NameProperty="ConfiguracionModeloMotorizacion_ClasificadorMotorizacion_Nombre" Header="Motorización" Key="False" FilterEnabled="True" Width="90" Wilcard="Both"/>
+    <Property NameProperty="ClasificadorAplicacion_Nombre" Header="Aplicación" Key="False" FilterEnabled="True" Width="100" Wilcard="Both"/>
+    <Property NameProperty="TipoUnidad_Nombre" Header="Tipo Unidad" Key="False" FilterEnabled="True" Width="100" Wilcard="Both"/>
+    <Property NameProperty="FechaProximoServicio" Header="Prox. Servicio"  Key="False" Width="80" FilterEnabled="False"/>
+    <Property NameProperty="Activo" Header="Activo" Key="False" Width="30" FilterEnabled="False" DataType="Boolean"/>
+  </Class>
+</Buscador>

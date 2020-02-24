@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://www.w3schools.com" targetNamespace="http://www.w3schools.com" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<!--Opciones de Class-->
+  <xs:simpleType name="Method">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Consultar"/>
+      <xs:enumeration value="ConsultarCompleto"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="MethodSelect">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Consultar"/>
+      <xs:enumeration value="ConsultarCompleto"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <!--Opciones de Property-->
+	<xs:simpleType name="Wilcard">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="Right"/>
+			<xs:enumeration value="Left"/>
+			<xs:enumeration value="Both"/><!--Aplica el LIKE al inicio y al final -->
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="DataType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="Int16"/>
+			<xs:enumeration value="Int32"/>
+      <xs:enumeration value="String"/>
+      <xs:enumeration value="Boolean"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="Required">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="True"/>
+			<xs:enumeration value="False"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="FilterEnabled">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="True"/>
+			<xs:enumeration value="False"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="Key">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="True"/>
+			<xs:enumeration value="False"/>
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<!--Opciones del GridView-->
+	<xs:simpleType name="AllowSorting">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="True"/>
+			<xs:enumeration value="False"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="AllowPaging">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="True"/>
+			<xs:enumeration value="False"/>
+		</xs:restriction>
+	</xs:simpleType>
+  
+  <!--Opciones principales -->
+  <xs:element name="Buscador">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Class">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="GridView" minOccurs="1" maxOccurs="1">
+                <xs:complexType>
+                  <xs:attribute name="AllowPaging" use="optional">
+                    <xs:simpleType>
+                      <xs:list itemType="AllowPaging" />
+                    </xs:simpleType>
+                  </xs:attribute>
+                  <xs:attribute name="PageSize" use="optional">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:integer">
+                        <xs:minExclusive value="0"/>
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:attribute>
+                  <xs:attribute name="AllowSorting" use="optional">
+                    <xs:simpleType>
+                      <xs:list itemType="AllowSorting" />
+                    </xs:simpleType>
+                  </xs:attribute>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Property" minOccurs="1" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:attribute name="NameProperty" type="xs:string" use="required"/>
+                  <xs:attribute name="Header" type="xs:string" use="required"/>
+                  <xs:attribute name="Key" use="required">
+                    <xs:simpleType>
+                      <xs:list itemType="Key" />
+                    </xs:simpleType>
+                  </xs:attribute>
+                  <xs:attribute name="Width" use="required">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:integer">
+                        <xs:minExclusive value="0"/>
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:attribute>
+                  <xs:attribute name="FilterEnabled" use="required">
+                    <xs:simpleType>
+                      <xs:list itemType="FilterEnabled" />
+                    </xs:simpleType>
+                  </xs:attribute>
+                  <xs:attribute name="Required" use="optional">
+                    <xs:simpleType>
+                      <xs:list itemType="Required" />
+                    </xs:simpleType>
+                  </xs:attribute>
+                  <xs:attribute name="DataType" use="optional">
+                    <xs:simpleType>
+                      <xs:list itemType="DataType" />
+                    </xs:simpleType>
+                  </xs:attribute>
+                  <xs:attribute name="Wilcard" use="optional">
+                    <xs:simpleType>
+                      <xs:list itemType="Wilcard" />
+                    </xs:simpleType>
+                  </xs:attribute>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="Assembly" type="xs:string" use="required"/>
+            <xs:attribute name="NameClass" type="xs:string" use="required"/>
+            <xs:attribute name="Method" use="required">
+              <xs:simpleType>
+                <xs:list itemType="Method"/>
+              </xs:simpleType>
+            </xs:attribute>
+            <xs:attribute name="TitleUI" type="xs:string" use="required"/>
+            <xs:attribute name="MethodSelect" use="optional">
+              <xs:simpleType>
+                <xs:list itemType="MethodSelect"/>
+              </xs:simpleType>
+            </xs:attribute>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

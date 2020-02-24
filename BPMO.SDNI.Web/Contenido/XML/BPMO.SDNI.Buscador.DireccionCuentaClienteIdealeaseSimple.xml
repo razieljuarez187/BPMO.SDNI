@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Buscador xsi:schemaLocation="http://www.w3schools.com ../xsd/Buscador.Schema.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.w3schools.com">
+  <Class Assembly="BPMO.SDNI.Comun" NameClass="CuentaClienteIdealeaseBR" Method="ConsultarDireccionesSimple" TitleUI="Direcciones del Cliente">
+    <GridView AllowPaging="True" PageSize="5" AllowSorting="True"/>
+    <Property NameProperty="Direccion_SiteId"  Header="Id" Key="True" Width="70" FilterEnabled="True"/>
+    <Property NameProperty="Direccion_Direccion"  Header="Dirección" Key="False" Width="400" FilterEnabled="True" Wilcard="Both" DataType="String"/>
+    <Property NameProperty="Cuenta_Id"  Header="Id de Cuenta" Key="True" Width="70" FilterEnabled="True"/>
+    <Property NameProperty="Cuenta_Cliente_Id"  Header="Cliente" Key="True" Width="70" FilterEnabled="True"/>
+    <Property NameProperty="Cuenta_UnidadOperativa_Id"  Header="Unidad Operativa" Key="True" Width="70" FilterEnabled="True"/>
+  </Class>
+</Buscador>

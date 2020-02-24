@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Plantilla>
+  <TipoRenglon>
+    COBRO_DANOS
+  </TipoRenglon>
+  <TipoRenglon>
+    OTROS_COBROS_RENTA
+  </TipoRenglon>
+  <TipoRenglon>
+    SEGUROS
+  </TipoRenglon>
+  <TipoRenglon>
+    CONEXIONES
+  </TipoRenglon>
+  <TipoRenglon>
+    CABLE
+  </TipoRenglon>
+  <TipoRenglon>
+    COMBUSTIBLE
+  </TipoRenglon>
+  <TipoRenglon>
+    MANIOBRA
+  </TipoRenglon>
+  <TipoRenglon>
+    MANTENIMIENTO
+  </TipoRenglon>
+  <TipoRenglon>
+    RENTA
+  </TipoRenglon>
+  <TipoRenglon>
+    HORA_EXTRA
+  </TipoRenglon>
+  <TipoRenglon>
+    GUARDIA
+  </TipoRenglon>
+</Plantilla>

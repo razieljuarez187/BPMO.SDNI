@@ -1,0 +1,30 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Lite.master.cs" Inherits="BPMO.SDNI.MapaSitio.UI.Lite" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <script src="<%= Page.ResolveUrl("../Contenido/Scripts/jquery-1.8.2.js") %>" type="text/javascript"></script>
+    <link href="~/Contenido/Estilos/SitioLite.css" rel="stylesheet" type="text/css" />
+    <link href="~/Contenido//Estilos/EstiloPaginaInicio.css" rel="Stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="dvHeader">
+        <div class="Logo"></div>
+    </div>
+    <asp:ContentPlaceHolder ID="MainContent" runat="server">
+        
+    </asp:ContentPlaceHolder>
+    <div id="dvFooter">
+        
+    </div>
+    <%--Campos ocultos--%>
+    <asp:HiddenField ID="hdnMostrarMenu" runat="server" />
+    <asp:HiddenField ID="hdnShowBuscador" runat="server" value="0"/>
+    </form>
+</body>
+</html>

@@ -1,0 +1,235 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AnexoA>
+  <Anverso>
+    <Cabecera>
+      <![CDATA[
+		<p style="font-size:8pt; font-family: Arial, Helvetica Neue, Helvetica, sans-serif; text-align:justify; width:100%;">
+			<table style="width:100%; margin: 0 auto;">
+				<tr>
+					<td style="width:50%;">
+						ANEXO "A" AL CONTRATO DE ARRENDAMIENTO DE VEHÍCULOS
+						<br />CON SERVICIO DE MANTENIMIENTO INCLUIDO
+					</td>
+					<td style="width:50%;text-align:right;">
+						CONTRATO: {NUMERO_CONTRATO}
+					</td>
+				</tr>
+			</table>
+		</p>
+      ]]>
+    </Cabecera>
+    <Nota>
+      <![CDATA[
+      <P style="font-family:Arial, Helvetica Neue, Helvetica, sans-serif; font-size:8pt; text-align:justify;">EL VEHÍCULO DEBERÁ DE REGRESARSE AL TÉRMINO DEL CONTRATO CON LLANTAS ORIGINALES RADIALES DELANTERAS Y LLANTAS TRASERA RADIALES TAL Y COMO SE 
+      ENTREGÓ EN EL ACTO.</P>
+      ]]>
+    </Nota>
+  </Anverso>
+  <Reverso>
+    <ContenidoReverso>
+      <![CDATA[
+      <div style="margin:auto;" >
+        <table border="1" cellspacing="0" cellpadding="6" width ="97%" align = "center" style="table-layout:fixed;">
+          <tr>
+            <td colspan="2">
+              <div style="font-size:8pt; font-family: Arial, Helvetica Neue, Helvetica, sans-serif; text-align:left;">ANEXO No. 1 DEL CONTRATO DE ARRENDAMIENTO {NUMERO_CONTRATO} CON MANTENIMIENTO INCLUIDO DE FECHA {FECHA_CONTRATO}, CELEBRADO ENTRE 
+			  {NOMBRE_CLIENTE} COMO  ARRENDATARIO, A QUIEN SE LE DENOMINÓ EL CLIENTE, Y 
+			  {UNIDAD_OPERATIVA} COMO ARRENDADOR, A QUIEN SE LE DENOMINÓ EL  DISTRIBUIDOR{OBLIGADOS_Y_DEPOSITARIOS}.
+			  </div>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2" style="overflow:hidden;">
+              <div style="font-size:8pt; font-family: Arial, Helvetica Neue, Helvetica, sans-serif; text-align:left;">1) BIENES: LOS VEHÍCULOS DESCRITOS EN EL ANVERSO DE ESTE DOCUMENTO.</ div>
+              <div style="font-size:8pt; font-family: Arial, Helvetica Neue, Helvetica, sans-serif; text-align:justify;">
+              EN CASO DE EXISTIR DIFERENCIA EN LOS DATOS DE LOS BIENES ASENTADOS EN EL ANVERSO DE ESTE DOCUMENTO 
+              CON LOS DE LAS FACTURAS, PREVALECERÁN LOS DE LAS FACTURAS, POR SER LOS QUE EN FORMA CORRECTA 
+              IDENTIFICAN LOS BIENES.
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td width ="50%" style="overflow:hidden;">
+              <div style="font-size:8pt; font-family: Arial, Helvetica Neue, Helvetica, sans-serif; text-align:left;">2) LUGAR DONDE SE DOMICILIAN LOS VEHÍCULOS:</ div>
+              <div style="font-size:8pt; font-family: Arial, Helvetica Neue, Helvetica, sans-serif; text-align:justify;">
+              {DIRECCION_CLIENTE}
+              </div>
+            </td>
+            <td width ="50%" style="overflow:hidden;">
+              <div style="font-size:8pt; font-family: Arial, Helvetica Neue, Helvetica, sans-serif; text-align:left;">3) KILOMETRAJE ESTIMADO ANUAL POR CADA VEHÍCULO</ div>
+              <div style="font-size:8pt; font-family: Arial, Helvetica Neue, Helvetica, sans-serif; text-align:left;">
+              {KILOMETRAJE_ANUAL_VEHICULO}
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td width ="50%" style="overflow:hidden;">
+              <div style="font-size:8pt; font-family: Arial, Helvetica Neue, Helvetica, sans-serif; text-align:left;">4)  SEGURO DE LA UNIDAD: {RESPONSABLE_SEGURO_UNIDAD}
+              </div>
+            </td>
+            <td width ="50%" style="overflow:hidden;">
+              <div style="font-size:8pt; font-family: Arial, Helvetica Neue, Helvetica, sans-serif; text-align:left;">5)COBERTURAS DEL SEGURO:<br /></div>
+              <ul style="font-size:8pt; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; text-align:justify;">
+                <li>Daños Materiales. Amparado</li>
+                <li>Robo Total. Amparado</li>
+		<li>Cristales. Amparado</li>
+                <li>Responsabilidad Civil. Amparado</li>
+                <li>Daños por la Carga. Amparado</li>
+                <li>Gastos Médicos Ocupantes. Amparado</li>
+                <li>Gastos Legales. Amparado</li>
+                <li>Muerte del Conductor por Accidente. Amparado</li>
+              </ul>              
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2" style="overflow:hidden;">
+              <div style="font-size:8pt; font-family: Arial, Helvetica Neue, Helvetica, sans-serif; text-align:left;">6)  PAGO ADICIONAL POR KILOMETRAJE EXCEDIDO POR CADA VEHÍCULO</ div>
+              <div style="font-size:8pt; font-family: Arial, Helvetica Neue, Helvetica, sans-serif; text-align:justify;">
+              EL KILOMETRAJE RECORRIDO PUEDE VARIAR EN UN 15% MENOR AL VALOR ESPECIFICADO EN EL PUNTO 3. EN EL 
+              SUPUESTO DE QUE EL KILOMETRAJE ANUAL REAL DE CUALQUIER VEHÍCULO CALCULADO A LA FECHA DE ENTREGA 
+              VARÍE, LAS PARTES CONVIENEN RENEGOCIAR LOS CARGOS HACIA LA ALZA POR CADA VEHÍCULO AFECTADO DE ÉSTA 
+              MANERA.
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td width ="50%" style="overflow:hidden;">
+              <div style="font-size:8pt; font-family: Arial, Helvetica Neue, Helvetica, sans-serif; text-align:justify;">7) DEPÓSITO EN GARANTÍA: {DEPOSITO_GARANTIA} MÁS IVA
+              </div>
+            </td>
+            <td width ="50%" style="overflow:hidden;">
+              <div style="font-size:8pt; font-family: Arial, Helvetica Neue, Helvetica, sans-serif; text-align:justify;">8) COMISIÓN POR APERTURA:  {COMISION_APERTURA} MÁS IVA
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td width ="50%" style="overflow:hidden;">
+              <div style="font-size:8pt; font-family: Arial, Helvetica Neue, Helvetica, sans-serif; text-align:left;">9) LUGAR DE PAGO:</ div>
+              <div style="font-size:8pt; font-family: Arial, Helvetica Neue, Helvetica, sans-serif; text-align:left;">
+              DEPÓSITO: BBVA BANCOMER <br />
+              CONVENIO 1339443 CLABE 012914002013394432 <br/>
+              CIUDAD: MÉRIDA YUCATÁN <br/>
+              BENEFICIARIO: AMSA IDEALEASE, S.A. DE C.V.
+              </div>
+            </td>
+            <td width ="50%" style="overflow:hidden;">
+              <div style="font-size:8pt; font-family: Arial, Helvetica Neue, Helvetica, sans-serif; text-align:justify;">10) AJUSTE POR INFLACIÓN: SE AJUSTARA CADA AÑO DE ACUERDO 
+              AL INDICADOR DEL ÍNDICE NACIONAL DE PRECIOS AL CONSUMIDOR DE ESTADOS UNIDOS 
+              MEXICANOS VIGENTE.
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td width ="50%" style="overflow:hidden;">
+              <div style="font-size:8pt; font-family: Arial, Helvetica Neue, Helvetica, sans-serif; text-align:justify;">11) LLANTAS  POR DESGASTE NORMAL DE 
+              OPERACIÓN (10,000 KM POR MM), ALINEACIÓN Y 
+              BALANCÉO POR CUENTA DEL : {RESPONSABLE_LLANTAS}
+              </div>
+            </td>
+            <td width ="50%" style="overflow:hidden;">
+              <div style="font-size:8pt; font-family: Arial, Helvetica Neue, Helvetica, sans-serif; text-align:justify;">12) TASA MORATORIA: {TASA_MORATORIA}% MENSUAL.
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td width ="50%" style="overflow:hidden;">
+              <div style="font-size:8pt; font-family: Arial, Helvetica Neue, Helvetica, sans-serif; text-align:left;">13) UBICACIÓN DEL TALLER DE SERVICIO:</ div>
+              <div style="font-size:8pt; font-family: Arial, Helvetica Neue, Helvetica, sans-serif; text-align:justify;">
+              {UBICACION_TALLER}
+              </div>
+            </td>
+            <td width ="50%" style=" overflow:hidden;">
+              <div style="font-size:8pt; font-family: Arial, Helvetica Neue, Helvetica, sans-serif; text-align:justify;">14) ROTULACIÓN Y PINTURA POR CUENTA DE: {RESPONSABLE_ROTULACION_PINTURA}
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td width ="50%" style="overflow:hidden;">
+              <div style="font-size:8pt; font-family: Arial, Helvetica Neue, Helvetica, sans-serif; text-align:justify;">15)  LAVADO DEL VEHÍCULO POR CUENTA DE:
+              {RESPONSABLE_LAVADO}
+              </div>
+            </td>
+            <td width ="50%" style="overflow:hidden;">
+              {DATOS_ADICIONALES_OBSERVACIONES}
+            </td>
+          </tr>
+          {DATOS_ADICIONALES}
+          <tr>
+            <td colspan="2" style="overflow:hidden;">
+              <div style="font-size:8pt; font-family: Arial, Helvetica Neue, Helvetica, sans-serif; text-align:justify;">LOS TÉRMINOS Y CONDICIONES DEL CONTRATO  DE ARRENDAMIENTO PURO SON, EN ESTE ACTO, INCORPORADOS Y 
+              FORMAN PARTE DEL PRESENTE ANEXO, COMO SÍ DICHOS TÉRMINOS Y CONDICIONES ESTUVIESEN TOTALMENTE 
+              PREVISTOS EN EL PRESENTE DOCUMENTO.
+              </ div>
+              <div style="font-size:8pt; font-family: Arial, Helvetica Neue, Helvetica, sans-serif; text-align:justify;">
+              LAS PARTES LO FIRMAN DE CONFORMIDAD, POR DUPLICADO EN LA CIUDAD DE {CIUDAD_ESTADO_MATRIZ}, AL DÍA {FECHA_CONTRATO}.
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      ]]>
+    </ContenidoReverso>
+    <Observaciones>
+      <PlantillaObservaciones>
+        <![CDATA[
+        <div style="font-size:8pt; font-family: Arial, Helvetica Neue, Helvetica, sans-serif; text-align:justify;">16) {OBSERVACIONES}</div>
+        <dl>
+          [OBSERVACIONES_O_DATOS]
+        </dl>
+      ]]>
+      </PlantillaObservaciones>
+      <ObservacionConTitulo>
+        <![CDATA[
+        <dt style="font-size:8pt; font-family: Arial, Helvetica Neue, Helvetica, sans-serif; text-align:left;">
+          {TITULO}
+        </dt>
+        <dd style="font-size:8pt; font-family: Arial, Helvetica Neue, Helvetica, sans-serif; text-align:justify;">
+          {DESCRIPCION}<br /><br />
+        </dd>
+      ]]>
+      </ObservacionConTitulo>
+      <ObservacionSinTitulo>
+        <![CDATA[
+          <dt style="font-size:8pt; font-family: Arial, Helvetica Neue, Helvetica, sans-serif; text-align:justify;">
+            {DESCRIPCION}<br /><br />
+          </dt>
+        ]]>
+      </ObservacionSinTitulo>      
+    </Observaciones>
+    <DatosAdicionales>
+      <PlantillaDatosAdicionales>
+        <![CDATA[
+          <tr>
+            <td width ="50%" style="overflow:hidden;">
+              [IMPAR]
+            </td>
+            <td width ="50%" style="overflow:hidden;">
+              [PAR]
+            </td>
+          </tr>
+        ]]>
+      </PlantillaDatosAdicionales>
+      <DAConTitulo>
+        <![CDATA[
+          <dl>
+            <dt style="font-size:8pt; font-family: Arial, Helvetica Neue, Helvetica, sans-serif; text-align:left;">
+              {INDEX_TITULO}<br />
+            </dt>
+            <dd style="font-size:8pt; font-family: Arial, Helvetica Neue, Helvetica, sans-serif; text-align:justify;">
+              {DESCRIPCION}<br /><br />
+            </dd>
+          </dl>
+        ]]>
+      </DAConTitulo>
+      <DASinTitulo>
+        <![CDATA[
+          <dl>
+            <dt style="font-size:8pt; font-family: Arial, Helvetica Neue, Helvetica, sans-serif; text-align:justify;">
+              {INDEX_DESCRIPCION}<br /><br />
+            </dt>
+          </dl>
+        ]]>
+      </DASinTitulo>
+    </DatosAdicionales>
+  </Reverso>
+</AnexoA>

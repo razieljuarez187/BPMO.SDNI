@@ -1,0 +1,57 @@
+﻿#MenuSecundario { float: left; height: 64px; }
+#BarraHerramientas { width: 835px; float: right; }   
+.GroupBody
+{
+    display: inline-table;
+    float: right;
+    margin-right: 38px;
+    margin-top: 10px;
+}
+.GroupHeader { width: 100%; }
+
+#divInformacionClienteControles,
+#divInformacionActaControles,
+#divInformacionHaciendaControles,
+#divRepresentantesLegalesControles,
+#divObligadosSolidariosControles
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    position: inherit;
+} 
+
+#divInformacionClienteControles .trAlinearDerecha,
+#divInformacionActaControles .trAlinearDerecha,
+#divInformacionHaciendaControles .trAlinearDerecha,
+#divRepresentantesLegalesControles .trAlinearDerecha,
+#divObligadosSolidariosControles .trAlinearDerecha 
+{ display: inline-table; margin-bottom: 5px; }
+  
+.CampoFecha { width:80px; }
+
+.Grid { width: 95%; margin: 10px auto; }
+
+
+#divRepresentantesLegalesControles .dvOpciones,
+#divObligadosSolidariosControles .dvOpciones
+{
+	text-align: right;
+	margin-right: 30px;
+}
+
+.indicacion { font-size:10px; }
+.trAlineaDerechaCliente
+{
+    text-align: right;
+    vertical-align: middle;
+    width:18%;
+}
+.trAlineaCentroCliente
+{
+    width: 2%;
+}
+.trAlineaIzquierdaCliente
+{
+    text-align: left;
+    width:30%;
+}

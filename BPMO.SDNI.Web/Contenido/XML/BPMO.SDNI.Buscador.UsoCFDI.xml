@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Buscador xsi:schemaLocation="http://www.w3schools.com Buscador.Schema.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.w3schools.com">
+  <Class Assembly="BPMO.Generales.BR" NameClass="UsoCFDIBR" Method="Consultar" TitleUI="Usos CFDI">
+    <GridView AllowPaging="True" PageSize="5" AllowSorting="True" />
+    <Property NameProperty="Id" Header="Id" Key="True" Width="80" FilterEnabled="True" DataType="Int32"/>
+    <Property NameProperty="Nombre" Header="UsoCFDI" Key="False" Width="280" FilterEnabled="True" Wilcard="Both"/>
+    <Property NameProperty="NombreCorto" Header="Clave" Key="False" Width="155" FilterEnabled="True" Wilcard="Both"/>
+    <Property NameProperty="Activo" Header="Activo" Key="False" Width="80" FilterEnabled="True" DataType="Boolean"/>
+    <Property NameProperty="EsFisica" Header="Fisica" Key="False" Width="80" FilterEnabled="True" DataType="Boolean"/>
+  </Class>
+</Buscador>

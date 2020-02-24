@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Buscador xsi:schemaLocation="http://www.w3schools.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.w3schools.com">
+  <Class Assembly="BPMO.SDNI.Contratos.RD" NameClass="ReservacionRDBR" Method="ConsultarDisponibles" TitleUI="ReservacionRDBOF">
+    <GridView AllowPaging="True" PageSize="5" AllowSorting="True" />
+    <Property NameProperty="Unidad_UnidadID" Header="Id" Key="True" Width="50" FilterEnabled="False"/>
+    <Property NameProperty="Unidad_NumeroEconomico" Header="# Económico" Key="False" Width="120" FilterEnabled="True" Wilcard="Both"/>
+    <Property NameProperty="Unidad_CaracteristicasUnidad_PBCMaximoRecomendado" Header="Capacidad Carga" Key="False" Width="120" FilterEnabled="True"/>
+    <Property NameProperty="Unidad_CaracteristicasUnidad_CapacidadTanque" Header="Capacidad Tanque" Key="False" Width="120" FilterEnabled="True"/>
+    <Property NameProperty="Unidad_CaracteristicasUnidad_RendimientoTanque" Header="Rendimiento Tanque" Key="False" Width="120" FilterEnabled="True"/>
+    <Property NameProperty="EstatusOperacion" Header="Estatus Operación" Key="False" Width="100" FilterEnabled="False"/>
+    <Property NameProperty="FechaPlaneadaLiberacion" Header="Fecha Planeada Liberación" Key="False" Width="200" FilterEnabled="False"/>
+  </Class>
+</Buscador>

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Buscador xsi:schemaLocation="http://www.w3schools.com C:\Home\Buscador.Schema.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.w3schools.com">
+  <Class  TitleUI="Resultados de Búsqueda: Unidad" Assembly="BPMO.SDNI.Equipos" NameClass="UnidadBR" Method="ConsultarSimple" MethodSelect="Consultar" >
+    <GridView AllowPaging="True" PageSize="5" AllowSorting="True" />
+    <Property NameProperty="UnidadID"  Header="Id" Key="True" Width="50" FilterEnabled="True"/>
+    <Property NameProperty="NumeroSerie"  Header="Número Serie" Key="False" Width="180" FilterEnabled="True" Wilcard="Both"/>
+	  <Property NameProperty="NumeroEconomico"  Header="Número Económico" Key="False" Width="150" FilterEnabled="True" Wilcard="Both"/>
+	  <Property NameProperty="ClaveActivoOracle"  Header="Clave Oracle" Key="False" Width="90" FilterEnabled="True" Wilcard="Both"/>
+	  <Property NameProperty="IDLider"  Header="Líder ID" Key="False" Width="90" FilterEnabled="True" Wilcard="Both"/>
+    <Property NameProperty="EstatusActualText" Header="Estatus Actual" Key="False" Width="90" FilterEnabled="False" DataType="String" Wilcard="Both"/>
+  </Class>
+</Buscador>

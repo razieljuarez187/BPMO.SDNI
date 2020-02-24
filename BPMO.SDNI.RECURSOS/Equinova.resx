@@ -1,0 +1,337 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CLI01" xml:space="preserve">
+    <value>SECTOR</value>
+    <comment>Etiqueta para el combo sector</comment>
+  </data>
+  <data name="CLI02" xml:space="preserve">
+    <value>TIPO DE CLIENTE</value>
+    <comment>Campo para cambiar la etiqueta de tipo cuenta a tipo cliente</comment>
+  </data>
+  <data name="CLI03" xml:space="preserve">
+    <value>TELÉFONO</value>
+    <comment>Campo para agregar números telefónicos al cliente</comment>
+  </data>
+  <data name="EQ01" xml:space="preserve">
+    <value>FT</value>
+    <comment>Campo equivalente a PBC en IDEALEASE</comment>
+  </data>
+  <data name="RE00" xml:space="preserve">
+    <value>ACCESORIO</value>
+    <comment>Casilla de verificación editable, por defecto aparecerá no seleccionado, podrá ser marcado por usuarios de Bepensa para indicar cuando el activo que se está registrando es un accesorio y no una unidad, esto se utilizará para el visor de inventario de la flota por lo que es importante guardar el valor establecido.</comment>
+  </data>
+  <data name="RE01" xml:space="preserve">
+    <value>SERIE UNIDAD</value>
+    <comment>Campo editable en el que se deberá capturar por Usuarios BEPENSA y debe de existir en el registro de ORACLE y/o E-SERVICIO según lo revisado con el Arquitecto de Software de BEPENSA.</comment>
+  </data>
+  <data name="RE02" xml:space="preserve">
+    <value>CLAVE ACTIVO ORACLE</value>
+    <comment>Campo de solo lectura que muestra la información consultada de Oracle en correspondencia con la SERIE UNIDAD capturada.</comment>
+  </data>
+  <data name="RE03" xml:space="preserve">
+    <value>ID LIDER</value>
+    <comment>Campo de solo lectura que muestra la información de respuesta del Web Service en correspondencia con la SERIE UNIDAD capturada.</comment>
+  </data>
+  <data name="RE04" xml:space="preserve">
+    <value>eCODE</value>
+    <comment>Campo de solo lectura que muestra la información de respuesta del Web Service en correspondencia con la SERIE UNIDAD capturada.
+Es el campo “CLAVE” en E_SERVICIO.</comment>
+  </data>
+  <data name="RE05" xml:space="preserve">
+    <value>TIPO UNIDAD</value>
+    <comment>Campo de solo lectura que muestra la Información de respuesta del Web Service en correspondencia con la SERIE UNIDAD capturada.
+Información que se encuentra en E-SERVICIO.</comment>
+  </data>
+  <data name="RE06" xml:space="preserve">
+    <value>MARCA</value>
+    <comment>Campo de solo lectura que muestra la Información de respuesta del Web Service en correspondencia con la SERIE UNIDAD capturada.
+Información que se encuentra en E-SERVICIO.</comment>
+  </data>
+  <data name="RE07" xml:space="preserve">
+    <value>MODELO</value>
+    <comment>Campo de solo lectura que muestra la Información de respuesta del Web Service en correspondencia con la SERIE UNIDAD capturada.
+Información que se encuentra en E-SERVICIO.</comment>
+  </data>
+  <data name="RE08" xml:space="preserve">
+    <value>AÑO</value>
+    <comment>Campo de solo lectura que muestra la Información de respuesta del Web Service en correspondencia con la SERIE UNIDAD capturada.
+Información que se encuentra en E-SERVICIO.</comment>
+  </data>
+  <data name="RE09" xml:space="preserve">
+    <value>FECHA COMPRA</value>
+    <comment>Campo de solo lectura que muestra la Información de respuesta del Web Service en correspondencia con la SERIE UNIDAD capturado.</comment>
+  </data>
+  <data name="RE10" xml:space="preserve">
+    <value># FACTURA</value>
+    <comment>Campo de solo lectura que muestra la Información de respuesta del Web Service en correspondencia con la SERIE UNIDAD capturada. (Deberá modificarse el WS por Vértice para que obtenga este dato).
+Deberá permitirse en algún apartado adjuntar archivos para que el usuario anexe la factura de la unidad.</comment>
+  </data>
+  <data name="RE11" xml:space="preserve">
+    <value>FABRICANTE</value>
+    <comment>Campo de solo lectura que muestra la información de respuesta del Web Service en correspondencia con la SERIE UNIDAD capturada.
+Información que se encuentra en E-SERVICIO.</comment>
+  </data>
+  <data name="RE12" xml:space="preserve">
+    <value>COSTO ADQUISICIÓN</value>
+    <comment>Campo de solo lectura que muestra la Información de respuesta del Web Service en correspondencia con la SERIE UNIDAD capturada. (Información consultada de Oracle).</comment>
+  </data>
+  <data name="RE13" xml:space="preserve">
+    <value>FECHA INICIO DE DEPRECIACIÓN</value>
+    <comment>Campo de solo lectura que muestra la Información consultada de Oracle en correspondencia con la SERIE UNIDAD capturada.</comment>
+  </data>
+  <data name="RE14" xml:space="preserve">
+    <value>FECHA IDEAL DE DESFLOTE</value>
+    <comment>Campo de solo lectura que muestra la Información consultada de Oracle en correspondencia con la SERIE UNIDAD capturada.</comment>
+  </data>
+  <data name="RE15" xml:space="preserve">
+    <value>TASA DEPRECIACIÓN</value>
+    <comment>Campo de solo lectura que muestra la Información de respuesta del Web Service en correspondencia con la SERIE UNIDAD capturada. (Deberá modificarse el WS por Vértice para que obtenga este dato, lo obtendrá de ORACLE).</comment>
+  </data>
+  <data name="RE16" xml:space="preserve">
+    <value>VIDA ÚTIL (AÑOS)</value>
+    <comment>Campo de solo lectura que muestra la Información consultada de Oracle en correspondencia con la SERIE UNIDAD capturada. (Deberá modificarse el WS por Vértice para que obtenga este dato, lo obtendrá de ORACLE).</comment>
+  </data>
+  <data name="RE17" xml:space="preserve">
+    <value>PORCENTAJE VALOR RESIDUAL</value>
+    <comment>Campo de solo lectura, nuevo para usuarios de generación y construcción, que muestra la Información consultada de Oracle en correspondencia con la SERIE UNIDAD capturada.
+(Deberá modificarse el WS por Vértice para que obtenga este dato, lo obtendrá de ORACLE).</comment>
+  </data>
+  <data name="RE18" xml:space="preserve">
+    <value>VALOR RESIDUAL</value>
+    <comment>Campo de solo lectura, nuevo para usuarios de generación y construcción, que muestra la Información consultada de Oracle en correspondencia con la SERIE UNIDAD capturada
+(Deberá modificarse el WS por Vértice para que obtenga este dato, lo obtendrá de ORACLE).</comment>
+  </data>
+  <data name="RE19" xml:space="preserve">
+    <value>SALDO POR DEPRECIAR (VALOR EN LIBROS)</value>
+    <comment>Campo de solo lectura, nuevo para usuarios de generación y construcción, que muestra la Información consultada de Oracle en correspondencia con la SERIE UNIDAD capturada.
+(Deberá modificarse el WS por Vértice para que obtenga este dato, lo obtendrá de ORACLE).</comment>
+  </data>
+  <data name="RE20" xml:space="preserve">
+    <value>MOTORIZACIÓN</value>
+    <comment>Campo de solo lectura que muestra la Información de respuesta del Web Service en correspondencia con la SERIE UNIDAD capturada.
+Información que se encuentra en E-SERVICIO.</comment>
+  </data>
+  <data name="RE21" xml:space="preserve">
+    <value>APLICACIÓN</value>
+    <comment>Campo de solo lectura que muestra la Información de respuesta del Web Service en correspondencia con la SERIE UNIDAD capturada.
+Información que se encuentra en E-SERVICIO.</comment>
+  </data>
+  <data name="RE22" xml:space="preserve">
+    <value>PRÓXIMO SERVICIO</value>
+    <comment>Campo de solo lectura que muestra la Información de respuesta del Web Service en correspondencia con la SERIE UNIDAD capturada.
+Información que se encuentra en E-SERVICIO.</comment>
+  </data>
+  <data name="RE23" xml:space="preserve">
+    <value>PRÓXIMO SERVICIO (HRS)</value>
+    <comment>Campo de solo lectura que muestra la Información de respuesta del Web Service en correspondencia con la SERIE UNIDAD capturada.
+Para usuarios IDEALEASE, la etiqueta (KM) seguida del campo, se mantiene igual, pero para usuarios de generación y construcción, la etiqueta deberá ser (HRS.)
+Información que se encuentra en E-SERVICIO.</comment>
+  </data>
+  <data name="RE24" xml:space="preserve">
+    <value>NO APLICA</value>
+    <comment>El comportamiento de este campo para IDEALEASE se mantiene, y para Generación y Construcción, deberá ocultarse.</comment>
+  </data>
+  <data name="RE25" xml:space="preserve">
+    <value>HORÓMETRO INICIAL</value>
+    <comment>Campo opcional editable de formato numérico, deberá guardarse en E-RENTA.</comment>
+  </data>
+  <data name="RE26" xml:space="preserve">
+    <value>CAPACIDAD DE TANQUE</value>
+    <comment>Campo opcional editable deberá guardarse en E-RENTA.</comment>
+  </data>
+  <data name="RE27" xml:space="preserve">
+    <value>1</value>
+    <comment>DATOS GENERALES</comment>
+  </data>
+  <data name="RE28" xml:space="preserve">
+    <value>1</value>
+    <comment>DATOS TÉCNICOS</comment>
+  </data>
+  <data name="RE29" xml:space="preserve">
+    <value>1</value>
+    <comment>NÚMEROS DE SERIE</comment>
+  </data>
+  <data name="RE30" xml:space="preserve">
+    <value>1</value>
+    <comment>LLANTAS</comment>
+  </data>
+  <data name="RE31" xml:space="preserve">
+    <value>1</value>
+    <comment>EQUIPOS ALIADOS</comment>
+  </data>
+  <data name="RE32" xml:space="preserve">
+    <value>1</value>
+    <comment>TRÁMITES</comment>
+  </data>
+  <data name="RE33" xml:space="preserve">
+    <value>1</value>
+    <comment>FIN DE REGISTRO</comment>
+  </data>
+  <data name="RE34" xml:space="preserve">
+    <value>TIPO DE RENTA</value>
+    <comment>Campo equivalente a AREA/DEPARTAMENTO en IDEALEASE</comment>
+  </data>
+  <data name="RE35" xml:space="preserve">
+    <value>TENENCIA</value>
+    <comment>Para Generación y Construcción este debe de ser el orden de los campos, mas no debe de impactar el orden actual en IDEALEASE.</comment>
+  </data>
+  <data name="RE36" xml:space="preserve">
+    <value>PLACA ESTATAL</value>
+    <comment>El comportamiento de este campo para IDEALEASE se mantiene, y para Generación y Construcción, no deberá ser obligatorio.</comment>
+  </data>
+  <data name="RE37" xml:space="preserve">
+    <value>NO APLICA</value>
+    <comment>El comportamiento de este campo para IDEALEASE se mantiene, y para Generación y Construcción, deberá ocultarse.</comment>
+  </data>
+  <data name="RE38" xml:space="preserve">
+    <value>NO APLICA</value>
+    <comment>El comportamiento de este campo para IDEALEASE se mantiene, y para Generación y Construcción, no deberá ser obligatorio.</comment>
+  </data>
+  <data name="RE39" xml:space="preserve">
+    <value>NO APLICA</value>
+    <comment>El comportamiento de este campo para IDEALEASE se mantiene, y para Generación y Construcción, deberá ocultarse.</comment>
+  </data>
+  <data name="RE40" xml:space="preserve">
+    <value>NO APLICA</value>
+    <comment>El comportamiento de este campo para IDEALEASE se mantiene, y para Generación y Construcción, deberá ocultarse.</comment>
+  </data>
+  <data name="RE41" xml:space="preserve">
+    <value>GPS</value>
+    <comment>El comportamiento de este campo se mantiene para las 3 empresas.
+Este campo, sustituye el que se había solicitado en el MD50 como “Datos Dispositivo Satelital”.</comment>
+  </data>
+  <data name="RE42" xml:space="preserve">
+    <value>FILTRO AK</value>
+    <comment>Este campo es opcional para usuarios de Generación y Construcción.</comment>
+  </data>
+  <data name="RE43" xml:space="preserve">
+    <value># PEDIMENTO</value>
+    <comment>Campo opcional editable de formato numérico de 20 posiciones, no deberá permitir capturar más y deberá guardarse en E-RENTA.
+Campo numérico. Longitud 20.</comment>
+  </data>
+  <data name="RE44" xml:space="preserve">
+    <value>PROVEEDOR</value>
+    <comment>Para Genereación y Construcción se define este nombre de etiqueta cuando el tipo de renta sea RE.</comment>
+  </data>
+  <data name="RE45" xml:space="preserve">
+    <value>../Contenido/Imagenes/MREQUIBienv.jpg</value>
+    <comment>Ruta de la imagen de portada principal EQUINOVA</comment>
+  </data>
+</root>

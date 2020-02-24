@@ -1,0 +1,1 @@
+﻿<%@ WebHandler Language="C#" CodeBehind="hdlrDescargarPlantilla.ashx.cs" Class="BPMO.SDNI.Contratos.UI.hdlrDescargarPlantilla" %>

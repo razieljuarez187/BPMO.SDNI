@@ -1,0 +1,24 @@
+﻿#MenuSecundario { float: left; height: 64px; }
+#BarraHerramientas { width: 835px; float: right; }
+.GroupHeader { width: 100%; }
+.GroupBody { margin: 0 auto;}
+#ControlesDatos { min-height: 120px; margin-top: 10px; position: inherit; border: 1px solid transparent; }
+#contenido {margin-top: 10px;}
+.GroupContentCollapsable .btnComando {margin: 20px auto 0px auto; position: relative; top: -20px;}
+#tablaAdicional {width: 298px;}
+.GroupSection { max-width: 650px; min-width:100px; margin: 0px auto; }
+.GroupContentCollapsable table { margin: 20px auto; width: 506px; }
+.GroupContentCollapsable .btnComando { margin: 20px auto 0px auto; }
+.Grid { border: none; margin: 0 auto; margin-bottom: 20px; }
+.ChildGrid { margin: 0px; padding: 0px; border: none;}
+.Grid th, .ChildGrid th { font-size : 12px !important; text-align: center; }
+.Grid td, .ChildGrid td { font-size : 11px !important; vertical-align: middle; }
+.ChildGrid td { border: solid 1px #cccccc; border-top: none; }
+#PaginaContenido { min-height: 350px;}
+#divGrid { width:95% !important; overflow: auto;}
+#contenido {margin-top: 20px;}
+
+@media(min-width: 691px)
+{
+    #tablaAdicional {width: auto;}
+}

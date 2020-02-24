@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Buscador xsi:schemaLocation="http://www.w3schools.com ../xsd/Buscador.Schema.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.w3schools.com">
+  <Class Assembly="BPMO.SDNI.Comun" NameClass="CuentaClienteIdealeaseBR" Method="Consultar" TitleUI="Cliente">
+    <GridView AllowPaging="True" PageSize="5" AllowSorting="True"/>
+    <Property NameProperty="Id"  Header="Id" Key="True" Width="80" FilterEnabled="True"/>
+    <Property NameProperty="Nombre"  Header="Cliente" Key="False" Width="250" FilterEnabled="True" Wilcard="Both" DataType="String"/>
+    <Property NameProperty="Numero"  Header="Número Cuenta"  Key="False" Width="70" FilterEnabled="True" Wilcard="Both"/>
+    <Property NameProperty="FisicaText"  Header="Persona" Key="False" Width="100" FilterEnabled="True" />
+    <Property NameProperty="TipoCuentaText"  Header="Tipo Cuenta" Key="False" Width="100" FilterEnabled="True" />
+    <Property NameProperty="Cliente_RFC"  Header="RFC" Key="False" Width="100" FilterEnabled="True" Wilcard="Both" DataType="String"/>
+    <Property NameProperty="Activo"  Header="Estatus"  Key="False" Width="50" FilterEnabled="False" DataType="Boolean"/>
+  </Class>
+</Buscador>

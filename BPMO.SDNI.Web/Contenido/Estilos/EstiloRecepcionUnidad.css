@@ -1,0 +1,16 @@
+﻿/* File Created: agosto 1, 2013 */
+.divContenedor { display: table; width: 100% }
+
+#divInformacionGeneralControles .ColumnaDerecha, .ColumnaIzquierda { width: 46% !important; }
+#divInformacionGeneralControles .ColumnaDerecha { float: right; margin-right: 15px; }
+
+#divInformacionGeneralControles .ColumnaIzquierda { float: left; margin-left: 15px; }
+/*#divInformacionGeneralControles .ColumnaDerecha input[type="text"], .ColumnaIzquierda input[type="text"] { float: right; margin-right: 5px; }*/
+/*#divInformacionGeneralControles .ColumnaDerecha span, .ColumnaIzquierda span { line-height: 25px; vertical-align: middle; padding-left: 10px; }*/
+#divInformacionGeneralControles .ColumnaDerecha div.Etiqueta, .ColumnaIzquierda div.Etiqueta { padding-left: 10px; }
+#divInformacionGeneralControles .ColumnaDerecha div.Etiqueta span, .ColumnaIzquierda div.Etiqueta span { padding-left: 0px; }
+#divInformacionGeneralControles .ColumnaDerecha .btnAgregarMediano, .ColumnaIzquierda .btnAgregarMediano { float: right; margin-right: 15px; }
+
+.altoColumnas{ height: 33px !important;}
+
+.altoControles { padding: 1px !important; }

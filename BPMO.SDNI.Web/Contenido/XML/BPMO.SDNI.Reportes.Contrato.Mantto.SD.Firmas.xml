@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Reporte>
+  <Firmas>
+	<![CDATA[
+	<div style="position:absolute; width:700px; height:auto; font-size:8pt;font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;" align="center" >[Leyenda]</div> <br/>
+	<Table style="font-weight: normal;position:absolute; width:650px; height:auto; text-align:center; font-size:8pt; font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;" align="center">
+	  <tr>
+		  <th align="center" style="float:left; position:relative; " width="275px">[TITULO_IZQUIERDA]</th>
+      <th style="width:80px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+		  <th align="center" style="float:left; position:relative;" width="275px">[TITULO_DERECHA]</th>
+	  </tr>
+	  <tr>
+		  <td align="center" style="float:left; position:relative; width:275px;vertical-align:top;">
+      <br /><br />
+      _________________________
+      <br />
+      <div>[NOMBRE_IZQUIERDA]</div>
+      <div>[NOMBRE_REP_IZQUIERDA]</div>
+      <div>[DIRECCION_IZQUIERDA]</div>
+      </td>
+      <td style="width:80px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+		  <td align="center" style="float:left; position:relative; width:275px;vertical-align:top;">
+      <br/><br/>_________________________
+      <br />
+      <div>[NOMBRE_DERECHA]</div>
+      <div>[NOMBRE_REP_DERECHA]</div>
+      <div>[DIRECCION_DERECHA]</div>
+      </td>
+	  </tr>
+	</Table>
+	]]>
+  </Firmas>
+	<FirmasCentro>
+	<![CDATA[
+	<div style="position:absolute; width:700px; height:auto; font-size:8pt; font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;" align="center" >[Leyenda]</div> <br/>
+	<Table style="font-weight: normal; position:absolute; width:300px; height:auto; text-align=center; font-size:8pt; font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;" align="center">
+	  <tr>
+		<th align="center" width="600">[TITULO_CENTRO]</th> 
+	  </tr>
+	  <tr>
+		  <td align="center" style="float:left; position:relative; vertical-align:top;">
+      <br/><br/>_________________________
+      <br />
+      <div>[NOMBRE_CENTRO]</div>
+      <div>[NOMBRE_REP_CENTRO]</div>
+      <div>[DIRECCION_CENTRO]</div>
+      </td>
+	  </tr>
+	</Table>
+	]]>
+  </FirmasCentro>
+	<LeyendaFisico>
+		<![CDATA[
+    <div style="font-size:8pt; Text-align: justify; font-weight: bold; font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;">
+		ESTA HOJA CON FIRMAS AUT&Oacute;GRAFAS FORMA PARTE DEL CONTRATO DE SERVICIO DEDICADO, QUE CELEBRAN EL D&Iacute;A [FECHA_CONTRATO], LA EMPRESA [UNIDAD_OPERATIVA], REPRESENTADA POR [REPRESENTANTE_UNIDAD] Y [NOMBRE_CLIENTE] COMO EL CLIENTE; Y EN EL CUAL COMPARECE[N] [OBLIGADOS_SOLIDARIOS] COMO OBLIGADO[S] SOLIDARIO[S].
+		
+    </div>
+		]]>
+	</LeyendaFisico>
+	<LeyendaMoral>
+		<![CDATA[
+    <div style="font-size:8pt; Text-align: justify; font-weight: bold; font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;">
+		ESTA HOJA CON FIRMAS AUT&Oacute;GRAFAS FORMA PARTE DEL CONTRATO DE SERVICIO DEDICADO, QUE CELEBRAN EL D&Iacute;A [FECHA_CONTRATO], LAS EMPRESAS [UNIDAD_OPERATIVA], REPRESENTADA POR [REPRESENTANTE_UNIDAD] Y [NOMBRE_CLIENTE], REPRESENTADA POR [REPRESENTANTE_LEGALES_CLIENTE]; Y EN EL CUAL COMPARECEN [OBLIGADOS_SOLIDARIOS] COMO OBLIGADO[S] SOLIDARIO[S].
+		
+    <div>
+		]]>
+	</LeyendaMoral>
+  <Opcionales>
+    <SoloRepresentantes>
+      <![CDATA[
+     
+      ]]>
+    </SoloRepresentantes>
+  </Opcionales>
+</Reporte>

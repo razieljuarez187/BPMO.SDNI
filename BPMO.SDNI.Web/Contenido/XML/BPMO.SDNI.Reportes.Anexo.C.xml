@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<reporte>
+  <cabecera>
+    <titulo>ANEXO "C"</titulo>
+    <subtitulo>Acta de Nacimiento de Unidades Idealease</subtitulo>
+  </cabecera>
+  <cuerpo>
+    <transmision></transmision>
+    <llantas></llantas>
+  </cuerpo>
+</reporte>

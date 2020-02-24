@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FormatoCorreo>
+  <Cuerpo>
+   <![CDATA[
+		<tr>
+		<td style='width: 200px; text-align: left; padding-right: 5px;'>
+		<b>Sucursal:</b> {sucursal}
+		<br />
+		<b>Solicitado por:</b> {solicitante}
+		<br />
+		<b>Cliente:</b> {cliente}
+		</td>
+		</tr>
+		<tr><td>&nbsp;</td></tr>
+		<tr>
+		<td style='width: 200px; text-align: left; padding-right: 5px;'>
+		<b><u>Tarifa a Autorizar:</u></b>
+		<br />
+		<b>Etiqueta:</b> {etiqueta}
+		<br />
+		<b>Tarifa:</b> ${tarifa}
+		<br />
+		<b>Porcentaje de Descuento a Aplicar:</b> {porcentajeDescuentoAplicar}
+		<br />
+		<b>Tarifa con Descuento:</b> {tarifaConDescuento}
+		<br />
+		<b>Tipo de Tarifa:</b> {tipoTarifa}
+		<br />
+		<b>Turno:</b> {turno}
+		<br />
+		<b>Tarifa Hora Adicional:</b> {tarifaHoraAdicional}
+		<br />
+		</td>
+		</tr>
+		<tr id='trAutorizacion'>
+		<td style='width: 200px; text-align: left; padding-right: 5px;'>
+		<b>Clave de Autorización:</b> {claveAutorizacion}
+		</td>
+		</tr>
+		<tr><td>&nbsp;</td></tr>
+	]]>
+  </Cuerpo>
+</FormatoCorreo>

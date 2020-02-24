@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--Satisface al Caso de uso CU005 - Armar Paquetes Facturacion-->
+<Plantilla>
+  <Departamento>
+    <ID>22</ID>
+    <TipoContrato>FSL</TipoContrato>
+    <Nombre>FULL SERVICE</Nombre>
+    <SegmentoContable>70</SegmentoContable>
+  </Departamento>
+  <Departamento>
+    <ID>24</ID>
+    <TipoContrato>SD</TipoContrato>
+    <Nombre>SERVICIO DEDICADO</Nombre>
+    <SegmentoContable>72</SegmentoContable>
+  </Departamento>
+  <Departamento>
+    <ID>23</ID>
+    <TipoContrato>CM</TipoContrato>
+    <Nombre>CONTRATO DE MANTENIMIENTO</Nombre>
+    <SegmentoContable>71</SegmentoContable>
+  </Departamento>
+  <Departamento>
+    <ID>17</ID>
+    <TipoContrato>RD</TipoContrato>
+    <Nombre>RENTA</Nombre>
+    <SegmentoContable>60</SegmentoContable>
+  </Departamento>
+
+  <UOID>
+    <!--/*GENERACION*/-->
+    <ID>446</ID>
+    <Departamento>
+      <ID>21</ID>
+      <TipoContrato>RO</TipoContrato>
+      <Nombre>RENTA GENERACION</Nombre>
+      <SegmentoContable>064</SegmentoContable>
+    </Departamento>
+    <Departamento>
+      <ID>21</ID>
+      <TipoContrato>RE</TipoContrato>
+      <Nombre>RENTA GENERACION</Nombre>
+      <SegmentoContable>064</SegmentoContable>
+    </Departamento>
+    <Departamento>
+      <ID>21</ID>
+      <TipoContrato>ROC</TipoContrato>
+      <Nombre>RENTA GENERACION</Nombre>
+      <SegmentoContable>064</SegmentoContable>
+    </Departamento>
+  </UOID>
+  <UOID>
+    <!--/*RENTAL*/-->
+    <ID>3096</ID>
+    <Departamento>
+      <ID>17</ID>
+      <TipoContrato>RO</TipoContrato>
+      <Nombre>RENTA</Nombre>
+      <SegmentoContable>060</SegmentoContable>
+    </Departamento>
+    <Departamento>
+      <ID>17</ID>
+      <TipoContrato>RE</TipoContrato>
+      <Nombre>RENTA</Nombre>
+      <SegmentoContable>060</SegmentoContable>
+    </Departamento>
+    <Departamento>
+      <ID>18</ID>
+      <TipoContrato>ROC</TipoContrato>
+      <Nombre>RENTA COMPRA</Nombre>
+      <SegmentoContable>061</SegmentoContable>
+    </Departamento>
+  </UOID>
+  <UOID>
+    <!--/*EQUINOVA ENERGIA*/-->
+    <ID>7676</ID>
+    <Departamento>
+      <ID>21</ID>
+      <TipoContrato>RO</TipoContrato>
+      <Nombre>RENTA GENERACION</Nombre>
+      <SegmentoContable>064</SegmentoContable>
+    </Departamento>
+    <Departamento>
+      <ID>21</ID>
+      <TipoContrato>RE</TipoContrato>
+      <Nombre>RENTA GENERACION</Nombre>
+      <SegmentoContable>064</SegmentoContable>
+    </Departamento>
+    <Departamento>
+      <ID>21</ID>
+      <TipoContrato>ROC</TipoContrato>
+      <Nombre>RENTA GENERACION</Nombre>
+      <SegmentoContable>064</SegmentoContable>
+    </Departamento>
+  </UOID>
+
+
+
+</Plantilla>

@@ -1,0 +1,347 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Reporte>
+	<Titulo>
+		<![CDATA[<P ALIGN=center><h1> MANUAL DE OPERACIONES</h1> </p>]]>
+	</Titulo>
+	<SubTitulo>
+		<![CDATA[ <P ALIGN=center><h2>CONTRATO DE FULL SERVICE LEASING</h2> </p> ]]>
+	</SubTitulo>
+	<Indice>
+		<![CDATA[
+		<table width="100%">
+		<tr><td  width="95%" >I.	Introducción</td><td  width="5%">2</td></tr>
+		<tr><td>II.	Responsabilidades de los Gerentes</td><td>	3</td></tr>
+		<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<strong>A)</strong>	Gerentes de {NombreCliente}.</td><td>	3</td></tr>
+		<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<strong>B)</strong>	Gerentes Idealease</td><td>	3</td></tr>
+		<tr><td>III.	Procedimiento de Arranque</td><td>	4</td></tr>
+		<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<strong>A)</strong>	Tipos de contrato</td><td>	4</td></tr>
+		<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<strong>B)</strong>	Capacitación</td><td>	4</td></tr>
+		<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<strong>C)</strong>	Servicios Incluidos en el Contrato de Mantenimiento</td><td>	4</td></tr>
+		<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<strong>D)</strong>	Responsabilidades de {NombreCliente}.</td><td>	5</td></tr>
+		<tr><td>IV.	Programa Calendarizado de Mantenimiento</td><td>	6</td></tr>
+		<tr><td>V.	Procedimiento Auxilio Carretero Idealnet</td><td>	6</td></tr>
+		<tr><td>VI.	Procedimiento de Transferencia de Unidades</td><td>	6</td></tr>
+		<tr><td>VII.	Procedimiento de Ordenes de Compra, Facturación y Pago</td><td>	7</td></tr>
+		<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<strong>A)</strong>	Facturación del Contrato</td><td>	7</td></tr>
+		<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<strong>B)</strong>	Ordenes de Compra</td><td>	8</td></tr>
+		<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<strong>C)</strong>	Facturación con Cargo a {NombreCliente} (abusos de operación)</td><td>	7</td></tr>
+		<tr><td>VIII.	Condiciones de las unidades a la terminación del contrato</td><td>	8</td></tr>
+		<tr><td>IX.	Evaluación de calidad</td><td>	8</td></tr>
+		<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<strong>A)</strong>	Evaluación</td><td>	8</td></tr>
+		<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<strong>B)</strong>	Acciones Correctivas</td><td>	8</td></tr>
+		<tr><td>X.	Comunicación formal y reportes</td><td>	9</td></tr>
+		<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<strong>A)</strong>	Tipos de Comunicación</td><td>	9</td></tr>
+		<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<strong>B)</strong>	Tipos de Reportes y Frecuencia</td><td>	9</td></tr>
+		<tr><td>XI.	Documentos contractuales</td><td>	10</td></tr>
+		<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<strong>A)</strong>	Contrato Maestro</td><td>	10</td></tr>
+		<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<strong>B)</strong>	Anexo “A”</td><td>	10</td></tr>
+		<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<strong>C)</strong>	Anexo “B”</td><td>	10</td></tr>
+		<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<strong>D)</strong>	Anexo “C”	</td><td>10</td></tr>
+		<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<strong>E)</strong>	Anexo “D”</td><td>	10</td></tr>
+		</table>
+		]]>
+	</Indice>
+	<ContenidoManual>
+		<![CDATA[
+		<p><strong>I.	Introducción</strong></p>
+
+		<p>{NombreCliente} e Idealease han realizado una alianza estratégica, donde {NombreCliente} se dedica a la distribución de entrega de sus productos e Idealease se encargará del cuidado y mantenimiento de las unidades de servicio pesado que llevan estos productos a cada plaza de {NombreCliente}.<br />
+		Una Alianza comparte riesgos y genera canales adecuados de comunicación y retroalimentación. Cada parte debe de conocer y entender bien a su socio y deben estar de acuerdo en ello, donde las mejoras en la operación conjunta se presentaran en forma continua.</p>
+
+		<p>La mejor manera de mantenerse enfocados en objetivos claros y reales es por medio del compromiso y comunicación. Con el espíritu de la Alianza y con las habilidades individuales de cada uno, se asegura obtener un retorno al negocio.</p>
+
+		<p>La interacción que se presente entre los Gerentes y Administradores en la operación día a día es absolutamente crítica para lograr el éxito en cada área en el ámbito local y nacional. Revisando áreas de oportunidades y desarrollando soluciones que beneficien mutuamente generan los niveles más altos de rendimiento del negocio y  confianza en ambas empresas, {NombreCliente} e Idealease.</p>
+
+		<p>Esta guía de operación esta desarrollada para proveer los lineamientos y formas de comunicación entre las personas involucradas de {NombreCliente} e Idealease, asistiendo a la mejor administración de esta Alianza.</p>
+]]>
+	</ContenidoManual>
+	<ContenidoManual>
+		<![CDATA[
+		<p><strong>II.	Responsabilidades de los Gerentes</strong></p>
+
+		<p>{NombreCliente}</p>
+
+		<ul>
+			<li>Debe asegurarse de tener una copia del contrato de mantenimiento de Idealease incluyendo los anexos A, B, C y D.</li>
+			<li>Debe entender todos los documentos y anexos del contrato.</li>
+			<li>Debe aprobar todos los cargos extras responsabilidad de {NombreCliente} antes de proceder a realizar el pago.</li>
+			<li>Debe registrar los kilometrajes mensuales y enviarlos a Idealease para que este realice la facturación mensual del servicio.</li>
+			<li>Debe enviar una orden de compra para los trabajos que no estén incluidos dentro del contrato de mantenimiento antes que Idealease realice cualquier trabajo en la unidad.</li>
+			<li>Debe consultar cualquier diferencia que no pueda ser resuelta en forma local con el supervisor de {NombreCliente}</li>
+			<li>Debe de mandar en tiempo y forma las unidades a mantenimiento al taller de servicio del socio Idealease según el programa de mantenimiento.</li>
+			<li>Se encargara de que sus operadores hagan las inspecciones diarias de las unidades, del llenado correcto del IL700, y de comunicar a la gente de Mantenimiento las fallas detectadas.</li>
+		</ul>
+
+		<p><strong>A)</strong><i><u>Gerentes Idealease</u></i></p>
+
+		<ul>
+			<li>Deben asegurarse de tener una copia del contrato de mantenimiento de Idealease incluyendo el anexo A, B, C y D; y es responsables de asegurarse de entender todos los documentos y anexos del convenio.</li>
+			<li>Debe comunicarse periódicamente con el gerente de {NombreCliente}.</li>
+			<li>Debe notificar a {NombreCliente} el tiempo de entrega de la(s) unidad(es) que entran a servicio en Idealease, en tiempo máximo de 2.5 hrs después del ingreso de la unidad.</li>
+			<li>Debe reunirse al menos una vez al mes con el gerente de {NombreCliente} para realizar una evaluación mensual de resultados y calidad en el  servicio proporcionado.</li>
+			<li>Debe llevar los controles adecuados para mantener información  mensual de cada una de las unidades disponibles.</li>
+			<li>Debe asegurarse de recibir la información de kilometrajes de la base local de {NombreCliente} los últimos 5 días de cada mes.</li>
+			<li>Debe asegurar que en la facturación mensual este anexa la relación de cargos fijos y  por kilometraje de cada unidad.</li>
+			<li>Debe realizar una reunión por cada base para revisar los puntos y términos del contrato {NombreCliente} e Idealease.</li>
+			<li>Implementar las acciones correctivas y trabajar en un proceso de mejora continua.</li>
+			<li>Retroalimentar a los operadores para que estos operen mejor sus unidades.</li>
+			<li>Debe lograr el 95% de disponibilidad de las unidades.</li>
+		</ul>
+]]>
+	</ContenidoManual>
+	<ContenidoManual>
+		<![CDATA[
+		<p><strong>III.	Procedimiento de Arranque</strong></p>
+
+		<p><strong>A)</strong><u><i>Tipos de contrato</i></u></p>
+
+			<p><u><i>Contrato de Mantenimiento con cuotas garantizadas.</i></u></p>
+
+		<p>Este contrato es el lineamiento que especifica las características de operación de {NombreCliente} e Idealease, en donde se detallan todos los términos y condiciones entre ambas empresas. En este documento se garantiza todos los componentes y la unidad en el contrato de mantenimiento desde el inicio del contrato.</p>
+
+		<p><u><i>Anexos del contrato.</i></u></p>
+
+		<p>El anexo ‘A’ refiere a cada una de las unidades que están ubicadas en las diferentes bases, considerando tipo de vehículo, termino de contrato, numero de serie, cargo fijo mensual, cargo por kilómetro.</p>
+
+		<p>El anexo B define los mantenimientos a realizar y la frecuencia de realización.</p>
+
+		<p>Para iniciar es necesario que cada unidad nueva quede identificada con el anexo C del contrato llamado “acta de nacimiento”. Esto debe realizarse en la primera ocasión que las unidades asistan a mantenimiento a Idealease. Al ser este manual un procedimiento establecido posterior al inicio del contrato, las “actas de nacimiento” se realizaran bajo una programación establecida entre {NombreCliente}  e Idealease </p>
+
+		<p>Las inspecciones diarias deben ser realizadas por los operadores bajo el formato que es indicado en el anexo D del contrato.</p>
+
+		<p><strong>B)</strong>	<u><i>Capacitación</i></u></p>
+
+		<p>Idealease se encargará de capacitar a los capacitadores de operadores de las unidades en el conocimiento de los servicios que reciben por Idealease, así como las mejores prácticas de operación. Para ello {NombreCliente}. tendrá una o más personas en cada plaza que fungirá como Capacitador local.</p>
+
+		<p><strong> C)</strong><u><i>Servicios Incluidos en el Contrato de Full Service Leasing</i></u></p>
+
+		Los servicios que incluyen el acuerdo de mantenimiento, durante su duración son para cada vehículo:<br />
+		<ul>
+			<li>Aceite, lubricante, y todos los demás accesorios necesarios para la operación de los Vehículos.</li>
+		<li>Toda la mano de obra y partes requeridas para mantener los vehículos en buenas condiciones de operación.</li>
+		<li>Un programa de servicio para dar el mantenimiento preventivo e inspecciones para cada vehículo que para estos efectos se indica en el Anexo “B”, los cuales tendrán que realizarse en el taller de servicio que para estos efectos se indica en el Anexo "A".</li>
+		<li>Las reparaciones necesarias en carretera o en zona urbana a causa de fallas mecánicas que inmovilicen la unidad, o que pongan en riesgo la integridad del operador y terceras personas, que no sean atribuibles a manejo u operación abusiva del vehículo.</li></ul>
+
+		<p><strong>D)</strong>	<u><i>Responsabilidades de {NombreCliente}</i></u></p>
+
+		Estos puntos incluyen:<br />
+		<ul>
+			<li>El cuidado y revisiones diarias de la unidad, así como los reportes del operador e inspecciones IL700 (anexo D)</li>
+			<li>Daño Estructural de la unidad</li>
+			<li>Daño en puertas, bisagras rotas, respaldos-cubiertas de las puertas, chapas</li>
+			<li>Brazos, argollas, manijas rotas o dobladas del dolly.</li>
+			<li>Plafones, luces y luces de ubicación rotas.</li>
+			<li>Cableado roto, cortado o arrancado.</li>
+			<li>Bases y soportes de deflectores y carrocería dañados</li>
+			<li>Ponchaduras por objetos externos (tornillos, clavos), por golpear los costados de las llantas o por baches.</li>
+			<li>Reemplazo prematuro de llantas debido a voladura, por sobrepresión, por sobrecarga, etc.</li>
+			<li>Daños causados por accidente o falta de cuidado en la carga / descarga</li>
+			<li>Quedar sin combustible</li>
+			<li>Daño por utilizar combustible no adecuado para el funcionamiento de la unidad.</li>
+			<li>Pasar corriente a las baterías debido a bajas temperaturas o por dejar accesorios encendidos</li>
+			<li>Reparaciones debidas a prácticas de operación negligentes</li>
+			<li>Detallado y limpieza del interior de la unidad</li>
+			<li>Servicio de grúa o remolcado por una unidad atascada</li>
+			<li>Reparación o reemplazo de espejos y cristales golpeados o dañados.</li>
+			<li>Servicio de rescate en carretera motivado por cualquier razón ajena al mantenimiento responsabilidad de Idealease.</li>
+			<li>Abusos por parte de los operadores </li>
+		</ul>
+
+		<p>Los Vehículos deberán ser usados y operados por el Cliente, sólo en el curso normal y ordinario de su negocio, en caminos pavimentados y rutas contempladas por las partes. Se considera manejo abusivo cuando existe negligencia en el cuidado del Vehículo y daños que se presentan por causa del operador, siendo estos enunciativos más no limitativos los siguientes casos: Operar el vehículo con bajos niveles de aceite y líquido refrigerante, sin filtros, con bandas rotas, cuando existe indicación de sobrecalentamiento del motor, transmisión y ejes, con llantas bajas, sobre revolucionar el motor, agua en el diesel, combustibles alterados, quedarse sin combustible, utilizar la unidad en caminos de terracería, daños estructurales de carrocería, daños en puertas, bisagras rotas, brazos de dollies doblados o rotos, espejos doblados o rotos, faros y cuartos rotas, cableados cortados por mano del hombre, soportes doblados de las loderas, exceso de velocidad en plano y en pendientes descendentes, operar la unidad con las bolsas de aire bajas, reemplazo de llantas prematuro por pinchadura o voladura de llanta derivada de un elemento externo o por golpe en caras laterales o sobrecarga del Vehículo, por cualquier falla derivada de un accidente o por una inadecuada carga y descarga del vehículo, frenos amarrados y tambores quemados por frenada de pánico, cuando la unidad se queda sin corriente en las baterías por dejar prendidos accesorios eléctricos, grúa para sacar una unidad atascada. Idealease, no será responsable por reparaciones y servicios que sean necesarios por el incumplimiento del Cliente con lo arriba mencionado o por el abuso en el manejo, mismo que incluye pero no limita  cualquier acto de omisión o comisión que se desvíe del razonable cargamento y trato del Vehículo.</p>
+]]>
+	</ContenidoManual>
+	<ContenidoManual>
+		<![CDATA[
+		<p><strong>IV.	Programa Calendarizado de Mantenimiento</strong></p>
+
+		<strong>A)</strong> 	Idealease en conjunto con cada uno de los gerentes responsables de la base de {NombreCliente}. planearán un programa de mantenimiento mensual para todas las unidades bajo contrato.<br />
+		<strong> B)</strong> 	El cumplimiento del programa puede ser revisado aleatoriamente por  {NombreCliente}. e IDEALEASE.<br />
+		<strong>C)</strong> 	Idealease o sus representantes por plaza notificarán por escrito cuando alguna unidad no se haya presentado a mantenimiento y esta misma unidad no haya sido reprogramada en la siguiente semana.<br />
+		<strong> D)</strong> 	Idealease tendrá disponible los archivos de mantenimiento por unidad que permitirá revisar el histórico de cada uno de las unidades. Estos archivos serán controlados en cada una de las plazas correspondientes.<br />
+]]>
+	</ContenidoManual>
+	<ContenidoManual>
+		<![CDATA[
+		<p><strong> V.	Procedimiento Auxilio Carretero Idealnet</strong></p>
+
+		El procedimiento de auxilio requiere la coordinación del Servicio Idealnet para identificar donde la unidad ha fallado. Esto es definido para eliminar errores de comunicación y asegurar que el proceso es consistente con los procedimientos definidos para los auxilios (rescates).<br />
+		<strong>A) </strong>	El operador de la unidad primeramente deberá estar notificando al numero de Idealnet  “{TelefonoEmergencia}”, en la zona Metropolitana de Monterrey 8173-1717, donde el agente Idealnet utilizará la base de datos en el sistema electrónico para registrar los datos del operador y la unidad.<br />
+
+		<strong> B)</strong> 	El personal de Idealnet corroborará la información obtenida del operador con la información de la base de datos.<br />
+
+		<strong>C)</strong> 	El operador debe ser lo mas especifico posible, si la unidad tiene un problema de llantas, indicar el tipo de llanta y posición; si arroja humo por el escape, indicar el color y si hay sonidos extraños; si no da marcha, indicar si tiene corriente o no.<br />
+
+		<strong>D)</strong> 	El operador deberá de dar indicaciones específicas de cómo localizar la unidad. Sin direcciones correctas, Idealnet a experimentado serios retrasos en los servicios por que el personal no sabe donde localizar la unidad.<br />
+
+		<strong>E) </strong>	Idealnet mantendrá informado a {NombreCliente}  del progreso del rescate hasta su finalización.<br />
+
+		<strong>F)</strong> 	La terminación del servicio será considerada cuando se tenga notificación de que la unidad ha vuelto a trabajar y regresó a la carretera.<br />
+]]>
+	</ContenidoManual>
+	<ContenidoManual>
+		<![CDATA[
+		<p><strong>VI.	Procedimiento de Transferencia de Unidades</strong></p>
+
+		<p>Cuando {NombreCliente}.  requiera cambiar la base de mantenimiento de las unidades, Idealease solicitará se le notifique con 30 días de anticipación para proceder con toda la información necesaria a las nuevas instalaciones de mantenimiento.</p>
+]]>
+	</ContenidoManual>
+	<ContenidoManual>
+		<![CDATA[
+		<p><strong>VII.	Procedimiento de Ordenes de Compra, Facturación y Pago</strong></p>
+
+		<p><strong> A)</strong>	<u>
+			<i>Facturación del Contrato</i>
+		</u></p>
+
+		<p>La primera semana de cada mes, {NombreCliente} recibirá por cada base una factura con los montos del cargo fijo en la modalidad de renta anticipada y los cargos variables por Km. del mes anterior. Dicha factura tendrá anexa una relación con la información desglosada por unidad.</p>
+
+		<p>Los cargos por kilometraje son obtenidos por medio de la forma anexa “Registro de Kilometraje Recorrido” que es enviada por fax, correo electrónico a cada punto de servicio Idealease en los días 24 o 25 de cada mes. Esta información la obtiene el gerente de {NombreCliente} quien la envía a Idealease con los datos del último mes de recorrido en Kilómetros reales de cada una de las unidades.</p>
+
+		<p>Idealease tendrá el control de los kilometrajes por cada uno de los mantenimientos que permitirá verificar que no existan errores en la facturación de los kilometrajes.</p>
+
+		<p>Dichas facturas son revisadas por el responsable de Logística de {NombreCliente} para su autorización y que posteriormente envía al área de pagos para su programación de cheque.</p>
+
+		<p><strong> B)</strong>	<u>
+			<i>Ordenes de Compra</i>
+		</u></p>
+
+		<ul>
+			<li>MANTENIMIENTO Y REPARACIONES PROGRAMADAS</li>
+		</ul>
+		NO requieren orden de compra. Ejemplos: Mantenimientos preventivos, reemplazo de llantas por desgaste normal, reparaciones del sistema eléctrico (focos, cableado suelto o desconectado), reparaciones programadas de frenos.
+
+<p>		<strong> C)</strong>	<i>
+			<u>Facturación con Cargo a {NombreCliente} - (abusos de operación)</u>
+		</i></p>
+
+<p>		Las facturas de refacciones no incluidas en mantenimiento y abusos de operación son realizadas directamente de Idealease local a la base de {NombreCliente}.<br />
+		Esta facturación comprende:</p>
+
+		<ol>
+			<li>Refacciones que no están en esquema garantizado</li>
+			<li>Daño o abuso del vehículo, accidentes, daños en la carretera y cualquier otro aspecto no incluido en el anexo A, llantas ponchadas o voladas</li>
+			<li>Renta de Vehículos</li>
+			<li>Recarga o reemplazo de combustible de mala calidad</li>
+		</ol>
+
+		<p>El gerente de Idealease de cada localidad solicitará una orden de compra para realizar todos los trabajos detallados como “Aspectos de Responsabilidad de {NombreCliente}, asegurando minimizar las controversias que se puedan presentar al momento generar el pago de facturas.</p>
+]]>
+	</ContenidoManual>
+	<ContenidoManual>
+		<![CDATA[
+		<p><strong> VIII.	Condiciones de las unidades a la terminación del contrato</strong></p>
+
+		<p>Las unidades deberán quedar en condiciones funcionales de operación, sin fugas de aceite o componentes faltantes relacionados con el mantenimiento responsabilidad de Idealease. En el caso de las llantas, las unidades se deberán entregar con 10/32’’ en las llantas delanteras y con 8/32’’ en las llantas traseras. En el posible caso de algún inconveniente, Idealease será responsable por la reparación de dicho componente hasta antes de la entrega de la unidad.</p>
+
+		<p>En el caso de componentes o daños responsabilidad de {NombreCliente}, estos deberán ser reparados con cargo a {NombreCliente}</p>
+
+		<p><strong>Evaluación de calidad</strong></p>
+
+		<p><strong> A)</strong>	<u>
+			<i>Evaluación</i>
+		</u></p>
+
+		<p>Para mantener un adecuado seguimiento a la relación así como el desempeño de cada localidad de servicio donde son atendidos, se ha implementado una forma de Evaluación (adjunta). Esta evaluación es parte obligatoria del convenio y deberá ser realizada  en la reunión el gerente de {NombreCliente}.  y el gerente de Idealease, al menos una vez al año.</p>
+
+		<p><strong> B)</strong>	<i>
+			<u>Acciones Correctivas</u>
+		</i></p>
+
+		<p>De los resultados de la evaluación que indiquen inconformidad deben generarse las acciones correctivas para cualquiera de las dos partes de esta alianza. Estas acciones deben de ser anexadas a la evaluación misma donde se incluyen las firmas de los responsables.</p>
+
+		<p>Posteriormente esta información debe ser enviada por fax a las oficinas centrales de {NombreCliente}. para mantener un record y seguimiento de las mejoras implementadas a esta operación.</p>
+]]>
+	</ContenidoManual>
+	<ContenidoManual>
+		<![CDATA[
+		<p><strong>IX.	Comunicación formal y reportes</strong></p>
+
+<p>		<strong> A)</strong>	<u>
+			<i>Tipos de Comunicación</i>
+		</u></p>
+
+		Las comunicaciones para considerarlas formales deben ser realizadas:<br />
+		<ul><li>Vía E-mail incluyendo firmas</li>
+		<li>Vía escrita por paquetería incluyendo firmas</li></ul>
+
+		La información del día a día puede realizarse:<br />
+		<ul>
+			<li>Vía Paquetería</li>
+			<li>Vía mensaje electrónico (e-mail)</li>
+		</ul>
+
+		<p>Para comunicación inmediata o fuera de horarios de oficina se realizará vía telefónica.</p>
+
+		<p>Para cumplir con lo anterior descrito, anexo se encuentra un documento “Contactos” donde están los datos de las personas responsables por {NombreCliente}. y por Idealease.</p>
+
+		<p><strong>B)</strong>	<i>
+			<u>Tipos de Reportes y Frecuencia</u>
+		</i></p>
+
+		<p>Los reportes que se utilizan son:</p>
+
+		<p>Reportes de {NombreCliente} a Idealease:</p>
+
+		<table border="1" width="100%">
+			<tr>
+				<td width="80%">NOMBRE</td>
+				<td width="20%">FRECUENCIA</td>
+			</tr>
+			<tr>
+				<td>
+					Kilometraje recorrido<br />
+					Solicitud de acciones correctivas
+				</td>
+				<td>
+					Mensual <br />Según se requiera
+				</td>
+			</tr>
+		</table>
+
+		<p>Reportes de Idealease a {NombreCliente}</p>
+
+		<table border="1" width="100%">
+			<tr>
+				<td width="80%">NOMBRE</td>
+				<td width="20%">FRECUENCIA</td>
+			</tr>
+			<tr>
+				<td>
+					Reporte de Mantenimiento<br />
+					Incluye: Kilometrajes recorridos.<br />
+					Asistencia de Unidades<br />
+					Comentarios de Operación<br />
+				</td>
+				<td>Mensual</td>
+			</tr>
+			<tr>
+				<td>
+					Reporte de Disponibilidad<br />
+					Incluye: Tiempo en horas de la unidad disponible para trabajar descontando el tiempo en mantenimiento o reparación.
+				</td>
+				<td>Mensual</td>
+			</tr>
+		</table>
+]]>
+	</ContenidoManual>
+	<ContenidoManual>
+		<![CDATA[
+		<p><strong>X.	Documentos contractuales</strong></p>
+
+		<p><strong>A)</strong><u>
+			<i>Contrato Maestro</i></p>
+		<p></u>
+		<strong>B)</strong> <u>
+			<i>Anexo “A”</i>
+		</u></p>
+		<p><strong>C)</strong> <u>
+			<i>Anexo “B”</i>
+		</u></p>
+		<p><strong>D)</strong> <u>
+			<i>Anexo “C”</i>
+		</u></p>
+		<p><strong>E)</strong> <u>
+			<i>Anexo “D”</i>
+		</u></p> ]]>
+	</ContenidoManual>
+</Reporte>

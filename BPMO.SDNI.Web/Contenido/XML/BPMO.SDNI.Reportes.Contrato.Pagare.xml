@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ReporteContratoPagare>
+  <Pagare>
+    <MONTO_ENC>
+      <![CDATA[
+        <p align="justify" style="margin:0px 0px 0px 0px;font-size: 8pt !important; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;text-align:right"><b>BUENO POR {MONEDA_ENC} {MONEDA_CVE}</b></p>
+      ]]>
+    </MONTO_ENC>
+    <SECCION_1>
+      <![CDATA[
+        <p align="justify" style="text-indent:50pt;margin:0px 0px 0px 0px;font-size: 8pt !important; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;"><div>POR ESTE PAGARÉ <b>EL SUSCRIPTOR O DEUDOR Y/O EL(LOS) AVALISTA(S),</b> RECONOCE(N) DEBER Y SE OBLIGA(N) Y COMPROMETE(N) A PAGAR A LA VISTA INCONDICIONALMENTE A LA ORDEN DE {EMPRESA_GB} <b>(LA ACREEDORA)</b>, EN LA CIUDAD DE MÉRIDA, YUCATÁN, MÉXICO, LA CANTIDAD DE {MONTO_DET} {MONEDA_CVE_DET}. (SON: {MONTO_LETRAS}), Y QUE CUBRIRÁ EFECTUANDO EL PAGO.</div>
+        <br/>
+        <br/>
+        <div style="text-indent:50pt;">EL PRESENTE PAGARÉ SE CONSIDERA EMITIDO CONFORME A LA LEY GENERAL DE TITULOS Y OPERACIONES DE CRÉDITOS Y DEMÁS ORDENAMIENTOS LEGALES MERCANTILES QUE LO RIGEN Y SUSTENTAN EN EL TERRITORIO DE LOS ESTADOS UNIDOS MEXICANOS.</div>
+        <br/>
+        <br/>
+        <div style="text-indent:50pt;">EL SUSCRIPTOR O DEUDOR Y/O LOS AVALISTA(S) DESIGNA(N) COMO DOMICILIO PARA EL CASO DE QUE EXISTA UN REQUERIMIENTO JUDICIAL DE PAGO:</div></p>
+    ]]>
+    </SECCION_1>
+    <DOMICILIO>
+      <![CDATA[
+        <p align="justify" style="text-indent:50pt;margin:0px 0px 0px 0px;font-size: 8pt !important; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;"><div><b>SUSCRIPTOR O DEUDOR:</b> {DOMICILIO_CLIENTE}</div>
+        <br/>
+        <br/>
+        <div style="text-indent:50pt; margin-bottom:2px;"><b>AVALISTA(S):</b> {DOMICILIO_AVAL}</b></p>
+    ]]>
+    </DOMICILIO>
+    <SECCION_2>
+      <![CDATA[
+        <p align="justify" style="text-indent:50pt;margin:0px 0px 0px 0px;font-size: 8pt !important; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;"><div><b>EL SUSCRIPTOR O DEUDOR Y/O EL(LOS) AVALISTA(S),</b> SE OBLIGA INCONDICIONALMENTE A PAGAR LA CANTIDAD AMPARADA EN EL PRESENTE PAGARÉ MAS LOS INTERESES ORDINARIOS SOBRE SALDOS INSOLUTOS QUE SE CALCULARÁN EN BASE A TASA FIJA DE INTERÉS DE {PORCENTAJE}  ANUAL.</div>
+        <br/>
+        <br/>
+        <div style="margin-bottom:5px;text-indent:50pt;">EN CASO DE MORA EN EL PAGO SE CAUSARÁN INTERESES SOBRE LOS ADEUDOS VENCIDOS Y NO PAGADOS MÁS EL IMPUESTO AL VALOR AGREGADO, DESDE <b>EL DÍA EN QUE EL SUSCRIPTOR O DEUDOR Y/O EL(LOS) AVALISTA(S)</b> TENGA(N) LA OBLIGACIÓN DE  CELEBRAR LOS PAGOS CORRESPONDIENTES, HASTA EL DÍA EN QUE DICHAS CANTIDADES QUEDEN CUBIERTAS Y TOTALMENTE PAGADAS A FAVOR DE <b>LA ACREEDORA</b>; INTERESES QUE SE CALCULARÁN A UNA TASA MENSUAL DEL 3% (TRES POR CIENTO) MÁS IVA, DE TODAS LAS CANTIDADES VENCIDAS Y NO PAGADAS CONFORME A ESTE PAGARÉ DURANTE EL TIEMPO EN QUE DICHA CANTIDAD PERMANEZCA INSOLUTA.</div></p>
+    ]]>
+    </SECCION_2>
+    <SECCION_3>
+      <![CDATA[
+        <p align="justify" style="margin:0px 0px 0px 0px;font-size: 8pt !important; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;"><div style="text-indent:50pt;"><b>EL SUSCRIPTOR O DEUDOR Y/O EL(LOS) AVALISTA(S)</b> POR MEDIO DEL PRESENTE PAGARÉ, PROMETE(N) INCONDICIONALMENTE PAGAR LOS GASTOS Y HONORARIOS LEGALES QUE EN SU CASO IMPLIQUE EL COBRO DE ESTE PAGARÉ.</div>
+        <br/>
+        <br/>
+        <div>QUEDA CONVENIDO DESDE ESTE MOMENTO QUE LA FALTA DE  PAGO OPORTUNO DEL PAGO TOTAL Y ÚNICO O DE UNA O MÁS DE LAS AMORTIZACIONES EN LOS TÉRMINOS CONVENIDOS Y EXPRESADOS EN EL PRESENTE PAGARÉ, DARÁ POR VENCIDA ANTICIPADAMENTE LA TOTALIDAD DE LA OBLIGACIÓN Y QUE RESULTAN COMPETENTES PARA HACER EXIGIBLE ESTE DOCUMENTO. PARA EL CASO DE CONTROVERSIAS, ASÍ COMO PARA TODO RELACIONADO CON LA INTERPRETACIÓN, CUMPLIMIENTO Y EJECUCIÓN DE ESTE PAGARE, LAS PARTES CONVIENEN EN SOMETERSE  A LAS LEYES DE LA REPÚBLICA MEXICANA Y A LOS TRIBUNALES COMPETENTES EN: (I) EL LUGAR DEL DOMICILIO DEL “EL SUSCRIPTOR” Y/O EL(LOS) AVALISTA(S) QUE APARECE DESIGNADO EN FORMA ESPECÍFICA EN EL PAGARÉ; (II) LA CIUDAD DE MÉRIDA YUCATÁN; (III) EL  LUGAR DE CUMPLIMIENTO DE LAS OBLIGACIONES PACTADAS EN ESTE PAGARÉ; CUALQUIERA DE ELLOS, YA SEAN DEL FUERO COMÚN O FEDERAL  Y A ELECCIÓN DEL ACTOR, RENUNCIANDO EXPRESAMENTE A LA APLICACIÓN DE CUALQUIER OTRA LEY, Y A LA JURISDICCIÓN DE CUALQUIER OTRO TRIBUNAL QUE POR RAZÓN DE SU DOMICILIO PRESENTE O FUTURO PUDIERE CORRESPONDERLES.</div>
+        <br/>
+        <br/>
+        <div style="margin-bottom:2px;">ESTE PAGARÉ SE ENCUENTRA REGULADO POR EL CAPITULO TERCERO DEL TÍTULO PRIMERO DE LA LEY GENERAL DE TÍTULOS Y OPERACIONES DE CRÉDITO VIGENTE A LA FECHA DE EMISIÓN DE ESTE PAGARÉ</div></p>
+    ]]>
+    </SECCION_3>
+    <FECHA>
+      <![CDATA[
+        <p align="center" style="margin:0px 0px 0px 0px;font-size: 8pt !important; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;">{CIUDAD_ESTADO}, MÉXICO, A {FECHA}</p>
+      ]]>
+    </FECHA>
+    <PERSONACLIENTE>
+      <![CDATA[
+        <p align="center" style="margin:0px 0px 2px 0px;font-size: 8pt !important; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;">{CLIENTE} <br/> {REPRESENTANTE} </p>
+      ]]>
+    </PERSONACLIENTE>
+    <PERSONAAVAL>
+      <![CDATA[
+        <p align="center" style="margin:0px 0px 0px 0px;font-size: 8pt !important; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;">{AVAL}</p>
+      ]]>
+    </PERSONAAVAL>
+  </Pagare>
+</ReporteContratoPagare>

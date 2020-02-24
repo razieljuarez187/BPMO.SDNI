@@ -1,0 +1,166 @@
+﻿body
+{
+    padding: 0px;
+    margin: 0px;
+    font-family: Century Gothic, Arial, Verdana, Serif;
+    font-size: 14px;
+    background: #FFFFFF url('../Imagenes/LiteFondo.jpg');
+}
+
+input[type="text"],
+input[type="password"],
+select
+{
+	height: 25px;
+	width: 82%;
+	font-family : Century Gothic, Arial, Verdana, Serif; 
+	
+	border-color:#d7d7d7; 
+	border-style:solid; 
+	border-width:1px;
+	border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px; -khtml-border-radius:5px;
+}
+input[type="text"],
+input[type="password"]
+{
+	padding-right:5px; padding-left:5px;
+}
+input[type="text"][disabled],
+input[type="password"][disabled],
+select[disabled]
+{
+	background-color:#e6e6e6; 
+	border-color:#d2d2d2; 
+	border-style:solid; 
+	border-width:1px;
+}
+span
+{
+    color: #56421f;
+}
+
+#dvHeader
+{
+    width: 100%;
+    height: 121px;
+    background-image: url('../Imagenes/LiteHeaderFondo.jpg');
+    background-position: top right;
+    background-repeat: repeat-x;
+}
+#dvHeader .Logo
+{
+    width: 249px;
+    height: 121px;
+    background: #FFFFFF url('../Imagenes/LiteHeader.jpg') no-repeat;
+}
+#dvFooter
+{
+    width: 100%;
+    height: 57px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    background-image: url('../Imagenes/LiteFooterFondo.jpg');
+    background-position: top right;
+    background-repeat: repeat-x;
+}
+
+.btnEntrar
+{
+    width: 144px;
+    height: 66px;
+    margin: 10px auto auto auto;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 12px;
+    background-image: url(../Imagenes/botonEntrar.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    display: inherit;
+}
+.btnEntrar:hover
+{
+    background-image: url(../Imagenes/botonEntrarSeleccionado.jpg);
+}
+
+.btnGenerico
+{
+    width: 103px;
+    height: 41px;
+    margin: 10px auto auto auto;
+    padding-bottom: 5px;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 12px;
+    background-image: url(../Imagenes/botonComando.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    display: inherit;
+}
+.btnGenerico:hover
+{
+    background-image: url(../Imagenes/botonComandoSeleccionado.png);
+}
+
+#dvCajaLibreGrande
+{
+    width: 574px;
+    margin: 40px auto auto auto;
+}
+#dvCajaLibreGrande .Header
+{
+    margin: 0px;
+    width: 100%;
+    height: 61px;
+    background-image: url('../Imagenes/LiteCajaLibreGrandeHeader.png');
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+#dvCajaLibreGrande .Content
+{
+    margin: 0px;
+    width: 100%;
+    height: 180px;
+    font-size: 14px;
+    background-image: url('../Imagenes/LiteCajaLibreGrandeContent.png');
+    background-position: top center;
+    background-repeat: repeat-y;
+}
+#dvCajaLibreGrande .Content .Error
+{
+	clear: both; 
+	height: 28px; 
+	width: 100%; 
+	color: Red; 
+	text-align: center;
+}
+#dvCajaLibreGrande .Content table
+{
+	width: 400px;
+    margin: 0px auto auto auto;
+}
+#dvCajaLibreGrande .Content table tr td 
+{ 	
+	text-transform: uppercase; 
+	vertical-align: middle; 
+	
+	width: 70%;
+}
+#dvCajaLibreGrande .Content table tr td:first-child { text-align: right; width: auto; }
+#dvCajaLibreGrande .Content table tr td span
+{
+	color: Red;
+}
+#dvCajaLibreGrande .Footer
+{
+    margin: 0px;
+    width: 100%;
+    height: 68px;
+    background-image: url('../Imagenes/LiteCajaLibreGrandeFooter.png');
+    background-position: top center;
+    background-repeat: no-repeat;
+}

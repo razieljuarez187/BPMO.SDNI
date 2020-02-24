@@ -1,0 +1,836 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<reporte>
+  <titulo>
+    <![CDATA[
+    <div  style="font-size:8pt; Text-align: center; font-weight: bold; font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;">
+      CONTRATO DE ARRENDAMIENTO No. [NUMERO_CONTRATO] DE VEHICULO CON SERVICIO DE MANTENIMIENTO INCLUIDO
+    </div>
+    ]]>
+  </titulo>
+  <leyenda>
+    <obligatorio>
+      <![CDATA[
+      <p style="font-size:8pt; Text-align: justify; font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;">
+      Este contrato se celebra el <b>[FECHA_CONTRATO]</b> entre <b>[NOMBRE_CLIENTE]</b> como ARRENDATARIO en lo sucesivo "<b>El Cliente</b>" y <b>[UNIDAD_OPERATIVA]</b>.
+      Como ARRENDADOR en lo sucesido "<b>El Distribuidor</b>"[LEYENDA_OBLIGADOS][LEYENDA_DEPOSITARIOS].
+      </p>]]>  
+    </obligatorio>
+    <opcionales>
+      <obligados>
+        <![CDATA[ Y <b>[OBLIGADOS_SOLIDARIOS]</b> como <b>Obligado[OBLIG_PLURAL] Solidario[OBLIG_PLURAL]</b>]]>
+      </obligados>
+      <depositarios>
+        <![CDATA[, y adem&aacute;s <b>[DEPOSITARIOS]</b> como <b>Depositario[DEPO_PLURAL]</b>]]>
+      </depositarios>
+    </opcionales>
+  </leyenda>
+  <declaraciones>
+    <contenido>
+      <cliente>
+        <declaracion tipo="F">
+          <valor>
+          <![CDATA[
+            El Servicio de Administraci&oacute;n Tributaria, le da a conocer el Registro Federal de Contribuyentes, que le ha asignado y quedado registrado por sus generales 
+            <b>[NOMBRE_CLIENTE]</b> con domicilio en calle <b>[CALLE_CLIENTE]</b> C&oacute;digo Postal <b>[CODIGO_POSTAL]</b> en 
+            <b>[UBICACION_CLIENTE]</b>, con Registro Federal de Contribuyente <b>[RFC_CLIENTE]</b>, de fecha de registro <b>[FECHA_REGISTRO_HDA]</b> y con clave &uacute;nica de 
+            registro de poblaci&oacute;n <b>[CURP_CLIENTE]</b>. Con actividad <b>[GIRO_EMPRESA_CLIENTE]</b>
+          ]]>
+          </valor>
+        </declaracion>
+        <declaracion tipo="M">
+          <valor>
+          <![CDATA[Es una sociedad debidamente constituida conforme a las leyes mexicanas y que se encuentra funcionando bajo el cumplimiento
+								de dichas leyes, a trav&eacute;s de la <b>escritura p&uacute;blica n&uacute;mero [NUMERO_ESCRITURA_CLIENTE]</b> de fecha <b>[FECHA_ESCRITURA_CLIENTE]</b>, otorgada ante la 
+								fe del Lic.<b>[NOMBRE_NOTARIO_CLIENTE], Notario P&uacute;blico No.[NUMERO_NOTARIA_CLIENTE] de [UBICACION_NOTARIA]</b>, inscrita  en el Registro 
+								P&uacute;blico de la Propiedad y Comercio.]]>
+          </valor>
+        </declaracion>        
+        <declaracion tipo="G">
+          <valor>
+            <![CDATA[
+          Tiene autorizaci&oacute;n bajo todas la leyes federales, estatales y locales aplicables, para operar los veh&iacute;culos en la forma contemplada por este contrato.
+          ]]>
+          </valor>
+        </declaracion>
+        <declaracion tipo="G">
+          <valor>
+          <![CDATA[Tiene el deseo de tomar en arrendamiento puro los veh&iacute;culos de acuerdo a los t&eacute;rminos de este contrato]]>
+          </valor>
+        </declaracion>
+        <declaracion tipo="O">
+          <valor>
+            <![CDATA[de fecha <b>[FECHA_ESCRITURA]</b> otorgada ante la fe del <b>Lic. [NOMBRE_NOTARIO], Notario Público No. [NUMERO_NOTARIA] de [LOCALIDAD_NOTARIA]</b>,]]>
+          </valor>
+        </declaracion>
+        <opcionales>
+          <declaracion tipo="OM" subtipo="RLAI">
+            <tipo>RLAI</tipo>
+            <valor>
+              <![CDATA[En la propia Acta Constitutiva le fueron otorgados a <b>[REPRESENTANTES_LEGALES]</b> poderes suficientes para la firma de este contrato, los cuales se encuentran 
+          vigentes y no le han sido revocados.]]>
+            </valor>
+          </declaracion>
+          <declaracion tipo="OM" subtipo="RLAD">
+            <tipo>RLAD</tipo>
+            <valor>
+              <![CDATA[Han otorgado en favor de <b>[REPRESENTANTES_LEGALES]</b> poderes suficientes para la firma de este contrato a trav&eacute;s de <b>la[ESC_PLU] escritura[ESC_PLU] 
+            p&uacute;blica[ESC_PLU] no. [NUMEROS_ACTAS]</b> de fecha <b>[FECHA_ESCRITURA]</b> otorgada ante la fe del <b>Lic. [NOMBRE_NOTARIO], Notario Público No. [NUMERO_NOTARIA] de 
+            [LOCALIDAD_NOTARIA]</b>,[ACTAS_CLIENT_ADD] inscrita[ESC_PLU] en el Registro P&uacute;blico de la Propiedad y Comercio]]>
+            </valor>
+          </declaracion>
+        </opcionales>
+      </cliente>
+      <distribuidor>
+        <![CDATA[
+        <ol type="A" style="margin:5px 0 5px -45px; font-size:8pt; Text-align: justify; font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;">
+          <li>Es una sociedad debidamente constituida conforme a las leyes de M&eacute;xico y que se encuentra funcionando bajo el cumplimiento
+            de dichas leyes, a trav&eacute;s de <b>escritura p&uacute;blica n&uacute;mero quinientos ochenta y tres</b> de fecha <b>12 de Diciembre de 2003</b>
+            , otorgada ante la fe del <b>Abogado Jorge Ram&oacute;n Peniche Aznar</b>,  Notario P&uacute;blico <b>N&uacute;mero Setenta y dos</b> de la
+            <b>Ciudad de M&eacute;rida del Estado de Yucat&aacute;n</b>, inscrita en el <b>Registro P&uacute;blico de la Propiedad y Comercio del Estado de
+            Yucat&aacute;n folio mercantil electr&oacute;nico n&uacute;mero 40647 Registro 1 registrado el 30 de Enero de 2004.</b>
+          </li>
+          <li>Ha otorgado en favor de <b>[REPRESENTANTE_LEGAL_UNIDAD_OPERATIVA]</b> poderes suficientes para la firma de este contrato a trav&eacute;s de
+            <b>escritura p&uacute;blica n&uacute;mero Doscientos cuarenta y ocho</b> de fecha <b>17 de mayo de 2007</b> ante la fe del <b>abogado Jorge 
+            Ram&oacute;n Peniche Aznar</b> Notario P&uacute;blico n&uacute;mero <b>setenta y dos</b> de la Ciudad de M&eacute;rida  del Estado de Yucat&aacute;n,
+            e inscrita en el <b>Registro P&uacute;blico de la Propiedad y Comercio del estado de Yucat&aacute;n con folio mercantil electr&oacute;nico
+            N&uacute;mero 40647 Registro 1 registrado el 2 de Julio de 2007.</b>
+          </li>
+          <li>Es capaz y tiene los recursos y el deseo de proveer en arrendamiento puro los Veh&iacute;culos y realizar los servicios a que se refiere este Contrato</li>
+        </ol>
+        ]]>
+      </distribuidor>
+      <obligadosDepositarios>
+        <declaracionOS id="1" grupo="A">
+          <tipo>NAOSNAD</tipo>
+          <valor>No Aplica</valor>
+        </declaracionOS>
+        <declaracionOS id="2" grupo="A">
+          <tipo>OSPF</tipo>
+          <valor>
+            <![CDATA[El(La) Sr(a). <b>[NOMBRE_OS_FISICO]</b> declara que es una persona f&iacute;sica de nacionalidad mexicana, con plena capacidad legal para obligarse y contratar.]]>
+          </valor>
+        </declaracionOS>
+        <declaracionOS id="3" grupo="A">
+          <tipo>OSPM</tipo>
+          <valor><![CDATA[Que <b>[NOMBRE_OS_MORAL]</b> es una sociedad debidamente constituida conforme a las leyes mexicanas y que se encuentra funcionando bajo el cumplimiento de dichas 
+          leyes, a trav&eacute;s de la <b>Escritura p&uacute;blica No. [NUMERO_ESCRITURA_OSM]</b> de fecha <b>[FECHA_ESCRITURA_OSM]</b>, otorgada ante la fe del <b>Lic. [NOMBRE_NOTARIO_OSM], 
+          Notar&iacute;o P&uacute;blico No. [NUMERO_NOTARIA_OSM]</b>, inscrita en el Registro P&uacute;blico de la Propiedad y Comercio.]]></valor>
+        </declaracionOS>
+        <declaracionOS  id="4" grupo="B">
+          <tipo>ROSAI</tipo>
+          <valor>
+            <![CDATA[En la propia Acta Constitutiva le fueron otorgados a <b>[REPRESENTANTES_OS]</b> poderes suficientes para la firma de este contrato, los cuales se encuentran vigentes y no le han sido revocados.]]>
+          </valor>
+        </declaracionOS>
+        <declaracionOS  id="5" grupo="B">
+          <tipo>ROSAD</tipo>
+          <valor>
+            <![CDATA[Que ha otorgado en favor de <b>[REPRESENTANTES_OS]</b> poderes suficientes para la firma de este contrato a través de <b>la[REP_OS_PLU] escritura[REP_OS_PLU] 
+            pública[REP_OS_PLU] no. [NUMEROS_ACTAS]</b> de fecha <b>[FECHA_ESCRITURA]</b> otorgada ante la fe del <b>Lic. [NOMBRE_NOTARIO], 
+            Notario Público No. [NUMERO_NOTARIA] de [LOCALIDAD_NOTARIA]</b>,[ACTAS_COMOP_REP_OS] inscrita[ACTA_REP_OS_PLU] en el Registro Público de la Propiedad y Comercio.]]></valor>
+        </declaracionOS>
+        <declaracionOS  id="6" grupo="C">
+          <tipo>default</tipo>
+          <valor>
+            <![CDATA[El(La) Sr(a). <b>[DEPOSITARIOS]</b> declara que es una persona física de nacionalidad mexicana, con plena capacidad legal para obligarse y contratar.]]>
+            </valor>
+        </declaracionOS>
+        <declaracionOS  id="7" grupo="D">
+          <tipo>default</tipo>
+          <valor>
+            <![CDATA[Que es su deseo comparecer en el presente contrato en car&aacute;cter de <b>Obligado[OBLIG_PLURAL] solidario[OBLIG_PLURAL] y Depositario[DEPO_PLURAL]</b> de todas las obligaciones que contraiga]]>
+          </valor>
+        </declaracionOS>
+        <declaracionOS id="8" grupo="E">
+          <tipo>opcional</tipo>
+          <valor>
+            <![CDATA[<b>de fecha [FECHA_ESCRITURA] otorgada ante la fe del Lic. [NOMBRE_NOTARIO], Notario Público No. [NUMERO_NOTARIA] de [LOCALIDAD_NOTARIA]</b>,]]>
+          </valor>
+        </declaracionOS>
+      </obligadosDepositarios>
+      <definiciones>
+        <![CDATA[
+        <p style="margin:5px 0 5px 5px; font-size:8pt; Text-align: justify; font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;">
+          Para efectos de este contrato los siguientes t&eacute;rminos tendr&aacute;n el significado que a continuaci&oacute;n se se&ntilde;ala:
+        </p>
+        <ol type="A" style="margin:5px 0 5px -45px; font-size:8pt; Text-align: justify; font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;">
+          <li>D&oacute;lares: La moneda de curso legal en los Estados Unidos de Norteam&eacute;rica.</li>
+          <li>Intereses Moratorios: La cantidad que  el  Cliente se obliga a pagar a el Distribuidor en caso de incumplir en forma 
+              total y oportuna con  los pagos consignados en este contrato, calculados a raz&oacute;n de la tasa de inter&eacute;s 
+              pactada en este contrato y los Anexos A respectivos, m&aacute;s IVA correspondiente</li>
+          <li>IVA: El Impuesto al Valor Agregado.</li>
+          <li>Renta: Las cantidades que por concepto de cargo fijo mensual y cargo por concepto de kilometraje mensual  se 
+              mencionan en cada Anexo "A" durante el t&eacute;rmino del contrato.</li>
+        </ol>
+        ]]>
+      </definiciones>
+      <eClausulas>
+        <![CDATA[En vista de las Declaraciones anteriores, y en consideraci&oacute;n de los acuerdos bilaterales contenidos en este documento, las partes convienen en celebrar un 
+        Contrato de Arrendamiento de Veh&iacute;culos con Servicio de Mantenimiento Incluido conforme a las siguientes clausulas.]]>
+      </eClausulas>
+    </contenido>    
+    <plantillas>
+      <padre>
+        <![CDATA[
+        <ol type="I" style="margin:5px 0 5px -20px; font-size:8pt; font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;">
+          <li style="font-weight: bold;">El Cliente declara que:</li>
+          [DECLARACION_CLIENTE]
+          <li style="font-weight: bold;">El Distribuidor declara que:</li>
+          [DECLARACION_DISTRIBUIDOR]
+          <li><b>Declaran los Obligado[OBLIG_PLURAL] Solidario[OBLIG_PLURAL] y [ARTICULO_DEP] Depositario[DEPO_PLURAL]</b>, bajo protesta de decir la verdad:
+          [DECLARACION_OBLIG_DEP]</li>
+          <li style="font-weight: bold;">Definiciones</li>
+          [DEFINICIONES]
+          <li style="Text-align: justify;">[ECLAUSULAS]</li>          
+        </ol>
+        ]]>
+      </padre>
+      <hijo>
+        <cabecera>
+          <![CDATA[
+          <ol type="A" style="margin:5px 0 5px -45px; font-size:8pt; Text-align: justify; font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;">
+          [ELEMENTOS]
+          </ol>
+          ]]>
+        </cabecera>
+        <elemento>
+          <![CDATA[<li>[TEXTO]</li>]]>
+        </elemento>
+      </hijo>
+    </plantillas>
+  </declaraciones>
+  <clausulas>
+    <contenido>
+      <clausula id="1">
+        <cabecera>
+          <![CDATA[BIENES OBJETO DEL ARRENDAMIENTO]]>
+        </cabecera>
+        <valor>
+          <![CDATA[<table style="margin:5px 0 5px 30px; Text-align: justify; font-size:8pt; font-family: Arial, Helvetica Neue, Helvetica, sans-serif;"><tr style="Text-align: justify;"><td>
+            El Distribuidor en este acto, se obliga a adquirir los equipos que se describen en el Anexo "A" de este Contrato (en lo sucesivo el "Veh&iacute;culo" o "Veh&iacute;culos"),
+            directamente del proveedor de los mismos, a fin de conceder el uso y goce de dichos bienes al Cliente, el cual a su vez los acepta y toma en tal car&aacute;cter, en los 
+            t&eacute;rminos y condiciones previstos en el presente Contrato. Cada Anexo "A" que ahora o en el futuro celebren las partes y cada uno de estos anexos de manera 
+            individual, o bien, todos en su conjunto forman o formar&aacute;n parte integrante de este Contrato como s&iacute; a la letra se transcribieran. La firma del Cliente del 
+            Anexo "A" constituir&aacute; la autorizaci&oacute;n al Distribuidor para adquirir los Veh&iacute;culos se&ntilde;alados en dicho Anexo "A".</td></tr></table>
+          ]]>
+        </valor>
+      </clausula>
+      <clausula id="2">
+        <cabecera>
+          <![CDATA[T&Eacute;RMINO]]>
+        </cabecera>
+        <valor>
+          <![CDATA[<table style="margin:5px 0 5px 30px; Text-align: justify; font-size:8pt; font-family: Arial, Helvetica Neue, Helvetica, sans-serif;"><tr style="Text-align: justify;"><td>
+            El t&eacute;rmino de este Contrato estar&aacute; vigente con respecto a cada Veh&iacute;culo desde la fecha que dicho Veh&iacute;culo sea entregado por el Distribuidor y 
+            recibido por el Cliente y deber&aacute; continuar en vigor por el plazo forzoso especificado en el Anexo "A" o hasta que se d&eacute; una terminaci&oacute;n anticipada 
+            prevista por este contrato.</td></tr></table>]]>
+        </valor>
+      </clausula>
+      <clausula id="3">
+        <cabecera>
+          <![CDATA[ACEPTACI&Oacute;N DE ENTREGA Y MODIFICACIONES DE UN VEH&Iacute;CULO]]>
+        </cabecera>
+        <valor>
+          <![CDATA[<table style="margin:5px 0 5px 30px; Text-align: justify; font-size:8pt; font-family: Arial, Helvetica Neue, Helvetica, sans-serif;"><tr style="Text-align: justify;"><td>
+          El Cliente hace constar que ha seleccionado directamente los Veh&iacute;culos respecto de los cuales se le concede el arrendamiento y que los
+          mismos son de su entera satisfacci&oacute;n y su funcionamiento est&aacute; en orden, motivo por el que el  Distribuidor no tiene responsabilidad alguna por error u 
+          omisi&oacute;n en la descripci&oacute;n de los Veh&iacute;culos especificados ni con respecto a las condiciones de los mismos.</td></tr>      
+          <tr style="Text-align: justify;"><td>El Cliente se obliga a recibir los Veh&iacute;culos  seg&uacute;n se prev&eacute; en el Anexo "A" del presente contrato. Si el Cliente se 
+          negar&aacute; a recibir los Veh&iacute;culos, cubrir&aacute; al Distribuidor una cantidad equivalente al 20% (veinte por ciento) de la renta total por concepto de pena 
+          convencional ya que no se est&aacute; cumpliendo esta cl&aacute;usula de la manera convenida por las partes y reintegrar&aacute; al  Distribuidor la totalidad de las 
+          cantidades que &eacute;ste hubiera pagado con relaci&oacute;n a dichos Veh&iacute;culos sin perjuicio del derecho del Distribuidor de rescindir el presente contrato o exigir 
+          el cumplimiento forzoso del mismo.</td></tr>
+          <tr style="Text-align: justify;"><td>El Cliente est&aacute; de acuerdo en pagar por cualquier modificaci&oacute;n en la estructura del Veh&iacute;culo, instalaci&oacute;n de 
+          equipo especial o adicional obligatorio por disposici&oacute;n gubernamental, en la pintura, rotulaci&oacute;n o trabajo art&iacute;stico solicitado por &eacute;l mismo.  
+          El Cliente no puede modificar un Veh&iacute;culo sin el previo consentimiento por escrito del Distribuidor mismo que no se negar&aacute; irrazonablemente.</td></tr></table>
+          ]]>
+        </valor>
+      </clausula>
+      <clausula id="4">
+        <cabecera>
+          <![CDATA[SERVICIOS DE MANTENIMIENTO]]>
+        </cabecera>
+        <valor>
+          <![CDATA[
+          <table style="margin: 0 -45px">
+						<tr style="Text-align: justify;">
+							<td>
+								<ol style="list-style-type: lower-latin; Text-align: justify; font-size:8pt; font-family: Arial, Helvetica Neue, Helvetica, sans-serif;">
+									<li>El Distribuidor deber&aacute; dar mantenimiento, reparaci&oacute;n y servicio a los Veh&iacute;culos y al llevar a cabo lo anterior proporcionar&aacute;:
+										<ol style="list-style-type: lower-roman; margin:5px 0 5px -25px; Text-align: justify; font-size:8pt; font-family: Arial, Helvetica Neue, Helvetica, sans-serif;">
+											<li>Aceites, lubricantes, llantas, c&aacute;maras de las llantas y todos los dem&aacute;s accesorios necesarios para la operaci&oacute;n de los Veh&iacute;culos, como est&aacute; especificado en el Anexo "A".</li>
+											<li>Toda la mano de obra y partes requeridas para mantener los Veh&iacute;culos en buenas condiciones de operaci&oacute;n.</li>
+											<li>Un programa de servicio para dar el mantenimiento preventivo e inspecciones para cada Veh&iacute;culo, los cuales tendr&aacute;n que realizarse en el taller que para estos efectos se indica en el Anexo "A" (en lo sucesivo "El  Taller de Servicio").</li>
+											<li>Las reparaciones necesarias en carretera o en zona urbana a causa de fallas mec&aacute;nicas que no sean atribuibles a manejo u operaci&oacute;n abusiva del Veh&iacute;culo, es decir, que no sea en incumplimiento con los t&eacute;rminos de este Contrato.  El Distribuidor se compromete el mismo o a trav&eacute;s de terceras personas llevar a cabo las reparaciones correspondientes.</li>
+											<li>Lavado exterior de los Veh&iacute;culos en forma peri&oacute;dica, como est&aacute; especificado en el Anexo "A".</li>
+											<li>Pintura y rotulaci&oacute;n del Veh&iacute;culo de acuerdo con las especificaciones del Cliente anteriores al tiempo en que el Veh&iacute;culo sea puesto en servicio a un costo para el Distribuidor que no exceda lo previsto en el Anexo  "A" aplicable a pintura y rotulaci&oacute;n.</li>
+										</ol>
+                  </li>
+									<li>El Distribuidor llevar&aacute; a cabo o se har&aacute; responsable por el costo de las reparaciones de emergencia a los Veh&iacute;culos  realizado fuera de los Talleres de Servicio, s&oacute;lo si se cumplen todos y cada uno de los siguientes puntos:
+										<table style="ext-align: justify;">
+											<tr style="Text-align: justify;">
+												<td>
+													<ol style="list-style-type: lower-roman; margin:5px 0 5px -25px; Text-align: justify; font-size:8pt; font-family: Arial, Helvetica Neue, Helvetica, sans-serif;">
+														<li>Que las reparaciones sean necesarias para el manejo seguro y eficiente del Veh&iacute;culo, con la excepci&oacute;n de pinchadura de llantas.</li>
+														<li>Que el Cliente haya notificado al Distribuidor del problema y la ubicaci&oacute;n del Veh&iacute;culo, a la brevedad y por los medios mas r&aacute;pidos y disponibles y haya seguido las instrucciones del Distribuidor correspondientes a reparaciones de emergencia.</li>
+														<li>Que la reparaci&oacute;n o servicio no haya sido necesaria por incumplimiento del Cliente en presentar el Veh&iacute;culo al  Taller  de servicio en los t&eacute;rminos acordados por las partes en el programa de mantenimiento.</li>
+														<li>Que el Cliente haya sometido una factura con requisitos fiscales a nombre de el Distribuidor y aceptable a el  Distribuidor, aplic&aacute;ndose un deducible a cargo del Cliente y en favor del Distribuidor en la cantidad de cinco d&oacute;lares  (US $ 5.00). De las cuales quedan excluidas reparaciones a llantas de cualquier tipo, lavado, o cualquier condici&oacute;n no incluida en el presente contrato.</li>
+													</ol>
+												</td>
+											</tr>
+											<tr  style="margin:0 0 5px 95px; Text-align: justify;">
+												<td>En el caso de que por cualquier raz&oacute;n, el monto de la reparaci&oacute;n sea pagado por el Distribuidor, la parte que corresponda pagar al Cliente en t&eacute;rminos de esta cl&aacute;usula ser&aacute; reembolsado por el mismo al Distribuidor dentro de los siguientes cinco d&iacute;as naturales contados a partir de la fecha en que el Distribuidor notifique al Cliente sobre el desembolso correspondiente</td>
+											</tr>
+										</table>
+                  </li>
+									<li>El Distribuidor no estar&aacute; obligado a reparar ni reemplazar cualquier equipo accesorio o auxiliar incluyendo de manera enunciativa mas no limitativa: se&ntilde;ales de emergencia,  extinguidores, cuerdas, lonas o cadenas.</li>
+									<li>El Distribuidor no estar&aacute; obligado a reparar da&ntilde;os o fallas mec&aacute;nicas causadas por el Cliente en un Veh&iacute;culo cuando se presenten por causa del operador, siendo los siguientes enunciativos m&aacute;s no limitativos
+										<table style="ext-align: justify;">
+											<tr style="Text-align: justify;">
+												<td>
+													<ol style="list-style-type: lower-roman; margin:5px 0 5px -25px; Text-align: justify; font-size:8pt; font-family: Arial, Helvetica Neue, Helvetica, sans-serif;">
+														<li>El operar el veh&iacute;culo con bajos niveles de aceite o refrigerante, sin filtros, con bandas rotas, sobre revolucionado, con presiones en llantas inferiores a las 100 libras por pulgada cuadrada, con agua en el diesel o combustibles alterados, con bolsas de aire bajas.</li>
+														<li>No detener la unidad cuando existe indicaci&oacute;n de sobrecalentamiento, mezcla de agua con aceite, mal funcionamiento del Veh&iacute;culo o bien sea notorio el olor a quemado o presencia de humo.</li>
+														<li>Ocasionar golpes, voladuras o mordeduras en las llantas por elementos externos o sobrecarga.</li>
+														<li>Frenos amarrados o tambores quemados causados por frenadas de p&aacute;nico.</li>
+														<li>El da&ntilde;o causado o la falla mec&aacute;nica se haya derivado de un semirremolque que  no se encuentre bajo contrato de mantenimiento con el Distribuidor.</li>
+														<li>Da&ntilde;os, golpes, ralladuras en la carrocer&iacute;a producto de colisiones, accidentes.</li>
+														<li>El operador no cumpla con lo dispuesto en la cl&aacute;usula 6.</li>
+													</ol>
+												</td>
+											</tr>
+											<tr style="margin:10px 0 5px 95px; Text-align: justify;">
+												<td>Si a causa del incumplimiento de el Cliente en seguir est&aacute;s disposiciones, el Veh&iacute;culo necesitase mantenimiento o servicio, el Distribuidor est&aacute; de acuerdo en realizar el mantenimiento o servicios requeridos y el Cliente est&aacute; de acuerdo en pagarle a el Distribuidor por los mismos, en adici&oacute;n a la Renta. </td>
+											</tr>
+										</table>	
+                  </li>
+									<li>El Distribuidor deber&aacute; proveer un veh&iacute;culo substituto siempre y cuando as&iacute; se disponga en el  Anexo "A" de este contrato, sin más cargo extra que lo exceptuado m&aacute;s adelante, siempre que un Veh&iacute;culo se vuelva temporalmente inoperable por fallas mec&aacute;nicas.  El veh&iacute;culo substituto deber&aacute; ser lo m&aacute;s parecido posible en tama&ntilde;o, dise&ntilde;o y capacidad de carga, sin tomar en consideraci&oacute;n la pintura especial, rotulaci&oacute;n u otras modificaciones efectuadas en el Veh&iacute;culo.  Siempre que sea posible, el veh&iacute;culo substituto ser&aacute; entregado en el mismo lugar en que el Veh&iacute;culo se descompuso y deber&aacute; ser devuelto por el Cliente en el lugar especificado como la base del veh&iacute;culo substituto. El Distribuidor no tendr&aacute; obligaci&oacute;n de proporcionar un veh&iacute;culo substituto  si no se dispone as&iacute; en el Anexo "A", o bien,  si el Veh&iacute;culo est&aacute; fuera de servicio por:  (1) mantenimiento y servicio ordinarios,  (2) da&ntilde;os resultantes de choque o volcadura;  (3) modificaci&oacute;n especializada del Veh&iacute;culo para su actividad;  (4) traer una caja en el Veh&iacute;culo que no sea propiedad del Distribuidor;  (5) reparaci&oacute;n o mantenimiento de equipo especial o accesorios por los cuales el Distribuidor no es responsable;  (6) tampoco estar&aacute; obligado a sustituir el Veh&iacute;culo por alg&uacute;n tipo de veh&iacute;culo substituto que el Distribuidor no tenga al momento en su flota de renta.  El incumplimiento del Distribuidor en proporcionar un veh&iacute;culo substituto dentro de un plazo razonable de tiempo  cuando est&aacute; obligado a hacerlo, causar&aacute; una suspensi&oacute;n en los cargos aplicables al Veh&iacute;culo inoperante hasta que el Veh&iacute;culo sea devuelto para su operaci&oacute;n o un veh&iacute;culo substituto sea ofrecido al Cliente.  La suspensi&oacute;n de dichos cargos ser&aacute; el l&iacute;mite de la responsabilidad del Distribuidor por dicho incumplimiento.</li>
+									<li>Mientras que un Veh&iacute;culo est&aacute; fuera de servicio por choque, colisi&oacute;n  o volcadura, el Distribuidor, a petici&oacute;n del Cliente, le rentar&aacute; otro veh&iacute;culo de reemplazo, s&oacute;lo si hay disponibles de la flota normal de renta del Distribuidor,  al mismo costo que el aplicado al Veh&iacute;culo inoperante.  Sin tomar en consideraci&oacute;n que el Cliente rente un veh&iacute;culo de reemplazo del Distribuidor, mientras un Veh&iacute;culo est&eacute; fuera de servicio por reparaciones o da&ntilde;os causados por choque, colisi&oacute;n o volcadura, los cargos aplicables al Veh&iacute;culo fuera de servicio no se suspender&aacute;n.  A menos que se convenga de otra forma en el presente contrato, todos los derechos y obligaciones del Cliente bajo el presente Contrato relacionados con un Veh&iacute;culo, deber&aacute;n aplicarse a cualquier veh&iacute;culo substituto, de reemplazo, interino o adicional.</li>
+									<li>El Distribuidor har&aacute; su mejor esfuerzo para proporcionar veh&iacute;culos adicionales cuando sean solicitados por el Cliente, bajo un sistema de renta diaria, tanto como lo permita la disponibilidad.  El precio que se cobre por la renta de todo equipo no cubierto por este Contrato ser&aacute;  15 por ciento ( 15 %) m&aacute;s bajo que el precio de renta diaria real aplicable a la clase de veh&iacute;culo y/o equipo dado en arrendamiento.  En el caso de que el Distribuidor no tenga veh&iacute;culos adicionales del tipo requerido, el Distribuidor, bajo la autorizaci&oacute;n del Cliente, har&aacute; su mejor esfuerzo para obtener de fuentes alternativas dichos veh&iacute;culos adicionales para el Cliente. El costo de renta para el Cliente no deber&aacute; exceder los pagos de renta vigentes y los costos incurridos por el Distribuidor.</li>
+									<li>El Distribuidor expresamente garantiza que todos los servicios que realice de reparaci&oacute;n y mantenimiento durante el t&eacute;rmino de este contrato, estar&aacute;n libres de defectos de mano de obra. El &uacute;nico recurso que tiene el Cliente por incumplimiento de dicha garant&iacute;a, ser&aacute; la realizaci&oacute;n de nueva cuenta de la mano de obra defectuosa por parte de el Distribuidor.</li>
+									<li>El Distribuidor no es el productor, fabricante, o dise&ntilde;ador de ning&uacute;n Veh&iacute;culo(s) dado en arrendamiento puro bajo este Contrato, as&iacute; como de ninguna de sus partes incorporadas en el mismo ahora o en un futuro y a excepci&oacute;n de la garant&iacute;a expresa del Fabricante, el Distribuidor  no puede hacer u otorgar ninguna garant&iacute;a que est&eacute; expresa o impl&iacute;cita, para o con respecto de alg&uacute;n Veh&iacute;culo o partes incorporadas o a ser incorporado en el mismo, ni garantizar que el Veh&iacute;culo se ajuste a un prop&oacute;sito particular o de uso intencionado o de alg&uacute;n otro tipo.
+										<table style="margin: 0 10px; Text-align: justify;">
+											<tr style="margin:10px 0 5px 80px; Text-align: justify;">
+												<td>El Distribuidor no  ser&aacute;  responsable por cualquier p&eacute;rdida, da&ntilde;o o reclamaci&oacute;n causada por o atribuible a: cualquier defecto o deficiencia del Veh&iacute;culo o partes incorporadas a el mismo y bajo ninguna circunstancia deber&aacute;n ser responsables por ning&uacute;n da&ntilde;o  perjuicio o alg&uacute;n otro da&ntilde;o especial u otro que alguna persona pueda sufrir o incurrir como resultado de una interrupci&oacute;n o cesaci&oacute;n en el uso de cualquier Veh&iacute;culo o que resulte del mantenimiento o servicio prove&iacute;do por el Distribuidor bajo este contrato</td>
+											</tr>
+											<tr style="margin:10px 0 5px 80px; Text-align: justify;">
+												<td>El Distribuidor no garantiza o asume ning&uacute;n riesgo por p&eacute;rdida o lesi&oacute;n a cualquier persona o por el almacenamiento o transporte de bienes o propiedades llevados en o transportados por cualquier Veh&iacute;culo y no deber&aacute;, en ning&uacute;n caso o bajo ninguna circunstancia, ser responsable por cualquier p&eacute;rdida o da&ntilde;o, incluidos da&ntilde;os o perjuicios, da&ntilde;os especiales u otros, que resulten de dicha p&eacute;rdida.</td>
+											</tr>
+										</table>
+                  </li>
+								</ol>
+							</td>
+						</tr>
+					</table>
+          ]]>
+        </valor>
+      </clausula>
+      <clausula id="5">
+        <cabecera>
+          <![CDATA[OTROS PUNTOS RELACIONADOS CON EL ARRENDAMIENTO DE VEH&Iacute;CULOS]]>
+        </cabecera>
+        <valor>
+          <![CDATA[
+           <table style="margin: 0 -45px">
+						<tr style="Text-align: justify;">
+							<td>
+								<ol style="list-style-type: lower-latin; Text-align: justify; font-size:8pt; font-family: Arial, Helvetica Neue, Helvetica, sans-serif;">
+									<li>La responsabilidad del Distribuidor con respecto al arrendamiento se limita a pagar el precio de los Veh&iacute;culos de  conformidad
+                  con las instrucciones que reciba del Cliente.</li>
+									<li>Todos los pagos incluyendo el de las rentas deber&aacute;n de ser hechos en el domicilio del Distribuidor  mencionado en la 
+                  cl&aacute;usula 18 de &eacute;ste contrato o en el que le notifique  por escrito el Distribuidor al Cliente</li>
+                  <li>El Cliente se obliga a documentar los pagos parciales de conformidad con el presente contrato mediante la suscripci&oacute;n de uno o m&aacute;s pagar&eacute;s en
+                  favor del Distribuidor.</li>
+									[PUNTO_OBLIGADOS]
+								</ol>
+							</td>
+						</tr>
+					</table>]]>
+        </valor>
+      </clausula>
+      <clausula id="6">
+        <cabecera>
+          <![CDATA[CLIENTE]]>
+        </cabecera>
+        <valor>
+          <![CDATA[
+          <table style="margin:5px 0 5px 30px; Text-align: justify; font-size:8pt; font-family: Arial, Helvetica Neue, Helvetica, sans-serif;"><tr style="Text-align: justify;"><td>
+          El Cliente reconoce y conviene en lo siguiente:</td></tr>
+          <tr style="margin:0 0 0 -70px; Text-align: justify;"><td>
+            <ol style="list-style-type: lower-latin; Text-align: justify; font-size:8pt; font-family: Arial, Helvetica Neue, Helvetica, sans-serif;">
+							<li>Los Veh&iacute;culos deber&aacute;n ser usados y operados por el Cliente, s&oacute;lo en el curso normal y ordinario de su negocio y sin violar las leyes o reglamentos, incluyendo pesos y dimensiones legales.  Cuando un Veh&iacute;culo es operado por el Cliente con un semirremolque u otro equipo no incluido en el Anexo "A" o no mantenido por el Distribuidor bajo un Contrato separado, el Cliente conviene que dicho semirremolque  y/o equipo estar&aacute; en buenas condiciones de operaci&oacute;n. Los Veh&iacute;culos no deber&aacute;n ser operados de manera descuidada o abusiva, fuera de un camino o carretera en buenas condiciones, con la llanta ponchada, indebidamente cargado, o cargado m&aacute;s all&aacute; del peso bruto vehicular o combinado (PBV / PBC) recomendado por el fabricante como se muestra en el Anexo "A" aplicable. Los Veh&iacute;culos no deber&aacute;n ser usados para transportar ning&uacute;n bien o material considerado peligroso o riesgoso por ser venenoso, inflamable, explosivo o fisionable, sin el Consentimiento escrito del Distribuidor, as&iacute; como tampoco deber&aacute; transportar bienes prohibidos en su consumo o su tenencia por la Ley. Sin considerar cualquier cl&aacute;usula de este Contrato, el Cliente deber&aacute; indemnizar y mantener al Distribuidor libre de toda responsabilidad derivada de reclamo, p&eacute;rdida o da&ntilde;os, incluyendo el costo de un veh&iacute;culo substituto y otros gastos resultantes de una violaci&oacute;n a la cl&aacute;usula 6.a.  El Cliente ser&aacute; responsable por todos los gastos de gr&uacute;a y traslado de cualquier Veh&iacute;culo atascado cuando &eacute;ste no est&aacute; en posesi&oacute;n del Distribuidor o dentro de sus instalaciones.</li>
+							<li>Cada Veh&iacute;culo ser&aacute; operado solo de una manera segura y cuidadosa, por un chofer operador con licencia federal de al menos 18 a&ntilde;os de edad, que sea empleado de el Cliente, que este sujeto a su exclusiva direcci&oacute;n y control y que posea las aptitudes y que cumpla con los requisitos establecidos por autoridades federales o estatales. Que sea aprobado previamente por el Distribuidor. Los ch&oacute;feres operadores del Cliente deber&aacute;n en todo momento cumplir con los puntos de este Contrato que establecen est&aacute;ndares de operaci&oacute;n y cualquier otra regla o procedimiento establecido por el Distribuidor, asimismo deber&aacute; preparar y firmar todos los reportes requeridos por el Distribuidor.  El Cliente se asegurar&aacute; de que los Veh&iacute;culos no ser&aacute;n operados por un chofer operador en posesi&oacute;n o bajo la influencia del alcohol o cualquier droga que pueda menguar la habilidad del chofer operador y conviene en rembolsar totalmente al Distribuidor las cantidades por p&eacute;rdidas o da&ntilde;os de los Veh&iacute;culos, bienes o personas incluyendo gastos relacionados con &eacute;stos s&iacute; los Veh&iacute;culos son operados en violaci&oacute;n con esta cl&aacute;usula. En caso de recibir una notificaci&oacute;n escrita del Distribuidor especificando cualquier manejo descuidado, impropio o abusivo de cualquier chofer operador y cancelando la autorizaci&oacute;n a dicho chofer operador como operador autorizado por el Distribuidor, el Cliente inmediatamente remover&aacute; a dicho individuo como chofer operador de los Veh&iacute;culos. En caso de que el Cliente no cumpliere con lo arriba mencionado o no pueda hacerlo por existir un contrato celebrado con terceras personas en representaci&oacute;n del chofer operador : (1) El Cliente deber&aacute;, no obstante alg&uacute;n otro recurso del Distribuidor o cl&aacute;usula de este Contrato, reembolsarle totalmente al Distribuidor por cualquier p&eacute;rdida o gasto, sufrido por el Distribuidor, por da&ntilde;o a cualquier Veh&iacute;culo o bienes, o muerte o lesi&oacute;n a cualquier persona en el momento en que el Veh&iacute;culo estaba siendo operado por dicho individuo y liberar&aacute;, indemnizar&aacute; y mantendr&aacute; al Distribuidor y al due&ntilde;o completamente libres de toda responsabilidad por cualquier reclamo o acci&oacute;n tomada por muerte o lesi&oacute;n a personas, as&iacute; como por da&ntilde;o o p&eacute;rdida de bienes derivada del uso u operaci&oacute;n de cualquier Veh&iacute;culo en el momento de ser operado por dicho individuo, no obstante que el Distribuidor pueda ser se&ntilde;alado como responsable por proveer y mantener un seguro de responsabilidad civil; y (2) el Distribuidor puede, si as&iacute; lo decide, en cualquier momento y d&aacute;ndole al Cliente treinta d&iacute;as previa notificaci&oacute;n escrita, terminar cualquier cobertura de seguro de responsabilidad civil prove&iacute;da por el Distribuidor de acuerdo a este Contrato, y puede, si as&iacute; lo desea con respecto a cada Veh&iacute;culo, incrementarle el monto de la responsabilidad por da&ntilde;o f&iacute;sico al Cliente a un monto igual al valor depreciado calculado de acuerdo con la cl&aacute;usula de terminaci&oacute;n de este Contrato.La operaci&oacute;n de cualquier Veh&iacute;culo por el Cliente, sus empleados, agentes o cualquier otra persona autorizada, en violaci&oacute;n a lo convenido con respecto al uso y a las restricciones al chofer o a cualquier otra cl&aacute;usula de este contrato, est&aacute; expresamente prohibido, otorg&aacute;ndole el derecho al Distribuidor de volver a tomar posesi&oacute;n del Veh&iacute;culo sin notificaci&oacute;n previa y sin reducci&oacute;n en la renta.</li>
+							<li>El Cliente deber&aacute; devolver cada Veh&iacute;culo al Distribuidor para inspecci&oacute;n, servicio, lavado, reparaciones y mantenimiento en el Taller de Servicio indicado en el Anexo "A" aplicable, en los tiempos y con la frecuencia que han acordado las partes en el programa de servicio. El Cliente no deber&aacute; permitir que nadie salvo el Distribuidor o personas expresamente autorizadas por el Distribuidor, haga reparaciones o ajustes al Veh&iacute;culo, incluyendo gobernadores de los sistemas de combustible y accesorios.</li>
+							<li>Cuando menos una vez al d&iacute;a y cada vez que se cargue combustible, el Cliente deber&aacute; verificar y corregir la presi&oacute;n de las llantas, niveles de aceite, refrigerante, engrasado y todos los dem&aacute;s fluidos y lubricantes necesarios para el buen funcionamiento de los Veh&iacute;culos. El costo de estos servicios correr&aacute; por cuenta del Cliente excepto cuando se hagan en las fechas fijadas por el Distribuidor para servicio y mantenimiento del Veh&iacute;culo.  El Cliente conviene en rembolsar al Distribuidor por todos los costos en que incurri&oacute; este &uacute;ltimo, que fueron causados por cualquier incumplimiento por parte del Cliente, para dar debido cumplimiento a lo se&ntilde;alado en este inciso.</li>
+							<li>En todos los casos en donde el mantenimiento de emergencia, reparaciones o ajustes al Veh&iacute;culo sean necesarios, el Cliente notificar&aacute; al Distribuidor del problema y de la ubicaci&oacute;n del Veh&iacute;culo lo m&aacute;s pronto posible, y deber&aacute; seguir las instrucciones del Distribuidor concernientes a reparaciones de emergencia y servicios.  El Cliente acepta que el Distribuidor no ser&aacute; responsable por ninguna reparaci&oacute;n o servicio (incluyendo cambio de llanta), a menos que dichas reparaciones o servicios hayan sido realizadas conforme a la cl&aacute;usula 4(b) de este contrato.</li>
+							<li>El Cliente deber&aacute; a la brevedad proveer al Distribuidor los estados financieros recientes y otras informaciones financieras requeridas por el Distribuidor de tiempo en tiempo.</li>
+							<li>El Cliente reconoce que el Distribuidor puede a su discreci&oacute;n, arrendar cualquier Veh&iacute;culo para subarrendarlo al Cliente o financiar la adquisici&oacute;n de cada Veh&iacute;culo.  Si cualquier Veh&iacute;culo es arrendado por el Distribuidor, el titular del Veh&iacute;culo (Due&ntilde;o) deber&aacute; tener los mismos derechos e indemnizaciones de parte del Cliente de conformidad con este contrato como Distribuidor.</li>
+							<li>Queda obligado expresamente el Cliente a obtener las licencias,  permisos y dem&aacute;s documentaci&oacute;n que se requiera de acuerdo con las leyes, reglamentos o circulares que sean aplicables al respecto, relativas a los Veh&iacute;culos arrendados, debiendo igualmente pagar por su cuenta los derechos, impuestos y erogaciones en general que por tal concepto deban ser pagados a las autoridades que correspondan, incluyendo de manera enunciativa mas no limitativa, el registro, tenencia, placas, verificaciones y otros requerimientos legales de cada Veh&iacute;culo a nombre del Distribuidor o del Due&ntilde;o como lo requiera el Distribuidor.  En caso de incumplimiento a lo dispuesto por el p&aacute;rrafo precedente por causas imputables al Cliente, sin perjuicio de la facultad que tiene el Distribuidor para rescindir el presente contrato, este &uacute;ltimo podr&aacute; pagar las sumas mencionadas por cuenta y orden del Cliente, cantidades que &eacute;ste deber&aacute; reintegrar al Distribuidor en cuanto el mismo se lo solicite.</li>
+							<li>El Cliente deber&aacute; proveer y pagar por todas las licencias y permisos federales y estatales requeridos para la operaci&oacute;n legal de los Veh&iacute;culos dentro de la Rep&uacute;blica Mexicana. A menos que se indique y que se especifiquen los pa&iacute;ses en el Anexo "A", el cliente no podr&aacute; operar el Veh&iacute;culo fuera de la Rep&uacute;blica Mexicana. En caso de que el cliente se encuentre autorizado para operar el Veh&iacute;culo en otro pa&iacute;s, ser&aacute; responsabilidad exclusiva del Cliente cubrir todos los requerimientos legales y costos  que se exijan para tales efectos.</li>
+							<li>El Cliente deber&aacute; dar el mantenimiento necesario a los interiores del Veh&iacute;culo.  S&iacute;, cuando un Veh&iacute;culo est&eacute; en servicio, el Distribuidor, a su discreci&oacute;n, considera que el Veh&iacute;culo requiere lavado y mantenimiento de interiores, el Distribuidor puede lavar el Veh&iacute;culo y cobrar al Cliente por dicho servicio con base en la cl&aacute;usula 9.b de este Contrato.</li>
+							<li>Los Veh&iacute;culos deber&aacute;n ser prontamente devueltos al Distribuidor en los Talleres de Servicio en la fecha de expiraci&oacute;n o cancelaci&oacute;n de este Contrato.  Todos los Veh&iacute;culos devueltos deber&aacute;n tener los interiores limpios y deber&aacute;n estar sin vidrios rotos ni estrellados, sin rayones en la pintura, sin abolladuras, ni vestiduras rasgadas o rotas. Todos los instrumentos y accesorios internos como indicadores del tablero,  estereo, bocinas, antenas funcionando y en buen estado. Si el Cliente no devuelve los Veh&iacute;culos en dichas condiciones, se le cobrar&aacute; al Cliente de acuerdo con la cl&aacute;usula 9.b, el costo incurrido por el Distribuidor para reparar el Veh&iacute;culo.  El Distribuidor tendr&aacute; en todo momento y sin necesidad de previo aviso, el derecho de inspecci&oacute;n sobre los Veh&iacute;culos con el fin de verificar que se encuentren en cumplimiento con las disposiciones de este contrato.</li>
+							<li>Los Veh&iacute;culos estar&aacute;n domiciliados en la direcci&oacute;n indicada y usados exclusivamente para los prop&oacute;sitos indicados en el Anexo "A".  El domicilio y el uso esperado de los Veh&iacute;culos son factores inherentes en la determinaci&oacute;n de los cargos establecidos en este Contrato y cualquier cambio de domicilio o de uso del Veh&iacute;culo sin el previo consentimiento escrito del  Distribuidor ser&aacute; considerado un incumplimiento de este Contrato.</li>
+							<li>El Cliente no tiene, ni podr&aacute;, por este Contrato, adquirir alg&uacute;n derecho de propiedad o inter&eacute;s sobre los Veh&iacute;culos.  El Cliente no podr&aacute; afectar o gravar de alguna manera el Veh&iacute;culo. El Cliente deber&aacute; notificar inmediatamente al Distribuidor en caso de que un tercero presente dicha petici&oacute;n o reclamo.</li>
+							<li>En caso de que las leyes o reglamentos federales, estatales o locales requieran equipo de control de emisiones, el costo de dicho equipo y su instalaci&oacute;n ser&aacute; a expensas del Cliente, y el cargo por mantenimiento o servicio de dicho equipo ser&aacute; a&ntilde;adido a los cargos hechos en este Contrato.  Se entiende y se acuerda que el Distribuidor no asume ninguna responsabilidad para determinar qu&eacute; equipo es necesario bajo las leyes aplicables.</li>
+							<li>El Cliente deber&aacute; requerirle a sus ch&oacute;feres operadores que sometan reportes de inspecci&oacute;n de viaje del Veh&iacute;culo al Distribuidor, al termino de cada viaje.  El Cliente deber&aacute; entregar al Distribuidor el reporte de recorrido o bit&aacute;cora de viaje del  chofer operador dentro de los siete d&iacute;as siguientes a partir del t&eacute;rmino de cada viaje.</li>
+							<li>El Cliente deber&aacute; pagar por cualquier licencia especial, cuota, o impuesto requerido por el negocio del Cliente y que resulten de la operaci&oacute;n y uso de cualquier Veh&iacute;culo, incluyendo impuestos por kilometraje (millaje), impuestos por toneladas de kilometraje (millaje), carreteras o casetas de cobro o cualquier otro impuesto o cuota que cause ahora o  en el futuro el uso y goce de cualquier Veh&iacute;culo cubierto por este Contrato.</li>
+							<li>Cada Veh&iacute;culo ser&aacute; operado bajo la direcci&oacute;n y control exclusivo del Cliente en todo momento durante el t&eacute;rmino de este Contrato.  Ni el Cliente, ni el chofer operador ser&aacute;n considerados agente, dependiente o empleado del Distribuidor  en ninguna forma o por ning&uacute;n motivo cualquiera que &eacute;ste sea.</li>
+							<li>En el caso de que el gasto de  llantas de los veh&iacute;culos  sea por cuenta del cliente, estos deber&aacute;n de devolverse al t&eacute;rmino del contrato con  llantas radiales con  una profundidad m&iacute;nima en el eje delantero de 5 mil&iacute;metros y originales NO recapeadas; en el caso de los  ejes  traseros como m&iacute;nimo de  3 mil&iacute;metros. Todas en buenas condiciones de operaci&oacute;n.</li>
+							<li>Los principales componentes del cami&oacute;n, as&iacute; como las llantas se encuentran marcados y asentados en un acta de nacimiento de la unidad. En el caso de que alguno de estos componentes fuera cambiado sin consentimiento del distribuidor, se reemplazar&aacute; el componente por uno nuevo con cargo para el cliente y le ser&aacute; notificado.</li>								
+						</ol>
+          </td></tr></table>
+          ]]>
+        </valor>
+      </clausula>
+      <clausula id="7">
+        <cabecera>
+          <![CDATA[CESION]]>
+        </cabecera>
+        <valor>
+          <![CDATA[<table style="margin:5px 0 5px 30px; Text-align: justify; font-size:8pt; font-family: Arial, Helvetica Neue, Helvetica, sans-serif;"><tr style="Text-align: justify;"><td>
+          El Distribuidor puede ceder este Contrato, sus derechos aqu&iacute; descritos y todas o cualquier parte de las rentas, cargos y todas las dem&aacute;s reclamaciones o 
+          derechos a dinero, o cr&eacute;ditos debidos ahora o en un futuro en cualquier momento bajo este contrato. Previa notificaci&oacute;n de dicha cesi&oacute;n, el Cliente 
+          deber&aacute; hacer todos los pagos adeudados al cesionario sin poder llevar a cabo compensaci&oacute;n alguna el Cliente, reconvenir o interponer cualquier defensa de 
+          cualquier tipo.  Los derechos del Cliente, de conformidad con este contrato se considerar&aacute;n en todo momento como sujetos y subordinados a dicha cesi&oacute;n.</td></tr>
+          <tr style="Text-align: justify;"><td>Este Contrato ser&aacute; obligatorio para las partes aqu&iacute; referidas, sus sucesores, representantes legales y cesionarios.  El 
+          Cliente conviene en notificar inmediatamente y con anterioridad por escrito al Distribuidor de todos los cambios substanciales en los accionistas del Cliente o de cualquier 
+          transferencia de importancia de los activos del negocio del Cliente.  El Cliente no tendr&aacute; derecho a subarrendar ninguno de los Veh&iacute;culos arrendados bajo este 
+          Contrato, ni de ceder este Contrato ni ning&uacute;n inter&eacute;s expresamente contenido en el presente Contrato sin el consentimiento previo y por escrito del Distribuidor.  
+          Cualquier intento para llevar a cabo lo anterior ser&aacute; nulo y no tendr&aacute; efecto legal alguno.  El Distribuidor puede ceder este Contrato sin la aprobaci&oacute;n 
+          del Cliente.  El cesionario del Distribuidor ser&aacute; titular de todos los derechos, poderes, reclamaciones y recursos resultantes de este Contrato.
+          </td></tr></table>]]>
+        </valor>
+      </clausula>
+      <clausula id="8">
+        <cabecera>
+          <![CDATA[IMPUESTOS]]>
+        </cabecera>
+        <valor>
+          <![CDATA[<table style="margin:5px 0 5px 30px; Text-align: justify; font-size:8pt; font-family: Arial, Helvetica Neue, Helvetica, sans-serif;"><tr style="Text-align: justify;"><td>
+          El Cliente acuerda pagar:  (1) impuestos sobre ventas, uso, recibos, valor agregado o impuestos similares, gravados ahora o en un futuro sobre el uso de Veh&iacute;culos, 
+          renta de los mismos o por cualquier otro cargo acumulado bajo este contrato;  (2) por cualquier aumento en cuotas de registro y licencia, cuotas de inspecci&oacute;n de 
+          veh&iacute;culos, impuestos por permisos de combustible, impuestos o derechos de carga  e impuestos de tenencia;  y (3) cualquier impuesto nuevo o adicional o cuotas 
+          gubernamentales adoptadas despu&eacute;s de la fecha de ejecuci&oacute;n del Anexo "A" aplicable.</td></tr></table>]]>
+        </valor>
+      </clausula>
+      <clausula id="9">
+        <cabecera>
+          <![CDATA[CARGOS]]>
+        </cabecera>
+        <valor>
+          <![CDATA[<table style="margin: 0 -45px">
+						<tr style="Text-align: justify;">
+							<td>
+								<ol style="list-style-type: lower-latin;">
+                  <li>El Cliente est&aacute; de acuerdo en pagar al Distribuidor todos los cargos, gastos y reembolsos mencionados en este Contrato en d&oacute;lares o su equivalente en moneda nacional al tipo de cambio para pago de obligaciones del d&iacute;a en que se  efect&uacute;a el pago, publicado en el Diario Oficial de la Federaci&oacute;n.</li>
+									<li>El Cliente conviene en pagar al Distribuidor, dentro de los siguientes <b>[DIAS_PRONTO_PAGO] d&iacute;a(s)</b> a partir de la emisi&oacute;n de la factura del Distribuidor sin deducci&oacute;n o compensaci&oacute;n alguna:
+								    <ol style="list-style-type: lower-roman; margin:5px 0 5px -25px; Text-align: justify; font-size:8pt; font-family: Arial, Helvetica Neue, Helvetica, sans-serif;">
+									    <li>La renta mensual calculada con los cargos fijos y cargos por  kilometraje mensual que se mencionan en el Anexo "A" de cada veh&iacute;culo.</li>
+									    <li>Cualquier aumento en seguros o primas instituidos despu&eacute;s de la celebraci&oacute;n del Anexo "A" correspondiente.</li>
+									    <li>Cualquier cargo por lavado y mantenimiento incurrido de acuerdo con la <b>cl&aacute;usula 6 j</b> de este Contrato.</li>
+									    <li>Cualquier costo incurrido por el Distribuidor para reparar los Veh&iacute;culos devueltos en las condiciones indicadas en la cl&aacute;usula 6.k de este Contrato.</li>
+									    <li>Cargos por exceso de kilometraje, que ser&aacute;n determinados por las lecturas del hubod&oacute;metro u od&oacute;metro. El Cliente deber&aacute; reportarle inmediatamente al Distribuidor cualquier falla en un hubod&oacute;metro u od&oacute;metro. Los kil&oacute;metros recorridos por cualquier per&iacute;odo en que haya existido una falla ser&aacute;n determinados a elecci&oacute;n del Distribuidor por:
+										    <ol style="list-style-type: upper-latin; margin:5px 0 5px -48px; Text-align: justify; font-size:8pt; font-family: Arial, Helvetica Neue, Helvetica, sans-serif;">
+											    <li>Reportes y bit&aacute;coras de viaje del Cliente.</li>
+											    <li>La cantidad de combustible consumido y el promedio de kil&oacute;metros por litro por los treinta (30) d&iacute;as anteriores.</li>
+											    <li>Cualquier otro m&eacute;todo razonable.</li>
+										    </ol></li>
+									    <li>Si el Cliente incurre en mora en cualquier obligaci&oacute;n de pago incurrida en este contrato y sus Anexos A, se obliga a pagar a el Distribuidor intereses moratorios calculados a raz&oacute;n de multiplicar la Tasa de Referencia por el factor, ambos establecidos en cada Anexo A, desde la fecha que se de el incumplimiento hasta la fecha de su pago total, m&aacute;s el IVA correspondiente.</li>
+									    <li>El pago inicial, dep&oacute;sito y comisi&oacute;n por apertura  determinado en los Anexo " A " ( reverso )  de este  contrato  por cada veh&iacute;culo.</li>
+                    </ol>
+                  </li>
+                </ol></td></tr></table>]]>
+        </valor>
+      </clausula>
+      <clausula id="10">
+        <cabecera>
+          <![CDATA[AJUSTE POR INFLACI&Oacute;N]]>
+        </cabecera>
+        <valor>
+          <![CDATA[<table style="margin:5px 0 5px 30px; Text-align: justify; font-size:8pt; font-family: Arial, Helvetica Neue, Helvetica, sans-serif;"><tr style="Text-align: justify;"><td>
+          El Cliente esta de acuerdo en que por cada incremento del 1 por ciento del &iacute;ndice Nacional de Precios al Consumidor (Consumer Price Index), publicado por la 
+          Direcci&oacute;n de Estad&iacute;sticas Laborales de la Secretar&iacute;a del Trabajo de los E.E.U.U.A. (Bureau of Labor Statistics of the US Department of labor), que 
+          est&eacute; por encima de la cifra del &iacute;ndice base del Anexo "A" de este Contrato, el cargo fijo por cada Veh&iacute;culo ser&aacute; ajustado hacia arriba en dicha 
+          proporci&oacute;n. En caso de que el mencionado &iacute;ndice sea descontinuado, otro &iacute;ndice de ajuste de costo de los E.E.U.U.A. mutuamente aceptado ser&aacute; 
+          escogido para ajustar los cargos referidos.</td></tr></table>]]>
+        </valor>
+      </clausula>
+      <clausula id="11">
+        <cabecera>
+          <![CDATA[SEGUROS]]>
+        </cabecera>
+        <valor>
+          <![CDATA[<ol style="list-style-type: lower-latin; Text-align: justify; margin: 0 0 0 -45px">
+										<li>Seguro de Responsabilidad Civil.
+											<table style="margin: 0 0 0 50px; Text-align: justify;">
+												<tr style="Text-align: justify;">
+													<td>Si as&iacute; se establece en el Anexo "A" de este Contrato, el Cliente deber&aacute; mantener a su cargo en todo momento y durante el tiempo de vigencia de este Contrato, un seguro contra da&ntilde;os y responsabilidad civil por lesiones f&iacute;sicas y da&ntilde;o en propiedad cubriendo los Veh&iacute;culos con l&iacute;mites no menores que los especificados en el Anexo "A" de este Contrato. Dicho seguro deber&aacute; proporcionar cobertura b&aacute;sica contratada con una compa&ntilde;&iacute;a aseguradora aceptable para el Distribuidor y deber&aacute; incluir como asegurados a el Distribuidor y todas las dem&aacute;s partes determinadas por &eacute;l Distribuidor como aseguradas , &oacute; con endoso preferencial  a nombre del distribuidor. Deber&aacute; proveer una renuncia de subrogaci&oacute;n por parte de la compa&ntilde;&iacute;a aseguradora en favor de el Distribuidor.  Por estar cubiertos por el seguro de responsabilidad civil  el Distribuidor no incurrir&aacute; en ninguna responsabilidad, ni asumir&aacute; ninguna direcci&oacute;n o control sobre el uso y operaci&oacute;n de los Veh&iacute;culos arrendados a trav&eacute;s de este acuerdo. El Cliente indemnizar&aacute; y mantendr&aacute; a el Distribuidor libre de toda responsabilidad por cualquier reclamaci&oacute;n, demanda u obligaciones que resulten de la propiedad, uso, mantenimiento u operaci&oacute;n de los Veh&iacute;culos que no est&eacute;n cubiertos por dicho seguro o est&eacute;n mas all&aacute; de los l&iacute;mites fijados en el Anexo "A" de este Contrato.</td>
+												</tr>
+											</table>
+                    </li>
+										<li>RESPONSABILIDAD POR DA&Ntilde;OS.
+                      <table style="margin: 0 5px 0 -68px; Text-align: justify;">
+												<tr>
+											<ol style="list-style-type: lower-roman; Text-align: justify;  margin: 0 0 0 -75px;">
+												<li style="margin:10px 0 5px;">El Cliente  ser&aacute; responsable por  todos  los da&ntilde;os o p&eacute;rdida de los Veh&iacute;culos por cualquier causa  hasta el monto del deducible especificado en el Anexo "A" correspondiente de este Contrato y en caso de que por cualquier raz&oacute;n la compa&ntilde;&iacute;a aseguradora no cubra la cantidad asegurada, el Cliente tambi&eacute;n ser&aacute; responsable por el monto asegurado;  as&iacute; como tambi&eacute;n ser&aacute; responsable de:  (a) cualquier da&ntilde;o intencionado al Veh&iacute;culo hecho por el Cliente, sus empleados, agentes o las personas autorizadas por el Cliente con respecto al Veh&iacute;culo;  (b) cualquier da&ntilde;o al Veh&iacute;culo que resulte de o en relaci&oacute;n con cualquier controversia laboral;  (c) apropiaci&oacute;n il&iacute;cita de cualquier Veh&iacute;culo por un agente o empleado del Cliente que no se considere robo en t&eacute;rminos de esta cl&aacute;usula;  y (d) cualquier p&eacute;rdida por robo de herramientas, p&eacute;rdida de lonas, accesorios, llantas de refacci&oacute;n y cualquier otro equipo.</li>
+												<li style="margin:10px 0 5px;">Si as&iacute; se establece en el Anexo "A" de este Contrato, el Cliente proveer&aacute; y mantendr&aacute; a sus expensas, cobertura de da&ntilde;os f&iacute;sicos por choque, colisi&oacute;n, incendio, robo y causas com&uacute;nmente cubiertas por un seguro de da&ntilde;os o de cobertura amplia, por el precio total del Veh&iacute;culo , que en ning&uacute;n caso ser&aacute; menor que el que aparece en el Anexo "A" de este Contrato con un monto deducible que no exceda del monto especificado en el Anexo "A".  La cobertura mencionada deber&aacute; estar con una compa&ntilde;&iacute;a aseguradora satisfactoria para el Distribuidor y deber&aacute; nombrar a Distribuidor, Due&ntilde;o, o cualquier otra parte designada por escrito por el Distribuidor como el beneficiario en cuanto al pago por parte de la compa&ntilde;&iacute;a de seguros.</li>
+											</ol></tr></table>
+                    </li>
+										<li>El Cliente deber&aacute;, con anterioridad a la entrega de cada Veh&iacute;culo por parte del Distribuidor, entregar a el Distribuidor un escrito en la forma autorizada por el mismo con respecto a cada Veh&iacute;culo, certificando: i) que la cobertura del seguro no podr&aacute; ser cancelada, terminada o cambiada, sin antes dar un aviso con 30 d&iacute;as de anticipaci&oacute;n al Distribuidor; ii) que todas las p&eacute;rdidas bajo las p&oacute;lizas de da&ntilde;os f&iacute;sicos deber&aacute;n de ser pagadas solamente a el Distribuidor o cualquier otra parte designada por escrito por el mismo; iii) que ning&uacute;n acto u omisi&oacute;n del Cliente o de cualquiera de sus funcionarios, agentes, empleados o representantes deber&aacute;n afectar la obligaci&oacute;n del asegurador para pagar el monto total por cualquier p&eacute;rdida. En el caso de que el Cliente no cumpla con proveer y mantener cualquiera de los seguros requeridos bajo este contrato o no cumpla en proporcionar al Distribuidor la evidencia requerida de dicho seguro, el Distribuidor est&aacute; autorizado pero no obligado a obtener dicho seguro en representaci&oacute;n del Cliente y el Cliente conviene en pagar a el Distribuidor por el costo del seguro as&iacute; obtenido y opcionalmente, el Distribuidor podr&aacute; terminar anticipadamente este contrato de acuerdo con lo previsto en la cl&aacute;usula 13.
+											<table style="margin: 0 5px 0 50px; Text-align: justify;">
+												<tr style="Text-align: justify;">
+													<td>El Distribuidor no ser&aacute; responsable por p&eacute;rdida de o da&ntilde;o a cualquier bien, cargamento o propiedad que se encuentre dentro o sobre cualquier Veh&iacute;culo en cualquier tiempo o lugar. El Cliente deber&aacute; rembolsar al Distribuidor por p&eacute;rdida de cualquier herramienta, lonas, accesorios, llantas de refacci&oacute;n o cualquier otro equipo proporcionado por el Distribuidor.</td>
+												</tr>
+											</table>
+                    </li>
+										<li>En evento de cualquier accidente, colisi&oacute;n o choque que involucre a cualquier Veh&iacute;culo o el robo de cualquier Veh&iacute;culo el Cliente deber&aacute;: i) notificar inmediatamente por tel&eacute;fono al Distribuidor ii) obligar al Chofer  operador  a  hacer un reporte personal escrito detallado en la oficina del Distribuidor lo m&aacute;s pronto posible  y iii) dar toda la asistencia y ayuda posible al Distribuidor y al asegurador requerida por cualquiera de ellos para investigar o defender todos las reclamaciones y demandas relacionadas.</li>
+									</ol>
+                  <table style="margin: 0 50px; Text-align: justify;">
+										<tr style="Text-align: justify;">
+											<td>El Cliente, sus agentes y sus empleados cooperar&aacute;n con el Distribuidor y cualquier asegurador en el reporte, investigaci&oacute;n, proceso o defensa de cualquier manera razonablemente requerida por el Distribuidor con respecto a todos los accidentes, reclamaciones o demandas derivadas de la operaci&oacute;n de los Veh&iacute;culos y se le enviar&aacute;n al Distribuidor lo m&aacute;s pronto posible copia de los papeles o notificaciones enviadas al Cliente, sus agentes o empleados y cumplir&aacute;n con los requerimientos de notificaci&oacute;n de la empresa aseguradora del Cliente.</td>
+										</tr>
+										<tr style="Text-align: justify;">
+											<td>En caso de accidente, p&eacute;rdida de la posesi&oacute;n o robo de los Veh&iacute;culos, el Distribuidor como tenedor de los derechos de propiedad de los Veh&iacute;culos arrendados, podr&aacute; autorizar al Cliente a costo del Cliente, para llevar a cabo todos los tramites necesarios para recuperar los Veh&iacute;culos, liberando al Distribuidor de cualquier responsabilidad al respecto.</td>
+										</tr>	
+										<tr style="Text-align: justify;">
+											<td>En cualquier evento mencionado anteriormente, a&uacute;n cuando sea originado por causas de fuerza mayor o caso fortuito, el Cliente no ser&aacute; liberado de sus obligaciones de pago para con el Distribuidor de todas las rentas que se le deban de conformidad con este Contrato.</td>
+										</tr>	
+										<tr style="Text-align: justify;">
+											<td>El Cliente por medio de la presente cl&aacute;usula irrevocablemente autoriza al  Distribuidor a hacer, presentar y ajustar reclamaciones ante su empresa aseguradora por da&ntilde;os al Veh&iacute;culo y endosar en nombre del Cliente en cualquier cheque u otro elemento de pago por los beneficios obtenidos de dichas p&oacute;lizas de seguros.  El Cliente, en esta acto es autorizado, a menos que el Distribuidor exprese lo contrario por escrito a: 1) hacer y presentar en tiempo todas las reclamaciones de conformidad con la p&oacute;liza de seguro; y 2) resolver, poner en orden y ajustar dichas reclamaciones pero s&oacute;lo con el previo consentimiento por escrito del Distribuidor, en caso de que el Cliente est&eacute; incumpliendo este contrato.</td>
+										</tr>	
+									</table>]]>
+        </valor>
+      </clausula>
+      <clausula id="12">
+        <cabecera>
+          <![CDATA[NO RESPONSABILIDAD]]>
+        </cabecera>
+        <valor>
+          <![CDATA[<table style="margin:5px 0 5px 30px; Text-align: justify; font-size:8pt; font-family: Arial, Helvetica Neue, Helvetica, sans-serif;"><tr style="Text-align: justify;"><td>
+            El Cliente conviene indemnizar y mantener a el Distribuidor libre de toda responsabilidad contra:</td></tr>
+					    <tr style="Text-align: justify;">
+						    <td>
+							    <ol style="list-style-type: lower-latin; margin: 0 0 0 -72px">
+								    <li>Cualquier reclamaci&oacute;n o acci&oacute;n originada por muerte o lesiones a terceras personas, p&eacute;rdidas o da&ntilde;os en propiedad, originados por la propiedad, uso u operaci&oacute;n de cualquier Veh&iacute;culo cubierto por &eacute;ste Contrato.</li>
+								    <li>Toda responsabilidad por muerte o lesi&oacute;n del Cliente, sus empleados, ch&oacute;feres operadores, pasajeros o agentes , derivados de la propiedad, uso u operaci&oacute;n de cualquier Veh&iacute;culo cubierto por este Contrato.</li>
+								    <li>Cualquier responsabilidad por p&eacute;rdida causada por el Cliente o terceras personas por razones de retraso de entrega o no entrega de productos de propiedad del Cliente o transportados por el mismo.</li>
+								    <li>Toda responsabilidad por p&eacute;rdida o da&ntilde;os en equipo o accesorios usados en relaci&oacute;n con cualquier Veh&iacute;culo proporcionado bajo este Contrato.</li>
+								    <li>De cualquier responsabilidad incurrida como resultado de un incumplimiento de este Contrato o informaci&oacute;n falsa o imprecisa proporcionada por el Cliente.</li>
+								    <li>Todos los gastos y costos de cualquier tipo para la defensa del Distribuidor, incluyendo honorarios razonables de abogados, relacionados con cualquier demanda o reclamaci&oacute;n en que el Cliente otorga indemnizaci&oacute;n al Distribuidor bajo esta cl&aacute;usula o en cualquier otra cl&aacute;usula del mismo.</li>
+								    <li>La indemnizaci&oacute;n bajo esta cl&aacute;usula deber&aacute; aplicarse a cualquier p&eacute;rdida o da&ntilde;o resultante de cualquier evento que ocurra durante la vigencia de este Contrato, no obstante cualquier terminaci&oacute;n del mismo y deber&aacute; ser en adici&oacute;n a cualquier responsabilidad que el Cliente pueda tener con el Distribuidor.</li>
+							    </ol>
+						    </td>
+					    </tr>
+						</table>]]>
+        </valor>
+      </clausula>
+      <clausula id="13">
+        <cabecera>
+          <![CDATA[TERMINACION]]>
+        </cabecera>
+        <valor>
+          <![CDATA[<ol style="list-style-type: lower-latin; margin: 0 0 0 -40px; Text-align: justify;">
+								<li>En caso de que el Cliente pretenda devolver veh&iacute;culos a el  Distribuidor en forma   anticipada a el plazo forzoso establecido en  el Anexo "A" del 
+                  Veh&iacute;culo en cuesti&oacute;n, el Cliente se obliga a pagar como pena convencional el monto que resulte de multiplicar por <b>[PORCENTAJE_PENALIZACION]</b> % la suma de
+                  los cargos fijos por la Renta del plazo forzoso no transcurrido a&uacute;n  (cargos fijos que se establecen en el Anexo "A" de dicho Veh&iacute;culo). Est&aacute; 
+                  cantidad nunca ser&aacute; inferior a el cargo fijo mensual correspondiente a tres meses.</li>
+								<li>INCUMPLIMIENTO O VIOLACI&Oacute;N.
+									<ol style="list-style-type: lower-roman; Text-align: justify; margin: 0 0 0 -63px;">
+												<li>Si el Cliente incumple o incurre en violaci&oacute;n de cualquiera de las obligaciones de este Contrato, o sea declarado insolvente, se vuelva deudor en un procedimiento de quiebra, haga una cesi&oacute;n en beneficio de acreedores, se le declare en quiebra, acepte el nombramiento de un s&iacute;ndico para su negocio,  permita o sufra una transferencia substancial de sus bienes,  el Distribuidor puede inmediatamente y sin notificaci&oacute;n o requerimiento alguno, tomar posesi&oacute;n de los Veh&iacute;culos junto con todo el equipo y accesorios que contengan.
+													<table style="margin: 0 0 0 80px; Text-align: justify;">
+														<tr style="Text-align: justify;">
+															<td>El Distribuidor tendr&aacute; derecho a entrar a las instalaciones en donde dichos Veh&iacute;culos puedan estar y remover, retener y negarse a volver a entregar los Veh&iacute;culos al Cliente hasta que dicho incumplimiento o violaci&oacute;n sea enmendada, sin que ninguna de estas acciones sea considerada un acto de terminaci&oacute;n y sin perjuicio a los otros recursos que el Distribuidor pueda ejercer.  El Cliente continuar&aacute; siendo responsable por los cargos acumulados durante el per&iacute;odo en que los Veh&iacute;culos fueron retenidos por el Distribuidor.</td>
+														</tr>
+													</table></li>
+												<li>El Distribuidor, en adici&oacute;n a sus otros recursos, est&aacute; autorizado a tomar posesi&oacute;n y retener cualquier propiedad, bien u otros art&iacute;culos de valor que pertenezcan al Cliente o est&eacute;n bajo su custodia o control, que est&eacute;n dentro, sobre o adheridos a un Veh&iacute;culo que el Distribuidor ha retenido o ha tomado en posesi&oacute;n.  El Distribuidor podr&aacute; retener dichos art&iacute;culos o situarlos en bodegas o almacenes a cargo del Cliente.</li>
+												<li>Si el incumplimiento o violaci&oacute;n del Cliente contin&uacute;a por siete (7) d&iacute;as despu&eacute;s de que la notificaci&oacute;n escrita al respecto ha sido enviada al Cliente, el Distribuidor puede terminar este Contrato con respecto de cualquier o todos los Veh&iacute;culos.  Desde la terminaci&oacute;n, el Distribuidor puede requerirle al Cliente el pago de la pena convencional conforme a lo dispuesto por la cl&aacute;usula 13.a, sin perjuicio a otros recursos que el Distribuidor pueda tener bajo este Contrato o por ley.</li>
+												<li>El Cliente deber&aacute; pagarle al Distribuidor, todos sus gastos y costas, incluyendo honorarios razonables de abogados, incurridos en la cobranza de montos adeudados por el Cliente o por hacer valer cualquier derecho del Distribuidor descrito en este contrato.</li>
+											</ol></li>
+								<li>En caso de que el Cliente, de acuerdo con esta cl&aacute;usula 13, sea requerido a pagar la pena convencional,  debe pagar al Distribuidor por cualquier cargo que se deba y no se encuentre pagado en t&eacute;rminos del presente Contrato, cualquier licencia no vigente, todos los impuestos aplicables y otros gastos previamente pagados por el Distribuidor en relaci&oacute;n con los Veh&iacute;culos, prorrateados a la fecha de su venta, incluyendo el IVA.  El Cliente no tendr&aacute; derecho a comprar ning&uacute;n Veh&iacute;culo cuando la vigencia del Anexo "A" correspondiente de este contrato ha finalizado.</li>
+							</ol>]]>
+        </valor>
+      </clausula>
+      <clausula id="14">
+        <cabecera>
+          <![CDATA[FUERZA MAYOR]]>
+        </cabecera>
+        <valor>
+          <![CDATA[<table style="margin:5px 0 5px 28px; Text-align: justify; font-size:8pt; font-family: Arial, Helvetica Neue, Helvetica, sans-serif;"><tr style="Text-align: justify;"><td>
+          El Distribuidor no ser&aacute; responsable por no cumplir en proveer cualquier Veh&iacute;culo, proveer Veh&iacute;culos substitutos y reparar cualquier compostura de los 
+          Veh&iacute;culos o proveer combustible para los Veh&iacute;culos si se encuentra imposibilitado por cualquier emergencia, guerras, incendio, manifestaciones, disputas 
+          laborales, leyes Federales, Estatales o Locales, reglamentos, decretos, circulares, apag&oacute;n, programas de ahorro de combustible, o cualquier otra causa fuera del control
+          del Distribuidor presente o futura. Sin perjuicio de la inhabilidad del Distribuidor en realizar sus obligaciones por las condiciones arriba expresadas, las obligaciones del 
+          Cliente establecidas por este Contrato deber&aacute;n continuar.</td></tr></table>]]>
+        </valor>
+      </clausula>
+      <clausula id="15">
+        <cabecera>
+          <![CDATA[DEPOSITARIA]]>
+        </cabecera>
+        <valor>
+          <![CDATA[[DEPOSITARIA]]]>
+        </valor>
+      </clausula>
+      <clausula id="16">
+        <cabecera>
+          <![CDATA[PROTECCI&Oacute;N DE DATOS PERSONALES]]>
+        </cabecera>
+        <valor>
+          <![CDATA[<table style="margin:5px 0 5px 28px; Text-align: justify; font-size:8pt; font-family: Arial, Helvetica Neue, Helvetica, sans-serif;"><tr style="Text-align: justify;"><td>
+          Las partes se obligan a tratar los datos personales que reciban una de la otra, como informaci&oacute;n confidencial, de conformidad con la Ley Federal de Protecci&oacute;n 
+          de Datos Personales en Posesi&oacute;n de los Particulares y los Avisos de Privacidad y Pol&iacute;ticas de la otra parte.</td></tr>
+          <tr style="Text-align: justify;"><td>Las partes manifiestan que no har&aacute;n uso distinto al establecido en los correspondientes Avisos de Privacidad y que resguardaran los datos
+          personales, de conformidad con las medidas de seguridad que tengan adoptadas para la protecci&oacute;n de su propia informaci&oacute;n.</td></tr>
+          <tr style="Text-align: justify;"><td>De conformidad con lo establecido en el art&iacute;culo 37 de la Ley Federal de Protecci&oacuten de Datos Personales en Posesi&oacute;n de
+          los Particulares, las partes se comprometen a no transferir su informaci&oacute;n personal a terceros sin su consentimiento, salvo las excepciones previstas en la referida Ley
+          y cuya transferencia se realice bajo los t&eacute;rminos que la misma establece.</td></tr>
+          <tr style="Text-align: justify;"><td>Las partes se asegurar&aacute;n de limitar el acceso a los datos personales solo a aquellos funcionarios, empleados, coordinadores, 
+          promotores, y representantes que requieran tener acceso a la informaci&oacute;n, ello, a fin de guardar la confidencialidad y seguridad de los datos personales.</td></tr></table>]]>
+        </valor>
+      </clausula>
+      <clausula id="17">
+        <cabecera>
+          <![CDATA[SEPARABILIDAD]]>
+        </cabecera>
+        <valor>
+          <![CDATA[<table style="margin:5px 0 5px 28px;Text-align: justify; font-size:8pt; font-family: Arial, Helvetica Neue, Helvetica, sans-serif;"><tr style="Text-align: justify;"><td>
+          Si en cualquier tiempo cualquier cl&aacute;usula de este Contrato es considerada ahora o en el futuro inv&aacute;lida, ilegal o no exigible de cualquier manera, la validez, 
+          legalidad o exigibilidad de las dem&aacute;s cl&aacute;usulas de este Contrato de ninguna manera ser&aacute;n afectadas o perjudicadas por las otras cl&aacute;usulas.  Las 
+          partes convienen en reemplazar cualquier cl&aacute;usula inv&aacute;lida, ilegal o no exigible de este Contrato, por cl&aacute;usulas legales y exigibles que logren lo m&aacute;s 
+          posible el esp&iacute;ritu de las cl&aacute;usulas reemplazadas.</td></tr></table>]]>
+        </valor>
+      </clausula>
+      <clausula id="18">
+        <cabecera>
+          <![CDATA[NOTIFICACIONES]]>
+        </cabecera>
+        <valor>
+          <![CDATA[<table style="margin:5px 0 5px 28px; Text-align: justify; font-size:8pt; font-family: Arial, Helvetica Neue, Helvetica, sans-serif;"><tr style="Text-align: justify;"><td>
+          Excepto de otra manera convenida en el presente Contrato, todas la notificaciones que deban hacerse las partes de conformidad con este Contrato, deber&aacute;n ser hechas por escrito y entregadas personalmente o enviadas por correo electr&oacute;nico, correo certificado (con acuse de recibo), o fax confirmado de recibido dentro de los diez d&iacute;as siguiente a partir de la fecha del fax o correo certificado, a cada una de las partes en sus respectivos domicilios que a continuaci&oacute;n se se&ntilde;alan:
+          </td></tr></table>]]>
+        </valor>
+      </clausula>
+    </contenido>
+    <plantillas>
+      <padre>
+        <cabecera>
+          <![CDATA[
+          <!DOCTYPE html>
+          <html>
+            <body>
+              <ol style="margin:5px 0 5px -20px; font-size:8pt; font-family: Arial, Helvetica Neue, Helvetica, sans-serif;">              
+              [CLAUSULAS]
+              </ol> 
+            </body>
+          </html>
+        ]]>
+        </cabecera>
+        <elemento>
+          <![CDATA[
+          <li>[TEXTO_CLAUSULA][VALOR_CLAUSULA]</li>         
+          ]]>
+        </elemento>
+      </padre>
+      <hijo>
+        <cabecera>
+          <![CDATA[
+          <ol type="A" style="margin:5px 0 5px -45px; font-size:8pt; Text-align: justify; font-family: Arial, Helvetica Neue, Helvetica, sans-serif;">
+          [ELEMENTOS]
+          </ol>
+          ]]>
+        </cabecera>
+        <elemento>
+          <![CDATA[<li>[TEXTO]</li>]]>
+        </elemento>
+      </hijo>
+    </plantillas>
+    <opcionales>
+      <opcion clausula="5" id="PUNTO_OBLIGADOS">
+        <id>PUNTO_OBLIGADOS</id>
+        <clausula>5</clausula>
+        <valor>
+        <![CDATA[<li><b>Obligado[OBLIG_PLURAL] Solidario[OBLIG_PLURAL]</b>.- <b>[OBLIGADOS_SOLIDARIOS]</b> se constituye[PREP_OBLIGADO] <b>Obligado[OBLIG_PLURAL] Solidario[OBLIG_PLURAL]</b>
+        del Cliente y a favor del Distribuidor y en consecuencia hacen suyas todas las obligaciones y prestaciones derivadas de este contrato a cargo [CARGO_OBLIGADO],
+        comprometi&eacute;ndose a cumplirlas en su totalidad, en los t&eacute;rminos de los Art&iacute;culos 1987, 1988, 1995 y dem&aacute;s relativos del C&oacute;digo Civil
+        para el Distrito Federal y sus correlativos en los c&oacute;digos civiles de los estados de la Rep&uacute;blica Mexicana</li>]]>
+        </valor>
+      </opcion>
+      <opcion clausula="15" id="DEPOSITARIA">
+        <id>DEPOSITARIA</id>
+        <clausula>15</clausula>
+        <valor>
+        <![CDATA[<table style="margin:5px 0 5px 28px; Text-align: justify; font-size:8pt; font-family: Arial, Helvetica Neue, Helvetica, sans-serif;"><tr style="Text-align: justify;"><td>
+          La terminaci&oacute;n anticipada de este contrato convierte en forma inmediata en DEPOSITARIO[DEPO_PLURAL] a  <b>[DEPOSITARIOS]</b>, mismo que acepta el nombramiento
+          de depositario conferido a su favor y protesta su fiel y leal desempe&ntilde;o con todas sus legales consecuencias. En el ejercicio de su cargo "EL DEPOSITARIO" 
+          asume las responsabilidades civiles y penales inherentes a su cargo, oblig&aacute;ndose a la guarda y conservaci&oacute;n de los bienes arrendados. Asimismo se 
+          compromete a ejercer de los derechos y acciones que le correspondan por la custodia de los bienes, y renuncia expresamente al cobro de honorarios por el 
+          desempe&ntilde;o de su referido cargo. Finalmente <b>"EL DEPOSITARIO"</b> se compromete a entregar los bienes muebles arrendados en forma inmediata, por simple 
+          requerimiento de "La Arrendadora" o mediante requerimiento ante Fedatario P&uacute;blico o ante Dos Testigos, en el entendido que al negarse a entregarlos 
+          comete el delito de Abuso de Confianza</td></tr></table>]]>
+        </valor>
+      </opcion>
+      <opcion clausula="15.1" id="NA_DEPOSITARIA">
+        <id>NA_DEPOSITARIA</id>
+        <clausula>15.1</clausula>
+        <valor>
+        <![CDATA[<table style="margin:5px 0 5px 28px; Text-align: justify; font-size:8pt; font-family: Arial, Helvetica Neue, Helvetica, sans-serif;"><tr style="Text-align: justify;"><td>
+          No Aplica
+        </td>
+        </tr>
+        </table>]]>
+        </valor>
+      </opcion>
+    </opcionales>
+    <finales>
+      <parrafo>
+        <valor>
+        <![CDATA[<table style="margin: 0 30px; Text-align: justify; font-size:8pt; font-family: Arial, Helvetica Neue, Helvetica, sans-serif;">
+          <tr style="Text-align: justify;">
+            <td>
+            Las partes con renuncia expresa al fuero que pudiera corresponderles con motivo de sus domicilios presentes o futuros que las leyes pudieran concederles y se someten a la jurisdicci&oacute;n y competencia de los jueces y tribunales del orden com&uacute;n de la ciudad de M&eacute;rida, Yucat&aacute;n, con renuncia expresa de cualesquiera otros que por razones de sus domicilios presentes o futuros le pudieren corresponder
+            </td>
+          </tr>
+        </table>]]>
+        </valor>
+      </parrafo>
+      <parrafo>
+        <valor>
+        <![CDATA[<table style="margin: 0 30px; Text-align: justify; font-size:8pt; font-family: Arial, Helvetica Neue, Helvetica, sans-serif;">
+          <tr style="Text-align: justify;">
+            <td>
+            EN TESTIMINIO DE LO CUAL, cada una de las partes aqu&iacute; mencionadas ha ocasionado que el presente Contrato est&eacute; debidamente firmado y celebrado el d&iacute;a y el a&ntilde;o se&ntilde;alado en el proemio del mismo.
+            </td>
+          </tr>
+        </table>]]>
+        </valor>
+      </parrafo>
+    </finales>
+  </clausulas>
+  <firmantes>
+    <plantilla>
+      <![CDATA[<table style=" position:absolute; width:645px; height:auto; font-size:8pt; font-family: Arial, Helvetica Neue, Helvetica, sans-serif; float: right;">
+	        <tr style="text-align:left; margin= 0 0 0 935px;">
+              <th align="left" style="float:left; position:relative; text-align:left;" width="275px">[TITLE_LEFTH]</th>
+              <th align="left" style="position:relative; width=50px"></th>
+              <th align="left" style="float:left; position:relative; text-align:left;" width="300px">[TITLE_RIGTH]</th>
+          </tr>
+          <tr style="text-align:left; margin= 0 0 0 935px;">
+              <td align="left" style="float:left; position:relative; width:275px;">[NAME_LEFTH]</td>
+              <td align="left" style="float:left; position:relative; width:50px"></td>
+              <td align="left" style="float:left; position:relative; width:300px;">[NAME_RIGTH]</td>
+	      </tr>
+	      <tr style="text-align:left; margin= 0 0 0 935px;">
+              <td align="left" style="float:left; position:relative; width:275px;">[NAME_REP_LEFTH]</td>
+              <td align="left" style="float:left; position:relative; width:50px"></td>
+              <td align="left" style="float:left; position:relative; width:300px;">[NAME_REP_RIGTH]</td>
+	      </tr>
+	      <tr style="text-align:left; margin= 0 0 0 935px;">
+		      <td align="left">[DIREC_REP_LEFTH]</td>
+		      <td align="left" style="float:left; position:relative; width:50px;"></td>
+		      <td align="left">[DIREC_REP_RIGTH]</td>
+          </tr>
+      </table>]]>
+    </plantilla>
+  </firmantes>
+  <personafisica>
+    <![CDATA[
+			<html>
+				<head>
+				</head>
+				<body>						
+					<div id="mainContent">						
+							<h3 style="text-align:center; margin-top:10px;">CLAUSULAS</h3>
+							<div>
+								<ol>
+									<li style="margin:10px 0 5px;">NOTIFICACIONES</li>
+									<table style="margin: 0 45px;">
+										<tr>
+											<td>Excepto de otra manera convenida en el presente Contrato, todas la notificaciones que deban hacerse las partes de conformidad con este Contrato, deber&aacute;n ser hechas por escrito y entregadas personalmente o enviadas por correo electr&oacute;nico, correo certificado (con acuse de recibo), o fax confirmado de recibido dentro de los diez d&iacute;as siguiente a partir de la fecha del fax o correo certificado, a cada una de las partes en sus respectivos domicilios que a continuaci&oacute;n se se&ntilde;alan:</td>
+										</tr>
+									</table>	
+                  <br/>
+                  <table style=”page-break-after: always;”>
+                    <tr><td>
+									    <table style="position:absolute; width:650px; height:auto; margin-top:1px; page-break-before: always;" align="center">
+										    <tr>
+											    <th scope="col" style="float:left; position:relative; color:#4169E1; font-size: 18px !important" width="300px">CLIENTE</th>
+                          <th align="center" style="position:relative;" width="50px"></th>
+											    <th scope="col" style="float:left; position:relative; color:#4169E1; font-size: 18px !important" width="300px">DISTRIBUIDOR</th>
+										    </tr>
+										    <tr>
+											    <td align="center"><label>[CLIENT_CONTRACT]</label></td>
+                          <td align="center" style="float:left; position:relative;" width="50px"></td>
+											    <td align="center"><label width="300px">[EMPRESA_CONTRACT]</label></td>
+										    </tr>
+										    <tr>
+											    <td style="width:290px; margin: 0 50px; text-align:center;">
+												    <label>Tel&eacute;fono [Telefono_Cliente]</label>
+												    <br/>
+												    <label>[Direcion_Cliente]</label>
+												    <br/>
+												    <label>CP[Codigo_Postal]</label>
+											    </td>
+                          <td></td>
+											    <td style="text-align:center;">
+												    <label>[Representante_Legal_Empresa]</label>
+												    <br/>
+												    <label>Tel&eacute;fono [Telefono_Empresa]</label>
+												    <br/>
+												    <label>[Direcion_Empresa]</label>
+												    <br/>
+												    <label>CP[Codigo_Postal_Empresa]</label>
+											    </td>
+										    </tr>
+										    <tr>
+											    <td style="width:300px"></td>
+											    <td></td>
+                          <td></td>
+										    </tr>
+									    </table>
+                    </td></tr>
+                  </table>
+									<table style="margin: 0 10px;">
+										<tr>
+											<td>Las partes con renuncia expresa al fuero que pudiera corresponderles con motivo de sus domicilios presentes o futuros que las leyes pudieran concederles y se someten a la jurisdicci&oacute;n y competencia de los jueces y tribunales del orden com&uacute;n de la ciudad de M&eacute;rida, Yucat&aacute;n, con renuncia expresa de cualesquiera otros que por razones de sus domicilios presentes o futuros le pudieren corresponder</td>								
+										</tr>
+										<tr style="margin-top: 10px;">
+											<td>EN TESTIMINIO DE LO CUAL, cada una de las partes aqu&iacute; mencionadas ha ocasionado que el presente Contrato est&eacute; debidamente firmado y celebrado el d&iacute;a y el a&ntilde;o se&ntilde;alado en el proemio del mismo.</td>
+										</tr>
+									</table>
+								</ol>					
+							</div>
+						</div>
+            <br/><br/>
+						<div id="firmas" align="center">
+							<table id="distCliente" style="position:absolute; width:650px; height:auto;" align="center">
+								<tr>
+									<th align="center" style="float:left; position:relative;" width="275px">DISTRIBUIDOR:</th>
+									<th align="center" style="position:relative;" width="100px"></th>
+									<th align="center" style="float:left; position:relative;" width="275px">CLIENTE:</th>
+								</tr>
+								<tr style="margin:10px 0 10px">
+									<td align="center" style="margin:10px 0 10px"><br/><br/>_________________________</td>
+									<td width="100px"></td>
+									<td align="center" style="margin:10px 0 10px"><br/><br/>_________________________</td>
+								</tr>
+								<tr>
+									<td align="center">[EMPRESA_CONTRACT]</td>
+									<td width="100px"></td>
+									<td align="center">Rep. Legal: [Representante_Legal_Empresa]</td>
+								</tr>
+								<tr>
+									<td align="center">[CLIENT_CONTRACT]</td>
+									<td width="100px"></td>
+									<td width="300px"></td>
+								</tr>
+							</table>
+							<div id="obligadosSolidarios">
+							[Firma_Ogligados_solidarios]
+							</div>
+						<div>
+					</div>
+				</body>
+			</html>
+		]]>
+  </personafisica>
+</reporte>

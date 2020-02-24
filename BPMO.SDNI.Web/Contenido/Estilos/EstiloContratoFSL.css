@@ -1,0 +1,82 @@
+﻿#MenuSecundario { float: left; height: 64px; }
+#BarraHerramientas { width: 835px; float: right; }
+#ControlesDatos
+{
+    min-height: 120px;
+    margin-top: 10px;
+    position: inherit;
+}
+        
+.GroupBody
+{
+    display: inline-table;
+    float: right;
+    margin-right: 38px;
+    margin-top: 10px;
+}
+        
+#divInformacionGeneralControles  fieldset { display: inherit; width: 96%; margin-top: 10px; margin-bottom: 13px; margin-left: 2%; margin-right: 2%; }
+#divInformacionGeneralControles .dvIzquierda { float: left; width: 49%; }
+#divInformacionGeneralControles .dvIzquierda .trAlinearDerecha { margin: 0px 0px 0px auto; }
+#divInformacionGeneralControles .dvDerecha { float: right; width: 49%; }
+#divInformacionGeneralControles .dvDerecha .trAlinearDerecha { margin: 0px auto 0px 0px; }
+#divInformacionGeneralControles table { margin: auto; }
+
+#fieldsetInformacionUnidad .GroupBody { margin: auto; }
+#divDatosClienteControles table .btnAgregarATabla { margin-right: 0px; margin-top: 5px; }
+#divDatosClienteControles .Grid { width: 95%; margin: 7px auto 15px auto; }
+        
+#divDatosRentaControles fieldset { display: inherit; width: 96%; margin-top: 10px; margin-bottom: 13px; margin-left: 2%; margin-right: 2%; }
+#divDatosRentaControles .leyendaAyuda { font-size: 8pt; }
+#divDatosRentaControles .trAlinearDerecha { margin: 5px auto 0px auto; width: 98%; }
+        
+.SoloBordeSuperior
+{
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+}
+#divDatosRentaControles .SoloBordeSuperior { margin-bottom: 0px; }
+        
+.LineasContrato
+{
+    background-color: transparent;
+    background-image: none;
+    border: none;
+}
+
+#divDatosFinales fieldset { display: inherit; width: 96%; margin-top: 10px; margin-bottom: 13px; margin-left: 2%; margin-right: 2%; }
+#divDatosFinales .trAlinearDerecha { margin: 5px auto 0px auto; width: 98%; }
+
+        
+.GroupHeader
+{
+    width: 100%;
+}
+.GridHeader, .GridRow, .GridAlternatingRow
+{
+    font-size: 10pt !important;
+}
+
+.RequeridosFSL { margin-right: 38px !important; }
+.FormatoIncorrectoFSL { margin-right: 38px !important; }
+
+.btnWizardEditar { width: 140px !important; }
+
+#divDatosCierre fieldset { display: inherit; width: 96%; margin-top: 10px; margin-bottom: 13px; margin-left: 2%; margin-right: 2%; }
+#divDatosCierre .trAlinearDerecha { margin: 5px auto 0px auto; width: 98%; }
+#divDatosCierre .dvIzquierda { float: left; width: 49%; }
+#divDatosCierre .dvIzquierda .trAlinearDerecha { margin: 0px 0px 0px auto; }
+#divDatosCierre .dvDerecha { float: right; width: 49%; }
+#divDatosCierre .dvDerecha .trAlinearDerecha { margin: 0px auto 0px 0px; }
+
+
+#DialogoTarifaPersonal  fieldset { display: inherit; width: 96%; margin-top: 10px; margin-bottom: 13px; margin-left: 2%; margin-right: 2%; }
+#DialogoTarifaPersonal .dvIzquierda { float: left; width: 49%; }
+#DialogoTarifaPersonal .dvIzquierda .trAlinearDerecha { margin: 0px 0px 0px auto; }
+#DialogoTarifaPersonal .dvDerecha { float: right; width: 49%; }
+#DialogoTarifaPersonal .dvDerecha .trAlinearDerecha { margin: 0px auto 0px 0px; }
+#DialogoTarifaPersonal table { margin: auto; }
+
+#dvDialogPlantillas.ui-widget-content { height: auto !important; }
+#dvDialogPlantillas .Grid { margin-left: auto; margin-right: auto; margin-top: 0px !important; width: 96%; }

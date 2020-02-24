@@ -1,0 +1,257 @@
+﻿h1
+{
+    font-size: 1em;
+    font-weight: normal;
+    font-style: normal;
+}
+
+#tituloNotificacion
+{
+    width: 100%;
+    margin-top: 0;
+    padding: 0;
+    background-color: #5c5e5d;
+    color: white;
+    height: 40px;
+    text-indent: 6px;
+}
+
+.A
+{
+    margin: 25px 35px;
+    padding: 0;
+    border: 1px solid orange;
+    border: 1px solid black;
+    text-align: left;
+    min-width: 500px;
+}
+.N
+{
+    margin: 25px 35px;
+    padding: 0;
+    background-color: White;
+    border: 1px solid black;
+    text-align: left;
+    min-width: 500px;
+}
+.imgNotificacion
+{
+    width: 190px;
+    height: 155px;
+    float: left;
+    margin-left: 5px;
+    margin-top: 5px;
+    border: none;
+}
+#TextoNotificacion
+{
+    margin: 5px 10px 5px 0;
+    width: 520px;
+    text-align: justify;
+    font-family: Century Gothic, Arial, Verdana, Serif;
+    font-size: 12px;
+    color: black;
+    float: right;
+}
+.EnlaceNotificacion
+{
+    width: 100%;
+    text-align: right;
+    margin-bottom: 10px;
+    float: right;
+}
+#CuerpoNotificacion
+{
+    clear: both;
+    margin: 0;
+    padding: 0;
+    margin: 20px;
+    overflow: auto;
+}
+#CuerpoNotificacion a:hover
+{
+    color: orange;
+    text-decoration: none;
+    font-weight: bold;
+}
+/*-------------------------------------------------------------------Estilos página de configuración inicial-------------------------------------------------------------------------------*/
+#ContenedorPrincipal_PCI
+{
+    width: 560px;
+    margin: 0 auto;
+    background-color: transparent;
+    overflow:hidden;
+}
+
+.ContenidoLibre_PCI
+{
+    clear:both;
+    width: 555px;
+    margin: 0px;
+    background-image: url(../Imagenes/LiteCajaLibreMedianaContent.png);
+    text-align: center;
+    color: #5c5e5d;
+    float: left; 
+}
+.ContenidoLibre_PCI #IEncabezado_PCI
+{
+    width: 100%;
+    text-align: center;
+    margin: 10px auto 10px;
+    font-size: 22px;
+    color:Black;
+    font-weight:200;
+}
+.ContenidoEncabezado_PCI
+{
+    clear:both;
+    width: 555px;
+    height: 22px;
+    margin: 0px;
+    background-image: url(../Imagenes/LiteCajaLibreMedianaHeader.png);
+    text-align: center;
+    color: #5c5e5d;
+    float: left;
+    }
+.ContenidoFooter_PCI
+{
+    width: 555px;
+    height: 22px;
+    background-image: url(../Imagenes/LiteCajaLibreMedianaFooter.png);
+    text-align: center;
+    color: #5c5e5d;
+    float: left;
+    }
+#tControles_PCI
+{
+    width: 100%;
+    margin: 25px  auto 5px;
+    font-size: 14px;
+}
+#tControles_PCI .tdNombre_PCI
+{
+    width: 200px;
+    text-align: right;
+    vertical-align:middle;
+}
+#tControles_PCI .tdControl_PCI
+{
+    width: 250px;
+    float: left;
+    font-size: 14px;
+    background-color:White;   
+    color: black;
+    border:1px solid gray;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    height: 30px;
+    
+	-moz-border-radius-bottomleft: 4px; -webkit-border-bottom-left-radius: 4px; -khtml-border-bottom-left-radius: 4px; border-bottom-left-radius: 4px; 
+	-moz-border-radius-bottomright: 4px; -webkit-border-bottom-right-radius: 4px; -khtml-border-bottom-right-radius: 4px; border-bottom-right-radius: 4px; 
+    -moz-border-radius-topright: 4px; -webkit-border-top-right-radius: 4px; -khtml-border-top-right-radius: 4px; border-top-right-radius: 4px; 
+	-moz-border-radius-topleft: 4px; -webkit-border-top-left-radius: 4px; -khtml-border-top-left-radius: 4px; border-top-left-radius: 4px; 
+}
+#BotonAceptar
+{
+    width: 100%;
+    height: 65px;
+}
+.btnComando
+{
+    width: 144px;
+    height: 63px;
+    margin-left: 220px;
+    margin-top: 20px;
+    
+    float: left;
+    border: none;
+    color: white;
+    
+    text-transform: uppercase;
+    
+    background-image: url(../Imagenes/boton1.jpg);
+}
+.btnComando:hover
+{
+    background-image: url(../Imagenes/boton2.jpg);
+    cursor:pointer;
+}
+/*----------------------Clases Exclusivas de Configuración de Acceso--------------------------------------*/
+.btnEntrar
+{
+    width: 144px;
+    height: 66px;
+    margin: 10px auto auto auto;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 12px;
+    background-image: url(../Imagenes/botonEntrar.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    display: inherit;
+}
+.btnEntrar:hover
+{
+    background-image: url(../Imagenes/botonEntrarSeleccionado.jpg);
+}
+#dvCajaLibreMediana
+{
+    width: 555px;
+    margin: 50px auto 50px auto;
+}
+#dvCajaLibreMediana .Header
+{
+    margin: 0px;
+    width: 100%;
+    height: 22px;
+    background-image: url('../Imagenes/LiteCajaLibreMedianaHeader.png');
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+#dvCajaLibreMediana .Content
+{
+    margin: 0px;
+    width: 100%;
+    background-image: url('../Imagenes/LiteCajaLibreMedianaContent.png');
+    background-position: top center;
+    background-repeat: repeat-y;
+}
+#dvCajaLibreMediana .Content h1
+{
+	margin-top: 0px;
+	text-align: center;
+	font-size: 16pt;
+	font-weight: bold;
+	color: #5c5e5d;
+}
+#dvCajaLibreMediana .Content table
+{
+	width: 450px;
+    margin: 30px auto auto auto;
+}
+#dvCajaLibreMediana .Content table tr td 
+{ 	
+	text-transform: uppercase; 
+	vertical-align: middle; 
+	
+	width: 70%;
+}
+#dvCajaLibreMediana .Content table tr td:first-child { text-align: right; width: auto; }
+#dvCajaLibreMediana .Content table tr td span
+{
+	color: Red;
+}
+#dvCajaLibreMediana .Content table tr td select { width: 97%; }
+#dvCajaLibreMediana .Footer
+{
+    margin: 0px;
+    width: 100%;
+    height: 31px;
+    background-image: url('../Imagenes/LiteCajaLibreMedianaFooter.png');
+    background-position: top center;
+    background-repeat: no-repeat;
+}

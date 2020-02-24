@@ -1,0 +1,3029 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DE840EC4-61B9-45B0-B56A-EA43644E5B79}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BPMO.SDNI</RootNamespace>
+    <AssemblyName>BPMO.SDNI.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <FilesToIncludeForPublish>OnlyFilesToRunTheApp</FilesToIncludeForPublish>
+    <PackageAsSingleFile>false</PackageAsSingleFile>
+    <DeployIisAppPath>Default Web Site/BPMO.SDNI.Web</DeployIisAppPath>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <GenerateSerializationAssemblies>On</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BPMO.Basicos, Version=1.0.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\BPMO.Librerias\IDLS\BPMO.Basicos.dll</HintPath>
+    </Reference>
+    <Reference Include="BPMO.Buscador">
+      <HintPath>..\..\..\..\BPMO.Librerias\BPMO.Buscador.dll</HintPath>
+    </Reference>
+    <Reference Include="BPMO.eFacturacion.Procesos.BO, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\BPMO.Librerias\IDLS\BPMO.eFacturacion.Procesos.BO.dll</HintPath>
+    </Reference>
+    <Reference Include="BPMO.Facturacion.BO, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\BPMO.Librerias\BPMO.Facturacion.BO.dll</HintPath>
+    </Reference>
+    <Reference Include="BPMO.Generales.BR, Version=1.0.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\BPMO.Librerias\BPMO.Generales.BR.dll</HintPath>
+    </Reference>
+    <Reference Include="BPMO.Patterns">
+      <HintPath>..\..\..\..\BPMO.Librerias\BPMO.Patterns.dll</HintPath>
+    </Reference>
+    <Reference Include="BPMO.Primitivos">
+      <HintPath>..\..\..\..\BPMO.Librerias\IDLS\BPMO.Primitivos.dll</HintPath>
+    </Reference>
+    <Reference Include="BPMO.Security">
+      <HintPath>..\..\..\..\BPMO.Librerias\BPMO.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="BPMO.Seguridad.BO">
+      <HintPath>..\..\..\..\BPMO.Librerias\BPMO.Seguridad.BO.dll</HintPath>
+    </Reference>
+    <Reference Include="BPMO.Servicio.Catalogos.BO">
+      <HintPath>..\..\..\..\BPMO.Librerias\BPMO.Servicio.Catalogos.BO.dll</HintPath>
+    </Reference>
+    <Reference Include="BPMO.Servicio.Procesos.BO">
+      <HintPath>..\..\..\..\BPMO.Librerias\IDLS\BPMO.Servicio.Procesos.BO.dll</HintPath>
+    </Reference>
+    <Reference Include="BPMOBaseLibrary">
+      <HintPath>..\..\..\..\BPMO.Librerias\BPMOBaseLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v13.2.Core, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Office.v13.2.Core, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v13.2.Core, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxThemes.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Web.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Charts.v13.2.Core, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.PivotGrid.v13.2.Core, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Sparkline.v13.2.Core, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v13.2.Web, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\BPMO.Librerias\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Buscador.UI\BuscadorUI.aspx" />
+    <Content Include="Buscador.UI\ExportaFormatoUI.aspx" />
+    <Content Include="Buscador.UI\images\btnSelect.png" />
+    <Content Include="Buscador.UI\VisorUI.aspx" />
+    <Content Include="Buscador.UI\VisorReporteUI.aspx" />
+    <Content Include="Comun.UI\ConsultarAutorizadorUI.aspx" />
+    <Content Include="Comun.UI\ConsultarCuentaClienteUI.aspx" />
+    <Content Include="Comun.UI\DetalleAutorizadorUI.aspx" />
+    <Content Include="Comun.UI\ConsultarOperadorUI.aspx" />
+    <Content Include="Comun.UI\EditarAutorizadorUI.aspx" />
+    <Content Include="Comun.UI\EditarOperadorUI.aspx" />
+    <Content Include="Comun.UI\DetalleOperadorUI.aspx" />
+    <Content Include="Comun.UI\DetalleCuentaClienteUI.aspx" />
+    <Content Include="Comun.UI\EditarCuentaClienteUI.aspx" />
+    <Content Include="Comun.UI\ObtenerEtiquetaEmpresas.aspx" />
+    <Content Include="Comun.UI\RegistrarAutorizadorUI.aspx" />
+    <Content Include="Comun.UI\RegistrarOperadorUI.aspx" />
+    <Content Include="Comun.UI\RegistrarCuentaClienteUI.aspx" />
+    <Content Include="Comun.UI\ucAutorizadorUI.ascx" />
+    <Content Include="Comun.UI\ucCatalogoDocumentosUI.ascx" />
+    <Content Include="Comun.UI\ucOperadorUI.ascx" />
+    <Content Include="Comun.UI\ucDatosActaConstitutivaUI.ascx" />
+    <Content Include="Comun.UI\ucDatosObligadoSolidarioUI.ascx" />
+    <Content Include="Comun.UI\ucDatosRepresentanteLegalUI.ascx" />
+    <Content Include="Contenido\Estilos\bootstrap.1.8.2.css" />
+    <Content Include="Contenido\Estilos\bootstrap.min.css" />
+    <Content Include="Contenido\Estilos\EstiloIngresarUnidad.css" />
+    <Content Include="Contenido\Estilos\EstiloRecepcionUnidad.css" />
+    <Content Include="Contenido\Estilos\EstiloActaNacimiento.css" />
+    <Content Include="Contenido\Estilos\EstiloCatCliente.css" />
+    <Content Include="Contenido\Estilos\EstiloCatTarifas.css" />
+    <Content Include="Contenido\Estilos\EstiloContratoFSL.css" />
+    <Content Include="Contenido\Estilos\EstiloDesarrollo.css" />
+    <Content Include="Contenido\Estilos\EstiloPaginaInicio.css" />
+    <Content Include="Contenido\Estilos\EstiloProduccion.css" />
+    <Content Include="Contenido\Estilos\EstiloPruebas.css" />
+    <Content Include="Contenido\Estilos\EstiloSeguroUI.css" />
+    <Content Include="Contenido\Estilos\EstilosPagos.css" />
+    <Content Include="Contenido\Estilos\EstiloTareaPendiente.css" />
+    <Content Include="Contenido\Estilos\EstiloTramites.css" />
+    <Content Include="Contenido\Estilos\MantenimientoResponsive.css" />
+    <Content Include="Contenido\Estilos\Sitio.css" />
+    <Content Include="Contenido\Estilos\SitioLite.css" />
+    <Content Include="Contenido\Estilos\Tema.FullCalendar\fullcalendar.css" />
+    <Content Include="Contenido\Estilos\Tema.JqueryUI\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Contenido\Estilos\Tema.JqueryUI\images\ui-bg_flat_0_dcdbdb_40x100.png" />
+    <Content Include="Contenido\Estilos\Tema.JqueryUI\images\ui-bg_flat_55_e0e0e0_40x100.png" />
+    <Content Include="Contenido\Estilos\Tema.JqueryUI\images\ui-bg_flat_75_666666_40x100.png" />
+    <Content Include="Contenido\Estilos\Tema.JqueryUI\images\ui-bg_flat_75_808080_40x100.png" />
+    <Content Include="Contenido\Estilos\Tema.JqueryUI\images\ui-bg_flat_75_cbcdcc_40x100.png" />
+    <Content Include="Contenido\Estilos\Tema.JqueryUI\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Contenido\Estilos\Tema.JqueryUI\images\ui-bg_flat_95_fce3e3_40x100.png" />
+    <Content Include="Contenido\Estilos\Tema.JqueryUI\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Contenido\Estilos\Tema.JqueryUI\images\ui-icons_222222_256x240.png" />
+    <Content Include="Contenido\Estilos\Tema.JqueryUI\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Contenido\Estilos\Tema.JqueryUI\images\ui-icons_454545_256x240.png" />
+    <Content Include="Contenido\Estilos\Tema.JqueryUI\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Contenido\Estilos\Tema.JqueryUI\images\ui-icons_dad7d7_256x240.png" />
+    <Content Include="Contenido\Estilos\Tema.JqueryUI\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="Contenido\Estilos\Tema.JqueryUI\jquery-ui-1.9.1.custom.css" />
+    <Content Include="Contenido\Estilos\Tema.JqueryUI\jquery-ui.css" />
+    <Content Include="Contenido\Estilos\Tema.JqueryUI\jquery.tooltip.css" />
+    <Content Include="Contenido\Estilos\Tema.JqueryUI\jquery.ui.accordion.css" />
+    <Content Include="Contenido\Estilos\Tema.JqueryUI\jquery.ui.all.css" />
+    <Content Include="Contenido\Estilos\Tema.JqueryUI\jquery.ui.autocomplete.css" />
+    <Content Include="Contenido\Estilos\Tema.JqueryUI\jquery.ui.base.css" />
+    <Content Include="Contenido\Estilos\Tema.JqueryUI\jquery.ui.button.css" />
+    <Content Include="Contenido\Estilos\Tema.JqueryUI\jquery.ui.core.css" />
+    <Content Include="Contenido\Estilos\Tema.JqueryUI\jquery.ui.datepicker.css" />
+    <Content Include="Contenido\Estilos\Tema.JqueryUI\jquery.ui.dialog.css" />
+    <Content Include="Contenido\Estilos\Tema.JqueryUI\jquery.ui.menu.css" />
+    <Content Include="Contenido\Estilos\Tema.JqueryUI\jquery.ui.progressbar.css" />
+    <Content Include="Contenido\Estilos\Tema.JqueryUI\jquery.ui.resizable.css" />
+    <Content Include="Contenido\Estilos\Tema.JqueryUI\jquery.ui.selectable.css" />
+    <Content Include="Contenido\Estilos\Tema.JqueryUI\jquery.ui.slider.css" />
+    <Content Include="Contenido\Estilos\Tema.JqueryUI\jquery.ui.spinner.css" />
+    <Content Include="Contenido\Estilos\Tema.JqueryUI\jquery.ui.tabs.css" />
+    <Content Include="Contenido\Estilos\Tema.JqueryUI\jquery.ui.theme.css" />
+    <Content Include="Contenido\Estilos\Tema.JqueryUI\jquery.ui.timepicker.css" />
+    <Content Include="Contenido\Estilos\Tema.JqueryUI\jquery.ui.tooltip.css" />
+    <Content Include="Contenido\Imagenes\alerta.png" />
+    <Content Include="Contenido\Imagenes\barra-alterna.jpg" />
+    <Content Include="Contenido\Imagenes\barra-d-ebotones.png" />
+    <Content Include="Contenido\Imagenes\barraAlterna.png" />
+    <Content Include="Contenido\Imagenes\BORRAR-ICO.png" />
+    <Content Include="Contenido\Imagenes\botonActualizar.png" />
+    <Content Include="Contenido\Imagenes\botonActualizarSeleccionado.png" />
+    <Content Include="Contenido\Imagenes\botonAgregar.png" />
+    <Content Include="Contenido\Imagenes\botonAgregarSeleccionado.png" />
+    <Content Include="Contenido\Imagenes\botonAtras.png" />
+    <Content Include="Contenido\Imagenes\botonAtrasDeshabilitado.png" />
+    <Content Include="Contenido\Imagenes\botonAtrasSeleccionado.png" />
+    <Content Include="Contenido\Imagenes\botonBarraActa.png" />
+    <Content Include="Contenido\Imagenes\botonBarraActaDeshabilitado.png" />
+    <Content Include="Contenido\Imagenes\botonBarraActaSeleccionado.png" />
+    <Content Include="Contenido\Imagenes\botonBarraContrato.png" />
+    <Content Include="Contenido\Imagenes\botonBarraContratoDeshabilitado.png" />
+    <Content Include="Contenido\Imagenes\botonBarraContratoSeleccionado.png" />
+    <Content Include="Contenido\Imagenes\botonBarraEquipoAliado.png" />
+    <Content Include="Contenido\Imagenes\botonBarraEquipoAliadoDeshabilitado.png" />
+    <Content Include="Contenido\Imagenes\botonBarraEquipoAliadoSeleccionado.png" />
+    <Content Include="Contenido\Imagenes\botonBarraHistorial.png" />
+    <Content Include="Contenido\Imagenes\botonBarraHistorialDeshabilitado.png" />
+    <Content Include="Contenido\Imagenes\botonBarraHistorialSeleccionado.png" />
+    <Content Include="Contenido\Imagenes\botonBarraLlantas.png" />
+    <Content Include="Contenido\Imagenes\botonBarraLlantasDeshabilitado.png" />
+    <Content Include="Contenido\Imagenes\botonBarraLlantasSeleccionado.png" />
+    <Content Include="Contenido\Imagenes\botonBarraMantenimiento.png" />
+    <Content Include="Contenido\Imagenes\botonBarraMantenimientoDeshabilitado.png" />
+    <Content Include="Contenido\Imagenes\botonBarraMantenimientoSeleccionado.png" />
+    <Content Include="Contenido\Imagenes\botonBarraSeguro.png" />
+    <Content Include="Contenido\Imagenes\botonBarraSeguroDeshabilitado.png" />
+    <Content Include="Contenido\Imagenes\botonBarraSeguroSeleccionado.png" />
+    <Content Include="Contenido\Imagenes\botonBarraTramites.png" />
+    <Content Include="Contenido\Imagenes\botonBarraTramitesDeshabilitado.png" />
+    <Content Include="Contenido\Imagenes\botonBarraTramitesSeleccionado.png" />
+    <Content Include="Contenido\Imagenes\botonBuscar.png" />
+    <Content Include="Contenido\Imagenes\botonBuscarOtra.png" />
+    <Content Include="Contenido\Imagenes\botonBuscarOtraSeleccionado.png" />
+    <Content Include="Contenido\Imagenes\botonBuscarSeleccionado.png" />
+    <Content Include="Contenido\Imagenes\botonCancelar.png" />
+    <Content Include="Contenido\Imagenes\botonCancelarDeshabilitado.png" />
+    <Content Include="Contenido\Imagenes\botonCancelarSeleccionado.png" />
+    <Content Include="Contenido\Imagenes\botonComando.png" />
+    <Content Include="Contenido\Imagenes\botonComandoSeleccionado.png" />
+    <Content Include="Contenido\Imagenes\botonContinuar.png" />
+    <Content Include="Contenido\Imagenes\botonContinuarDeshabilitado.png" />
+    <Content Include="Contenido\Imagenes\botonContinuarSeleccionado.png" />
+    <Content Include="Contenido\Imagenes\botonDescargar.png" />
+    <Content Include="Contenido\Imagenes\botonDescargarEvidencia.png" />
+    <Content Include="Contenido\Imagenes\botonEditar.png" />
+    <Content Include="Contenido\Imagenes\botonEditarDeshabilitado.png" />
+    <Content Include="Contenido\Imagenes\botonEditarSeleccionado.png" />
+    <Content Include="Contenido\Imagenes\botonEntrar.jpg" />
+    <Content Include="Contenido\Imagenes\botonEntrarSeleccionado.jpg" />
+    <Content Include="Contenido\Imagenes\botonGuardar.png" />
+    <Content Include="Contenido\Imagenes\botonGuardarBorrador.png" />
+    <Content Include="Contenido\Imagenes\botonGuardarBorradorDeshabilitado.png" />
+    <Content Include="Contenido\Imagenes\botonGuardarBorradorSeleccionado.png" />
+    <Content Include="Contenido\Imagenes\botonGuardarDeshabilitado.png" />
+    <Content Include="Contenido\Imagenes\botonGuardarSeleccionado.png" />
+    <Content Include="Contenido\Imagenes\botonHistorial.png" />
+    <Content Include="Contenido\Imagenes\botonHistorialDeshabilitado.png" />
+    <Content Include="Contenido\Imagenes\botonHistorialSeleccionado.png" />
+    <Content Include="Contenido\Imagenes\botonImprimir.png" />
+    <Content Include="Contenido\Imagenes\botonImprimirDeshabilitado.png" />
+    <Content Include="Contenido\Imagenes\botonImprimirSeleccionado.png" />
+    <Content Include="Contenido\Imagenes\botonNuevoTrabajoDeshabilitadoRapido.png" />
+    <Content Include="Contenido\Imagenes\botonNuevoTrabajoRapido.png" />
+    <Content Include="Contenido\Imagenes\botonNuevoTrabajoSeleccionadoRapido.png" />
+    <Content Include="Contenido\Imagenes\botonRegistrarEdicion.png" />
+    <Content Include="Contenido\Imagenes\botonRegistrarEdicionDeshabilitado.png" />
+    <Content Include="Contenido\Imagenes\botonRegistrarEdicionSeleccionado.png" />
+    <Content Include="Contenido\Imagenes\botonRegresar.png" />
+    <Content Include="Contenido\Imagenes\botonRegresarDeshabilitado.png" />
+    <Content Include="Contenido\Imagenes\botonRegresarSeleccionado.png" />
+    <Content Include="Contenido\Imagenes\botonTerminar.png" />
+    <Content Include="Contenido\Imagenes\botonTerminarDeshabilitado.png" />
+    <Content Include="Contenido\Imagenes\botonTerminarSeleccionado.png" />
+    <Content Include="Contenido\Imagenes\Buscar.png" />
+    <Content Include="Contenido\Imagenes\buscarBrowser.png" />
+    <Content Include="Contenido\Imagenes\calendar.gif" />
+    <Content Include="Contenido\Imagenes\camion-24-PV.png" />
+    <Content Include="Contenido\Imagenes\camion-24-PV2.png" />
+    <Content Include="Contenido\Imagenes\camion-24-PV3.png" />
+    <Content Include="Contenido\Imagenes\camion-24-PV4.png" />
+    <Content Include="Contenido\Imagenes\camion-24.png" />
+    <Content Include="Contenido\Imagenes\camion-25.png" />
+    <Content Include="Contenido\Imagenes\camion-26.png" />
+    <Content Include="Contenido\Imagenes\camion-27.png" />
+    <Content Include="Contenido\Imagenes\Cargando.gif" />
+    <Content Include="Contenido\Imagenes\CIRCULO-BLANCO.png" />
+    <Content Include="Contenido\Imagenes\Contrato.png" />
+    <Content Include="Contenido\Imagenes\DESCARGAR-ICO.png" />
+    <Content Include="Contenido\Imagenes\Detalle.png" />
+    <Content Include="Contenido\Imagenes\EDITAR-ICO.png" />
+    <Content Include="Contenido\Imagenes\ELIMINAR-ICO.png" />
+    <Content Include="Contenido\Imagenes\error-01.png" />
+    <Content Include="Contenido\Imagenes\error.png" />
+    <Content Include="Contenido\Imagenes\ESTATUS-NO-ICO.png" />
+    <Content Include="Contenido\Imagenes\ESTATUS-SI-ICO.png" />
+    <Content Include="Contenido\Imagenes\exito.png" />
+    <Content Include="Contenido\Imagenes\find.png" />
+    <Content Include="Contenido\Imagenes\flechaAbajo.png" />
+    <Content Include="Contenido\Imagenes\FlechaArriba.png" />
+    <Content Include="Contenido\Imagenes\FondoDesarrollo.jpg" />
+    <Content Include="Contenido\Imagenes\FondoGroupHeader.png" />
+    <Content Include="Contenido\Imagenes\footerIdealease.jpg" />
+    <Content Include="Contenido\Imagenes\GroupHeaderOpciones.png" />
+    <Content Include="Contenido\Imagenes\GUARDAR-ICO.png" />
+    <Content Include="Contenido\Imagenes\ico.usuario.certificado.png" />
+    <Content Include="Contenido\Imagenes\ico.usuario.png" />
+    <Content Include="Contenido\Imagenes\imgReloj.png" />
+    <Content Include="Contenido\Imagenes\imprimir.png" />
+    <Content Include="Contenido\Imagenes\info.png" />
+    <Content Include="Contenido\Imagenes\LiteCajaLibreGrandeContent.png" />
+    <Content Include="Contenido\Imagenes\LiteCajaLibreGrandeFooter.png" />
+    <Content Include="Contenido\Imagenes\LiteCajaLibreGrandeHeader.png" />
+    <Content Include="Contenido\Imagenes\LiteCajaLibreMedianaContent.png" />
+    <Content Include="Contenido\Imagenes\LiteCajaLibreMedianaFooter.png" />
+    <Content Include="Contenido\Imagenes\LiteCajaLibreMedianaHeader.png" />
+    <Content Include="Contenido\Imagenes\LiteFondo.jpg" />
+    <Content Include="Contenido\Imagenes\LiteFooterFondo.jpg" />
+    <Content Include="Contenido\Imagenes\LiteHeader.jpg" />
+    <Content Include="Contenido\Imagenes\LiteHeaderFondo.jpg" />
+    <Content Include="Contenido\Imagenes\LogoBepensa.jpg" />
+    <Content Include="Contenido\Imagenes\LogoBepensaMotriz.png" />
+    <Content Include="Contenido\Imagenes\LogoIdealease.png" />
+    <Content Include="Contenido\Imagenes\MegaRent.png" />
+    <Content Include="Contenido\Imagenes\MegaRentConstruccion.jpg" />
+    <Content Include="Contenido\Imagenes\MegaRentenergia.png" />
+    <Content Include="Contenido\Imagenes\MegaRentEquinova.jpg" />
+    <Content Include="Contenido\Imagenes\MegaRentEquinova.png" />
+    <Content Include="Contenido\Imagenes\MegaRentGeneracion.jpg" />
+    <Content Include="Contenido\Imagenes\minus.png" />
+    <Content Include="Contenido\Imagenes\MRBienv.jpg" />
+    <Content Include="Contenido\Imagenes\MREBienv.jpg" />
+    <Content Include="Contenido\Imagenes\MREQUIBienv.jpg" />
+    <Content Include="Contenido\Imagenes\newsletter.png" />
+    <Content Include="Contenido\Imagenes\numero.activo.png" />
+    <Content Include="Contenido\Imagenes\numero.hover.png" />
+    <Content Include="Contenido\Imagenes\numero.png" />
+    <Content Include="Contenido\Imagenes\Parametro-barra-de-herramientas.jpg" />
+    <Content Include="Contenido\Imagenes\plus.png" />
+    <Content Include="Contenido\Imagenes\pregunta.png" />
+    <Content Include="Contenido\Imagenes\recargar.png" />
+    <Content Include="Contenido\Imagenes\Reservar.png" />
+    <Content Include="Contenido\Imagenes\seguridad-candado.png" />
+    <Content Include="Contenido\Imagenes\SelectorBlanco.png" />
+    <Content Include="Contenido\Imagenes\signo-interrogacion.png" />
+    <Content Include="Contenido\Imagenes\ui-bg_gloss-wave_35_f6a828_500x100.png" />
+    <Content Include="Contenido\Imagenes\Unidad.png" />
+    <Content Include="Contenido\Imagenes\v0.png" />
+    <Content Include="Contenido\Imagenes\v1.png" />
+    <Content Include="Contenido\Imagenes\v10.png" />
+    <Content Include="Contenido\Imagenes\v11.png" />
+    <Content Include="Contenido\Imagenes\v12.png" />
+    <Content Include="Contenido\Imagenes\v13.png" />
+    <Content Include="Contenido\Imagenes\v2.png" />
+    <Content Include="Contenido\Imagenes\v3.png" />
+    <Content Include="Contenido\Imagenes\v4.png" />
+    <Content Include="Contenido\Imagenes\v5.png" />
+    <Content Include="Contenido\Imagenes\v6.png" />
+    <Content Include="Contenido\Imagenes\v7.png" />
+    <Content Include="Contenido\Imagenes\v8.png" />
+    <Content Include="Contenido\Imagenes\v9.png" />
+    <Content Include="Contenido\Imagenes\VER.png" />
+    <Content Include="Contenido\Imagenes\WorkInProgress.png" />
+    <Content Include="Contenido\Imagenes\WorkInProgressDefault.png" />
+    <Content Include="Contenido\MasterPages\Site.Master" />
+    <Content Include="Contenido\Scripts\bootstrap-1.8.2.js" />
+    <Content Include="Contenido\Scripts\jconfigBuscadorWeb.js" />
+    <Content Include="Contenido\Scripts\jIdealease.Base.js" />
+    <Content Include="Contenido\Scripts\jidealease.extension.js" />
+    <Content Include="Contenido\Scripts\jPage.BlockUI.js" />
+    <Content Include="Contenido\Scripts\jquery-1.8.2.js" />
+    <Content Include="Contenido\Scripts\jquery-ui-1.9.1.custom.min.js" />
+    <Content Include="Contenido\Scripts\jquery.blockUI.js" />
+    <Content Include="Contenido\Scripts\jquery.format.1.05.js" />
+    <Content Include="Contenido\Scripts\jquery.fullcalendar.js" />
+    <Content Include="Contenido\Scripts\jquery.jlabel-1.3.min.js" />
+    <Content Include="Contenido\Scripts\jquery.tooltip.min.js" />
+    <Content Include="Contenido\Scripts\jquery.ui.datepicker-es.js" />
+    <Content Include="Contenido\Scripts\jquery.ui.timepicker-es.js" />
+    <Content Include="Contenido\Scripts\jquery.ui.timepicker.js" />
+    <Content Include="Contenido\Scripts\mantenimiento-responsive.js" />
+    <Content Include="Contenido\Scripts\ObtenerEtiquetasEmpresa.js" />
+    <Content Include="Contenido\Scripts\ObtenerFormatoImporte.js" />
+    <Content Include="Contenido\XML\BPMO.SDNI.Buscador.Caracteristica.xml" />
+    <Content Include="Contenido\XML\BPMO.SDNI.Buscador.ClasificadorAplicacion.xml" />
+    <Content Include="Contenido\XML\BPMO.SDNI.Buscador.ClasificadorMotorizacion.xml" />
+    <Content Include="Contenido\XML\BPMO.SDNI.Buscador.Cliente.xml" />
+    <Content Include="Contenido\XML\BPMO.SDNI.Buscador.ConceptoMovimiento.xml" />
+    <Content Include="Contenido\XML\BPMO.SDNI.Buscador.ConfiguracionModeloMotorizacion.xml" />
+    <Content Include="Contenido\XML\BPMO.SDNI.Buscador.Cuenta.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Contenido\XML\BPMO.SDNI.Buscador.CuentaClienteIdealease.xml" />
+    <Content Include="Contenido\XML\BPMO.SDNI.Buscador.DireccionCuentaClienteIdealeaseSimple.xml" />
+    <Content Include="Contenido\XML\BPMO.SDNI.Buscador.Distribuidor.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Contenido\XML\BPMO.SDNI.Buscador.Empleado.xml" />
+    <Content Include="Contenido\XML\BPMO.SDNI.Buscador.Empresa.xml" />
+    <Content Include="Contenido\XML\BPMO.SDNI.Buscador.EquipoAliado.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Contenido\XML\BPMO.SDNI.Buscador.EquipoBepensa.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Contenido\XML\BPMO.SDNI.Buscador.HistorialUnidad.xml" />
+    <Content Include="Contenido\XML\BPMO.SDNI.Buscador.Llanta.xml" />
+    <Content Include="Contenido\XML\BPMO.SDNI.Buscador.Marca.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Contenido\XML\BPMO.SDNI.Buscador.Modelo.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Contenido\XML\BPMO.SDNI.Buscador.MotivoBitacora.xml" />
+    <Content Include="Contenido\XML\BPMO.SDNI.Buscador.Operadores.xml" />
+    <Content Include="Contenido\XML\BPMO.SDNI.Buscador.OrdenServicio.xml" />
+    <Content Include="Contenido\XML\BPMO.SDNI.Buscador.ProductoServicio.xml" />
+    <Content Include="Contenido\XML\BPMO.SDNI.Buscador.Proveedor.xml" />
+    <Content Include="Contenido\XML\BPMO.SDNI.Buscador.SubCuentaCliente.xml" />
+    <Content Include="Contenido\XML\BPMO.SDNI.Buscador.Sucursal.xml" />
+    <Content Include="Contenido\XML\BPMO.SDNI.Buscador.SucursalSeguridad.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Contenido\XML\BPMO.SDNI.Buscador.TallerSeguridad.xml" />
+    <Content Include="Contenido\XML\BPMO.SDNI.Buscador.Tarifas.xml" />
+    <Content Include="Contenido\XML\BPMO.SDNI.Buscador.Tecnico.xml" />
+    <Content Include="Contenido\XML\BPMO.SDNI.Buscador.TipoCliente.xml" />
+    <Content Include="Contenido\XML\BPMO.SDNI.Buscador.TipoDocumento.xml" />
+    <Content Include="Contenido\XML\BPMO.SDNI.Buscador.TipoServicio.xml" />
+    <Content Include="Contenido\XML\BPMO.SDNI.Buscador.TipoUnidad.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Contenido\XML\BPMO.SDNI.Buscador.Unidad.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Contenido\XML\BPMO.SDNI.Buscador.UnidadDisponibleReservacion.xml" />
+    <Content Include="Contenido\XML\BPMO.SDNI.Buscador.UnidadIdealeaseSimple.xml" />
+    <Content Include="Contenido\XML\BPMO.SDNI.Buscador.UnidadOperativa.xml" />
+    <Content Include="Contenido\XML\BPMO.SDNI.Buscador.UsoCFDI.xml" />
+    <Content Include="Contenido\XML\BPMO.SDNI.Claves.TiposUnidad.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Contenido\XML\BPMO.SDNI.Conexiones.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Contenido\XML\BPMO.SDNI.Buscador.UnidadIdealease.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Contenido\XML\BPMO.SDNI.Configuraciones.Departamentos.Facturacion.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Contenido\XML\BPMO.SDNI.Configuraciones.Descripcion.Lineas.Factura.xml" />
+    <Content Include="Contenido\XML\BPMO.SDNI.Configuraciones.FormasPago.Facturacion.xml" />
+    <Content Include="Contenido\XML\BPMO.SDNI.Configuraciones.Modelos.No.Auditables.xml" />
+    <Content Include="Contenido\XML\BPMO.SDNI.Configuraciones.Paquetes.Mantenimiento.xml" />
+    <Content Include="Contenido\XML\BPMO.SDNI.Configuraciones.Tipo.Renglon.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Contenido\XML\BPMO.SDNI.Configuraciones.TiposRenglon.CostosAdicionales.Facturacion.xml" />
+    <Content Include="Contenido\XML\BPMO.SDNI.Reportes.Anexo.A.SD.xml" />
+    <Content Include="Contenido\XML\BPMO.SDNI.Reportes.Contrato.FSL.Pagare.xml" />
+    <Content Include="Contenido\XML\BPMO.SDNI.Reportes.Contrato.Mantto.CM.Pagare.xml" />
+    <Content Include="Contenido\XML\BPMO.SDNI.Reportes.Anexo.A.CM.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Contenido\XML\BPMO.SDNI.Reportes.Anexo.A.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Contenido\XML\BPMO.SDNI.Reportes.Anexo.C.xml" />
+    <Content Include="Contenido\XML\BPMO.SDNI.Reportes.Constancia.Entrega.Bienes.xml" />
+    <Content Include="Contenido\XML\BPMO.SDNI.Reportes.Contrato.Fisica.xml" />
+    <Content Include="Contenido\XML\BPMO.SDNI.Reportes.Contrato.Maestro.xml" />
+    <Content Include="Contenido\XML\BPMO.SDNI.Reportes.Contrato.Moral.xml" />
+    <Content Include="Contenido\XML\BPMO.SDNI.Reportes.Contrato.Pagare.xml" />
+    <Content Include="Contenido\XML\BPMO.SDNI.Reportes.Contrato.RD.Firmas.xml" />
+    <Content Include="Contenido\XML\BPMO.SDNI.Reportes.Contrato.RD.Pagare.xml" />
+    <Content Include="Contenido\XML\BPMO.SDNI.Reportes.Contrato.Renta.Diaria.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Contenido\XML\BPMO.SDNI.Reportes.Contrato.Renta.Ordinaria.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Contenido\XML\BPMO.SDNI.Reportes.Firmas.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Contenido\XML\BPMO.SDNI.Reportes.Manual.Operaciones.Mantenimiento.xml" />
+    <Content Include="Contenido\XML\BPMO.SDNI.Reportes.Manual.Operaciones.xml" />
+    <Content Include="Contenido\XML\BPMO.SDNI.Buscador.DireccionCuentaClienteIdealease.xml" />
+    <Content Include="Contenido\XML\BPMO.SDNI.Reportes.Check.List.xml" />
+    <Content Include="Contenido\XML\BPMO.SDNI.Reportes.Contrato.Mantto.CM.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Contenido\XML\BPMO.SDNI.Reportes.Contrato.Mantto.SD.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Contenido\XML\BPMO.SDNI.Reportes.Contrato.Mantto.CM.Firmas.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Contenido\XML\BPMO.SDNI.Reportes.Contrato.Mantto.SD.Firmas.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Contenido\XML\BPMO.SDNI.Reportes.Contrato.Mantto.SD.Pagare.xml" />
+    <Content Include="Contenido\XML\BPMO.SDNI.Buscador.UnidadIdealeaseSimple.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Contenido\XML\BPMO.SDNI.Buscador.CuentaClienteIdealeaseSimple.xml" />
+    <Content Include="Contenido\XML\BPMO.SDNI.Buscador.SucursalSeguridadSimple.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Contenido\XML\Formato.Correo.Autorizador.Baja_Unidad.Construccion.xml" />
+    <Content Include="Contenido\XML\Formato.Correo.Autorizador.Baja_Unidad.Equinova.xml" />
+    <Content Include="Contenido\XML\Formato.Correo.Autorizador.Baja_Unidad.Generacion.xml" />
+    <Content Include="Contenido\XML\Formato.Correo.Autorizador.Cancelar_Solicitud_Pago.Construccion.xml" />
+    <Content Include="Contenido\XML\Formato.Correo.Autorizador.Cancelar_Solicitud_Pago.Equinova.xml" />
+    <Content Include="Contenido\XML\Formato.Correo.Autorizador.Cancelar_Solicitud_Pago.Generacion.xml" />
+    <Content Include="Contenido\XML\Formato.Correo.Autorizador.Entrega_Unidad.Construccion.xml" />
+    <Content Include="Contenido\XML\Formato.Correo.Autorizador.Entrega_Unidad.Equinova.xml" />
+    <Content Include="Contenido\XML\Formato.Correo.Autorizador.Entrega_Unidad.Generacion.xml" />
+    <Content Include="Contenido\XML\Formato.Correo.Autorizador.Orden_Servicio.Construccion.xml" />
+    <Content Include="Contenido\XML\Formato.Correo.Autorizador.Orden_Servicio.Equinova.xml" />
+    <Content Include="Contenido\XML\Formato.Correo.Autorizador.Orden_Servicio.Generacion.xml" />
+    <Content Include="Contenido\XML\Formato.Correo.Autorizador.Recepcion_Unidad.Construccion.xml" />
+    <Content Include="Contenido\XML\Formato.Correo.Autorizador.Recepcion_Unidad.Equinova.xml" />
+    <Content Include="Contenido\XML\Formato.Correo.Autorizador.Recepcion_Unidad.Generacion.xml" />
+    <Content Include="Contenido\XML\Formato.Correo.Autorizador.RE_Vencimiento.Construccion.xml" />
+    <Content Include="Contenido\XML\Formato.Correo.Autorizador.RE_Vencimiento.Equinova.xml" />
+    <Content Include="Contenido\XML\Formato.Correo.Autorizador.RE_Vencimiento.Generacion.xml" />
+    <Content Include="Contenido\XML\Formato.Correo.Autorizador.Tarifa_Renta.Construccion.xml" />
+    <Content Include="Contenido\XML\Formato.Correo.Autorizador.Tarifa_Renta.Equinova.xml" />
+    <Content Include="Contenido\XML\Formato.Correo.Autorizador.Tarifa_Renta.Generacion.xml" />
+    <Content Include="Contenido\XML\Formato.Correo.Autorizador.xml" />
+    <Content Include="Contenido\XML\Formato.Correo.Servicio.Realizado.xml" />
+    <Content Include="Contratos.FSL.Reportes.UI\ContratosFSLRegistradosUI.aspx" />
+    <Content Include="Contratos.FSL.UI\AgregarDocumentosContratoUI.aspx" />
+    <Content Include="Contratos.FSL.UI\CerrarContratoFSLUI.aspx" />
+    <Content Include="Contratos.FSL.UI\ConsultarContratosFSLUI.aspx" />
+    <Content Include="Contratos.FSL.UI\DetalleContratoFSLUI.aspx" />
+    <Content Include="Contratos.FSL.UI\EditarContratoFSLUI.aspx" />
+    <Content Include="Contratos.FSL.UI\EditarLineasContratoFSLUI.aspx" />
+    <Content Include="Contratos.FSL.UI\ucClienteContratoUI.ascx" />
+    <Content Include="Contratos.FSL.UI\ucDatosAdicionalesAnexoUI.ascx" />
+    <Content Include="Contratos.FSL.UI\ucDatosRentaUI.ascx" />
+    <Content Include="Contratos.FSL.UI\ucFinalizacionContratoFSLUI.ascx" />
+    <Content Include="Contratos.FSL.UI\ucHerramientasFSLUI.ascx" />
+    <Content Include="Contratos.FSL.UI\RegistrarContratoFSLUI.aspx" />
+    <Content Include="Contratos.FSL.UI\TarifasEquipoAliadoUI.aspx" />
+    <Content Include="Contratos.FSL.UI\ucCargosAdicionalesEquiposAliados.ascx" />
+    <Content Include="Contratos.FSL.UI\ucInformacionGeneralUI.ascx" />
+    <Content Include="Contratos.FSL.UI\ucInformacionPagoUI.ascx" />
+    <Content Include="Contratos.FSL.UI\ucLineaContratoFSLUI.ascx" />
+    <Content Include="Contratos.Mantto.CM.Reportes.UI\ContratosMantenimientoRegistradosUI.aspx" />
+    <Content Include="Contratos.Mantto.CM.UI\AgregarDocumentosContratoUI.aspx" />
+    <Content Include="Contratos.Mantto.CM.UI\CancelarContratoCMUI.aspx" />
+    <Content Include="Contratos.Mantto.CM.UI\CerrarContratoCMUI.aspx" />
+    <Content Include="Contratos.Mantto.CM.UI\ConsultarContratoCMUI.aspx" />
+    <Content Include="Contratos.Mantto.CM.UI\DetalleContratoCMUI.aspx" />
+    <Content Include="Contratos.Mantto.CM.UI\EditarContratoCMUI.aspx" />
+    <Content Include="Contratos.Mantto.CM.UI\RegistrarContratoCMUI.aspx" />
+    <Content Include="Contratos.Mantto.CM.UI\ucHerramientasCMUI.ascx" />
+    <Content Include="Contratos.Mantto.SD.Reportes.UI\ContratoSDRegistradoUI.aspx" />
+    <Content Include="Contratos.Mantto.SD.UI\AgregarDocumentosContratoUI.aspx" />
+    <Content Include="Contratos.Mantto.SD.UI\CancelarContratoSDUI.aspx" />
+    <Content Include="Contratos.Mantto.SD.UI\CerrarContratoSDUI.aspx" />
+    <Content Include="Contratos.Mantto.SD.UI\ConsultarContratoSDUI.aspx" />
+    <Content Include="Contratos.Mantto.SD.UI\DetalleContratoSDUI.aspx" />
+    <Content Include="Contratos.Mantto.SD.UI\EditarContratoSDUI.aspx" />
+    <Content Include="Contratos.Mantto.SD.UI\RegistrarContratoSDUI.aspx" />
+    <Content Include="Contratos.Mantto.SD.UI\ucHerramientasSDUI.ascx" />
+    <Content Include="Contratos.Mantto.UI\ucContratoManttoUI.ascx" />
+    <Content Include="Contratos.PSL.Reportes.UI\DetalladoPSLSucursalUI.aspx" />
+    <Content Include="Contratos.PSL.Reportes.UI\RentaGeneralPSLUI.aspx" />
+    <Content Include="Contratos.PSL.UI\CancelarContratoPSLUI.aspx" />
+    <Content Include="Contratos.PSL.UI\CerrarContratoPSLUI.aspx" />
+    <Content Include="Contratos.PSL.UI\ConsultarConfiguracionDescuentoPSLUI.aspx" />
+    <Content Include="Contratos.PSL.UI\ConsultarListadoVerificacionPSLUI.aspx" />
+    <Content Include="Contratos.PSL.UI\ConsultarContratoROUI.aspx" />
+    <Content Include="Contratos.PSL.UI\ConsultarTarifaPSLUI.aspx" />
+    <Content Include="Contratos.PSL.UI\ConsultarContratoROCUI.aspx" />
+    <Content Include="Contratos.PSL.UI\DetalleConfiguracionDescuentoPSLUI.aspx" />
+    <Content Include="Contratos.PSL.UI\DetallePeriodoTarifarioPSLUI.aspx" />
+    <Content Include="Contratos.PSL.UI\EditarConfiguracionDescuentoPSLUI.aspx" />
+    <Content Include="Contratos.PSL.UI\EditarContratoROCUI.aspx" />
+    <Content Include="Contratos.PSL.UI\EditarPeriodoTarifarioPSLUI.aspx" />
+    <Content Include="Contratos.PSL.UI\RegistrarConfiguracionDescuentoPSLUI.aspx" />
+    <Content Include="Contratos.PSL.UI\RenovarContratoROCUI.aspx" />
+    <Content Include="Contratos.PSL.UI\DetalleContratoROCUI.aspx" />
+    <Content Include="Contratos.PSL.UI\EditarContratoROUI.aspx" />
+    <Content Include="Contratos.PSL.UI\IntercambioUnidadPSLUI.aspx" />
+    <Content Include="Contratos.PSL.UI\RegistrarContratoROCUI.aspx" />
+    <Content Include="Contratos.PSL.UI\DetalleContratoROUI.aspx" />
+    <Content Include="Contratos.PSL.UI\DetalleTarifaPSLUI.aspx" />
+    <Content Include="Contratos.PSL.UI\EditarTarifaPSLUI.aspx" />
+    <Content Include="Contratos.PSL.UI\RegistrarContratoROUI.aspx" />
+    <Content Include="Contratos.PSL.UI\RegistrarEntregaPSLUI.aspx" />
+    <Content Include="Contratos.PSL.UI\RegistrarRecepcionPSLUI.aspx" />
+    <Content Include="Contratos.PSL.UI\RegistrarTarifaPSLUI.aspx" />
+    <Content Include="Contratos.PSL.UI\RenovarContratoROUI.aspx" />
+    <Content Include="Contratos.PSL.UI\TarifaPersonalizadaPSLUI.aspx" />
+    <Content Include="Contratos.PSL.UI\ucCargosAdicionalesCierrePSLUI.ascx" />
+    <Content Include="Contratos.PSL.UI\ucConfiguracionDescuentoPSLUI.ascx" />
+    <Content Include="Contratos.PSL.UI\ucLineaContratoPSLUI.ascx" />
+    <Content Include="Contratos.PSL.UI\ucContratoPSLUI.ascx" />
+    <Content Include="Contratos.PSL.UI\ucHerramientasPSLUI.ascx" />
+    <Content Include="Contratos.PSL.UI\ucPeriodoTarifarioPSLUI.ascx" />
+    <Content Include="Contratos.PSL.UI\ucPuntosVerificacionCompresoresPortatilesPSLUI.ascx" />
+    <Content Include="Contratos.PSL.UI\ucPuntosVerificacionEntregaRecepcionPSLUI.ascx" />
+    <Content Include="Contratos.PSL.UI\ucPuntosVerificacionExcavadoraPSLUI.ascx" />
+    <Content Include="Contratos.PSL.UI\ucPuntosVerificacionMartilloHidraulicoPSLUI.ascx" />
+    <Content Include="Contratos.PSL.UI\ucPuntosVerificacionMiniCargadorPSLUI.ascx" />
+    <Content Include="Contratos.PSL.UI\ucPuntosVerificacionMontaCargaPSLUI.ascx" />
+    <Content Include="Contratos.PSL.UI\ucPuntosVerificacionMotoNiveladoraPSLUI.ascx" />
+    <Content Include="Contratos.PSL.UI\ucPuntosVerificacionPistolaNeumaticaPSLUI.ascx" />
+    <Content Include="Contratos.PSL.UI\ucPuntosVerificacionPlataformaTijerasPSLUI.ascx" />
+    <Content Include="Contratos.PSL.UI\ucPuntosVerificacionRetroExcavadoraPSLUI.ascx" />
+    <Content Include="Contratos.PSL.UI\ucPuntosVerificacionSubArrendadoPSLUI.ascx" />
+    <Content Include="Contratos.PSL.UI\ucPuntosVerificacionTorresLuzPSLUI.ascx" />
+    <Content Include="Contratos.PSL.UI\ucPuntosVerificacionVibroCompactadorPSLUI.ascx" />
+    <Content Include="Contratos.PSL.UI\ucResumenContratoPSLUI.ascx" />
+    <Content Include="Contratos.PSL.UI\ucTarifaPSLUI.ascx" />
+    <Content Include="Contratos.RD.Reportes.UI\DetalladoRDSucursalUI.aspx" />
+    <Content Include="Contratos.RD.Reportes.UI\PorcentajeUtilizacionRDRefrigeradosTipoUI.aspx" />
+    <Content Include="Contratos.RD.Reportes.UI\PorcentajeUtilizacionRDRefrigeradosUI.aspx" />
+    <Content Include="Contratos.RD.Reportes.UI\PorcentajeUtilizacionRDTipoUnidadUI.aspx" />
+    <Content Include="Contratos.RD.Reportes.UI\PorcentajeUtilizacionRDUI.aspx" />
+    <Content Include="Contratos.RD.UI\AgregarDocumentosContratoUI.aspx" />
+    <Content Include="Contratos.RD.UI\CambiarFrecuenciaContratosRDUI.aspx" />
+    <Content Include="Contratos.RD.UI\CancelarContratoRDUI.aspx" />
+    <Content Include="Contratos.RD.UI\CerrarContratoRDUI.aspx" />
+    <Content Include="Contratos.RD.UI\ConsultarCambioFrecuenciaRDUI.aspx" />
+    <Content Include="Contratos.RD.UI\ConsultarContratoRDUI.aspx" />
+    <Content Include="Contratos.RD.UI\ConsultarListadoVerificacionUI.aspx" />
+    <Content Include="Contratos.RD.UI\ConsultarReservacionRDUI.aspx" />
+    <Content Include="Contratos.RD.UI\ConsultarTarifasRDUI.aspx" />
+    <Content Include="Contratos.RD.UI\DetalleContratoRDUI.aspx" />
+    <Content Include="Contratos.RD.UI\DetalleReservacionRDUI.aspx" />
+    <Content Include="Contratos.RD.UI\DetalleTarifaRDUI.aspx" />
+    <Content Include="Contratos.RD.UI\EditarContratoRDUI.aspx" />
+    <Content Include="Contratos.RD.UI\EditarReservacionRDUI.aspx" />
+    <Content Include="Contratos.RD.UI\EditarTarifaRDUI.aspx" />
+    <Content Include="Contratos.RD.UI\RegistrarContratoRDUI.aspx" />
+    <Content Include="Contratos.RD.UI\RegistrarReservacionRDUI.aspx" />
+    <Content Include="Contratos.RD.UI\RegistrarEntregaUI.aspx" />
+    <Content Include="Contratos.RD.UI\RegistrarRecepcionUI.aspx" />
+    <Content Include="Contratos.RD.UI\RegistrarTarifaRDUI.aspx" />
+    <Content Include="Contratos.RD.UI\ucContratoRDUI.ascx" />
+    <Content Include="Contratos.RD.UI\ucHerramientasRDUI.ascx" />
+    <Content Include="Contratos.RD.UI\ucReservacionRDUI.ascx" />
+    <Content Include="Contratos.RD.UI\ucResumenContratoRDUI.ascx" />
+    <Content Include="Contratos.RD.UI\ucTarifaRDUI.ascx" />
+    <Content Include="Contratos.UI\CambiarContratoSucursalUI.aspx" />
+    <Content Include="Contratos.UI\ConsultarContratoSucursalUI.aspx" />
+    <Content Include="Contratos.UI\ConsultarPlantillaUI.aspx" />
+    <Content Include="Contratos.UI\RegistrarPlantillaUI.aspx" />
+    <Content Include="Contratos.UI\ucListadoPlantillasUI.ascx" />
+    <Content Include="Equipos.UI\ConsultarActaNacimientoUI.aspx" />
+    <Content Include="Equipos.UI\ConsultarEquipoAliadoUI.aspx" />
+    <Content Include="Equipos.UI\ConsultarLlantaUI.aspx" />
+    <Content Include="Equipos.UI\DetalleActaNacimientoUI.aspx" />
+    <Content Include="Equipos.UI\DetalleEquipoAliadoUI.aspx" />
+    <Content Include="Equipos.UI\DetalleLlantaUI.aspx" />
+    <Content Include="Equipos.UI\EditarActaNacimientoUI.aspx" />
+    <Content Include="Equipos.UI\EditarEquipoAliadoUI.aspx" />
+    <Content Include="Equipos.UI\EditarLlantaUI.aspx" />
+    <Content Include="Equipos.UI\EliminarEquipoAliadoUI.aspx" />
+    <Content Include="Equipos.UI\EliminarLlantaUI.aspx" />
+    <Content Include="Equipos.UI\RegistrarActaNacimientoUI.aspx" />
+    <Content Include="Contratos.FSL.UI\ucTarifasFSLUI.ascx" />
+    <Content Include="Equipos.UI\RegistrarEquipoAliadoUI.aspx" />
+    <Content Include="Equipos.UI\RegistrarLlantaUI.aspx" />
+    <Content Include="Equipos.UI\ucActaNacimientoUI.ascx" />
+    <Content Include="Equipos.UI\ucAsignacionEquiposAliadosUI.ascx" />
+    <Content Include="Equipos.UI\ucAsignacionLlantasUI.ascx" />
+    <Content Include="Equipos.UI\ucDatosGeneralesUI.ascx" />
+    <Content Include="Equipos.UI\ucEquipoAliadoDetalleUI.ascx" />
+    <Content Include="Equipos.UI\ucEquipoAliadoUI.ascx" />
+    <Content Include="Equipos.UI\ucLlantaUI.ascx" />
+    <Content Include="Equipos.UI\ucDatosTecnicosUI.ascx" />
+    <Content Include="Equipos.UI\ucNumerosSerieUI.ascx" />
+    <Content Include="Equipos.UI\ucResumenActaNacimientoUI.ascx" />
+    <Content Include="Facturacion.AplicacionesFacturacion.UI\ConfigurarFacturacionPSLUI.aspx" />
+    <Content Include="Facturacion.AplicacionesFacturacion.UI\ConfigurarFacturacionUI.aspx" />
+    <Content Include="Facturacion.AplicacionesFacturacion.UI\CargaMasivaContratosUI.aspx" />
+    <Content Include="Facturacion.AplicacionesFacturacion.UI\ConsultarMasterFacturacionUI.aspx" />
+    <Content Include="Facturacion.AplicacionesFacturacion.UI\ConsultarPagosFacturarUI.aspx" />
+    <Content Include="Facturacion.AplicacionesFacturacion.UI\ConsultarPagosNoFacturadosUI.aspx" />
+    <Content Include="Facturacion.AplicacionesFacturacion.UI\ucCostosAdicionalesFacturaContratoUI.ascx" />
+    <Content Include="Facturacion.AplicacionesFacturacion.UI\ucLineasFacturaContratoPSLUI.ascx" />
+    <Content Include="Facturacion.AplicacionesFacturacion.UI\GenerarPagosAdicionalesUI.aspx" />
+    <Content Include="Facturacion.AplicacionesFacturacion.UI\ucCostosAdicionalesUI.ascx" />
+    <Content Include="Facturacion.AplicacionesFacturacion.UI\ucHerramientasPrefacturaUI.ascx" />
+    <Content Include="Facturacion.AplicacionesFacturacion.UI\ucInformacionAdicionalUI.ascx" />
+    <Content Include="Facturacion.AplicacionesFacturacion.UI\ucInformacionCabeceraUI.ascx" />
+    <Content Include="Facturacion.AplicacionesFacturacion.UI\ucInformacionGeneralPSLUI.ascx" />
+    <Content Include="Facturacion.AplicacionesFacturacion.UI\ucLineasFacturaUI.ascx" />
+    <Content Include="Facturacion.AplicacionesPago.UI\VerPagosContratoUI.aspx" />
+    <Content Include="Facturacion.MonitoreoPagos.UI\ConsultarConfigurarAlertaUI.aspx" />
+    <Content Include="Facturacion.MonitoreoPagos.UI\DetalleConfigurarAlertaUI.aspx" />
+    <Content Include="Facturacion.MonitoreoPagos.UI\EditarConfigurarAlertaUI.aspx" />
+    <Content Include="Facturacion.MonitoreoPagos.UI\RegistrarConfigurarAlertaUI.aspx" />
+    <Content Include="Facturacion.MonitoreoPagos.UI\ucConfigurarAlertaUI.ascx" />
+    <Content Include="Flota.Reportes.UI\DescargarReporteExcel.aspx" />
+    <Content Include="Flota.Reportes.UI\DollarUtilizationUI.aspx" />
+    <Content Include="Flota.Reportes.UI\AniejamientoFlotaUI.aspx" />
+    <Content Include="Flota.Reportes.UI\FlotaActivaRDUI.aspx" />
+    <Content Include="Flota.Reportes.UI\DiasRentaTipoUnidadUI.aspx" />
+    <Content Include="Flota.Reportes.UI\DiasRentaUI.aspx" />
+    <Content Include="Flota.Reportes.UI\ConsultarControlRentasPSLUI.aspx" />
+    <Content Include="Flota.Reportes.UI\FlotaActivaUI.aspx" />
+    <Content Include="Flota.Reportes.UI\RentaDiariaGeneralUI.aspx" />
+    <Content Include="Flota.UI\CambiarAsignacionEquipoAliadoUI.aspx" />
+    <Content Include="Flota.UI\CambiarDepartamentoUnidadUI.aspx" />
+    <Content Include="Flota.UI\CambiarSucursalEquipoAliadoUI.aspx" />
+    <Content Include="Flota.UI\CambiarSucursalUnidadUI.aspx" />
+    <Content Include="Flota.UI\ConsultarFlotaUI.aspx" />
+    <Content Include="Flota.UI\ConsultarSeguimientoFlotaUI.aspx" />
+    <Content Include="Flota.UI\ConsultarTableroRDUI.aspx" />
+    <Content Include="Flota.UI\DetalleExpedienteUnidadUI.aspx" />
+    <Content Include="Flota.UI\DetalleFlotaUI.aspx" />
+    <Content Include="Flota.UI\RegistrarAltaUnidadUI.aspx" />
+    <Content Include="Flota.UI\RegistrarBajaUnidadUI.aspx" />
+    <Content Include="Flota.UI\RegistrarReactivacionUnidadUI.aspx" />
+    <Content Include="Flota.UI\ucDatosGeneralesElementoUI.ascx" />
+    <Content Include="Flota.UI\ucEquiposAliadosUnidadUI.ascx" />
+    <Content Include="Global.asax" />
+    <Content Include="Mantenimiento.Reportes.UI\CalcomaniaMantenimientoUI.aspx" />
+    <Content Include="Mantenimiento.Reportes.UI\ComparativoMantenimientoUI.aspx" />
+    <Content Include="Mantenimiento.Reportes.UI\MantenimientoRealizadoContraProgramadoUI.aspx" />
+    <Content Include="Mantenimiento.Reportes.UI\MantenimientoRealizadoUI.aspx" />
+    <Content Include="Mantenimiento.Reportes.UI\RendimientoUnidadUI.aspx" />
+    <Content Include="Mantenimiento.Reportes.UI\ReporteAuditoriasRealizadasUI.aspx" />
+    <Content Include="Mantenimiento.Reportes.UI\SistemasRevisadosUI.aspx" />
+    <Content Include="Mantenimiento.Reportes.UI\UpTimeUI.aspx" />
+    <Content Include="Mantenimiento.UI\ConsultarAuditoriaUI.aspx" />
+    <Content Include="Mantenimiento.UI\ConsultarConfiguracionParametroMantenimientoUI.aspx" />
+    <Content Include="Mantenimiento.UI\ConsultarConfiguracionParametrosAuditoriaUI.aspx" />
+    <Content Include="Mantenimiento.UI\ConsultarConfiguracionSistemaUnidadUI.aspx" />
+    <Content Include="Mantenimiento.UI\ConsultarContactoClienteUI.aspx" />
+    <Content Include="Mantenimiento.UI\ConsultarMantenimientoUI.aspx" />
+    <Content Include="Mantenimiento.UI\ConsultarTareaPendienteUI.aspx" />
+    <Content Include="Mantenimiento.UI\DetalleAuditoria.aspx" />
+    <Content Include="Mantenimiento.UI\DetalleConfiguracionParametroMantenimientoUI.aspx" />
+    <Content Include="Mantenimiento.UI\DetalleConfiguracionParametrosAuditoriaUI.aspx" />
+    <Content Include="Mantenimiento.UI\DetalleConfiguracionSistemaUnidadUI.aspx" />
+    <Content Include="Mantenimiento.UI\DetalleContactoClienteUI.aspx" />
+    <Content Include="Mantenimiento.UI\DetalleMantenimientoUI.aspx" />
+    <Content Include="Mantenimiento.UI\EditarConfiguracionParametroMantenimientoUI.aspx" />
+    <Content Include="Mantenimiento.UI\EditarConfiguracionParametrosAuditoriaUI.aspx" />
+    <Content Include="Mantenimiento.UI\EditarConfiguracionSistemaUnidadUI.aspx" />
+    <Content Include="Mantenimiento.UI\EditarContactoClienteUI.aspx" />
+    <Content Include="Mantenimiento.UI\EditarTareaPendienteUI.aspx" />
+    <Content Include="Mantenimiento.UI\EliminarConfiguracionSistemaUnidadUI.aspx" />
+    <Content Include="Mantenimiento.UI\EliminarContactoClienteUI.aspx" />
+    <Content Include="Mantenimiento.UI\EnviarCorreoServicioRealizadoUI.aspx" />
+    <Content Include="Mantenimiento.UI\ProgramarCitaMantenimientoUI.aspx" />
+    <Content Include="Mantenimiento.UI\ProgramarMantenimientosUI.aspx" />
+    <Content Include="Mantenimiento.UI\PruebaAuditoria.aspx" />
+    <Content Include="Mantenimiento.UI\RealizarAuditoriaMantenimientoUI.aspx" />
+    <Content Include="Mantenimiento.UI\RegistrarConfiguracionParametroMantenimientoUI.aspx" />
+    <Content Include="Mantenimiento.UI\RegistrarConfiguracionParametrosAuditoriaUI.aspx" />
+    <Content Include="Mantenimiento.UI\RegistrarConfiguracionSistemaUnidadUI.aspx" />
+    <Content Include="Mantenimiento.UI\RegistrarContactoClienteUI.aspx" />
+    <Content Include="Mantenimiento.UI\RegistrarTareaPendienteUI.aspx" />
+    <Content Include="Mantenimiento.UI\RegistrarUnidadUI.aspx" />
+    <Content Include="Mantenimiento.UI\ReprogramarCitaMantenimientoUI.aspx" />
+    <Content Include="Mantenimiento.UI\ucConfiguracionParametrosMantenimientoUI.ascx" />
+    <Content Include="Mantenimiento.UI\ucConfiguracionSistemaUnidad.ascx" />
+    <Content Include="Mantenimiento.UI\ucContactoCliente.ascx" />
+    <Content Include="Mantenimiento.UI\ucDatosCitaMantenimientoUI.ascx" />
+    <Content Include="Mantenimiento.UI\ucDatosOrdenServicioUI.ascx" />
+    <Content Include="Mantenimiento.UI\ucDetalleConfiguracionParametrosAuditoriaUI.ascx" />
+    <Content Include="Mantenimiento.UI\ucTareasPendientesUI.ascx" />
+    <Content Include="MapaSitio.UI\MenuPrincipalUI.aspx" />
+    <Content Include="MapaSitio.UI\PaginaErrorUI.aspx" />
+    <Content Include="MapaSitio.UI\PaginaSinAccesoUI.aspx" />
+    <Content Include="Tramites.UI\ConsultarTramitesUI.aspx" />
+    <Content Include="Tramites.UI\DetalleTramitesUI.aspx" />
+    <Content Include="Tramites.UI\EditarTramitesUI.aspx" />
+    <Content Include="Tramites.UI\RegistrarTramitesUI.aspx" />
+    <Content Include="Tramites.UI\ucTramitesActivosUI.ascx" />
+    <Content Include="Tramites.UI\ConsultarSeguroUI.aspx" />
+    <Content Include="Tramites.UI\DetalleSeguroUI.aspx" />
+    <Content Include="Tramites.UI\EditarSeguroUI.aspx" />
+    <Content Include="Tramites.UI\RegistrarSeguroUI.aspx" />
+    <Content Include="Tramites.UI\ucDeducibleSeguroUI.ascx" />
+    <Content Include="Tramites.UI\ucEndosoSeguroUI.ascx" />
+    <Content Include="Tramites.UI\ucSeguroUI.ascx" />
+    <Content Include="Tramites.UI\ucSeguroDetalleUI.ascx" />
+    <Content Include="Tramites.UI\ucSiniestroSeguroUI.ascx" />
+    <Content Include="Tramites.UI\ucTramiteFiltroAKUI.ascx" />
+    <Content Include="Tramites.UI\ucTramiteGPSUI.ascx" />
+    <Content Include="Tramites.UI\ucTramitePlacalUI.ascx" />
+    <Content Include="Tramites.UI\ucTramiteTenenciaUI.ascx" />
+    <Content Include="Tramites.UI\ucTramiteVerificacionUI.ascx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Seguridad.Acceso.UI\ConfiguracionAccesoUI.aspx" />
+    <Content Include="Seguridad.Acceso.UI\LoginUI.aspx" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Buscador.UI\BuscadorUI.aspx.cs">
+      <DependentUpon>BuscadorUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Buscador.UI\BuscadorUI.aspx.designer.cs">
+      <DependentUpon>BuscadorUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Buscador.UI\ExportaFormatoUI.aspx.cs">
+      <DependentUpon>ExportaFormatoUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Buscador.UI\ExportaFormatoUI.aspx.designer.cs">
+      <DependentUpon>ExportaFormatoUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Buscador.UI\VisorUI.aspx.cs">
+      <DependentUpon>VisorUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Buscador.UI\VisorUI.aspx.designer.cs">
+      <DependentUpon>VisorUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Buscador.UI\VisorReporteUI.aspx.cs">
+      <DependentUpon>VisorReporteUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Buscador.UI\VisorReporteUI.aspx.designer.cs">
+      <DependentUpon>VisorReporteUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Comun.UI\ConsultarAutorizadorUI.aspx.cs">
+      <DependentUpon>ConsultarAutorizadorUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Comun.UI\ConsultarAutorizadorUI.aspx.designer.cs">
+      <DependentUpon>ConsultarAutorizadorUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Comun.UI\ConsultarCuentaClienteUI.aspx.cs">
+      <DependentUpon>ConsultarCuentaClienteUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Comun.UI\ConsultarCuentaClienteUI.aspx.designer.cs">
+      <DependentUpon>ConsultarCuentaClienteUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Comun.UI\ConsultarOperadorUI.aspx.cs">
+      <DependentUpon>ConsultarOperadorUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Comun.UI\ConsultarOperadorUI.aspx.designer.cs">
+      <DependentUpon>ConsultarOperadorUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Comun.UI\DetalleAutorizadorUI.aspx.cs">
+      <DependentUpon>DetalleAutorizadorUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Comun.UI\DetalleAutorizadorUI.aspx.designer.cs">
+      <DependentUpon>DetalleAutorizadorUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Comun.UI\EditarAutorizadorUI.aspx.cs">
+      <DependentUpon>EditarAutorizadorUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Comun.UI\EditarAutorizadorUI.aspx.designer.cs">
+      <DependentUpon>EditarAutorizadorUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Comun.UI\EditarOperadorUI.aspx.cs">
+      <DependentUpon>EditarOperadorUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Comun.UI\EditarOperadorUI.aspx.designer.cs">
+      <DependentUpon>EditarOperadorUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Comun.UI\DetalleOperadorUI.aspx.cs">
+      <DependentUpon>DetalleOperadorUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Comun.UI\DetalleOperadorUI.aspx.designer.cs">
+      <DependentUpon>DetalleOperadorUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Comun.UI\DetalleCuentaClienteUI.aspx.cs">
+      <DependentUpon>DetalleCuentaClienteUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Comun.UI\DetalleCuentaClienteUI.aspx.designer.cs">
+      <DependentUpon>DetalleCuentaClienteUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Comun.UI\EditarCuentaClienteUI.aspx.cs">
+      <DependentUpon>EditarCuentaClienteUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Comun.UI\EditarCuentaClienteUI.aspx.designer.cs">
+      <DependentUpon>EditarCuentaClienteUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Comun.UI\hdlrCatalogoDocumentos.ashx.cs">
+      <SubType>Code</SubType>
+      <DependentUpon>hdlrCatalogoDocumentos.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Comun.UI\ObtenerEtiquetaEmpresas.aspx.cs">
+      <DependentUpon>ObtenerEtiquetaEmpresas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Comun.UI\ObtenerEtiquetaEmpresas.aspx.designer.cs">
+      <DependentUpon>ObtenerEtiquetaEmpresas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Comun.UI\RegistrarAutorizadorUI.aspx.cs">
+      <DependentUpon>RegistrarAutorizadorUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Comun.UI\RegistrarAutorizadorUI.aspx.designer.cs">
+      <DependentUpon>RegistrarAutorizadorUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Comun.UI\RegistrarOperadorUI.aspx.cs">
+      <DependentUpon>RegistrarOperadorUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Comun.UI\RegistrarOperadorUI.aspx.designer.cs">
+      <DependentUpon>RegistrarOperadorUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Comun.UI\RegistrarCuentaClienteUI.aspx.cs">
+      <DependentUpon>RegistrarCuentaClienteUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Comun.UI\RegistrarCuentaClienteUI.aspx.designer.cs">
+      <DependentUpon>RegistrarCuentaClienteUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Comun.UI\ucAutorizadorUI.ascx.cs">
+      <DependentUpon>ucAutorizadorUI.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Comun.UI\ucAutorizadorUI.ascx.designer.cs">
+      <DependentUpon>ucAutorizadorUI.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Comun.UI\ucCatalogoDocumentosUI.ascx.cs">
+      <DependentUpon>ucCatalogoDocumentosUI.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Comun.UI\ucCatalogoDocumentosUI.ascx.designer.cs">
+      <DependentUpon>ucCatalogoDocumentosUI.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Comun.UI\ucOperadorUI.ascx.cs">
+      <DependentUpon>ucOperadorUI.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Comun.UI\ucOperadorUI.ascx.designer.cs">
+      <DependentUpon>ucOperadorUI.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Comun.UI\ucDatosActaConstitutivaUI.ascx.cs">
+      <DependentUpon>ucDatosActaConstitutivaUI.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Comun.UI\ucDatosActaConstitutivaUI.ascx.designer.cs">
+      <DependentUpon>ucDatosActaConstitutivaUI.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Comun.UI\ucDatosObligadoSolidarioUI.ascx.cs">
+      <DependentUpon>ucDatosObligadoSolidarioUI.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Comun.UI\ucDatosObligadoSolidarioUI.ascx.designer.cs">
+      <DependentUpon>ucDatosObligadoSolidarioUI.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Comun.UI\ucDatosRepresentanteLegalUI.ascx.cs">
+      <DependentUpon>ucDatosRepresentanteLegalUI.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Comun.UI\ucDatosRepresentanteLegalUI.ascx.designer.cs">
+      <DependentUpon>ucDatosRepresentanteLegalUI.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Contenido\MasterPages\Lite.Master.cs">
+      <DependentUpon>Lite.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contenido\MasterPages\Lite.Master.designer.cs">
+      <DependentUpon>Lite.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Contenido\MasterPages\Pagos.master.cs">
+      <DependentUpon>Pagos.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contenido\MasterPages\Pagos.master.designer.cs">
+      <DependentUpon>Pagos.master</DependentUpon>
+    </Compile>
+    <Compile Include="Contenido\MasterPages\Reportes.Master.cs">
+      <DependentUpon>Reportes.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contenido\MasterPages\Reportes.Master.designer.cs">
+      <DependentUpon>Reportes.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Contenido\MasterPages\Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contenido\MasterPages\Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Contratos.FSL.Reportes.UI\ContratosFSLRegistradosUI.aspx.cs">
+      <DependentUpon>ContratosFSLRegistradosUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contratos.FSL.Reportes.UI\ContratosFSLRegistradosUI.aspx.designer.cs">
+      <DependentUpon>ContratosFSLRegistradosUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contratos.FSL.UI\AgregarDocumentosContratoUI.aspx.cs">
+      <DependentUpon>AgregarDocumentosContratoUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contratos.FSL.UI\AgregarDocumentosContratoUI.aspx.designer.cs">
+      <DependentUpon>AgregarDocumentosContratoUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contratos.FSL.UI\CerrarContratoFSLUI.aspx.cs">
+      <DependentUpon>CerrarContratoFSLUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contratos.FSL.UI\CerrarContratoFSLUI.aspx.designer.cs">
+      <DependentUpon>CerrarContratoFSLUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contratos.FSL.UI\ConsultarContratosFSLUI.aspx.cs">
+      <DependentUpon>ConsultarContratosFSLUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contratos.FSL.UI\ConsultarContratosFSLUI.aspx.designer.cs">
+      <DependentUpon>ConsultarContratosFSLUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contratos.FSL.UI\DetalleContratoFSLUI.aspx.cs">
+      <DependentUpon>DetalleContratoFSLUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contratos.FSL.UI\DetalleContratoFSLUI.aspx.designer.cs">
+      <DependentUpon>DetalleContratoFSLUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contratos.FSL.UI\EditarContratoFSLUI.aspx.cs">
+      <DependentUpon>EditarContratoFSLUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contratos.FSL.UI\EditarContratoFSLUI.aspx.designer.cs">
+      <DependentUpon>EditarContratoFSLUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contratos.FSL.UI\EditarLineasContratoFSLUI.aspx.cs">
+      <DependentUpon>EditarLineasContratoFSLUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contratos.FSL.UI\EditarLineasContratoFSLUI.aspx.designer.cs">
+      <DependentUpon>EditarLineasContratoFSLUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contratos.FSL.UI\ucClienteContratoUI.ascx.cs">
+      <DependentUpon>ucClienteContratoUI.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contratos.FSL.UI\ucClienteContratoUI.ascx.designer.cs">
+      <DependentUpon>ucClienteContratoUI.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Contratos.FSL.UI\ucDatosAdicionalesAnexoUI.ascx.cs">
+      <DependentUpon>ucDatosAdicionalesAnexoUI.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contratos.FSL.UI\ucDatosAdicionalesAnexoUI.ascx.designer.cs">
+      <DependentUpon>ucDatosAdicionalesAnexoUI.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Contratos.FSL.UI\ucDatosRentaUI.ascx.cs">
+      <DependentUpon>ucDatosRentaUI.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contratos.FSL.UI\ucDatosRentaUI.ascx.designer.cs">
+      <DependentUpon>ucDatosRentaUI.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Contratos.FSL.UI\ucFinalizacionContratoFSLUI.ascx.cs">
+      <DependentUpon>ucFinalizacionContratoFSLUI.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contratos.FSL.UI\ucFinalizacionContratoFSLUI.ascx.designer.cs">
+      <DependentUpon>ucFinalizacionContratoFSLUI.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Contratos.FSL.UI\ucHerramientasFSLUI.ascx.cs">
+      <DependentUpon>ucHerramientasFSLUI.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contratos.FSL.UI\ucHerramientasFSLUI.ascx.designer.cs">
+      <DependentUpon>ucHerramientasFSLUI.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Contratos.FSL.UI\RegistrarContratoFSLUI.aspx.cs">
+      <DependentUpon>RegistrarContratoFSLUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contratos.FSL.UI\RegistrarContratoFSLUI.aspx.designer.cs">
+      <DependentUpon>RegistrarContratoFSLUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contratos.FSL.UI\TarifasEquipoAliadoUI.aspx.cs">
+      <DependentUpon>TarifasEquipoAliadoUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contratos.FSL.UI\TarifasEquipoAliadoUI.aspx.designer.cs">
+      <DependentUpon>TarifasEquipoAliadoUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contratos.FSL.UI\ucCargosAdicionalesEquiposAliados.ascx.cs">
+      <DependentUpon>ucCargosAdicionalesEquiposAliados.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contratos.FSL.UI\ucCargosAdicionalesEquiposAliados.ascx.designer.cs">
+      <DependentUpon>ucCargosAdicionalesEquiposAliados.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Contratos.FSL.UI\ucInformacionGeneralUI.ascx.cs">
+      <DependentUpon>ucInformacionGeneralUI.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contratos.FSL.UI\ucInformacionGeneralUI.ascx.designer.cs">
+      <DependentUpon>ucInformacionGeneralUI.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Contratos.FSL.UI\ucInformacionPagoUI.ascx.cs">
+      <DependentUpon>ucInformacionPagoUI.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contratos.FSL.UI\ucInformacionPagoUI.ascx.designer.cs">
+      <DependentUpon>ucInformacionPagoUI.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Contratos.FSL.UI\ucLineaContratoFSLUI.ascx.cs">
+      <DependentUpon>ucLineaContratoFSLUI.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contratos.FSL.UI\ucLineaContratoFSLUI.ascx.designer.cs">
+      <DependentUpon>ucLineaContratoFSLUI.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Contratos.Mantto.CM.Reportes.UI\ContratosMantenimientoRegistradosUI.aspx.cs">
+      <DependentUpon>ContratosMantenimientoRegistradosUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contratos.Mantto.CM.Reportes.UI\ContratosMantenimientoRegistradosUI.aspx.designer.cs">
+      <DependentUpon>ContratosMantenimientoRegistradosUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contratos.Mantto.CM.UI\AgregarDocumentosContratoUI.aspx.cs">
+      <DependentUpon>AgregarDocumentosContratoUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contratos.Mantto.CM.UI\AgregarDocumentosContratoUI.aspx.designer.cs">
+      <DependentUpon>AgregarDocumentosContratoUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contratos.Mantto.CM.UI\CancelarContratoCMUI.aspx.cs">
+      <DependentUpon>CancelarContratoCMUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contratos.Mantto.CM.UI\CancelarContratoCMUI.aspx.designer.cs">
+      <DependentUpon>CancelarContratoCMUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contratos.Mantto.CM.UI\CerrarContratoCMUI.aspx.cs">
+      <DependentUpon>CerrarContratoCMUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contratos.Mantto.CM.UI\CerrarContratoCMUI.aspx.designer.cs">
+      <DependentUpon>CerrarContratoCMUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contratos.Mantto.CM.UI\ConsultarContratoCMUI.aspx.cs">
+      <DependentUpon>ConsultarContratoCMUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contratos.Mantto.CM.UI\ConsultarContratoCMUI.aspx.designer.cs">
+      <DependentUpon>ConsultarContratoCMUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contratos.Mantto.CM.UI\DetalleContratoCMUI.aspx.cs">
+      <DependentUpon>DetalleContratoCMUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contratos.Mantto.CM.UI\DetalleContratoCMUI.aspx.designer.cs">
+      <DependentUpon>DetalleContratoCMUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contratos.Mantto.CM.UI\EditarContratoCMUI.aspx.cs">
+      <DependentUpon>EditarContratoCMUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contratos.Mantto.CM.UI\EditarContratoCMUI.aspx.designer.cs">
+      <DependentUpon>EditarContratoCMUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contratos.Mantto.CM.UI\RegistrarContratoCMUI.aspx.cs">
+      <DependentUpon>RegistrarContratoCMUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contratos.Mantto.CM.UI\RegistrarContratoCMUI.aspx.designer.cs">
+      <DependentUpon>RegistrarContratoCMUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contratos.Mantto.CM.UI\ucHerramientasCMUI.ascx.cs">
+      <DependentUpon>ucHerramientasCMUI.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contratos.Mantto.CM.UI\ucHerramientasCMUI.ascx.designer.cs">
+      <DependentUpon>ucHerramientasCMUI.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Contratos.Mantto.SD.Reportes.UI\ContratoSDRegistradoUI.aspx.cs">
+      <DependentUpon>ContratoSDRegistradoUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contratos.Mantto.SD.Reportes.UI\ContratoSDRegistradoUI.aspx.designer.cs">
+      <DependentUpon>ContratoSDRegistradoUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contratos.Mantto.SD.UI\AgregarDocumentosContratoUI.aspx.cs">
+      <DependentUpon>AgregarDocumentosContratoUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contratos.Mantto.SD.UI\AgregarDocumentosContratoUI.aspx.designer.cs">
+      <DependentUpon>AgregarDocumentosContratoUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contratos.Mantto.SD.UI\CancelarContratoSDUI.aspx.cs">
+      <DependentUpon>CancelarContratoSDUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contratos.Mantto.SD.UI\CancelarContratoSDUI.aspx.designer.cs">
+      <DependentUpon>CancelarContratoSDUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contratos.Mantto.SD.UI\CerrarContratoSDUI.aspx.cs">
+      <DependentUpon>CerrarContratoSDUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contratos.Mantto.SD.UI\CerrarContratoSDUI.aspx.designer.cs">
+      <DependentUpon>CerrarContratoSDUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contratos.Mantto.SD.UI\ConsultarContratoSDUI.aspx.cs">
+      <DependentUpon>ConsultarContratoSDUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contratos.Mantto.SD.UI\ConsultarContratoSDUI.aspx.designer.cs">
+      <DependentUpon>ConsultarContratoSDUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contratos.Mantto.SD.UI\DetalleContratoSDUI.aspx.cs">
+      <DependentUpon>DetalleContratoSDUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contratos.Mantto.SD.UI\DetalleContratoSDUI.aspx.designer.cs">
+      <DependentUpon>DetalleContratoSDUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contratos.Mantto.SD.UI\EditarContratoSDUI.aspx.cs">
+      <DependentUpon>EditarContratoSDUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contratos.Mantto.SD.UI\EditarContratoSDUI.aspx.designer.cs">
+      <DependentUpon>EditarContratoSDUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contratos.Mantto.SD.UI\RegistrarContratoSDUI.aspx.cs">
+      <DependentUpon>RegistrarContratoSDUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contratos.Mantto.SD.UI\RegistrarContratoSDUI.aspx.designer.cs">
+      <DependentUpon>RegistrarContratoSDUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contratos.Mantto.SD.UI\ucHerramientasSDUI.ascx.cs">
+      <DependentUpon>ucHerramientasSDUI.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contratos.Mantto.SD.UI\ucHerramientasSDUI.ascx.designer.cs">
+      <DependentUpon>ucHerramientasSDUI.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Contratos.Mantto.UI\ucContratoManttoUI.ascx.cs">
+      <DependentUpon>ucContratoManttoUI.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contratos.Mantto.UI\ucContratoManttoUI.ascx.designer.cs">
+      <DependentUpon>ucContratoManttoUI.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Contratos.PSL.Reportes.UI\DetalladoPSLSucursalUI.aspx.cs">
+      <DependentUpon>DetalladoPSLSucursalUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contratos.PSL.Reportes.UI\DetalladoPSLSucursalUI.aspx.designer.cs">
+      <DependentUpon>DetalladoPSLSucursalUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contratos.PSL.Reportes.UI\RentaGeneralPSLUI.aspx.cs">
+      <DependentUpon>RentaGeneralPSLUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contratos.PSL.Reportes.UI\RentaGeneralPSLUI.aspx.designer.cs">
+      <DependentUpon>RentaGeneralPSLUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contratos.PSL.UI\CancelarContratoPSLUI.aspx.cs">
+      <DependentUpon>CancelarContratoPSLUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contratos.PSL.UI\CancelarContratoPSLUI.aspx.designer.cs">
+      <DependentUpon>CancelarContratoPSLUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contratos.PSL.UI\CerrarContratoPSLUI.aspx.cs">
+      <DependentUpon>CerrarContratoPSLUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contratos.PSL.UI\CerrarContratoPSLUI.aspx.designer.cs">
+      <DependentUpon>CerrarContratoPSLUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contratos.PSL.UI\ConsultarConfiguracionDescuentoPSLUI.aspx.cs">
+      <DependentUpon>ConsultarConfiguracionDescuentoPSLUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contratos.PSL.UI\ConsultarConfiguracionDescuentoPSLUI.aspx.designer.cs">
+      <DependentUpon>ConsultarConfiguracionDescuentoPSLUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contratos.PSL.UI\ConsultarListadoVerificacionPSLUI.aspx.cs">
+      <DependentUpon>ConsultarListadoVerificacionPSLUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contratos.PSL.UI\ConsultarListadoVerificacionPSLUI.aspx.designer.cs">
+      <DependentUpon>ConsultarListadoVerificacionPSLUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contratos.PSL.UI\ConsultarContratoROUI.aspx.cs">
+      <DependentUpon>ConsultarContratoROUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contratos.PSL.UI\ConsultarContratoROUI.aspx.designer.cs">
+      <DependentUpon>ConsultarContratoROUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contratos.PSL.UI\ConsultarTarifaPSLUI.aspx.cs">
+      <DependentUpon>ConsultarTarifaPSLUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contratos.PSL.UI\ConsultarTarifaPSLUI.aspx.designer.cs">
+      <DependentUpon>ConsultarTarifaPSLUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contratos.PSL.UI\ConsultarContratoROCUI.aspx.cs">
+      <DependentUpon>ConsultarContratoROCUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contratos.PSL.UI\ConsultarContratoROCUI.aspx.designer.cs">
+      <DependentUpon>ConsultarContratoROCUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contratos.PSL.UI\DetalleConfiguracionDescuentoPSLUI.aspx.cs">
+      <DependentUpon>DetalleConfiguracionDescuentoPSLUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contratos.PSL.UI\DetalleConfiguracionDescuentoPSLUI.aspx.designer.cs">
+      <DependentUpon>DetalleConfiguracionDescuentoPSLUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contratos.PSL.UI\DetallePeriodoTarifarioPSLUI.aspx.cs">
+      <DependentUpon>DetallePeriodoTarifarioPSLUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contratos.PSL.UI\DetallePeriodoTarifarioPSLUI.aspx.designer.cs">
+      <DependentUpon>DetallePeriodoTarifarioPSLUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contratos.PSL.UI\EditarConfiguracionDescuentoPSLUI.aspx.cs">
+      <DependentUpon>EditarConfiguracionDescuentoPSLUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contratos.PSL.UI\EditarConfiguracionDescuentoPSLUI.aspx.designer.cs">
+      <DependentUpon>EditarConfiguracionDescuentoPSLUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contratos.PSL.UI\EditarContratoROCUI.aspx.cs">
+      <DependentUpon>EditarContratoROCUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contratos.PSL.UI\EditarContratoROCUI.aspx.designer.cs">
+      <DependentUpon>EditarContratoROCUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contratos.PSL.UI\EditarPeriodoTarifarioPSLUI.aspx.cs">
+      <DependentUpon>EditarPeriodoTarifarioPSLUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contratos.PSL.UI\EditarPeriodoTarifarioPSLUI.aspx.designer.cs">
+      <DependentUpon>EditarPeriodoTarifarioPSLUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contratos.PSL.UI\RegistrarConfiguracionDescuentoPSLUI.aspx.cs">
+      <DependentUpon>RegistrarConfiguracionDescuentoPSLUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contratos.PSL.UI\RegistrarConfiguracionDescuentoPSLUI.aspx.designer.cs">
+      <DependentUpon>RegistrarConfiguracionDescuentoPSLUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contratos.PSL.UI\RenovarContratoROCUI.aspx.cs">
+      <DependentUpon>RenovarContratoROCUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contratos.PSL.UI\RenovarContratoROCUI.aspx.designer.cs">
+      <DependentUpon>RenovarContratoROCUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contratos.PSL.UI\DetalleContratoROCUI.aspx.cs">
+      <DependentUpon>DetalleContratoROCUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contratos.PSL.UI\DetalleContratoROCUI.aspx.designer.cs">
+      <DependentUpon>DetalleContratoROCUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contratos.PSL.UI\EditarContratoROUI.aspx.cs">
+      <DependentUpon>EditarContratoROUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contratos.PSL.UI\EditarContratoROUI.aspx.designer.cs">
+      <DependentUpon>EditarContratoROUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contratos.PSL.UI\IntercambioUnidadPSLUI.aspx.cs">
+      <DependentUpon>IntercambioUnidadPSLUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contratos.PSL.UI\IntercambioUnidadPSLUI.aspx.designer.cs">
+      <DependentUpon>IntercambioUnidadPSLUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contratos.PSL.UI\RegistrarContratoROCUI.aspx.cs">
+      <DependentUpon>RegistrarContratoROCUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contratos.PSL.UI\RegistrarContratoROCUI.aspx.designer.cs">
+      <DependentUpon>RegistrarContratoROCUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contratos.PSL.UI\DetalleContratoROUI.aspx.cs">
+      <DependentUpon>DetalleContratoROUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contratos.PSL.UI\DetalleContratoROUI.aspx.designer.cs">
+      <DependentUpon>DetalleContratoROUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contratos.PSL.UI\DetalleTarifaPSLUI.aspx.cs">
+      <DependentUpon>DetalleTarifaPSLUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contratos.PSL.UI\DetalleTarifaPSLUI.aspx.designer.cs">
+      <DependentUpon>DetalleTarifaPSLUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contratos.PSL.UI\EditarTarifaPSLUI.aspx.cs">
+      <DependentUpon>EditarTarifaPSLUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contratos.PSL.UI\EditarTarifaPSLUI.aspx.designer.cs">
+      <DependentUpon>EditarTarifaPSLUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contratos.PSL.UI\RegistrarContratoROUI.aspx.cs">
+      <DependentUpon>RegistrarContratoROUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contratos.PSL.UI\RegistrarContratoROUI.aspx.designer.cs">
+      <DependentUpon>RegistrarContratoROUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contratos.PSL.UI\RegistrarEntregaPSLUI.aspx.cs">
+      <DependentUpon>RegistrarEntregaPSLUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contratos.PSL.UI\RegistrarEntregaPSLUI.aspx.designer.cs">
+      <DependentUpon>RegistrarEntregaPSLUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contratos.PSL.UI\RegistrarRecepcionPSLUI.aspx.cs">
+      <DependentUpon>RegistrarRecepcionPSLUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contratos.PSL.UI\RegistrarRecepcionPSLUI.aspx.designer.cs">
+      <DependentUpon>RegistrarRecepcionPSLUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contratos.PSL.UI\RegistrarTarifaPSLUI.aspx.cs">
+      <DependentUpon>RegistrarTarifaPSLUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contratos.PSL.UI\RegistrarTarifaPSLUI.aspx.designer.cs">
+      <DependentUpon>RegistrarTarifaPSLUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contratos.PSL.UI\RenovarContratoROUI.aspx.cs">
+      <DependentUpon>RenovarContratoROUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contratos.PSL.UI\RenovarContratoROUI.aspx.designer.cs">
+      <DependentUpon>RenovarContratoROUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contratos.PSL.UI\TarifaPersonalizadaPSLUI.aspx.cs">
+      <DependentUpon>TarifaPersonalizadaPSLUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contratos.PSL.UI\TarifaPersonalizadaPSLUI.aspx.designer.cs">
+      <DependentUpon>TarifaPersonalizadaPSLUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contratos.PSL.UI\ucCargosAdicionalesCierrePSLUI.ascx.cs">
+      <DependentUpon>ucCargosAdicionalesCierrePSLUI.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contratos.PSL.UI\ucCargosAdicionalesCierrePSLUI.ascx.designer.cs">
+      <DependentUpon>ucCargosAdicionalesCierrePSLUI.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Contratos.PSL.UI\ucConfiguracionDescuentoPSLUI.ascx.cs">
+      <DependentUpon>ucConfiguracionDescuentoPSLUI.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contratos.PSL.UI\ucConfiguracionDescuentoPSLUI.ascx.designer.cs">
+      <DependentUpon>ucConfiguracionDescuentoPSLUI.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Contratos.PSL.UI\ucLineaContratoPSLUI.ascx.cs">
+      <DependentUpon>ucLineaContratoPSLUI.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contratos.PSL.UI\ucLineaContratoPSLUI.ascx.designer.cs">
+      <DependentUpon>ucLineaContratoPSLUI.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Contratos.PSL.UI\ucContratoPSLUI.ascx.cs">
+      <DependentUpon>ucContratoPSLUI.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contratos.PSL.UI\ucContratoPSLUI.ascx.designer.cs">
+      <DependentUpon>ucContratoPSLUI.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Contratos.PSL.UI\ucHerramientasPSLUI.ascx.cs">
+      <DependentUpon>ucHerramientasPSLUI.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contratos.PSL.UI\ucHerramientasPSLUI.ascx.designer.cs">
+      <DependentUpon>ucHerramientasPSLUI.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Contratos.PSL.UI\ucPeriodoTarifarioPSLUI.ascx.cs">
+      <DependentUpon>ucPeriodoTarifarioPSLUI.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contratos.PSL.UI\ucPeriodoTarifarioPSLUI.ascx.designer.cs">
+      <DependentUpon>ucPeriodoTarifarioPSLUI.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Contratos.PSL.UI\ucPuntosVerificacionCompresoresPortatilesPSLUI.ascx.cs">
+      <DependentUpon>ucPuntosVerificacionCompresoresPortatilesPSLUI.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contratos.PSL.UI\ucPuntosVerificacionCompresoresPortatilesPSLUI.ascx.designer.cs">
+      <DependentUpon>ucPuntosVerificacionCompresoresPortatilesPSLUI.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Contratos.PSL.UI\ucPuntosVerificacionEntregaRecepcionPSLUI.ascx.cs">
+      <DependentUpon>ucPuntosVerificacionEntregaRecepcionPSLUI.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contratos.PSL.UI\ucPuntosVerificacionEntregaRecepcionPSLUI.ascx.designer.cs">
+      <DependentUpon>ucPuntosVerificacionEntregaRecepcionPSLUI.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Contratos.PSL.UI\ucPuntosVerificacionExcavadoraPSLUI.ascx.cs">
+      <DependentUpon>ucPuntosVerificacionExcavadoraPSLUI.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contratos.PSL.UI\ucPuntosVerificacionExcavadoraPSLUI.ascx.designer.cs">
+      <DependentUpon>ucPuntosVerificacionExcavadoraPSLUI.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Contratos.PSL.UI\ucPuntosVerificacionMartilloHidraulicoPSLUI.ascx.cs">
+      <DependentUpon>ucPuntosVerificacionMartilloHidraulicoPSLUI.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contratos.PSL.UI\ucPuntosVerificacionMartilloHidraulicoPSLUI.ascx.designer.cs">
+      <DependentUpon>ucPuntosVerificacionMartilloHidraulicoPSLUI.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Contratos.PSL.UI\ucPuntosVerificacionMiniCargadorPSLUI.ascx.cs">
+      <DependentUpon>ucPuntosVerificacionMiniCargadorPSLUI.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contratos.PSL.UI\ucPuntosVerificacionMiniCargadorPSLUI.ascx.designer.cs">
+      <DependentUpon>ucPuntosVerificacionMiniCargadorPSLUI.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Contratos.PSL.UI\ucPuntosVerificacionMontaCargaPSLUI.ascx.cs">
+      <DependentUpon>ucPuntosVerificacionMontaCargaPSLUI.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contratos.PSL.UI\ucPuntosVerificacionMontaCargaPSLUI.ascx.designer.cs">
+      <DependentUpon>ucPuntosVerificacionMontaCargaPSLUI.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Contratos.PSL.UI\ucPuntosVerificacionMotoNiveladoraPSLUI.ascx.cs">
+      <DependentUpon>ucPuntosVerificacionMotoNiveladoraPSLUI.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contratos.PSL.UI\ucPuntosVerificacionMotoNiveladoraPSLUI.ascx.designer.cs">
+      <DependentUpon>ucPuntosVerificacionMotoNiveladoraPSLUI.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Contratos.PSL.UI\ucPuntosVerificacionPistolaNeumaticaPSLUI.ascx.cs">
+      <DependentUpon>ucPuntosVerificacionPistolaNeumaticaPSLUI.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contratos.PSL.UI\ucPuntosVerificacionPistolaNeumaticaPSLUI.ascx.designer.cs">
+      <DependentUpon>ucPuntosVerificacionPistolaNeumaticaPSLUI.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Contratos.PSL.UI\ucPuntosVerificacionPlataformaTijerasPSLUI.ascx.cs">
+      <DependentUpon>ucPuntosVerificacionPlataformaTijerasPSLUI.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contratos.PSL.UI\ucPuntosVerificacionPlataformaTijerasPSLUI.ascx.designer.cs">
+      <DependentUpon>ucPuntosVerificacionPlataformaTijerasPSLUI.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Contratos.PSL.UI\ucPuntosVerificacionRetroExcavadoraPSLUI.ascx.cs">
+      <DependentUpon>ucPuntosVerificacionRetroExcavadoraPSLUI.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contratos.PSL.UI\ucPuntosVerificacionRetroExcavadoraPSLUI.ascx.designer.cs">
+      <DependentUpon>ucPuntosVerificacionRetroExcavadoraPSLUI.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Contratos.PSL.UI\ucPuntosVerificacionSubArrendadoPSLUI.ascx.cs">
+      <DependentUpon>ucPuntosVerificacionSubArrendadoPSLUI.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contratos.PSL.UI\ucPuntosVerificacionSubArrendadoPSLUI.ascx.designer.cs">
+      <DependentUpon>ucPuntosVerificacionSubArrendadoPSLUI.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Contratos.PSL.UI\ucPuntosVerificacionTorresLuzPSLUI.ascx.cs">
+      <DependentUpon>ucPuntosVerificacionTorresLuzPSLUI.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contratos.PSL.UI\ucPuntosVerificacionTorresLuzPSLUI.ascx.designer.cs">
+      <DependentUpon>ucPuntosVerificacionTorresLuzPSLUI.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Contratos.PSL.UI\ucPuntosVerificacionVibroCompactadorPSLUI.ascx.cs">
+      <DependentUpon>ucPuntosVerificacionVibroCompactadorPSLUI.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contratos.PSL.UI\ucPuntosVerificacionVibroCompactadorPSLUI.ascx.designer.cs">
+      <DependentUpon>ucPuntosVerificacionVibroCompactadorPSLUI.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Contratos.PSL.UI\ucResumenContratoPSLUI.ascx.cs">
+      <DependentUpon>ucResumenContratoPSLUI.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contratos.PSL.UI\ucResumenContratoPSLUI.ascx.designer.cs">
+      <DependentUpon>ucResumenContratoPSLUI.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Contratos.PSL.UI\ucTarifaPSLUI.ascx.cs">
+      <DependentUpon>ucTarifaPSLUI.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contratos.PSL.UI\ucTarifaPSLUI.ascx.designer.cs">
+      <DependentUpon>ucTarifaPSLUI.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Contratos.RD.Reportes.UI\DetalladoRDSucursalUI.aspx.cs">
+      <DependentUpon>DetalladoRDSucursalUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contratos.RD.Reportes.UI\DetalladoRDSucursalUI.aspx.designer.cs">
+      <DependentUpon>DetalladoRDSucursalUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contratos.RD.Reportes.UI\PorcentajeUtilizacionRDRefrigeradosTipoUI.aspx.cs">
+      <DependentUpon>PorcentajeUtilizacionRDRefrigeradosTipoUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contratos.RD.Reportes.UI\PorcentajeUtilizacionRDRefrigeradosTipoUI.aspx.designer.cs">
+      <DependentUpon>PorcentajeUtilizacionRDRefrigeradosTipoUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contratos.RD.Reportes.UI\PorcentajeUtilizacionRDRefrigeradosUI.aspx.cs">
+      <DependentUpon>PorcentajeUtilizacionRDRefrigeradosUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contratos.RD.Reportes.UI\PorcentajeUtilizacionRDRefrigeradosUI.aspx.designer.cs">
+      <DependentUpon>PorcentajeUtilizacionRDRefrigeradosUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contratos.RD.Reportes.UI\PorcentajeUtilizacionRDTipoUnidadUI.aspx.cs">
+      <DependentUpon>PorcentajeUtilizacionRDTipoUnidadUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contratos.RD.Reportes.UI\PorcentajeUtilizacionRDTipoUnidadUI.aspx.designer.cs">
+      <DependentUpon>PorcentajeUtilizacionRDTipoUnidadUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contratos.RD.Reportes.UI\PorcentajeUtilizacionRDUI.aspx.cs">
+      <DependentUpon>PorcentajeUtilizacionRDUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contratos.RD.Reportes.UI\PorcentajeUtilizacionRDUI.aspx.designer.cs">
+      <DependentUpon>PorcentajeUtilizacionRDUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contratos.RD.UI\AgregarDocumentosContratoUI.aspx.cs">
+      <DependentUpon>AgregarDocumentosContratoUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contratos.RD.UI\AgregarDocumentosContratoUI.aspx.designer.cs">
+      <DependentUpon>AgregarDocumentosContratoUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contratos.RD.UI\CambiarFrecuenciaContratosRDUI.aspx.cs">
+      <DependentUpon>CambiarFrecuenciaContratosRDUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contratos.RD.UI\CambiarFrecuenciaContratosRDUI.aspx.designer.cs">
+      <DependentUpon>CambiarFrecuenciaContratosRDUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contratos.RD.UI\CancelarContratoRDUI.aspx.cs">
+      <DependentUpon>CancelarContratoRDUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contratos.RD.UI\CancelarContratoRDUI.aspx.designer.cs">
+      <DependentUpon>CancelarContratoRDUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contratos.RD.UI\CerrarContratoRDUI.aspx.cs">
+      <DependentUpon>CerrarContratoRDUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contratos.RD.UI\CerrarContratoRDUI.aspx.designer.cs">
+      <DependentUpon>CerrarContratoRDUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contratos.RD.UI\ConsultarCambioFrecuenciaRDUI.aspx.cs">
+      <DependentUpon>ConsultarCambioFrecuenciaRDUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contratos.RD.UI\ConsultarCambioFrecuenciaRDUI.aspx.designer.cs">
+      <DependentUpon>ConsultarCambioFrecuenciaRDUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contratos.RD.UI\ConsultarContratoRDUI.aspx.cs">
+      <DependentUpon>ConsultarContratoRDUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contratos.RD.UI\ConsultarContratoRDUI.aspx.designer.cs">
+      <DependentUpon>ConsultarContratoRDUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contratos.RD.UI\ConsultarListadoVerificacionUI.aspx.cs">
+      <DependentUpon>ConsultarListadoVerificacionUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contratos.RD.UI\ConsultarListadoVerificacionUI.aspx.designer.cs">
+      <DependentUpon>ConsultarListadoVerificacionUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contratos.RD.UI\ConsultarReservacionRDUI.aspx.cs">
+      <DependentUpon>ConsultarReservacionRDUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contratos.RD.UI\ConsultarReservacionRDUI.aspx.designer.cs">
+      <DependentUpon>ConsultarReservacionRDUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contratos.RD.UI\ConsultarTarifasRDUI.aspx.cs">
+      <DependentUpon>ConsultarTarifasRDUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contratos.RD.UI\ConsultarTarifasRDUI.aspx.designer.cs">
+      <DependentUpon>ConsultarTarifasRDUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contratos.RD.UI\DetalleContratoRDUI.aspx.cs">
+      <DependentUpon>DetalleContratoRDUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contratos.RD.UI\DetalleContratoRDUI.aspx.designer.cs">
+      <DependentUpon>DetalleContratoRDUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contratos.RD.UI\DetalleReservacionRDUI.aspx.cs">
+      <DependentUpon>DetalleReservacionRDUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contratos.RD.UI\DetalleReservacionRDUI.aspx.designer.cs">
+      <DependentUpon>DetalleReservacionRDUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contratos.RD.UI\DetalleTarifaRDUI.aspx.cs">
+      <DependentUpon>DetalleTarifaRDUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contratos.RD.UI\DetalleTarifaRDUI.aspx.designer.cs">
+      <DependentUpon>DetalleTarifaRDUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contratos.RD.UI\EditarContratoRDUI.aspx.cs">
+      <DependentUpon>EditarContratoRDUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contratos.RD.UI\EditarContratoRDUI.aspx.designer.cs">
+      <DependentUpon>EditarContratoRDUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contratos.RD.UI\EditarReservacionRDUI.aspx.cs">
+      <DependentUpon>EditarReservacionRDUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contratos.RD.UI\EditarReservacionRDUI.aspx.designer.cs">
+      <DependentUpon>EditarReservacionRDUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contratos.RD.UI\EditarTarifaRDUI.aspx.cs">
+      <DependentUpon>EditarTarifaRDUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contratos.RD.UI\EditarTarifaRDUI.aspx.designer.cs">
+      <DependentUpon>EditarTarifaRDUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contratos.RD.UI\RegistrarContratoRDUI.aspx.cs">
+      <DependentUpon>RegistrarContratoRDUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contratos.RD.UI\RegistrarContratoRDUI.aspx.designer.cs">
+      <DependentUpon>RegistrarContratoRDUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contratos.RD.UI\RegistrarReservacionRDUI.aspx.cs">
+      <DependentUpon>RegistrarReservacionRDUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contratos.RD.UI\RegistrarReservacionRDUI.aspx.designer.cs">
+      <DependentUpon>RegistrarReservacionRDUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contratos.RD.UI\RegistrarEntregaUI.aspx.cs">
+      <DependentUpon>RegistrarEntregaUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contratos.RD.UI\RegistrarEntregaUI.aspx.designer.cs">
+      <DependentUpon>RegistrarEntregaUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contratos.RD.UI\RegistrarRecepcionUI.aspx.cs">
+      <DependentUpon>RegistrarRecepcionUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contratos.RD.UI\RegistrarRecepcionUI.aspx.designer.cs">
+      <DependentUpon>RegistrarRecepcionUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contratos.RD.UI\RegistrarTarifaRDUI.aspx.cs">
+      <DependentUpon>RegistrarTarifaRDUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contratos.RD.UI\RegistrarTarifaRDUI.aspx.designer.cs">
+      <DependentUpon>RegistrarTarifaRDUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contratos.RD.UI\ucContratoRDUI.ascx.cs">
+      <DependentUpon>ucContratoRDUI.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contratos.RD.UI\ucContratoRDUI.ascx.designer.cs">
+      <DependentUpon>ucContratoRDUI.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Contratos.RD.UI\ucHerramientasRDUI.ascx.cs">
+      <DependentUpon>ucHerramientasRDUI.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contratos.RD.UI\ucHerramientasRDUI.ascx.designer.cs">
+      <DependentUpon>ucHerramientasRDUI.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Contratos.RD.UI\ucReservacionRDUI.ascx.cs">
+      <DependentUpon>ucReservacionRDUI.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contratos.RD.UI\ucReservacionRDUI.ascx.designer.cs">
+      <DependentUpon>ucReservacionRDUI.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Contratos.RD.UI\ucResumenContratoRDUI.ascx.cs">
+      <DependentUpon>ucResumenContratoRDUI.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contratos.RD.UI\ucResumenContratoRDUI.ascx.designer.cs">
+      <DependentUpon>ucResumenContratoRDUI.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Contratos.RD.UI\ucTarifaRDUI.ascx.cs">
+      <DependentUpon>ucTarifaRDUI.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contratos.RD.UI\ucTarifaRDUI.ascx.designer.cs">
+      <DependentUpon>ucTarifaRDUI.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Contratos.UI\CambiarContratoSucursalUI.aspx.cs">
+      <DependentUpon>CambiarContratoSucursalUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contratos.UI\CambiarContratoSucursalUI.aspx.designer.cs">
+      <DependentUpon>CambiarContratoSucursalUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contratos.UI\ConsultarContratoSucursalUI.aspx.cs">
+      <DependentUpon>ConsultarContratoSucursalUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contratos.UI\ConsultarContratoSucursalUI.aspx.designer.cs">
+      <DependentUpon>ConsultarContratoSucursalUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contratos.UI\ConsultarPlantillaUI.aspx.cs">
+      <DependentUpon>ConsultarPlantillaUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contratos.UI\ConsultarPlantillaUI.aspx.designer.cs">
+      <DependentUpon>ConsultarPlantillaUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contratos.UI\hdlrDescargarPlantilla.ashx.cs">
+      <DependentUpon>hdlrDescargarPlantilla.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Contratos.UI\RegistrarPlantillaUI.aspx.cs">
+      <DependentUpon>RegistrarPlantillaUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contratos.UI\RegistrarPlantillaUI.aspx.designer.cs">
+      <DependentUpon>RegistrarPlantillaUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contratos.UI\ucListadoPlantillasUI.ascx.cs">
+      <DependentUpon>ucListadoPlantillasUI.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contratos.UI\ucListadoPlantillasUI.ascx.designer.cs">
+      <DependentUpon>ucListadoPlantillasUI.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Equipos.UI\ConsultarActaNacimientoUI.aspx.cs">
+      <DependentUpon>ConsultarActaNacimientoUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Equipos.UI\ConsultarActaNacimientoUI.aspx.designer.cs">
+      <DependentUpon>ConsultarActaNacimientoUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Equipos.UI\ConsultarEquipoAliadoUI.aspx.cs">
+      <DependentUpon>ConsultarEquipoAliadoUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Equipos.UI\ConsultarEquipoAliadoUI.aspx.designer.cs">
+      <DependentUpon>ConsultarEquipoAliadoUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Equipos.UI\ConsultarLlantaUI.aspx.cs">
+      <DependentUpon>ConsultarLlantaUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Equipos.UI\ConsultarLlantaUI.aspx.designer.cs">
+      <DependentUpon>ConsultarLlantaUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Equipos.UI\DetalleActaNacimientoUI.aspx.cs">
+      <DependentUpon>DetalleActaNacimientoUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Equipos.UI\DetalleActaNacimientoUI.aspx.designer.cs">
+      <DependentUpon>DetalleActaNacimientoUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Equipos.UI\DetalleEquipoAliadoUI.aspx.cs">
+      <DependentUpon>DetalleEquipoAliadoUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Equipos.UI\DetalleEquipoAliadoUI.aspx.designer.cs">
+      <DependentUpon>DetalleEquipoAliadoUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Equipos.UI\DetalleLlantaUI.aspx.cs">
+      <DependentUpon>DetalleLlantaUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Equipos.UI\DetalleLlantaUI.aspx.designer.cs">
+      <DependentUpon>DetalleLlantaUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Equipos.UI\EditarActaNacimientoUI.aspx.cs">
+      <DependentUpon>EditarActaNacimientoUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Equipos.UI\EditarActaNacimientoUI.aspx.designer.cs">
+      <DependentUpon>EditarActaNacimientoUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Equipos.UI\EditarEquipoAliadoUI.aspx.cs">
+      <DependentUpon>EditarEquipoAliadoUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Equipos.UI\EditarEquipoAliadoUI.aspx.designer.cs">
+      <DependentUpon>EditarEquipoAliadoUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Equipos.UI\EditarLlantaUI.aspx.cs">
+      <DependentUpon>EditarLlantaUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Equipos.UI\EditarLlantaUI.aspx.designer.cs">
+      <DependentUpon>EditarLlantaUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Equipos.UI\EliminarEquipoAliadoUI.aspx.cs">
+      <DependentUpon>EliminarEquipoAliadoUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Equipos.UI\EliminarEquipoAliadoUI.aspx.designer.cs">
+      <DependentUpon>EliminarEquipoAliadoUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Equipos.UI\EliminarLlantaUI.aspx.cs">
+      <DependentUpon>EliminarLlantaUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Equipos.UI\EliminarLlantaUI.aspx.designer.cs">
+      <DependentUpon>EliminarLlantaUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Equipos.UI\RegistrarActaNacimientoUI.aspx.cs">
+      <DependentUpon>RegistrarActaNacimientoUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Equipos.UI\RegistrarActaNacimientoUI.aspx.designer.cs">
+      <DependentUpon>RegistrarActaNacimientoUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contratos.FSL.UI\ucTarifasFSLUI.ascx.cs">
+      <DependentUpon>ucTarifasFSLUI.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contratos.FSL.UI\ucTarifasFSLUI.ascx.designer.cs">
+      <DependentUpon>ucTarifasFSLUI.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Equipos.UI\RegistrarEquipoAliadoUI.aspx.cs">
+      <DependentUpon>RegistrarEquipoAliadoUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Equipos.UI\RegistrarEquipoAliadoUI.aspx.designer.cs">
+      <DependentUpon>RegistrarEquipoAliadoUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Equipos.UI\RegistrarLlantaUI.aspx.cs">
+      <DependentUpon>RegistrarLlantaUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Equipos.UI\RegistrarLlantaUI.aspx.designer.cs">
+      <DependentUpon>RegistrarLlantaUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Equipos.UI\ucActaNacimientoUI.ascx.cs">
+      <DependentUpon>ucActaNacimientoUI.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Equipos.UI\ucActaNacimientoUI.ascx.designer.cs">
+      <DependentUpon>ucActaNacimientoUI.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Equipos.UI\ucAsignacionEquiposAliadosUI.ascx.cs">
+      <DependentUpon>ucAsignacionEquiposAliadosUI.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Equipos.UI\ucAsignacionEquiposAliadosUI.ascx.designer.cs">
+      <DependentUpon>ucAsignacionEquiposAliadosUI.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Equipos.UI\ucAsignacionLlantasUI.ascx.cs">
+      <DependentUpon>ucAsignacionLlantasUI.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Equipos.UI\ucAsignacionLlantasUI.ascx.designer.cs">
+      <DependentUpon>ucAsignacionLlantasUI.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Equipos.UI\ucDatosGeneralesUI.ascx.cs">
+      <DependentUpon>ucDatosGeneralesUI.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Equipos.UI\ucDatosGeneralesUI.ascx.designer.cs">
+      <DependentUpon>ucDatosGeneralesUI.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Equipos.UI\ucEquipoAliadoDetalleUI.ascx.cs">
+      <DependentUpon>ucEquipoAliadoDetalleUI.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Equipos.UI\ucEquipoAliadoDetalleUI.ascx.designer.cs">
+      <DependentUpon>ucEquipoAliadoDetalleUI.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Equipos.UI\ucEquipoAliadoUI.ascx.cs">
+      <DependentUpon>ucEquipoAliadoUI.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Equipos.UI\ucEquipoAliadoUI.ascx.designer.cs">
+      <DependentUpon>ucEquipoAliadoUI.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Equipos.UI\ucLlantaUI.ascx.cs">
+      <DependentUpon>ucLlantaUI.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Equipos.UI\ucLlantaUI.ascx.designer.cs">
+      <DependentUpon>ucLlantaUI.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Equipos.UI\ucDatosTecnicosUI.ascx.cs">
+      <DependentUpon>ucDatosTecnicosUI.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Equipos.UI\ucDatosTecnicosUI.ascx.designer.cs">
+      <DependentUpon>ucDatosTecnicosUI.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Equipos.UI\ucNumerosSerieUI.ascx.cs">
+      <DependentUpon>ucNumerosSerieUI.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Equipos.UI\ucNumerosSerieUI.ascx.designer.cs">
+      <DependentUpon>ucNumerosSerieUI.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Equipos.UI\ucResumenActaNacimientoUI.ascx.cs">
+      <DependentUpon>ucResumenActaNacimientoUI.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Equipos.UI\ucResumenActaNacimientoUI.ascx.designer.cs">
+      <DependentUpon>ucResumenActaNacimientoUI.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Facturacion.AplicacionesFacturacion.UI\ConfigurarFacturacionPSLUI.aspx.cs">
+      <DependentUpon>ConfigurarFacturacionPSLUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Facturacion.AplicacionesFacturacion.UI\ConfigurarFacturacionPSLUI.aspx.designer.cs">
+      <DependentUpon>ConfigurarFacturacionPSLUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Facturacion.AplicacionesFacturacion.UI\ConfigurarFacturacionUI.aspx.cs">
+      <DependentUpon>ConfigurarFacturacionUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Facturacion.AplicacionesFacturacion.UI\ConfigurarFacturacionUI.aspx.designer.cs">
+      <DependentUpon>ConfigurarFacturacionUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Facturacion.AplicacionesFacturacion.UI\CargaMasivaContratosUI.aspx.cs">
+      <DependentUpon>CargaMasivaContratosUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Facturacion.AplicacionesFacturacion.UI\CargaMasivaContratosUI.aspx.designer.cs">
+      <DependentUpon>CargaMasivaContratosUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Facturacion.AplicacionesFacturacion.UI\ConsultarMasterFacturacionUI.aspx.cs">
+      <DependentUpon>ConsultarMasterFacturacionUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Facturacion.AplicacionesFacturacion.UI\ConsultarMasterFacturacionUI.aspx.designer.cs">
+      <DependentUpon>ConsultarMasterFacturacionUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Facturacion.AplicacionesFacturacion.UI\ConsultarPagosFacturarUI.aspx.cs">
+      <DependentUpon>ConsultarPagosFacturarUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Facturacion.AplicacionesFacturacion.UI\ConsultarPagosFacturarUI.aspx.designer.cs">
+      <DependentUpon>ConsultarPagosFacturarUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Facturacion.AplicacionesFacturacion.UI\ConsultarPagosNoFacturadosUI.aspx.cs">
+      <DependentUpon>ConsultarPagosNoFacturadosUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Facturacion.AplicacionesFacturacion.UI\ConsultarPagosNoFacturadosUI.aspx.designer.cs">
+      <DependentUpon>ConsultarPagosNoFacturadosUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Facturacion.AplicacionesFacturacion.UI\ucCostosAdicionalesFacturaContratoUI.ascx.cs">
+      <DependentUpon>ucCostosAdicionalesFacturaContratoUI.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Facturacion.AplicacionesFacturacion.UI\ucCostosAdicionalesFacturaContratoUI.ascx.designer.cs">
+      <DependentUpon>ucCostosAdicionalesFacturaContratoUI.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Facturacion.AplicacionesFacturacion.UI\ucLineasFacturaContratoPSLUI.ascx.cs">
+      <DependentUpon>ucLineasFacturaContratoPSLUI.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Facturacion.AplicacionesFacturacion.UI\ucLineasFacturaContratoPSLUI.ascx.designer.cs">
+      <DependentUpon>ucLineasFacturaContratoPSLUI.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Facturacion.AplicacionesFacturacion.UI\GenerarPagosAdicionalesUI.aspx.cs">
+      <DependentUpon>GenerarPagosAdicionalesUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Facturacion.AplicacionesFacturacion.UI\GenerarPagosAdicionalesUI.aspx.designer.cs">
+      <DependentUpon>GenerarPagosAdicionalesUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Facturacion.AplicacionesFacturacion.UI\ucCostosAdicionalesUI.ascx.cs">
+      <DependentUpon>ucCostosAdicionalesUI.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Facturacion.AplicacionesFacturacion.UI\ucCostosAdicionalesUI.ascx.designer.cs">
+      <DependentUpon>ucCostosAdicionalesUI.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Facturacion.AplicacionesFacturacion.UI\ucHerramientasPrefacturaUI.ascx.cs">
+      <DependentUpon>ucHerramientasPrefacturaUI.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Facturacion.AplicacionesFacturacion.UI\ucHerramientasPrefacturaUI.ascx.designer.cs">
+      <DependentUpon>ucHerramientasPrefacturaUI.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Facturacion.AplicacionesFacturacion.UI\ucInformacionAdicionalUI.ascx.cs">
+      <DependentUpon>ucInformacionAdicionalUI.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Facturacion.AplicacionesFacturacion.UI\ucInformacionAdicionalUI.ascx.designer.cs">
+      <DependentUpon>ucInformacionAdicionalUI.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Facturacion.AplicacionesFacturacion.UI\ucInformacionCabeceraUI.ascx.cs">
+      <DependentUpon>ucInformacionCabeceraUI.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Facturacion.AplicacionesFacturacion.UI\ucInformacionCabeceraUI.ascx.designer.cs">
+      <DependentUpon>ucInformacionCabeceraUI.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Facturacion.AplicacionesFacturacion.UI\ucInformacionGeneralPSLUI.ascx.cs">
+      <DependentUpon>ucInformacionGeneralPSLUI.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Facturacion.AplicacionesFacturacion.UI\ucInformacionGeneralPSLUI.ascx.designer.cs">
+      <DependentUpon>ucInformacionGeneralPSLUI.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Facturacion.AplicacionesFacturacion.UI\ucLineasFacturaUI.ascx.cs">
+      <DependentUpon>ucLineasFacturaUI.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Facturacion.AplicacionesFacturacion.UI\ucLineasFacturaUI.ascx.designer.cs">
+      <DependentUpon>ucLineasFacturaUI.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Facturacion.AplicacionesPago.UI\VerPagosContratoUI.aspx.cs">
+      <DependentUpon>VerPagosContratoUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Facturacion.AplicacionesPago.UI\VerPagosContratoUI.aspx.designer.cs">
+      <DependentUpon>VerPagosContratoUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Facturacion.MonitoreoPagos.UI\ConsultarConfigurarAlertaUI.aspx.cs">
+      <DependentUpon>ConsultarConfigurarAlertaUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Facturacion.MonitoreoPagos.UI\ConsultarConfigurarAlertaUI.aspx.designer.cs">
+      <DependentUpon>ConsultarConfigurarAlertaUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Facturacion.MonitoreoPagos.UI\DetalleConfigurarAlertaUI.aspx.cs">
+      <DependentUpon>DetalleConfigurarAlertaUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Facturacion.MonitoreoPagos.UI\DetalleConfigurarAlertaUI.aspx.designer.cs">
+      <DependentUpon>DetalleConfigurarAlertaUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Facturacion.MonitoreoPagos.UI\EditarConfigurarAlertaUI.aspx.cs">
+      <DependentUpon>EditarConfigurarAlertaUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Facturacion.MonitoreoPagos.UI\EditarConfigurarAlertaUI.aspx.designer.cs">
+      <DependentUpon>EditarConfigurarAlertaUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Facturacion.MonitoreoPagos.UI\RegistrarConfigurarAlertaUI.aspx.cs">
+      <DependentUpon>RegistrarConfigurarAlertaUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Facturacion.MonitoreoPagos.UI\RegistrarConfigurarAlertaUI.aspx.designer.cs">
+      <DependentUpon>RegistrarConfigurarAlertaUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Facturacion.MonitoreoPagos.UI\ucConfigurarAlertaUI.ascx.cs">
+      <DependentUpon>ucConfigurarAlertaUI.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Facturacion.MonitoreoPagos.UI\ucConfigurarAlertaUI.ascx.designer.cs">
+      <DependentUpon>ucConfigurarAlertaUI.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Flota.Reportes.UI\DescargarReporteExcel.aspx.cs">
+      <DependentUpon>DescargarReporteExcel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Flota.Reportes.UI\DescargarReporteExcel.aspx.designer.cs">
+      <DependentUpon>DescargarReporteExcel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Flota.Reportes.UI\DollarUtilizationUI.aspx.cs">
+      <DependentUpon>DollarUtilizationUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Flota.Reportes.UI\DollarUtilizationUI.aspx.designer.cs">
+      <DependentUpon>DollarUtilizationUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Flota.Reportes.UI\AniejamientoFlotaUI.aspx.cs">
+      <DependentUpon>AniejamientoFlotaUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Flota.Reportes.UI\AniejamientoFlotaUI.aspx.designer.cs">
+      <DependentUpon>AniejamientoFlotaUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Flota.Reportes.UI\FlotaActivaRDUI.aspx.cs">
+      <DependentUpon>FlotaActivaRDUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Flota.Reportes.UI\FlotaActivaRDUI.aspx.designer.cs">
+      <DependentUpon>FlotaActivaRDUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Flota.Reportes.UI\DiasRentaTipoUnidadUI.aspx.cs">
+      <DependentUpon>DiasRentaTipoUnidadUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Flota.Reportes.UI\DiasRentaTipoUnidadUI.aspx.designer.cs">
+      <DependentUpon>DiasRentaTipoUnidadUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Flota.Reportes.UI\DiasRentaUI.aspx.cs">
+      <DependentUpon>DiasRentaUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Flota.Reportes.UI\DiasRentaUI.aspx.designer.cs">
+      <DependentUpon>DiasRentaUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Flota.Reportes.UI\ConsultarControlRentasPSLUI.aspx.cs">
+      <DependentUpon>ConsultarControlRentasPSLUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Flota.Reportes.UI\ConsultarControlRentasPSLUI.aspx.designer.cs">
+      <DependentUpon>ConsultarControlRentasPSLUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Flota.Reportes.UI\FlotaActivaUI.aspx.cs">
+      <DependentUpon>FlotaActivaUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Flota.Reportes.UI\FlotaActivaUI.aspx.designer.cs">
+      <DependentUpon>FlotaActivaUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Flota.Reportes.UI\RentaDiariaGeneralUI.aspx.cs">
+      <DependentUpon>RentaDiariaGeneralUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Flota.Reportes.UI\RentaDiariaGeneralUI.aspx.designer.cs">
+      <DependentUpon>RentaDiariaGeneralUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Flota.UI\CambiarAsignacionEquipoAliadoUI.aspx.cs">
+      <DependentUpon>CambiarAsignacionEquipoAliadoUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Flota.UI\CambiarAsignacionEquipoAliadoUI.aspx.designer.cs">
+      <DependentUpon>CambiarAsignacionEquipoAliadoUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Flota.UI\CambiarDepartamentoUnidadUI.aspx.cs">
+      <DependentUpon>CambiarDepartamentoUnidadUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Flota.UI\CambiarDepartamentoUnidadUI.aspx.designer.cs">
+      <DependentUpon>CambiarDepartamentoUnidadUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Flota.UI\CambiarSucursalEquipoAliadoUI.aspx.cs">
+      <DependentUpon>CambiarSucursalEquipoAliadoUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Flota.UI\CambiarSucursalEquipoAliadoUI.aspx.designer.cs">
+      <DependentUpon>CambiarSucursalEquipoAliadoUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Flota.UI\CambiarSucursalUnidadUI.aspx.cs">
+      <DependentUpon>CambiarSucursalUnidadUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Flota.UI\CambiarSucursalUnidadUI.aspx.designer.cs">
+      <DependentUpon>CambiarSucursalUnidadUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Flota.UI\ConsultarFlotaUI.aspx.cs">
+      <DependentUpon>ConsultarFlotaUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Flota.UI\ConsultarFlotaUI.aspx.designer.cs">
+      <DependentUpon>ConsultarFlotaUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Flota.UI\ConsultarSeguimientoFlotaUI.aspx.cs">
+      <DependentUpon>ConsultarSeguimientoFlotaUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Flota.UI\ConsultarSeguimientoFlotaUI.aspx.designer.cs">
+      <DependentUpon>ConsultarSeguimientoFlotaUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Flota.UI\ConsultarTableroRDUI.aspx.cs">
+      <DependentUpon>ConsultarTableroRDUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Flota.UI\ConsultarTableroRDUI.aspx.designer.cs">
+      <DependentUpon>ConsultarTableroRDUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Flota.UI\DetalleExpedienteUnidadUI.aspx.cs">
+      <DependentUpon>DetalleExpedienteUnidadUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Flota.UI\DetalleExpedienteUnidadUI.aspx.designer.cs">
+      <DependentUpon>DetalleExpedienteUnidadUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Flota.UI\DetalleFlotaUI.aspx.cs">
+      <DependentUpon>DetalleFlotaUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Flota.UI\DetalleFlotaUI.aspx.designer.cs">
+      <DependentUpon>DetalleFlotaUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Flota.UI\RegistrarAltaUnidadUI.aspx.cs">
+      <DependentUpon>RegistrarAltaUnidadUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Flota.UI\RegistrarAltaUnidadUI.aspx.designer.cs">
+      <DependentUpon>RegistrarAltaUnidadUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Flota.UI\RegistrarBajaUnidadUI.aspx.cs">
+      <DependentUpon>RegistrarBajaUnidadUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Flota.UI\RegistrarBajaUnidadUI.aspx.designer.cs">
+      <DependentUpon>RegistrarBajaUnidadUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Flota.UI\RegistrarReactivacionUnidadUI.aspx.cs">
+      <DependentUpon>RegistrarReactivacionUnidadUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Flota.UI\RegistrarReactivacionUnidadUI.aspx.designer.cs">
+      <DependentUpon>RegistrarReactivacionUnidadUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Flota.UI\ucDatosGeneralesElementoUI.ascx.cs">
+      <DependentUpon>ucDatosGeneralesElementoUI.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Flota.UI\ucDatosGeneralesElementoUI.ascx.designer.cs">
+      <DependentUpon>ucDatosGeneralesElementoUI.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Flota.UI\ucEquiposAliadosUnidadUI.ascx.cs">
+      <DependentUpon>ucEquiposAliadosUnidadUI.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Flota.UI\ucEquiposAliadosUnidadUI.ascx.designer.cs">
+      <DependentUpon>ucEquiposAliadosUnidadUI.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento.Reportes.UI\CalcomaniaMantenimientoUI.aspx.cs">
+      <DependentUpon>CalcomaniaMantenimientoUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento.Reportes.UI\CalcomaniaMantenimientoUI.aspx.designer.cs">
+      <DependentUpon>CalcomaniaMantenimientoUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento.Reportes.UI\ComparativoMantenimientoUI.aspx.cs">
+      <DependentUpon>ComparativoMantenimientoUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento.Reportes.UI\ComparativoMantenimientoUI.aspx.designer.cs">
+      <DependentUpon>ComparativoMantenimientoUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento.Reportes.UI\MantenimientoRealizadoContraProgramadoUI.aspx.cs">
+      <DependentUpon>MantenimientoRealizadoContraProgramadoUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento.Reportes.UI\MantenimientoRealizadoContraProgramadoUI.aspx.designer.cs">
+      <DependentUpon>MantenimientoRealizadoContraProgramadoUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento.Reportes.UI\MantenimientoRealizadoUI.aspx.cs">
+      <DependentUpon>MantenimientoRealizadoUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento.Reportes.UI\MantenimientoRealizadoUI.aspx.designer.cs">
+      <DependentUpon>MantenimientoRealizadoUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento.Reportes.UI\RendimientoUnidadUI.aspx.cs">
+      <DependentUpon>RendimientoUnidadUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento.Reportes.UI\RendimientoUnidadUI.aspx.designer.cs">
+      <DependentUpon>RendimientoUnidadUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento.Reportes.UI\ReporteAuditoriasRealizadasUI.aspx.cs">
+      <DependentUpon>ReporteAuditoriasRealizadasUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento.Reportes.UI\ReporteAuditoriasRealizadasUI.aspx.designer.cs">
+      <DependentUpon>ReporteAuditoriasRealizadasUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento.Reportes.UI\SistemasRevisadosUI.aspx.cs">
+      <DependentUpon>SistemasRevisadosUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento.Reportes.UI\SistemasRevisadosUI.aspx.designer.cs">
+      <DependentUpon>SistemasRevisadosUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento.Reportes.UI\UpTimeUI.aspx.cs">
+      <DependentUpon>UpTimeUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento.Reportes.UI\UpTimeUI.aspx.designer.cs">
+      <DependentUpon>UpTimeUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento.UI\ConsultarAuditoriaUI.aspx.cs">
+      <DependentUpon>ConsultarAuditoriaUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento.UI\ConsultarAuditoriaUI.aspx.designer.cs">
+      <DependentUpon>ConsultarAuditoriaUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento.UI\ConsultarConfiguracionParametroMantenimientoUI.aspx.cs">
+      <DependentUpon>ConsultarConfiguracionParametroMantenimientoUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento.UI\ConsultarConfiguracionParametroMantenimientoUI.aspx.designer.cs">
+      <DependentUpon>ConsultarConfiguracionParametroMantenimientoUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento.UI\ConsultarConfiguracionParametrosAuditoriaUI.aspx.cs">
+      <DependentUpon>ConsultarConfiguracionParametrosAuditoriaUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento.UI\ConsultarConfiguracionParametrosAuditoriaUI.aspx.designer.cs">
+      <DependentUpon>ConsultarConfiguracionParametrosAuditoriaUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento.UI\ConsultarConfiguracionSistemaUnidadUI.aspx.cs">
+      <DependentUpon>ConsultarConfiguracionSistemaUnidadUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento.UI\ConsultarConfiguracionSistemaUnidadUI.aspx.designer.cs">
+      <DependentUpon>ConsultarConfiguracionSistemaUnidadUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento.UI\ConsultarContactoClienteUI.aspx.cs">
+      <DependentUpon>ConsultarContactoClienteUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento.UI\ConsultarContactoClienteUI.aspx.designer.cs">
+      <DependentUpon>ConsultarContactoClienteUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento.UI\ConsultarMantenimientoUI.aspx.cs">
+      <DependentUpon>ConsultarMantenimientoUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento.UI\ConsultarMantenimientoUI.aspx.designer.cs">
+      <DependentUpon>ConsultarMantenimientoUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento.UI\ConsultarTareaPendienteUI.aspx.cs">
+      <DependentUpon>ConsultarTareaPendienteUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento.UI\ConsultarTareaPendienteUI.aspx.designer.cs">
+      <DependentUpon>ConsultarTareaPendienteUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento.UI\DetalleAuditoria.aspx.cs">
+      <DependentUpon>DetalleAuditoria.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento.UI\DetalleAuditoria.aspx.designer.cs">
+      <DependentUpon>DetalleAuditoria.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento.UI\DetalleConfiguracionParametroMantenimientoUI.aspx.cs">
+      <DependentUpon>DetalleConfiguracionParametroMantenimientoUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento.UI\DetalleConfiguracionParametroMantenimientoUI.aspx.designer.cs">
+      <DependentUpon>DetalleConfiguracionParametroMantenimientoUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento.UI\DetalleConfiguracionParametrosAuditoriaUI.aspx.cs">
+      <DependentUpon>DetalleConfiguracionParametrosAuditoriaUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento.UI\DetalleConfiguracionParametrosAuditoriaUI.aspx.designer.cs">
+      <DependentUpon>DetalleConfiguracionParametrosAuditoriaUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento.UI\DetalleConfiguracionSistemaUnidadUI.aspx.cs">
+      <DependentUpon>DetalleConfiguracionSistemaUnidadUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento.UI\DetalleConfiguracionSistemaUnidadUI.aspx.designer.cs">
+      <DependentUpon>DetalleConfiguracionSistemaUnidadUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento.UI\DetalleContactoClienteUI.aspx.cs">
+      <DependentUpon>DetalleContactoClienteUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento.UI\DetalleContactoClienteUI.aspx.designer.cs">
+      <DependentUpon>DetalleContactoClienteUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento.UI\DetalleMantenimientoUI.aspx.cs">
+      <DependentUpon>DetalleMantenimientoUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento.UI\DetalleMantenimientoUI.aspx.designer.cs">
+      <DependentUpon>DetalleMantenimientoUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento.UI\EditarConfiguracionParametroMantenimientoUI.aspx.cs">
+      <DependentUpon>EditarConfiguracionParametroMantenimientoUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento.UI\EditarConfiguracionParametroMantenimientoUI.aspx.designer.cs">
+      <DependentUpon>EditarConfiguracionParametroMantenimientoUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento.UI\EditarConfiguracionParametrosAuditoriaUI.aspx.cs">
+      <DependentUpon>EditarConfiguracionParametrosAuditoriaUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento.UI\EditarConfiguracionParametrosAuditoriaUI.aspx.designer.cs">
+      <DependentUpon>EditarConfiguracionParametrosAuditoriaUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento.UI\EditarConfiguracionSistemaUnidadUI.aspx.cs">
+      <DependentUpon>EditarConfiguracionSistemaUnidadUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento.UI\EditarConfiguracionSistemaUnidadUI.aspx.designer.cs">
+      <DependentUpon>EditarConfiguracionSistemaUnidadUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento.UI\EditarContactoClienteUI.aspx.cs">
+      <DependentUpon>EditarContactoClienteUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento.UI\EditarContactoClienteUI.aspx.designer.cs">
+      <DependentUpon>EditarContactoClienteUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento.UI\EditarTareaPendienteUI.aspx.cs">
+      <DependentUpon>EditarTareaPendienteUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento.UI\EditarTareaPendienteUI.aspx.designer.cs">
+      <DependentUpon>EditarTareaPendienteUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento.UI\EliminarConfiguracionSistemaUnidadUI.aspx.cs">
+      <DependentUpon>EliminarConfiguracionSistemaUnidadUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento.UI\EliminarConfiguracionSistemaUnidadUI.aspx.designer.cs">
+      <DependentUpon>EliminarConfiguracionSistemaUnidadUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento.UI\EliminarContactoClienteUI.aspx.cs">
+      <DependentUpon>EliminarContactoClienteUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento.UI\EliminarContactoClienteUI.aspx.designer.cs">
+      <DependentUpon>EliminarContactoClienteUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento.UI\EnviarCorreoServicioRealizadoUI.aspx.cs">
+      <DependentUpon>EnviarCorreoServicioRealizadoUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento.UI\EnviarCorreoServicioRealizadoUI.aspx.designer.cs">
+      <DependentUpon>EnviarCorreoServicioRealizadoUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento.UI\hdlrDescargarEvidenciaAuditoria.ashx.cs">
+      <DependentUpon>hdlrDescargarEvidenciaAuditoria.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento.UI\ProgramarCitaMantenimientoUI.aspx.cs">
+      <DependentUpon>ProgramarCitaMantenimientoUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento.UI\ProgramarCitaMantenimientoUI.aspx.designer.cs">
+      <DependentUpon>ProgramarCitaMantenimientoUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento.UI\ProgramarMantenimientosUI.aspx.cs">
+      <DependentUpon>ProgramarMantenimientosUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento.UI\ProgramarMantenimientosUI.aspx.designer.cs">
+      <DependentUpon>ProgramarMantenimientosUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento.UI\PruebaAuditoria.aspx.cs">
+      <DependentUpon>PruebaAuditoria.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento.UI\PruebaAuditoria.aspx.designer.cs">
+      <DependentUpon>PruebaAuditoria.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento.UI\RealizarAuditoriaMantenimientoUI.aspx.cs">
+      <DependentUpon>RealizarAuditoriaMantenimientoUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento.UI\RealizarAuditoriaMantenimientoUI.aspx.designer.cs">
+      <DependentUpon>RealizarAuditoriaMantenimientoUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento.UI\RegistrarConfiguracionParametroMantenimientoUI.aspx.cs">
+      <DependentUpon>RegistrarConfiguracionParametroMantenimientoUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento.UI\RegistrarConfiguracionParametroMantenimientoUI.aspx.designer.cs">
+      <DependentUpon>RegistrarConfiguracionParametroMantenimientoUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento.UI\RegistrarConfiguracionParametrosAuditoriaUI.aspx.cs">
+      <DependentUpon>RegistrarConfiguracionParametrosAuditoriaUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento.UI\RegistrarConfiguracionParametrosAuditoriaUI.aspx.designer.cs">
+      <DependentUpon>RegistrarConfiguracionParametrosAuditoriaUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento.UI\RegistrarConfiguracionSistemaUnidadUI.aspx.cs">
+      <DependentUpon>RegistrarConfiguracionSistemaUnidadUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento.UI\RegistrarConfiguracionSistemaUnidadUI.aspx.designer.cs">
+      <DependentUpon>RegistrarConfiguracionSistemaUnidadUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento.UI\RegistrarContactoClienteUI.aspx.cs">
+      <DependentUpon>RegistrarContactoClienteUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento.UI\RegistrarContactoClienteUI.aspx.designer.cs">
+      <DependentUpon>RegistrarContactoClienteUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento.UI\RegistrarTareaPendienteUI.aspx.cs">
+      <DependentUpon>RegistrarTareaPendienteUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento.UI\RegistrarTareaPendienteUI.aspx.designer.cs">
+      <DependentUpon>RegistrarTareaPendienteUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento.UI\RegistrarUnidadUI.aspx.cs">
+      <DependentUpon>RegistrarUnidadUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento.UI\RegistrarUnidadUI.aspx.designer.cs">
+      <DependentUpon>RegistrarUnidadUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento.UI\ReprogramarCitaMantenimientoUI.aspx.cs">
+      <DependentUpon>ReprogramarCitaMantenimientoUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento.UI\ReprogramarCitaMantenimientoUI.aspx.designer.cs">
+      <DependentUpon>ReprogramarCitaMantenimientoUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento.UI\ucConfiguracionParametrosMantenimientoUI.ascx.cs">
+      <DependentUpon>ucConfiguracionParametrosMantenimientoUI.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento.UI\ucConfiguracionParametrosMantenimientoUI.ascx.designer.cs">
+      <DependentUpon>ucConfiguracionParametrosMantenimientoUI.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento.UI\ucConfiguracionSistemaUnidad.ascx.cs">
+      <DependentUpon>ucConfiguracionSistemaUnidad.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento.UI\ucConfiguracionSistemaUnidad.ascx.designer.cs">
+      <DependentUpon>ucConfiguracionSistemaUnidad.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento.UI\ucContactoCliente.ascx.cs">
+      <DependentUpon>ucContactoCliente.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento.UI\ucContactoCliente.ascx.designer.cs">
+      <DependentUpon>ucContactoCliente.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento.UI\ucDatosCitaMantenimientoUI.ascx.cs">
+      <DependentUpon>ucDatosCitaMantenimientoUI.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento.UI\ucDatosCitaMantenimientoUI.ascx.designer.cs">
+      <DependentUpon>ucDatosCitaMantenimientoUI.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento.UI\ucDatosOrdenServicioUI.ascx.cs">
+      <DependentUpon>ucDatosOrdenServicioUI.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento.UI\ucDatosOrdenServicioUI.ascx.designer.cs">
+      <DependentUpon>ucDatosOrdenServicioUI.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento.UI\ucDetalleConfiguracionParametrosAuditoriaUI.ascx.cs">
+      <DependentUpon>ucDetalleConfiguracionParametrosAuditoriaUI.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento.UI\ucDetalleConfiguracionParametrosAuditoriaUI.ascx.designer.cs">
+      <DependentUpon>ucDetalleConfiguracionParametrosAuditoriaUI.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento.UI\ucTareasPendientesUI.ascx.cs">
+      <DependentUpon>ucTareasPendientesUI.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento.UI\ucTareasPendientesUI.ascx.designer.cs">
+      <DependentUpon>ucTareasPendientesUI.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MapaSitio.UI\MenuPrincipalUI.aspx.cs">
+      <DependentUpon>MenuPrincipalUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MapaSitio.UI\MenuPrincipalUI.aspx.designer.cs">
+      <DependentUpon>MenuPrincipalUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MapaSitio.UI\PaginaErrorUI.aspx.cs">
+      <DependentUpon>PaginaErrorUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MapaSitio.UI\PaginaErrorUI.aspx.designer.cs">
+      <DependentUpon>PaginaErrorUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MapaSitio.UI\PaginaSinAccesoUI.aspx.cs">
+      <DependentUpon>PaginaSinAccesoUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MapaSitio.UI\PaginaSinAccesoUI.aspx.designer.cs">
+      <DependentUpon>PaginaSinAccesoUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Contenido\Pages\ReportPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Seguridad.Acceso.UI\ConfiguracionAccesoUI.aspx.cs">
+      <DependentUpon>ConfiguracionAccesoUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Seguridad.Acceso.UI\ConfiguracionAccesoUI.aspx.designer.cs">
+      <DependentUpon>ConfiguracionAccesoUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Seguridad.Acceso.UI\LoginUI.aspx.cs">
+      <DependentUpon>LoginUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Seguridad.Acceso.UI\LoginUI.aspx.designer.cs">
+      <DependentUpon>LoginUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tramites.UI\ConsultarTramitesUI.aspx.cs">
+      <DependentUpon>ConsultarTramitesUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tramites.UI\ConsultarTramitesUI.aspx.designer.cs">
+      <DependentUpon>ConsultarTramitesUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tramites.UI\DetalleTramitesUI.aspx.cs">
+      <DependentUpon>DetalleTramitesUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tramites.UI\DetalleTramitesUI.aspx.designer.cs">
+      <DependentUpon>DetalleTramitesUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tramites.UI\EditarTramitesUI.aspx.cs">
+      <DependentUpon>EditarTramitesUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tramites.UI\EditarTramitesUI.aspx.designer.cs">
+      <DependentUpon>EditarTramitesUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tramites.UI\RegistrarTramitesUI.aspx.cs">
+      <DependentUpon>RegistrarTramitesUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tramites.UI\RegistrarTramitesUI.aspx.designer.cs">
+      <DependentUpon>RegistrarTramitesUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tramites.UI\ucTramitesActivosUI.ascx.cs">
+      <DependentUpon>ucTramitesActivosUI.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tramites.UI\ucTramitesActivosUI.ascx.designer.cs">
+      <DependentUpon>ucTramitesActivosUI.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Tramites.UI\ConsultarSeguroUI.aspx.cs">
+      <DependentUpon>ConsultarSeguroUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tramites.UI\ConsultarSeguroUI.aspx.designer.cs">
+      <DependentUpon>ConsultarSeguroUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tramites.UI\DetalleSeguroUI.aspx.cs">
+      <DependentUpon>DetalleSeguroUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tramites.UI\DetalleSeguroUI.aspx.designer.cs">
+      <DependentUpon>DetalleSeguroUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tramites.UI\EditarSeguroUI.aspx.cs">
+      <DependentUpon>EditarSeguroUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tramites.UI\EditarSeguroUI.aspx.designer.cs">
+      <DependentUpon>EditarSeguroUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tramites.UI\RegistrarSeguroUI.aspx.cs">
+      <DependentUpon>RegistrarSeguroUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tramites.UI\RegistrarSeguroUI.aspx.designer.cs">
+      <DependentUpon>RegistrarSeguroUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tramites.UI\ucDeducibleSeguroUI.ascx.cs">
+      <DependentUpon>ucDeducibleSeguroUI.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tramites.UI\ucDeducibleSeguroUI.ascx.designer.cs">
+      <DependentUpon>ucDeducibleSeguroUI.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Tramites.UI\ucEndosoSeguroUI.ascx.cs">
+      <DependentUpon>ucEndosoSeguroUI.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tramites.UI\ucEndosoSeguroUI.ascx.designer.cs">
+      <DependentUpon>ucEndosoSeguroUI.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Tramites.UI\ucSeguroUI.ascx.cs">
+      <DependentUpon>ucSeguroUI.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tramites.UI\ucSeguroUI.ascx.designer.cs">
+      <DependentUpon>ucSeguroUI.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Tramites.UI\ucSeguroDetalleUI.ascx.cs">
+      <DependentUpon>ucSeguroDetalleUI.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tramites.UI\ucSeguroDetalleUI.ascx.designer.cs">
+      <DependentUpon>ucSeguroDetalleUI.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Tramites.UI\ucSiniestroSeguroUI.ascx.cs">
+      <DependentUpon>ucSiniestroSeguroUI.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tramites.UI\ucSiniestroSeguroUI.ascx.designer.cs">
+      <DependentUpon>ucSiniestroSeguroUI.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Tramites.UI\ucTramiteFiltroAKUI.ascx.cs">
+      <DependentUpon>ucTramiteFiltroAKUI.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tramites.UI\ucTramiteFiltroAKUI.ascx.designer.cs">
+      <DependentUpon>ucTramiteFiltroAKUI.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Tramites.UI\ucTramiteGPSUI.ascx.cs">
+      <DependentUpon>ucTramiteGPSUI.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tramites.UI\ucTramiteGPSUI.ascx.designer.cs">
+      <DependentUpon>ucTramiteGPSUI.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Tramites.UI\ucTramitePlacalUI.ascx.cs">
+      <DependentUpon>ucTramitePlacalUI.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tramites.UI\ucTramitePlacalUI.ascx.designer.cs">
+      <DependentUpon>ucTramitePlacalUI.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Tramites.UI\ucTramiteTenenciaUI.ascx.cs">
+      <DependentUpon>ucTramiteTenenciaUI.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tramites.UI\ucTramiteTenenciaUI.ascx.designer.cs">
+      <DependentUpon>ucTramiteTenenciaUI.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Tramites.UI\ucTramiteVerificacionUI.ascx.cs">
+      <DependentUpon>ucTramiteVerificacionUI.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tramites.UI\ucTramiteVerificacionUI.ascx.designer.cs">
+      <DependentUpon>ucTramiteVerificacionUI.ascx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Contenido\MasterPages\Lite.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Comun.UI\hdlrCatalogoDocumentos.ashx" />
+    <Content Include="Contenido\MasterPages\Pagos.master" />
+    <Content Include="Contenido\MasterPages\Reportes.Master" />
+    <None Include="Contenido\XSD\Buscador.Schema.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Contratos.UI\hdlrDescargarPlantilla.ashx" />
+    <Content Include="Mantenimiento.UI\hdlrDescargarEvidenciaAuditoria.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\BPMO.Facade\BPMO.Facade.SDNI.BO\BPMO.Facade.SDNI.BO.csproj">
+      <Project>{F0BDEA5B-E1DB-45E7-9889-E76D1C91BCF6}</Project>
+      <Name>BPMO.Facade.SDNI.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\BPMO.Facade\BPMO.Facade.SDNI\BPMO.Facade.SDNI.csproj">
+      <Project>{9F4751DE-EBF5-4179-B07F-2AF4A5E40CDF}</Project>
+      <Name>BPMO.Facade.SDNI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\BPMO.SDNI.Comun\BPMO.SDNI.Comun.BO\BPMO.SDNI.Comun.BO.csproj">
+      <Project>{ED641CFB-B3D3-471A-A585-1760434F5F6B}</Project>
+      <Name>BPMO.SDNI.Comun.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\BPMO.SDNI.Comun\BPMO.SDNI.Comun\BPMO.SDNI.Comun.csproj">
+      <Project>{57837904-63D6-4FAD-9868-FB9926AE4960}</Project>
+      <Name>BPMO.SDNI.Comun</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\BPMO.SDNI.Contratos\BPMO.SDNI.Contratos.BO\BPMO.SDNI.Contratos.BO.csproj">
+      <Project>{48798ACA-6BCB-425F-93AE-7CE9F5B5C7CF}</Project>
+      <Name>BPMO.SDNI.Contratos.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\BPMO.SDNI.Contratos\BPMO.SDNI.Contratos.FSL.BO\BPMO.SDNI.Contratos.FSL.BO.csproj">
+      <Project>{401FC003-0FF9-4979-BABF-643837AF26E5}</Project>
+      <Name>BPMO.SDNI.Contratos.FSL.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\BPMO.SDNI.Contratos\BPMO.SDNI.Contratos.Mantto.BO\BPMO.SDNI.Contratos.Mantto.BO.csproj">
+      <Project>{E73513A0-81A2-4227-AAFC-3574D32C1674}</Project>
+      <Name>BPMO.SDNI.Contratos.Mantto.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\BPMO.SDNI.Contratos\BPMO.SDNI.Contratos.PSL.BO\BPMO.SDNI.Contratos.PSL.BO.csproj">
+      <Project>{E498EB8B-AC7C-4526-BDDC-967FBEDEC012}</Project>
+      <Name>BPMO.SDNI.Contratos.PSL.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\BPMO.SDNI.Contratos\BPMO.SDNI.Contratos.PSL\BPMO.SDNI.Contratos.PSL.csproj">
+      <Project>{38B4F6CC-00A0-4B41-A4BF-F755E8DE7D57}</Project>
+      <Name>BPMO.SDNI.Contratos.PSL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\BPMO.SDNI.Contratos\BPMO.SDNI.Contratos.RD.BO\BPMO.SDNI.Contratos.RD.BO.csproj">
+      <Project>{A79DA316-A8C5-460B-B01D-15C4D3919AF4}</Project>
+      <Name>BPMO.SDNI.Contratos.RD.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\BPMO.SDNI.Equipos\BPMO.SDNI.Equipos.BO\BPMO.SDNI.Equipos.BO.csproj">
+      <Project>{5C782134-37F3-4402-9D24-A99D4C6F7B20}</Project>
+      <Name>BPMO.SDNI.Equipos.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\BPMO.SDNI.Facturacion\BPMO.SDNI.Facturacion.AplicacionesFacturacion.BO\BPMO.SDNI.Facturacion.AplicacionesFacturacion.BO.csproj">
+      <Project>{AD17CC85-F539-4A93-83B8-18D2C8AC1A15}</Project>
+      <Name>BPMO.SDNI.Facturacion.AplicacionesFacturacion.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\BPMO.SDNI.Facturacion\BPMO.SDNI.Facturacion.InfraestructuraPagos.BO\BPMO.SDNI.Facturacion.InfraestructuraPagos.BO.csproj">
+      <Project>{364DDD0A-9482-4EEE-926E-8458B5A2B459}</Project>
+      <Name>BPMO.SDNI.Facturacion.InfraestructuraPagos.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\BPMO.SDNI.Facturacion\BPMO.SDNI.Facturacion.MonitoreoPagos.BO\BPMO.SDNI.Facturacion.MonitoreoPagos.BO.csproj">
+      <Project>{E9016B2F-1B3C-46BD-B98C-EE8C6AA55A02}</Project>
+      <Name>BPMO.SDNI.Facturacion.MonitoreoPagos.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\BPMO.SDNI.Flota\BPMO.SDNI.Flota.BO\BPMO.SDNI.Flota.BO.csproj">
+      <Project>{3CAA037B-8DB5-4CC0-A61D-20C697140EAC}</Project>
+      <Name>BPMO.SDNI.Flota.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\BPMO.SDNI.Mantenimiento\BPMO.SDNI.Mantenimiento.BO\BPMO.SDNI.Mantenimiento.BO.csproj">
+      <Project>{32541E88-7F7C-48D8-BEA8-9C8342C82191}</Project>
+      <Name>BPMO.SDNI.Mantenimiento.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\BPMO.SDNI.Tramites\BPMO.SDNI.Tramites.BO\BPMO.SDNI.Tramites.BO.csproj">
+      <Project>{3B76A879-F7E8-4390-9443-267101660C58}</Project>
+      <Name>BPMO.SDNI.Tramites.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BPMO.SDNI.Presentador\BPMO.SDNI.Presentador.csproj">
+      <Project>{0B4FBE18-1C0B-4287-9209-6A038BF6EF78}</Project>
+      <Name>BPMO.SDNI.Presentador</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BPMO.SDNI.RECURSOS\BPMO.SDNI.Recursos.csproj">
+      <Project>{029115DD-F13D-45FA-AC38-0A84A2D839C8}</Project>
+      <Name>BPMO.SDNI.Recursos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BPMO.SDNI.Reportes\BPMO.SDNI.Reportes.csproj">
+      <Project>{0B7CA310-D0AD-4060-A251-982242FA2AC7}</Project>
+      <Name>BPMO.SDNI.Reportes</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BPMO.SDNI.Vista\BPMO.SDNI.Vista.csproj">
+      <Project>{E8DCBD22-011E-4A0E-98A1-7F853FC917A4}</Project>
+      <Name>BPMO.SDNI.Vista</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>23107</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/BPMO.SDNI.Web</IISUrl>
+          <OverrideIISAppRootUrl>True</OverrideIISAppRootUrl>
+          <IISAppRootUrl>http://localhost/BPMO.SDNI.Web</IISAppRootUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

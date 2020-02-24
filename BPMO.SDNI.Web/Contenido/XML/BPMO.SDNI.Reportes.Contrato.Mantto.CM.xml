@@ -1,0 +1,568 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--Este archivo satisface los requerimientos especificados en el caso de uso CU031 - Imprimir Contrato Mantenimiento-->
+<reporte>
+	<titulo>
+		<![CDATA[
+    <div  style="font-size:8pt; Text-align: center; font-weight: bold; font-family: Arial, Helvetica Neue, Helvetica, sans-serif;">
+      CONTRATO DE MANTENIMIENTO N&Uacute;MERO [NUMERO_CONTRATO]
+    </div>
+    ]]>
+	</titulo>
+	<leyenda>
+		<obligatorio>
+			<![CDATA[
+      <p style="font-size:8pt; Text-align: justify; font-family: Arial, Helvetica Neue, Helvetica, sans-serif;">
+     Este  contrato de mantenimiento de equipo de transporte se celebra  <b>[FECHA_CONTRATO]</b> entre <b>[NOMBRE_CLIENTE]</b> en adelante: "<b>El Cliente</b>" y por la otra <b>[UNIDAD_OPERATIVA]</b>, en adelante:  "<b>[NOMBRE_CORTO_UNIDAD_OPERATIVA]</b>" [LEYENDA_OBLIGADOS].
+      </p>]]>
+		</obligatorio>
+		<opcionales>
+			<obligados>
+				<![CDATA[ Y <b>[OBLIGADOS_SOLIDARIOS]</b> como <b>Obligado[OBLIG_PLURAL] Solidario[OBLIG_PLURAL]</b>]]>
+			</obligados>
+		</opcionales>
+	</leyenda>
+	<declaraciones>
+		<contenido>
+			<cliente>
+				<declaracion tipo="F">
+					<valor>
+						<![CDATA[
+            El Servicio de Administraci&oacute;n Tributaria, le da a conocer el Registro Federal de Contribuyentes, que le ha asignado y quedado registrado por sus generales 
+            <b>[NOMBRE_CLIENTE]</b> con domicilio en calle <b>[CALLE_CLIENTE]</b> C&oacute;digo Postal <b>[CODIGO_POSTAL]</b> en 
+            <b>[UBICACION_CLIENTE]</b>, con Registro Federal de Contribuyente <b>[RFC_CLIENTE]</b>, de fecha de registro <b>[FECHA_REGISTRO_HDA]</b> y con clave &uacute;nica de 
+            registro de poblaci&oacute;n <b>[CURP_CLIENTE]</b>. Con actividad <b>[GIRO_EMPRESA_CLIENTE]</b>
+          ]]>
+					</valor>
+				</declaracion>
+				<declaracion tipo="M">
+					<valor>
+						<![CDATA[Ser una sociedad debidamente constituida conforme a las leyes mexicanas y que se encuentra funcionando bajo el cumplimiento
+								de dichas leyes, a trav&eacute;s de la <b>escritura p&uacute;blica n&uacute;mero [NUMERO_ESCRITURA_CLIENTE]</b> de fecha <b>[FECHA_ESCRITURA_CLIENTE]</b>, otorgada ante la 
+								fe del Lic.<b>[NOMBRE_NOTARIO_CLIENTE], Notario P&uacute;blico No.[NUMERO_NOTARIA_CLIENTE] de [UBICACION_NOTARIA]</b>, inscrita  en el Registro 
+								P&uacute;blico de la Propiedad y Comercio.
+								]]>
+					</valor>
+				</declaracion>
+				<declaracion tipo="G">
+					<valor>
+						<![CDATA[
+          Ser el propietario o arrendatario de los Vehículos (como mas adelante se define) y poseer licencia para operar bajo este Contrato los Vehículos conforme a las Leyes Federales, Estatales y Locales aplicables.
+          ]]>
+					</valor>
+				</declaracion>
+				<declaracion tipo="G">
+					<valor>
+						<![CDATA[Desea darles mantenimiento a los Vehículos en los términos de este Contrato.]]>
+					</valor>
+				</declaracion>
+				<declaracion tipo="O">
+					<valor>
+						<![CDATA[de fecha <b>[FECHA_ESCRITURA]</b> otorgada ante la fe del <b>Lic. [NOMBRE_NOTARIO], Notario Público No. [NUMERO_NOTARIA] de [LOCALIDAD_NOTARIA]</b>,]]>
+					</valor>
+				</declaracion>
+				<opcionales>
+					<declaracion tipo="OM" subtipo="RLAI">
+						<tipo>RLAI</tipo>
+						<valor>
+							<![CDATA[En la propia Acta Constitutiva le fueron otorgados a <b>[REPRESENTANTES_LEGALES]</b> poderes suficientes para la firma de este contrato, los cuales se encuentran 
+          vigentes y no le han sido revocados.]]>
+						</valor>
+					</declaracion>
+					<declaracion tipo="OM" subtipo="RLAD">
+						<tipo>RLAD</tipo>
+						<valor>
+							<![CDATA[Han otorgado en favor de <b>[REPRESENTANTES_LEGALES]</b> poderes suficientes para la firma de este contrato a trav&eacute;s de <b>la[ESC_PLU] escritura[ESC_PLU] 
+            p&uacute;blica[ESC_PLU] no. [NUMEROS_ACTAS]</b> de fecha <b>[FECHA_ESCRITURA]</b> otorgada ante la fe del <b>Lic. [NOMBRE_NOTARIO], Notario Público No. [NUMERO_NOTARIA] de 
+            [LOCALIDAD_NOTARIA]</b>,[ACTAS_CLIENT_ADD] inscrita[ESC_PLU] en el Registro P&uacute;blico de la Propiedad y Comercio]]>
+						</valor>
+					</declaracion>
+				</opcionales>
+			</cliente>
+			<distribuidor>
+				<![CDATA[
+        <ol type="I" style="font-size:8pt; Text-align: justify; font-family: Arial, Helvetica Neue, Helvetica, sans-serif;">
+          <li>Es una sociedad debidamente constituida conforme a las leyes de M&eacute;xico y que se encuentra funcionando bajo el cumplimiento
+            de dichas leyes, a trav&eacute;s de <b>escritura p&uacute;blica n&uacute;mero quinientos ochenta y tres</b> de fecha <b>12 de Diciembre de 2003</b>
+            , otorgada ante la fe del <b>Abogado Jorge Ram&oacute;n Peniche Aznar</b>,  Notario P&uacute;blico <b>N&uacute;mero Setenta y dos</b> de la
+            <b>Ciudad de M&eacute;rida del Estado de Yucat&aacute;n</b>, inscrita en el <b>Registro P&uacute;blico de la Propiedad y Comercio del Estado de
+            Yucat&aacute;n folio mercantil electr&oacute;nico n&uacute;mero 40647 registrado el 1 de Abril de 2006.</b>
+          </li>
+          <li>Ha otorgado en favor de <b>[REPRESENTANTE_LEGAL_UNIDAD_OPERATIVA]</b> poderes suficientes para la firma de este contrato a trav&eacute;s de
+            <b>escritura p&uacute;blica n&uacute;mero Doscientos cuarenta y ocho</b> de fecha <b>17 de mayo de 2007</b> ante la fe del <b>abogado Jorge 
+            Ram&oacute;n Peniche Aznar</b> Notario P&uacute;blico n&uacute;mero <b>setenta y dos</b> de la Ciudad de M&eacute;rida  del Estado de Yucat&aacute;n,
+            e inscrita en el <b>Registro P&uacute;blico de la Propiedad y Comercio del estado de Yucat&aacute;n con folio mercantil electr&oacute;nico
+            N&uacute;mero 40647 registrado el 21 de Junio de 2007.</b>
+          </li>
+          <li>Que es capaz y tiene los recursos y el deseo de proveer y realizar los servicios de mantenimiento de los vehículos a que se refiere este Contrato</li>
+        </ol>
+        ]]>
+			</distribuidor>
+			<obligadosDepositarios>
+				<declaracionOS id="1" grupo="A">
+					<tipo>NAOSNAD</tipo>
+					<valor>No Aplica</valor>
+				</declaracionOS>
+				<declaracionOS id="2" grupo="A">
+					<tipo>OSPF</tipo>
+					<valor>
+						<![CDATA[El(La) Sr(a). <b>[NOMBRE_OS_FISICO]</b> declara que es una persona f&iacute;sica de nacionalidad mexicana, con plena capacidad legal para obligarse y contratar.]]>
+					</valor>
+				</declaracionOS>
+				<declaracionOS id="3" grupo="A">
+					<tipo>OSPM</tipo>
+					<valor>
+						<![CDATA[Que <b>[NOMBRE_OS_MORAL]</b> es una sociedad debidamente constituida conforme a las leyes mexicanas y que se encuentra funcionando bajo el cumplimiento de dichas 
+          leyes, a trav&eacute;s de la <b>Escritura p&uacute;blica No. [NUMERO_ESCRITURA_OSM]</b> de fecha <b>[FECHA_ESCRITURA_OSM]</b>, otorgada ante la fe del <b>Lic. [NOMBRE_NOTARIO_OSM], 
+          Notar&iacute;o P&uacute;blico No. [NUMERO_NOTARIA_OSM]</b>, inscrita en el Registro P&uacute;blico de la Propiedad y Comercio.]]>
+					</valor>
+				</declaracionOS>
+				<declaracionOS  id="4" grupo="B">
+					<tipo>ROSAI</tipo>
+					<valor>
+						<![CDATA[En la propia Acta Constitutiva le fueron otorgados a <b>[REPRESENTANTES_OS]</b> poderes suficientes para la firma de este contrato, los cuales se encuentran vigentes y no le han sido revocados.]]>
+					</valor>
+				</declaracionOS>
+				<declaracionOS  id="5" grupo="B">
+					<tipo>ROSAD</tipo>
+					<valor>
+						<![CDATA[Que ha otorgado en favor de <b>[REPRESENTANTES_OS]</b> poderes suficientes para la firma de este contrato a través de <b>la[REP_OS_PLU] escritura[REP_OS_PLU]
+            pública[REP_OS_PLU] no. [NUMEROS_ACTAS]</b> de fecha <b>[FECHA_ESCRITURA]</b> otorgada ante la fe del <b>Lic. [NOMBRE_NOTARIO], 
+            Notario Público No. [NUMERO_NOTARIA] de [LOCALIDAD_NOTARIA]</b>,inscrita[ACTA_REP_OS_PLU] en el Registro Público de la Propiedad y Comercio.]]>
+					</valor>
+				</declaracionOS>
+				<declaracionOS  id="6" grupo="C">
+					<tipo>default</tipo>
+					<valor>
+						<![CDATA[ Que es su deseo comparecer en el presente contrato en carácter de Obligado[OBLIG_PLURAL] Solidario[OBLIG_PLURAL] de todas las obligaciones que contraiga “El Cliente” en el mismo.
+						]]>
+					</valor>
+				</declaracionOS>
+			</obligadosDepositarios>
+			<eClausulas>
+				<![CDATA[En vista de que las declaraciones anteriores, y en consideración de los acuerdos bilaterales contenidos en este documento, las partes convienen en celebrar un Contrato de Mantenimiento de Vehículos conforme a las siguientes]]>
+			</eClausulas>
+		</contenido>
+		<plantillas>
+			<padre>
+				<![CDATA[
+        <ol type="A" style="font-size:8pt; font-family: Arial, Helvetica Neue, Helvetica, sans-serif;">
+          <li style="font-weight: bold;">[NOMBRE_CORTO_UNIDAD_OPERATIVA] declara:</li>
+		  [DECLARACION_DISTRIBUIDOR]
+		  <li style="font-weight: bold;">El Cliente declara:</li>
+		  [DECLARACION_CLIENTE]
+          <li><b>Declara[OBLIG_N] [ARTICULO_OBLIG] Obligado[OBLIG_PLURAL] Solidario[OBLIG_PLURAL], bajo protesta de decir la verdad:</b></li>
+		  [DECLARACION_OBLIG_DEP]
+          [ECLAUSULAS]
+        </ol>
+        ]]>
+			</padre>
+			<hijo>
+				<cabecera>
+					<![CDATA[
+          <ol type="1" style="font-size:8pt; Text-align: justify; font-family: Arial, Helvetica Neue, Helvetica, sans-serif;">
+          [ELEMENTOS]
+          </ol>
+          ]]>
+				</cabecera>
+				<elemento>
+					<![CDATA[<li>[TEXTO]</li>]]>
+				</elemento>
+			</hijo>
+		</plantillas>
+	</declaraciones>
+	<clausulas>
+		<contenido>
+			<clausula id="1">
+				<cabecera>
+					<![CDATA[VEHÍCULOS Y TÉRMINOS]]>
+				</cabecera>
+				<valor>
+					<![CDATA[Este Contrato deberá aplicarse a cada vehículo indicado en el Anexo "A" que ha sido firmado por las partes y que forma parte integrante del mismo (en adelante: Vehículos o Vehículo) desde la fecha fijada para ese Vehículo en el Anexo "A" respectivo (Fecha de Inicio) hasta que finalice en la forma en que se prevea en el presente contrato.]]>
+				</valor>
+			</clausula>
+			<clausula id="2">
+				<cabecera>
+					<![CDATA[[NOMBRE_CORTO_UNIDAD_OPERATIVA]]]>
+				</cabecera>
+				<valor>
+					<![CDATA[<ol type="a" style="font-size:8pt; Text-align: justify; font-family: Arial, Helvetica Neue, Helvetica, sans-serif;">
+						<li>[NOMBRE_CORTO_UNIDAD_OPERATIVA] deberá dar mantenimiento, reparación y servicio a los Vehículos, y al llevar a cabo lo anterior proporcionará:<br/>
+						 <ol type="i" style="font-size:8pt; Text-align: justify; font-family: Arial, Helvetica Neue, Helvetica, sans-serif;">
+							<li>Aceite, lubricante, y todas las demás partes necesarias para la operación de los Vehículos.</li>
+							<li>Llantas, cámaras y renovados de llantas como se especifica en el Anexo “A”.</li>
+							<li>Toda la mano de obra y partes requeridas para mantener los Vehículos en buenas condiciones de operación.</li>
+							<li>Un programa de servicio para dar el mantenimiento preventivo e inspecciones para cada Vehículo, los cuales tendrán que realizarse en el taller que para estos efectos se indica en el Anexo "A" (El Taller de Servicio).</li>
+							<li>Las reparaciones necesarias en carretera o en zona urbana a causa de fallas mecánicas que no sean atribuibles a manejo u operación abusiva del Vehículo, es decir, que no sea en incumplimiento con los términos de este Contrato.</li>
+							<li>Lavado exterior de los Vehículos en forma periódica, como está especificado en el Anexo "A"</li>
+							</ol>
+						</li>
+						<li>[NOMBRE_CORTO_UNIDAD_OPERATIVA] llevará a cabo o se hará responsable por el costo de cualquier reparación de emergencia a los Vehículos realizada fuera de el Taller de Servicio, sólo si se cumplen todos y cada uno de los siguientes puntos: <br/>
+							  <ol type="i" style="font-size:8pt; Text-align: justify; font-family: Arial, Helvetica Neue, Helvetica, sans-serif;">
+								<li>Que las reparaciones sean necesarios para el manejo seguro y eficiente del Vehículo.</li>
+								<li>Cuando el operador del cliente o el mismo cliente notifique a [NOMBRE_CORTO_UNIDAD_OPERATIVA] del problema y la ubicación del Vehículo a la brevedad y por los medios mas rápidos y disponibles, y siguiendo  las instrucciones de [NOMBRE_CORTO_UNIDAD_OPERATIVA] correspondientes a reparaciones de emergencia.</li>
+								<li>Si el vehículo ha atendido a su programa de mantenimiento en los términos que se establecen en este contrato y sus anexos.</li>
+								<li>Quedan excluidas las reparaciones de llantas, lavado y cualquier condición no incluida en el presente contrato.</li>
+								<li>En el caso de que [NOMBRE_CORTO_UNIDAD_OPERATIVA] haya costeado la reparación, la parte que corresponda pagar al Cliente en términos de esta cláusula será reembolsada a [NOMBRE_CORTO_UNIDAD_OPERATIVA] dentro de los siguientes cinco días naturales contados a partir de la fecha en que [NOMBRE_CORTO_UNIDAD_OPERATIVA] notifique al Cliente sobre el desembolso correspondiente.</li>
+
+							</ol>
+						</li>
+						<li>[NOMBRE_CORTO_UNIDAD_OPERATIVA] tendrá el derecho de retener y disponer de cualquier parte removida de los Vehículos cuando se reemplacen o instalen partes nuevas en los mismos
+						</li>
+						<li>
+							[NOMBRE_CORTO_UNIDAD_OPERATIVA] no estará obligado a reparar ni reemplazar cualquier equipo accesorio o auxiliar incluyendo de manera enunciativa mas no limitativa: señales reflejantes, fusibles, extinguidor, cuerdas, lonas o cadenas.
+						</li>
+						<li>[NOMBRE_CORTO_UNIDAD_OPERATIVA] no estará obligado a reparar daños o fallas mecánicas causadas por el Cliente en un Vehículo, cuando: <br/>
+							 <ol type="i" style="font-size:8pt; Text-align: justify; font-family: Arial, Helvetica Neue, Helvetica, sans-serif;">
+								<li>La operación del Vehículo se ha llevado a cabo con un semiremolque o cualquier otro equipo que no se encuentre bajo contrato de mantenimiento con [NOMBRE_CORTO_UNIDAD_OPERATIVA] y que no esté en buenas condiciones de operación.</li>
+								<li>El chofer-operador no cumpla con lo dispuesto en la <b>cláusula 4</b> de este Contrato.</li>
+								<li>
+									No se mantengan los niveles adecuados de aceite, refrigerante, agua y presión de aire en las llantas, así como cualquier otro fluido.
+								</li>
+								<li>
+									En las llantas se presente desgaste no uniforme, golpes, mordeduras, ponchaduras, separación de capas, fallas derivadas de una inadecuada presión de las llantas y no imputables a [NOMBRE_CORTO_UNIDAD_OPERATIVA].
+								</li>
+							</ol>
+						</li>
+					</ol>
+			]]>
+				</valor>
+			</clausula>
+			<clausula id="3">
+				<cabecera>
+					<![CDATA[CLIENTE]]>
+				</cabecera>
+				<valor>
+					<![CDATA[
+					<ol type="a" style="font-size:8pt; Text-align: justify; font-family: Arial, Helvetica Neue, Helvetica, sans-serif;">
+						<li>
+						El Cliente deberá devolver cada Vehículo al Distribudior para inspección, servicio, lavado, reparaciones y mantenimiento en el Taller de Servicio indicado en el Anexo "A" aplicable, en los tiempos y con la frecuencia que han acordado las partes en el programa de servicio. El Cliente no deberá permitir que nadie, salvo [NOMBRE_CORTO_UNIDAD_OPERATIVA] o personas expresamente autorizadas por Idealease , haga reparaciones, reemplazos de refacciones o ajustes al Vehículo, incluyendo gobernadores de los sistemas de combustible y accesorios.
+						</li>
+						<li>
+						Cuando menos una vez al día y cada vez que se cargue combustible, el Cliente deberá checar y corregir la presión de las llantas, niveles de aceite, refrigerante,  engrasado y todos los demás fluidos y lubricantes necesarios para el buen funcionamiento de los Vehículos. Asimismo,  llenará la bitácora de inspección diaria IL700. El costo de estos servicios correrá por parte del Cliente siempre que no se haga en las fechas fijadas por [NOMBRE_CORTO_UNIDAD_OPERATIVA] para servicio y mantenimiento del Vehículo. El Cliente conviene en reembolsar a [NOMBRE_CORTO_UNIDAD_OPERATIVA] por todos los costos en que incurra este último, causados por falta del Cliente en dar debido cumplimiento a lo señalado en este inciso.
+						</li>
+						<li>
+						En todos los casos cuando el mantenimiento, reparaciones o ajustes de emergencia al Vehículo sean necesarios, el Cliente notificará a [NOMBRE_CORTO_UNIDAD_OPERATIVA] o Idealease del problema y de la ubicación del Vehículo lo más pronto posible, y deberá seguir las instrucciones de [NOMBRE_CORTO_UNIDAD_OPERATIVA] o Idealease concernientes a las reparaciones de emergencia.  El Cliente acepta que [NOMBRE_CORTO_UNIDAD_OPERATIVA] no será responsable por ninguna reparación o servicio, a menos que dichas reparaciones o servicios hayan sido realizadas conforme a lo establecido en la  cláusula  2 (b) antes mencionada.
+						</li>
+						<li>
+						El Cliente se compromete a no remover ni reemplazar ninguna refacción o pieza del vehículo sin previa autorización de [NOMBRE_CORTO_UNIDAD_OPERATIVA].
+						</li>					
+					</ol>
+         
+          ]]>
+				</valor>
+			</clausula>
+			<clausula id="4">
+				<cabecera>
+					<![CDATA[CHOFERES]]>
+				</cabecera>
+				<valor>
+					<![CDATA[El Cliente está de acuerdo en que los Vehículos deberán ser operados de una manera segura y cuidadosa por un chofer-operador con licencia federal para este tipo de vehículos, de al menos 18 años de edad, que sea empleado de una agencia de choferes reconocida o por el Cliente, que esté sujeto a su exclusiva dirección y control, que posea las aptitudes y  cumpla  con los requisitos establecidos por autoridades federales o estatales y que sea  aprobado previamente por [NOMBRE_CORTO_UNIDAD_OPERATIVA].
+					<p></p>Los choferes-operadores del Cliente deberán en todo momento cumplir con los puntos de este contrato y deberán preparar y firmar todos los reportes requeridos por [NOMBRE_CORTO_UNIDAD_OPERATIVA]. El Cliente se asegurará de que los Vehículos no serán operados por un chofer-operador en posesión o bajo la influencia del alcohol o cualquier droga que pueda menguar la habilidad del chofer-operador.  El Cliente conviene en pagar a [NOMBRE_CORTO_UNIDAD_OPERATIVA]  todas las reparaciones y servicios causados por un chofer-operador que opere un Vehículo en violación a esta cláusula.
+
+          ]]>
+				</valor>
+			</clausula>
+			<clausula id="5">
+				<cabecera>
+					<![CDATA[MANEJO ABUSIVO]]>
+				</cabecera>
+				<valor>
+					<![CDATA[Los Vehículos deberán ser usados y operados por el Cliente sólo en el curso normal y ordinario de su negocio, en caminos pavimentados y rutas contempladas por las partes y establecidas en el Anexo "A" del vehículo.  [NOMBRE_CORTO_UNIDAD_OPERATIVA], no será responsable por las reparaciones y servicios  necesarios por el incumplimiento del Cliente con lo arriba mencionado o por el abuso en el manejo, mismo que incluye pero no limita  cualquier acto de omisión o comisión que se desvíe del razonable cargamento y trato del Vehículo.
+								<p></p>
+								Se considera manejo abusivo cuando existe negligencia en el cuidado del Vehículo y daños que se presentan por causa del operador, siendo los siguientes casos enunciativos mas no limitativos:<br>
+								<ol type="a" style="font-size:8pt; Text-align: justify; font-family: Arial, Helvetica Neue, Helvetica, sans-serif;">
+									<li>El operar el vehículo con bajos niveles de aceite  y  refrigerante,  sin filtros, con bandas rotas,  sobre-revolucionado, con presiones en llantas inferiores a  lo recomendado por el fabricante, con agua en el diesel, combustibles alterados, bolsas de aire bajas.</li>
+									<li>No detener la unidad cuando existe indicación de sobrecalentamiento, mal funcionamiento en el desempeño del vehículo o bien sea notorio el olor a quemado o presencia de humo.
+									</li>
+									<li>Ocasionar golpes, voladuras y mordeduras en la llantas, por elementos externos o sobrecarga. Presentar frenos amarrados o tambores quemados por frenadas de pánico.</li>
+								</ol>
+								<br/>
+								Si a causa del incumplimiento del Cliente en seguir estas disposiciones, el Vehículo necesitase mantenimiento o servicio, [NOMBRE_CORTO_UNIDAD_OPERATIVA] está de acuerdo en realizar el mantenimiento o servicios requeridos y el Cliente está de acuerdo en pagarle a [NOMBRE_CORTO_UNIDAD_OPERATIVA] por los mismos, esto en adición a los cargos de este Contrato.]]>
+
+				</valor>
+			</clausula>
+			<clausula id="6">
+				<cabecera>
+					<![CDATA[CARGOS]]>
+				</cabecera>
+				<valor>
+					<![CDATA[
+          
+                 <ol type="a" style="font-size:8pt; Text-align: justify; font-family: Arial, Helvetica Neue, Helvetica, sans-serif;">
+							<li>
+							El Cliente está de acuerdo en pagar a [NOMBRE_CORTO_UNIDAD_OPERATIVA] todos los cargos, gastos y reembolsos mencionados en este Contrato y sus anexos, en moneda de los Estados Unidos de América o su equivalente en moneda nacional, al tipo de cambio que rija  al momento de pago efectivo según el precio de venta del dólar en el mercado.
+							</li>
+							<li>
+							Los cargos fijos, los de kilometraje  que se mencionan en el Anexo "A"  y los demás previstos en este contrato,  deberán ser pagados por el Cliente cada 15 días a la presentación de la factura de [NOMBRE_CORTO_UNIDAD_OPERATIVA].
+							</li>
+							<li>
+							En caso de que el cliente no presente el vehículo  para su mantenimiento programado y no pueda ser tomada la lectura del kilometraje recorrido, [NOMBRE_CORTO_UNIDAD_OPERATIVA] estimará el kilometraje a facturar utilizando el promedio de los últimos 2 meses ó el kilometraje anual que se indique en  el anexo A, lo que resulte mayor.
+							</li>
+							<li>
+							Los cargos por exceso de kilometraje serán determinados por las lecturas  del odómetro, hubodómetro o la computadora del motor. El Cliente deberá reportarle inmediatamente a [NOMBRE_CORTO_UNIDAD_OPERATIVA] cualquier falla en el odómetro o en el hubodómetro del vehículo. Los kilómetros recorridos por cualquier periodo en que haya  existido una falla de los mismos serán determinados a elección de [NOMBRE_CORTO_UNIDAD_OPERATIVA] de:<br>
+ <ol type="i" style="font-size:8pt; Text-align: justify; font-family: Arial, Helvetica Neue, Helvetica, sans-serif;">
+								<li>
+								Los reportes y bitácoras de viaje del Cliente
+								</li>
+								<li>
+								La cantidad de combustible consumida y el promedio de kilómetros por litro de los treinta (30) días anteriores
+								</li>
+								<li>
+								Cualquier otro método razonable
+								</li>
+							</ol>
+							</li>
+							<li>
+							El Cliente se obliga a documentar los pagos fijos y variables equivalentes a tres meses de mantenimiento de cada vehículo de conformidad con el presente contrato, mediante la suscripción de uno o más pagarés a favor de [NOMBRE_CORTO_UNIDAD_OPERATIVA], en la inteligencia de que su suscripción no implica el pago de los servicios de mantenimiento derivados del presente contrato y sus anexos, ni constituye recibo de los mismos.
+							</li>
+							<li>
+							En caso de que el cliente no se encuentre al corriente en sus pagos de mantenimiento, el crédito le será suspendido y los servicios de mantenimiento tanto fijo como variable deberán de ser pagados de contado. El que el crédito sea suspendido no implica que se suspendan los mantenimientos especificados en el presente contrato.
+							</li>
+							<li>
+							Durante el tiempo requerido para la reparación en caso de accidente, el Cliente deberá pagar por concepto de mantenimiento solamente el cargo fijo especificado en el anexo “A” del vehículo.
+							</li>
+								
+						</ol>
+       
+          ]]>
+				</valor>
+			</clausula>
+			<clausula id="7">
+				<cabecera>
+					<![CDATA[AJUSTE POR INFLACIÓN]]>
+				</cabecera>
+				<valor>
+					<![CDATA[
+						El Cliente está de acuerdo en que por cada incremento del uno por ciento (1%) del Índice Nacional de Precios al Consumidor, publicado por el Banco de México,  por encima de la cifra del índice base del Anexo "A" de este contrato,  se ajustará el cargo fijo y variable por cada Vehículo en la misma proporción. Los ajustes en cargos serán efectivos el Primero de enero, Primero de abril, Primero de julio y Primero de octubre de cada año, y estarán basados en el último Índice publicado anterior a dicha fecha.
+          ]]>
+				</valor>
+			</clausula>
+			<clausula id="8">
+				<cabecera>
+					<![CDATA[MORA]]>
+				</cabecera>
+				<valor>
+					<![CDATA[
+					<ol type="a" style="font-size:8pt; Text-align: justify; font-family: Arial, Helvetica Neue, Helvetica, sans-serif;">
+			<li>En caso de que el cliente incurra en mora de cualquier obligación de pago de los cargos establecidas en la cláusula sexta del presente contrato,  pagará a [NOMBRE_CORTO_UNIDAD_OPERATIVA] cargos moratorios sobre cualquier cantidad vencida y no pagada, equivalente al resultado de multiplicar 1.5 veces la Tasa de Interés al 3% sobre la deuda insoluta vigente en la fecha de incumplimiento por el importe vencido no pagado, dividido posteriormente entre 360 días y multiplicado por el número de días transcurridos entre la fecha original de pago y la fecha en que efectivamente se realice este, sin perjuicio del derecho que tendrá [NOMBRE_CORTO_UNIDAD_OPERATIVA] de rescindir el presente contrato o exigir el cumplimiento forzoso del mismo.</li>
+
+			<li>En caso de incumplimiento de cualquier obligación a cargo del Cliente derivada del presente contrato y de cualesquiera Anexo “A” que no consista en el pago de alguna cantidad y  si dicho incumplimiento no es remediado dentro de los 5 días naturales siguientes a la fecha en que el Cliente hubiere incurrido en el mismo, el Cliente se obliga a pagar, como pena por retraso, un importe equivalente al 10% sobre el importe del pago mensual por concepto de mantenimiento previsto en la totalidad de los Anexos “A”, que hubiere suscrito en la fecha del incumplimiento de que se trate y hasta que el mismo sea.
+			</li></ol>
+		  ]]>
+				</valor>
+			</clausula>
+			<clausula id="9">
+				<cabecera>
+					<![CDATA[PAGO DE IMPUESTOS]]>
+				</cabecera>
+				<valor>
+					<![CDATA[El Cliente conviene en pagar el Impuesto al Valor Agregado y cualquier otro impuesto aplicable a [NOMBRE_CORTO_UNIDAD_OPERATIVA] que resulten de la prestación de servicios independientes al Cliente por parte de [NOMBRE_CORTO_UNIDAD_OPERATIVA].
+                 ]]>
+				</valor>
+			</clausula>
+			<clausula id="10">
+				<cabecera>
+					<![CDATA[SEGUROS]]>
+				</cabecera>
+				<valor>
+					<![CDATA[
+					<ol type="a" style="font-size:8pt; Text-align: justify; font-family: Arial, Helvetica Neue, Helvetica, sans-serif;">
+					<li>Seguro de daños y Responsabilidad Civil. Si así se establece en el Anexo "A" de este contrato, el Cliente deberá mantener en todo momento y durante el tiempo de vigencia de este Contrato, un seguro contra daños y responsabilidad civil por lesiones físicas y daños a terceros cubriendo los Vehículos, con límites no menores que esos especificados en el Anexo "A" de este Contrato. Dicho seguro deberá proporcionar cobertura básica contratada con una compañía aseguradora aceptable para [NOMBRE_CORTO_UNIDAD_OPERATIVA] y deberá incluir como asegurados a el Cliente y a [NOMBRE_CORTO_UNIDAD_OPERATIVA]. El seguro proveerá una renuncia de subrogación por parte de la compañía aseguradora en favor de [NOMBRE_CORTO_UNIDAD_OPERATIVA]. El Cliente indemnizará y mantendrá a [NOMBRE_CORTO_UNIDAD_OPERATIVA] libre de toda responsabilidad por cualquier reclamación, demanda u obligaciones que resulten de la propiedad, uso, mantenimiento u operación de los Vehículos que no estén cubiertos por dicho seguro o estén mas allá de los límites fijados en el Anexo "A" de este Contrato. Queda bajo responsabilidad del Cliente la contratación de seguros contra daños de la (s) unidad (es) así como el pago del deducible contratado.</li>
+
+					<li>[NOMBRE_CORTO_UNIDAD_OPERATIVA] no será responsable por pérdida  o daño a cualquier bien, cargamento o propiedad  olvidada dentro o sobre cualquier Vehículo en cualquier tiempo o lugar, incluyendo garages, talleres o lugares operados por [NOMBRE_CORTO_UNIDAD_OPERATIVA] ó Idealease  (ya sea dicha pérdida o daño haya sido o no causado por su negligencia o esté relacionado con ella) y el Cliente conviene en indemnizar [NOMBRE_CORTO_UNIDAD_OPERATIVA] de toda responsabilidad  por pérdida o daño a la carga o cualesquiera bienes al cuidado o bajo custodia del Cliente mientras que dicha carga se encuentra dentro o sobre el mencionado Vehículo o mientras que dicha carga esta siendo cargada o descargada de dicho Vehículo. El Cliente además está de acuerdo en que cualquier compañía aseguradora de la carga renunciará a cualquier derecho de subrogación en favor de [NOMBRE_CORTO_UNIDAD_OPERATIVA].</li></ol>
+]]>
+				</valor>
+			</clausula>
+			<clausula id="11">
+				<cabecera>
+					<![CDATA[INDEMNIZACIÓN]]>
+				</cabecera>
+				<valor>
+					<![CDATA[
+					
+					El Cliente conviene indemnizar y mantener [NOMBRE_CORTO_UNIDAD_OPERATIVA] libre de toda responsabilidad contra:
+					<ol type="a" style="font-size:8pt; Text-align: justify; font-family: Arial, Helvetica Neue, Helvetica, sans-serif;">
+
+					<li>Cualquier reclamación o acción originada por muerte o lesiones a  terceras personas, pérdidas o daños en propiedad originados por el uso u operación de cualquier Vehículo cubierto por éste Contrato.</li>
+
+					<li>Toda responsabilidad por muerte o lesión del Cliente, sus empleados, choferes y/u operadores, pasajeros o agentes, derivados del uso u operación de cualquier Vehículo cubierto por este Contrato.</li>
+
+					<li>Cualquier responsabilidad por pérdida causada por el Cliente o terceras personas por razones de retraso de entrega o no entrega de productos de propiedad del Cliente o transportados por el mismo.</li>
+
+					<li>Toda responsabilidad por pérdida o daños en equipo o accesorios usados en relación con cualquier Vehículo.</li>
+
+					<li>De cualquier responsabilidad incurrida como resultado de un  incumplimiento de este Contrato o información falsa o imprecisa  proporcionada por el Cliente.</li>
+
+					<li>Todos los gastos y costas de cualquier tipo para la defensa del Cliente, incluyendo honorarios razonables de abogados, relacionados con cualquier demanda o reclamación en que el Cliente otorga indemnización a [NOMBRE_CORTO_UNIDAD_OPERATIVA] bajo cualquier otra cláusula de este Contrato.</li>
+
+					</ol>
+					
+					]]>
+				</valor>
+			</clausula>
+			<clausula id="12">
+				<cabecera>
+					<![CDATA[TERMINACIÓN]]>
+				</cabecera>
+				<valor>
+					<![CDATA[
+					
+<ol type="a" style="font-size:8pt; Text-align: justify; font-family: Arial, Helvetica Neue, Helvetica, sans-serif;">
+					<li>
+           Cualquier parte puede terminar este Contrato con respecto de cualquier Vehículo en  cualquier fecha aniversario con una notificación por escrito con cuando menos 30 días de anticipación. Si un Vehículo está perdido o robado y permanece en ese estado por 30 días después de que el Cliente ha notificado [NOMBRE_CORTO_UNIDAD_OPERATIVA], este Contrato se dará por terminado anticipadamente con respecto a dicho Vehículo desde la fecha de pérdida o robo, en la inteligencia de que todos los cargos bajo este Contrato han sido pagados hasta la fecha del robo o pérdida. Incluso, si un Vehículo ha sido dañado hasta el grado en que es económicamente impráctico para el Cliente repararlo, este Contrato deberá terminarse con respecto a dicho Vehículo desde la fecha en que el daño ocurrió, en la inteligencia de que todos los cargos bajo este Contrato en relación con dicho Vehículo han sido pagados hasta la fecha del daño. Para cada uno de los casos  de rescisión  de este contrato,  el cliente esta de acuerdo en que [NOMBRE_CORTO_UNIDAD_OPERATIVA] realice  una  conciliación sobre las piezas y componentes que no alcanzaron a amortizarse por completo y la diferencia sea pagada por el cliente. </li>
+
+			<li> [NOMBRE_CORTO_UNIDAD_OPERATIVA] podrá, si así lo desea, terminar este contrato después de haber notificado a el Cliente  por escrito con una anticipación de siete días y sin perjuicio de lo establecido en el inciso a) de ésta cláusula, en los siguientes casos:
+			 <ol type="i" style="font-size:8pt; Text-align: justify; font-family: Arial, Helvetica Neue, Helvetica, sans-serif;">
+			<li>Si el Cliente incumple en pagar cualquier cargo en términos de este Contrato o incumple en llevar a cabo cualquier obligación impuesta en términos del presente documento.</li>
+
+			<li>En caso de que el Cliente sea insolvente, promueva voluntariamente una declaración de quiebra de su negocio, haga una cesión en beneficio de acreedores, se le declare en quiebra por un tribunal competente, acepte el nombramiento de un sindico para su negocio, o permita o sufra una transferencia sustancial de sus bienes.</li>
+	
+			<li>Si el Cliente se encuentra en incumplimiento de contrato de arrendamiento financiero, puro  o crédito refaccionario para el vehículo, celebrado con Arrendadora Financiera Navistar S.A. de C.V., Navistar Comercial SA de CV, Servicios Financieros Navistar SA de CV, Financiera  Bepensa respectivamente. </li>
+</ol></li></ol>
+						    ]]>
+				</valor>
+			</clausula>
+			<clausula id="13">
+				<cabecera>
+					<![CDATA[FUERZA MAYOR]]>
+				</cabecera>
+				<valor>
+					<![CDATA[
+							
+					[NOMBRE_CORTO_UNIDAD_OPERATIVA] no será responsable frente al Cliente por no cumplir cualquier obligación bajo este contrato si se encuentra imposibilitado por cualquier emergencia nacional, guerras, incendio, manifestaciones, disputas laborales, leyes Federales, Estatales o Locales, reglamentos, decretos, circulares, apagón, programas de ahorro de combustible, o cualquier otra causa fuera del control de [NOMBRE_CORTO_UNIDAD_OPERATIVA] presente o futura.
+							
+							]]>
+				</valor>
+			</clausula>
+			<clausula id="14">
+				<cabecera>
+					<![CDATA[ASPECTOS GENERALES]]>
+				</cabecera>
+				<valor>
+					<![CDATA[
+<ol type="a" style="font-size:8pt; Text-align: justify; font-family: Arial, Helvetica Neue, Helvetica, sans-serif;">
+					<li>Este Contrato será obligatorio para las partes aquí referidas, sus sucesores, representantes legales y cesionarios.  El Cliente conviene en notificar inmediatamente y por escrito a [NOMBRE_CORTO_UNIDAD_OPERATIVA] antes de o cualquier transferencia substancial de los activos del Cliente.  El Cliente no tendrá derecho de ceder este Contrato o cualquier interés ahí establecido, salvo autorización expresa de [NOMBRE_CORTO_UNIDAD_OPERATIVA]. [NOMBRE_CORTO_UNIDAD_OPERATIVA] no podrá ceder este Contrato sin la aprobación del Cliente, misma que no negará irrazonablemente. </li>
+					<li>Este Contrato contiene todo el acuerdo y entendimiento entre las partes  y sus términos no deberán ser interpretados como modificados por ningún acuerdo verbal o escrito informal, ni por la omisión en manifestar o realizar el ejercicio de cualquier derecho o privilegio.  Sin embargo, cualquier alteración o adición a este Contrato será hecha sólo por convenio por escrito o enmienda, así como por un nuevo Anexo "A" adicional por separado y debidamente firmado por ambas partes. </li>
+					<li>Si en cualquier tiempo cualquier cláusula de este Contrato es considerada ahora o en el futuro inválida, ilegal o no exigible de cualquier manera, la validez, legalidad o exigibilidad de las demás cláusulas de este Contrato de ninguna manera serán afectadas o perjudicadas por las otras cláusulas.  Las partes convienen en reemplazar cualquier cláusula invalida, ilegal o no exigible de este Contrato, por cláusulas legales y exigibles que logren lo más posible el espíritu de las cláusulas reemplazadas.</li>
+					</ol>
+         ]]>
+				</valor>
+			</clausula>
+			<clausula id="15">
+				<cabecera>
+					<![CDATA[SEPARABILIDAD]]>
+				</cabecera>
+				<valor>
+					<![CDATA[
+          Si en cualquier tiempo cualquier cl&aacute;usula de este Contrato es considerada ahora o en el futuro inv&aacute;lida, ilegal o no exigible de cualquier manera, la validez, 
+          legalidad o exigibilidad de las dem&aacute;s cl&aacute;usulas de este Contrato de ninguna manera ser&aacute;n afectadas o perjudicadas por las otras cl&aacute;usulas.  Las 
+          partes convienen en reemplazar cualquier cl&aacute;usula inv&aacute;lida, ilegal o no exigible de este Contrato, por cl&aacute;usulas legales y exigibles que logren lo m&aacute;s 
+          posible el esp&iacute;ritu de las cl&aacute;usulas reemplazadas.]]>
+				</valor>
+			</clausula>
+			<clausula id="16">
+				<cabecera>
+					<![CDATA[NOTIFICACIONES]]>
+				</cabecera>
+				<valor>
+					<![CDATA[
+          Excepto de otra manera convenida en el presente Contrato, todas la notificaciones que deban hacerse las partes de conformidad con este Contrato, deber&aacute;n ser hechas por escrito y entregadas personalmente o enviadas por correo electr&oacute;nico, correo certificado (con acuse de recibo), o fax confirmado de recibido dentro de los diez d&iacute;as siguiente a partir de la fecha del fax o correo certificado, a cada una de las partes en sus respectivos domicilios que a continuaci&oacute;n se se&ntilde;alan:
+         ]]>
+				</valor>
+			</clausula>
+		</contenido>
+		<plantillas>
+			<padre>
+				<cabecera>
+					<![CDATA[
+          <!DOCTYPE html>
+          <html>
+            <body>
+              <ol style="font-size:8pt; font-family: Arial, Helvetica Neue, Helvetica, sans-serif;">              
+              [CLAUSULAS]
+              </ol> 
+            </body>
+          </html>
+        ]]>
+				</cabecera>
+				<elemento>
+					<![CDATA[
+          <li>[TEXTO_CLAUSULA] <br />
+		  <table style="Text-align: justify; font-size:8pt; font-family: Arial, Helvetica Neue, Helvetica, sans-serif;">
+			<tr style="Text-align: justify;">
+				<td>
+					[VALOR_CLAUSULA]
+				</td>
+			</tr>
+		  </table>
+		  </li>         
+          ]]>
+				</elemento>
+			</padre>
+			<hijo>
+				<cabecera>
+					<![CDATA[
+          <ol type="A" style="font-size:8pt; Text-align: justify; font-family: Arial, Helvetica Neue, Helvetica, sans-serif;">
+          [ELEMENTOS]
+          </ol>
+          ]]>
+				</cabecera>
+				<elemento>
+					<![CDATA[<li>[TEXTO]</li>]]>
+				</elemento>
+			</hijo>
+		</plantillas>
+		<opcionales>
+		</opcionales>
+		<finales>
+			<parrafo>
+				<valor>
+					<![CDATA[<table style="Text-align: justify; font-size:8pt; font-family: Arial, Helvetica Neue, Helvetica, sans-serif;">
+          <tr style="Text-align: justify;">
+            <td>
+            Las partes con renuncia expresa al fuero que pudiera corresponderles con motivo de sus domicilios presentes o futuros que las leyes pudieran concederles y se someten a la jurisdicci&oacute;n y competencia de los jueces y tribunales del orden com&uacute;n de la ciudad de M&eacute;rida, Yucat&aacute;n, con renuncia expresa de cualesquiera otros que por razones de sus domicilios presentes o futuros le pudieren corresponder
+            </td>
+          </tr>
+        </table>]]>
+				</valor>
+			</parrafo>
+			<parrafo>
+				<valor>
+					<![CDATA[<table style="Text-align: justify; font-size:8pt; font-family: Arial, Helvetica Neue, Helvetica, sans-serif;">
+          <tr style="Text-align: justify;">
+            <td>
+            EN TESTIMINIO DE LO CUAL, cada una de las partes aqu&iacute; mencionadas ha ocasionado que el presente Contrato est&eacute; debidamente firmado y celebrado el d&iacute;a y el a&ntilde;o se&ntilde;alado en el proemio del mismo.
+            </td>
+          </tr>
+        </table>]]>
+				</valor>
+			</parrafo>
+		</finales>
+	</clausulas>
+	<firmantes>
+		<plantilla>
+			<![CDATA[<table style=" position:absolute; width:645px; height:auto; font-size:8pt; font-family: Arial, Helvetica Neue, Helvetica, sans-serif; float: right;">
+	        <tr style="text-align:left; margin= 0 0 0 935px;">
+              <th align="left" style="float:left; position:relative; text-align:left;" width="275px">[TITLE_LEFTH]</th>
+              <th align="left" style="position:relative; width=50px"></th>
+              <th align="left" style="float:left; position:relative; text-align:left;" width="300px">[TITLE_RIGTH]</th>
+          </tr>
+          <tr style="text-align:left; margin= 0 0 0 935px;">
+              <td align="left" style="float:left; position:relative; width:275px;">[NAME_LEFTH]</td>
+              <td align="left" style="float:left; position:relative; width:50px"></td>
+              <td align="left" style="float:left; position:relative; width:300px;">[NAME_RIGTH]</td>
+	      </tr>
+	      <tr style="text-align:left; margin= 0 0 0 935px;">
+              <td align="left" style="float:left; position:relative; width:275px;">[NAME_REP_LEFTH]</td>
+              <td align="left" style="float:left; position:relative; width:50px"></td>
+              <td align="left" style="float:left; position:relative; width:300px;">[NAME_REP_RIGTH]</td>
+	      </tr>
+	      <tr style="text-align:left; margin= 0 0 0 935px;">
+		      <td align="left">[DIREC_REP_LEFTH]</td>
+		      <td align="left" style="float:left; position:relative; width:50px;"></td>
+		      <td align="left">[DIREC_REP_RIGTH]</td>
+          </tr>
+      </table>]]>
+		</plantilla>
+	</firmantes>
+</reporte>

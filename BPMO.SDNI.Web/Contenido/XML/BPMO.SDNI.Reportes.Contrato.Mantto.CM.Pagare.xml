@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--Satisface al caso de uso CU095 - Imprimir Pagaré Contrato CM-->
+<Pagare>
+	<Titulo>
+		<![CDATA[
+		<p style="font-size:8pt; Text-align: center; font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;">
+		 <strong>PAGARÉ</strong> 
+		</p>
+		]]>
+	</Titulo>
+	<BuenoPor>
+		<![CDATA[
+		<p style="font-size:8pt; Text-align: right; font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;">
+		 BUENO POR: [CANTIDAD] [CODIGO_MONEDA]
+		</p>
+		]]>
+	</BuenoPor>
+	<Contenido>
+		<![CDATA[
+		<p style="font-size:8pt; Text-align: justify; font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;">
+			<p style="font-size:8pt; Text-align: justify; font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;">
+				POR EL PRESENTE PAGARÉ RECONOZCO DEBER Y ME COMPROMETO A PAGAR INCONDICIONALMENTE A LA ORDEN DE [UNIDAD_OPERATIVA] EN LA CIUDAD DE MÉRIDA, YUCATÁN. LA CANTIDAD DE [CANTIDAD] [CODIGO_MONEDA] (SON: [CANTIDAD_LETRAS]) EN UNA SOLA EXHIBICI&Oacute;N, EFECTUANDO EL PAGO PRECISAMENTE EL D&Iacute;A [FECHA_FIN].
+			</p>
+			<p style="font-size:8pt; Text-align: justify; font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;">
+				EL PRESENTE PAGAR&Eacute; SE CONSIDERA EMITIDO CONFORME A LA LEY GENERAL DE TÍTULOS Y OPERACIONES DE CRÉDITO Y DEMÁS ORDENAMIENTOS LEGALES MERCANTILES QUE LO RIGEN Y SUSTENTAN EN EL TERRITORIO DE LOS ESTADOS UNIDOS MEXICANOS.
+			</p>
+			<p style="font-size:8pt; Text-align: justify; font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;">
+				EN CASO DE INCUMPLIMIENTO, ME COMPROMETO A PAGAR INTERESES MORATORIOS MENSUALES A UNA TASA DEL 3% (TRES POR CIENTO), SOBRE LA CANTIDAD VENCIDA Y NO CUBIERTA, HASTA LA FECHA EN QUE EFECTIVAMENTE SE RECIBA EL PAGO.
+			</p>
+			<p style="font-size:8pt; Text-align: justify; font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;">
+				PARA LA INTERPRETACIÓN, EJECUCIÓN Y CUMPLIMIENTO DEL PRESENTE PAGARÉ EL SUSCRIPTOR SE SOMETE A LOS TRIBUNALES DE LOS ESTADOS DE YUCATÁN, CAMPECHE, TABASCO, CHIAPAS, QUINTANA ROO. A ELECCION DE [UNIDAD_OPERATIVA] RENUNCIANDO A CUALQUIER FUERO QUE POR RAZÓN DE SU DOMICILIO PRESENTE O FUTURO PUDIERE CORRESPONDERLE O POR CUALQUIER OTRA RAZÓN.
+			</p>
+			<p style="font-size:8pt; Text-align: justify; font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;">
+				EL PRESENTE PAGARÉ SE SUSCRIBE EN MÉRIDA, YUCATÁN EL D&Iacute;A [FECHA_INICIO]
+			</p>
+		</p>
+		]]>
+	</Contenido>
+</Pagare>
+
+
+
+
+
+
+
+
+
+

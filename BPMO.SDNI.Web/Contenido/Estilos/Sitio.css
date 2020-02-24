@@ -1,0 +1,152 @@
+﻿/*--------------------------------Todos los catálogos-----------------------------*/
+.trDerecha
+{
+    text-align: right;
+}
+.trAlinearDerecha tr td:first-child
+{
+    text-align: right;
+}
+
+#TablaBusqueda tr
+{
+    height: 30px;
+}
+.TipoLetra
+{
+   font-family: Century Gothic, Arial, Verdana, Serif;
+}
+/*Estilos para las notas de taller*/
+.PanelNotasTaller
+{
+    min-height: 50px;
+    max-height: 400px;   
+    background-color: transparent;
+    margin:20px 0 0 17px;    
+}
+.SinNotas
+{
+    float: left;
+    margin: 50px auto;
+    border-width: 1px;
+    border-style: solid;   
+    font-size: 18px;
+    margin: auto;
+}
+.EncabezadoNotaTaller
+{
+    clear: both;
+    padding: 0;
+    text-align: center;
+    width: 100px;
+    border-right: 1px solid orange;
+    font-size: 12px;
+    font-weight: bold;
+}
+/*----------------Valorizado-------------------*/
+.tdValorizado td 
+{
+    text-align:right;
+}
+.textValorizado
+{
+    background: #E6E6E6;
+    border: 1px solid #CCCCCC;
+    padding: 1px;
+    text-align:right;
+    border-radius:5px;
+    height:20px;
+    font-size:14px;
+    color:Black;
+}
+/*------------------CSS PARA OPCIONES DE BUSQUEDA---------------------*/
+.textBoxSearch
+{
+    background: #FFFFFF url('../Imagenes/buscarBrowser.png') no-repeat 2px 2px;
+    padding: 2px 2px 2px 18px;
+    border: 1px solid #CCCCCC;
+}
+.textBoxDisabled
+{
+    background: #E6E6E6;
+    border: 1px solid #d2d2d2;
+}
+.txtMoneda
+{
+    text-align: right;
+    padding: 2px 4px 2px 4px;
+    border: 1px solid #CCCCCC;
+    font-family: "Century Gothic", Arial, Verdana, Serif;
+}
+.monedaDisabled
+{
+    text-align: right;
+    background: #E6E6E6;
+    padding: 1px;
+    border: 1px solid #CCCCCC;
+}
+/*Configura la imagen de selección*/
+.imgBtnSelect
+{
+    background-image: url('../Imagenes/VER.png');
+    background-repeat: no-repeat;
+    background-color: inherit !important;
+        
+    width: 16px;
+    height: 16px;
+    position: absolute;
+}
+/*-----------------------------Nuevo-----------------------------------------*/
+
+
+/*Estilo de los botones tipo JQuery*/
+.button-ui-corner-top
+{
+    -moz-border-radius-topleft: 0px;
+    -webkit-border-top-left-radius: 0px;
+    border-top-left-radius: 0px;
+    -moz-border-radius-topright: 6px;
+    -webkit-border-top-right-radius: 6px;
+    border-top-right-radius: 6px;
+    -moz-border-radius-bottomleft: 6px;
+    -webkit-border-bottom-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    -moz-border-radius-bottomright: 0px;
+    -webkit-border-bottom-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+.button-ui-main
+{
+    border: 1px solid #cccccc;
+    background: #f6f6f6 url(ui-lightness/images/ui-bg_glass_100_f6f6f6_1x400.png) 50% 50% repeat-x;
+    font-weight: bold;
+    color: #1c94c4;
+    cursor: pointer;
+}
+.button-ui-main:hover
+{
+    border: 1px solid #fbd850;
+    background: #ffffff url(ui-lightness/images/ui-bg_glass_65_ffffff_1x400.png) 50% 50% repeat-x;
+    font-weight: bold;
+    color: #eb8f00;
+}
+.button-ui-main-disabled
+{
+    border: 1px solid #cccccc;
+    background: #f6f6f6 url(ui-lightness/images/ui-bg_glass_100_f6f6f6_1x400.png) 50% 50% repeat-x;
+    font-weight: bold;
+    color: #cccccc;
+}
+/*Fin estilo de los botones*/
+/*
+Color para el texto desplegado por el validator
+*/
+.ColorValidator
+{
+    color: Red;
+}
+
+.blockUI .blockMsg .blockPage
+{
+    z-index: 2000 !important;
+}

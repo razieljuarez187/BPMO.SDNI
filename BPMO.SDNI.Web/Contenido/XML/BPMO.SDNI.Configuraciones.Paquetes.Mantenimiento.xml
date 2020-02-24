@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<PaquetesMantenimiento>
+    <Paquete>
+        <TipoMantenimientoID>
+            1
+        </TipoMantenimientoID>
+        <Prioridad>
+            1
+        </Prioridad>
+    </Paquete>
+    <Paquete>
+        <TipoMantenimientoID>
+            2
+        </TipoMantenimientoID>
+        <Prioridad>
+            2
+        </Prioridad>
+    </Paquete>
+    <Paquete>
+        <TipoMantenimientoID>
+            3
+        </TipoMantenimientoID>
+        <Prioridad>
+            3
+        </Prioridad>
+    </Paquete>
+</PaquetesMantenimiento>
+

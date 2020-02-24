@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Buscador xsi:schemaLocation="http://www.w3schools.com ../xsd/Buscador.Schema.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.w3schools.com">
+  <Class Assembly="BPMO.SDNI.Equipos" NameClass="HistorialBR" Method="ConsultarCompleto" TitleUI="Historial de la Unidad">
+    <GridView AllowPaging="True" PageSize="5" AllowSorting="True" />    
+    <Property NameProperty="MovimientoText"  Header="Movimiento" Key="True" Width="250" FilterEnabled="True"/>
+    <Property NameProperty="Observaciones"  Header="Observaciones"  Key="False" Width="2000" FilterEnabled="True" Wilcard="Both"/>
+    <Property NameProperty="NombreUsuario"  Header="Usuario"  Key="False" Width="600" FilterEnabled="True" Wilcard="Both"/>
+    <Property NameProperty="Fecha"  Header="Fecha"  Key="False" Width="200" FilterEnabled="True" Wilcard="Both"/>
+  </Class>
+</Buscador>

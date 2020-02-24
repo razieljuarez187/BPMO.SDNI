@@ -1,0 +1,16 @@
+﻿/* File Created: enero 10, 2013 */
+#MenuSecundario { float: left; }
+#BarraHerramientas { width: 835px; float: right; }
+.GroupBody { margin: 10px auto; width: 761px; }
+.GroupHeader { width: 100%; }
+#ControlesDatos { min-height: 120px; margin-top: 17px; position: inherit; border: 1px solid transparent; }
+
+#ControlesDatos fieldset { margin: 0px auto; width: 480px; }
+
+#tabs { width: 90%; margin: 10px auto 10px auto; }
+#tabs .Grid { width: 100%; }
+
+#deducible, #endoso, #siniestro { margin: 0px auto; }
+#deducibles, #endosos, #siniestros { width: 100%; margin: 15px auto; }
+
+.Totales { margin-right: 0px; margin-left: auto; }

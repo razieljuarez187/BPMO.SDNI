@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Buscador xsi:schemaLocation="http://www.w3schools.com Buscador.Schema.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.w3schools.com">
+  <Class TitleUI="Tipo Unidad" Assembly="BPMO.Facade.SDNI" NameClass="FacadeBR" Method="ConsultarTipoUnidad" >
+    <GridView AllowPaging="True" PageSize="5" AllowSorting="True" />
+    <Property NameProperty="Id"  Header="Id" Key="True" Width="50" FilterEnabled="True"/>
+    <Property NameProperty="NombreCorto"  Header="Clave"  Key="False" Width="120" FilterEnabled="True" Wilcard="Both"/>
+    <Property NameProperty="Nombre"  Header="Descripción" Key="False" Width="200" FilterEnabled="True" Wilcard="Both"/>
+    <Property NameProperty="Activo"  Header="Estatus" Key="False" Width="50" FilterEnabled="True" DataType="Boolean"/>
+  </Class>
+</Buscador>

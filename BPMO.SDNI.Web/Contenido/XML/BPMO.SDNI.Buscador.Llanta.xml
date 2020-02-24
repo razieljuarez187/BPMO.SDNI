@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Buscador xsi:schemaLocation="http://www.w3schools.com ../XSD/Buscador.Schema.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.w3schools.com">
+  <Class Assembly="BPMO.SDNI.Equipos" NameClass="LlantaBR" Method="ConsultarFiltro" TitleUI="Llantas">
+		<GridView AllowPaging="True" PageSize="5" AllowSorting="True" />
+		<Property NameProperty="LlantaID" Width="50" Header="Id" Key="True" FilterEnabled="True" />
+		<Property NameProperty="Codigo" Width="100" DataType="String" Header="Código" Key="False" Required="False" FilterEnabled="True" Wilcard="Both" />
+    <Property NameProperty="Marca" Width="100" DataType="String" Header="Marca" Key="False" Required="False" FilterEnabled="True" Wilcard="Both" />
+    <Property NameProperty="Modelo" Width="100" DataType="String" Header="Modelo" Key="False" Required="False" FilterEnabled="True" Wilcard="Both" />
+    <Property NameProperty="Revitalizada" Width="80" DataType="Boolean" Header="Revitalizada" Key="False" Required="False" FilterEnabled="True" />
+    <Property NameProperty="Stock" Width="70" DataType="Boolean" Header="Stock" Key="False" Required="False" FilterEnabled="True" />
+    <Property NameProperty="Activo" Width="70" DataType="Boolean" Header="Activo" Key="False" Required="False" FilterEnabled="True" />
+	</Class>
+</Buscador>

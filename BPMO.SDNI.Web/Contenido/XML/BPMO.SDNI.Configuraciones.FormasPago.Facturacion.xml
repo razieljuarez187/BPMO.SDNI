@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Plantilla>
+  <FormaPago>
+    <ID>1</ID>
+    <Nombre>Crédito</Nombre>
+  </FormaPago>
+  <FormaPago>
+    <ID>2</ID>
+    <Nombre>Contado</Nombre>
+  </FormaPago>
+</Plantilla>

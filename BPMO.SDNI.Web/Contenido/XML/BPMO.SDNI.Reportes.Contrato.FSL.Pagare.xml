@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--Satisface al caso de uso CU095 - Imprimir Pagaré Contrato CM-->
+<Pagare>
+	<Titulo>
+		<![CDATA[
+		<p style="font-size:8pt; Text-align: center; font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;">
+		 <strong>PAGARÉ</strong> 
+		</p>
+		]]>
+	</Titulo>
+	<BuenoPor>
+		<![CDATA[
+		<p style="font-size:8pt; Text-align: right; font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;">
+		 BUENO POR: [CANTIDAD] [CODIGO_MONEDA]
+		</p>
+		]]>
+	</BuenoPor>
+	<Contenido>
+		<![CDATA[
+		<p style="font-size:8pt; Text-align: justify; font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;">
+			<p style="font-size:8pt; Text-align: justify; font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;">
+				POR ESTE PAGARÉ NOS COMPROMETEMOS Y OBLIGAMOS A PAGAR INCONDICIONALMENTE A LA ORDEN DE [UNIDAD_OPERATIVA] EN ESTA CIUDAD DE MÉRIDA, YUCATÁN. LA CANTIDAD DE [CANTIDAD] [CODIGO_MONEDA] (SON: [CANTIDAD_LETRAS]).
+			</p>
+			<p style="font-size:8pt; Text-align: justify; font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;">
+				EL PAGO DE LA SUMA MENCIONADA LA REALIZAREMOS EN [PLAZO] ([PLAZO_LETRAS]) EXHIBICIONES MENSUALES Y SUCESIVAS, POR LA CANTIDAD DE [MENSUALIDAD] [CODIGO_MONEDA] (SON: [MENSUALIDAD_LETRAS]) CADA UNA; MISMAS EXHIBICIONES QUE NOS COMPROMETEMOS A REALIZAR LOS DIAS 15 DE CADA MES, A PARTIR DEL MES DE [MES_INICIO], HASTA EL DIA [FECHA_FIN] .
+			</p>
+			<p style="font-size:8pt; Text-align: justify; font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;">
+				ESTE PAGARÉ ES UNICO Y NO CAUSA INTERESES NORMALES; NO OBSTANTE QUEDA CONVENIDO DESDE ESTE MOMENTO QUE LA FALTA DE PAGO OPORTUNO DE UNA O MAS EXHIBICIONES, DARÁ POR VENCIDA ANTICIPADAMENTE LA TOTALIDAD DE LA OBLIGACIÓN, CAUSANDO DESDE ESE MOMENTO INTERESES MORATORIOS AL TIPO DE 4% (CUATRO POR CIENTO) MENSUAL, PAGADERO EN ESTA CIUDAD JUNTAMENTE CON EL PRINCIPAL.
+			</p>
+			<p style="font-size:8pt; Text-align: justify; font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;">
+				PARA LA INTERPRETACIÓN EJECUCIÓN Y CUMPLIMIENTO DE LO PACTADO EN ESTE PAGARÉ LOS SUSCRIPTORES SE SOMETEN A LA JURISDICCIÓN DE LOS TRIBUNALES COMPETENTES EN LA CIUDAD DE MÉRIDA, YUCATAN, RENUNCIANDO A CUALQUIER FUERO QUE POR RAZÓN DE DOMICILIO TENGA O LLEGARÁN A TENER.
+			</p>
+			<p style="font-size:8pt; Text-align: justify; font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;">
+				EL PRESENTE PAGARÉ SE SUSCRIBE EN MÉRIDA, YUCATÁN EL DIA [FECHA_INICIO]
+			</p>
+		</p>
+		]]>
+	</Contenido>
+</Pagare>
+
+
+
+
+
+
+
+
+
+

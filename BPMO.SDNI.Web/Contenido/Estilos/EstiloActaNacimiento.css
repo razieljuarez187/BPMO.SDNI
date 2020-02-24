@@ -1,0 +1,53 @@
+﻿/*Página Principal y 0*/
+#MenuSecundario { float: left; height: 64px; }
+#BarraHerramientas { width: 835px; float: right; }
+.GroupBody { display: inline-table; float: right; margin-right: 38px; margin-top: 10px; width: 761px; }
+.GroupHeader { width: 100%; }
+#ControlesDatos { min-height: 120px; margin-top: 10px; position: inherit; }
+
+/*Página 2 y 3*/
+.ColumnaDerecha, .ColumnaIzquierda { width: 350px; }
+.ColumnaDerecha { float: right; margin-right: 15px; }
+.ColumnaIzquierda { float: left; margin-left: 15px; }
+.ColumnaDerecha input[type="text"], .ColumnaIzquierda input[type="text"] { float: right; margin-right: 5px; }
+.ColumnaDerecha span, .ColumnaIzquierda span { line-height: 25px; vertical-align: middle; padding-left: 10px; }
+.ColumnaDerecha div.Etiqueta, .ColumnaIzquierda div.Etiqueta { padding-left: 10px; }
+.ColumnaDerecha div.Etiqueta span, .ColumnaIzquierda div.Etiqueta span { padding-left: 0px; }
+.ColumnaDerecha .btnAgregarMediano, .ColumnaIzquierda .btnAgregarMediano { float: right; margin-right: 15px; }
+    
+.ColumnaDerecha .Contenedor, .ColumnaIzquierda .Contenedor { width: 325px; height: 130px; overflow: auto; border: 1px solid #d6d6d6; margin: 8px auto 5px auto; }
+
+/*Página 4*/
+#dvAsignarLlantas
+{
+	width: 650px !important;
+	margin: 0px auto;
+}
+#dvAsignarLlantas fieldset { width: 100% !important; margin-bottom: 10px; }
+#dvAsignarLlantas .btnAgregarMediano { float: right; margin-right: 110px; }
+#dvAsignarLlantas .Contenedor { width: 95%; margin: 0px auto; }
+#dvAsignarLlantas .Grid { margin-top: 35px; width: 100%; }
+
+/*Página 5*/
+#dvAsignarEquipoAliado
+{
+    float: none;
+    display: inherit;
+    margin: 15px auto auto auto; 
+    width: 700px;
+    border: 1px solid gree;
+}
+#dvAsignarEquipoAliado .trAlinearDerecha { width: 100%; }
+#dvAsignarEquipoAliado input { float: none; }
+#dvAsignarEquipoAliado .Contenedor { width: 698px; border: 1px solid #d6d6d6; height: 130px; overflow: auto; margin-top: 5px; }
+
+/*Página 6*/
+#dvTramitesActivos 
+{
+	min-width: 530px;
+	max-width: 580px;
+	margin: 0px auto;
+    display: inherit;
+    border: 1px solid transparent;
+}
+#dvTramitesActivos table { border: 1px solid transparent; }

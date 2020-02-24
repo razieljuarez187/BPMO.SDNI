@@ -1,0 +1,326 @@
+﻿div.ui-dialog.ui-widget.ui-widget-content.ui-corner-all.ui-draggable.ui-resizable
+{
+    max-width: 66.66666667% !important;
+}
+
+#dvContenedorPrincipal
+{
+    width: auto;
+    max-width: 1020px;
+    min-width: 100px; 
+}
+
+.default-label
+{
+    font-weight: normal !important;
+}
+
+.input-space-responsive
+{
+    width: 20px;
+}
+
+.input-find-responsive
+{
+    min-width: 275px;
+}
+
+.input-text-responsive
+{
+    min-width: 301px;
+}
+
+.input-button-responsive
+{
+    text-align:center !important;
+    margin: 0 auto;
+    width: 100% !important;
+}
+
+.input-group-responsive
+{
+    width: auto !important;
+    text-align:left !important;
+}
+
+.input-date-responsive
+{
+    min-width: 100px;
+}
+
+.input-dropdown-responsive
+{
+    min-width: 200px;
+}
+
+.trAlinearDerecha tr td
+{
+    text-align: right;
+}
+
+.input-text-responsive.full-width
+{
+    min-width:100% !important;
+}
+
+#dvEncabezado
+{
+    width: auto;
+    min-width: 100px;
+    background-size: contain;
+}
+
+#hrLineaEncabezado
+{   width:auto;
+    max-width: 825px;
+}
+
+#dvEncabezado #dvAdscripcionTitulo
+{
+    width: auto;
+    max-width: 500px;
+}
+
+#dvNavegacion
+{
+    width: auto !important;
+}
+
+.menuPrincipal
+{
+    height: auto !important;
+    width: auto;
+    min-width: 100px;
+}
+
+#dvCuerpo
+{
+    width: auto;
+    min-width: 100px;
+}
+
+#dvPie
+{
+    width: auto;
+    min-width: 100px;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: contain; 
+}
+
+.GroupBody, .GroupSection
+{
+    width: 100% !important;
+    max-width: 940px;
+}
+
+.GroupContentCollapsable
+{
+    max-height: 500px;
+    padding: 10px;
+}
+
+.radio-resultado
+{
+    text-align: center !important;
+}
+
+#MenuSecundario
+{
+    position:absolute;
+    z-index:2;
+}
+
+#BarraHerramientas
+{
+    padding-left:185px;
+    position:absolute;
+    z-index:0;
+    width:100% !important;
+    max-width:1018px;     
+}
+
+.Correo  
+{
+    text-transform: none !important; 
+}
+        
+.InputReset
+{
+	height: 25px;
+	width: 82%;
+	font-family : Century Gothic, Arial, Verdana, Serif; 
+	
+	border-color:#d7d7d7; 
+	border-style:solid; 
+	border-width:1px;
+	border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px; -khtml-border-radius:5px;
+}
+
+.InputReset
+{
+	padding-right:5px; padding-left:5px;
+}
+
+.InputReset
+{
+	border-color:#d2d2d2; 
+	border-style:solid; 
+	border-width:1px;
+}
+
+/*.Ancho1Opciones
+{
+    width: 100% !important;
+    max-width: 160px;   
+}*/
+
+.Grid td.lbGridRightAlign 
+{
+    text-align:right !important;
+}
+
+.Grid td.lbGridLeftAlign
+{
+    text-align:left !important;
+}
+
+.GroupContent, .GroupContentCollapsable
+{
+    width:100% !important;   
+}
+
+.GroupContentCollapsable > .btnComando 
+{ 
+    margin: 20px auto 0px auto; 
+    display: inherit; 
+}
+
+@media (max-width: 1030px)
+{
+    #dvDatosSesion
+    {
+        margin-right:0px;
+    }
+}
+
+.reponsive-menu
+{
+    width: auto !important;
+    float: right;
+    min-width: 100px;
+}
+
+@media (min-width: 691px)
+{
+    .menuBstrp
+    {
+        display: none !important;
+    }
+}
+
+@media (max-width: 690px)
+{
+    #dvNavegacion{
+        display: none !important;
+    }
+    .menuBstrp
+    {
+        display: block !important;
+    }
+    
+    #BarraHerramientas
+    {
+        padding-left: 0px !important;
+    }
+    
+    ul#MenuSecundario.menuCompuesto
+    {
+        margin-top:31px;       
+    }
+    
+    .GroupBody
+    {
+        margin-top:45px !important;    
+    }
+    
+    body,
+    div.blockUI.blockMsg.blockPage{
+	    margin-top: 59px !important;
+    }
+    
+    #dvAdscripcionTitulo
+    {
+        display: none !important;
+    }
+    
+    #dvDatosSesion
+    {
+        display: none !important;
+    }
+    
+    .hrLineaDivisoraEncabezado
+    {
+        display: none !important;
+    }
+    
+     .input-space-responsive
+    {
+        display: none !important;
+    }
+    
+    table.table-responsive > tbody >  tr > td {
+		display: block;
+    }
+    
+    table.table-responsive td.tdCentradoVertical.input-label-responsive
+    {
+        text-align: left !important;
+    }
+} 
+
+@media (max-width: 970px)
+{
+.GroupHeaderOpciones
+    {
+        margin-top:-19px;
+        z-index:-1;
+    }
+    
+.GroupBody
+    {
+        position:relative;
+        margin-left:0;
+        margin-right:0; 
+        z-index: 0;
+    }
+}
+
+@media (max-width: 850px)
+{
+div.GroupBody table.trAlinearDerecha.form-two-columns-responsive
+    {
+        min-width: 95% !important;
+    }
+
+div.GroupBody table.trAlinearDerecha.form-two-columns-responsive > tbody > tr > td
+    {
+		display: block;
+    }
+    
+div.GroupBody table.trAlinearDerecha.form-two-columns-responsive > tbody > tr > td.input-space-responsive 
+    {
+        display: none !important;
+    }
+    
+div.GroupBody table.trAlinearDerecha.form-two-columns-responsive > tbody > tr > td.tdCentradoVertical.input-label-responsive
+    {
+        text-align: left !important;
+    }
+    .input-button-responsive
+    {
+        text-align:center !important;
+        margin: 0 auto;
+        width: auto !important;
+    }
+}

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FormatoCorreo>
+  <Cuerpo>
+    <![CDATA[
+		<tr>
+		<td style='width: 200px; text-align: left; padding-right: 5px;'>
+		<b>Empresa:</b> {empresa}
+		<br />
+		<b>Sucursal:</b> {sucursal}
+		<br />
+		<b>Contrato:</b> {contrato}
+		<br />
+		<b>Fecha del Contrato:</b> {fechaContrato}
+		<br />
+		<b>Cliente:</b> {cliente}
+		</td>
+		</tr>
+		<tr><td>&nbsp;</td></tr>
+		<tr>
+		<td style='width: 200px; text-align: left; padding-right: 5px;'>
+		<b><u>Pago a Cancelar:</u></b>
+		<br />
+		<b>Monto del Pago:</b> ${montoPago}
+		<br />
+		<b>Motivo de la Cancelación:</b> {motivoCancelacion}
+		<br />
+		<b>Solicitante:</b> {solicitante}
+		<br />
+		</td>
+		</tr>
+		AUT_CLAVE
+		<tr><td>&nbsp;</td></tr>
+	]]>
+  </Cuerpo>
+</FormatoCorreo>

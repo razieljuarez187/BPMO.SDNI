@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Buscador xsi:schemaLocation="http://www.w3schools.com Buscador.Schema.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.w3schools.com">
+  <Class  TitleUI="Órdenes de servicio" Assembly="BPMO.Facade.SDNI" NameClass="FacadeBR" Method="ConsultarOrdenServicioParaOrdenCompra" >
+    <GridView AllowPaging="True" PageSize="5" AllowSorting="True" />
+    <Property NameProperty="Id"  Header="Id" Key="True" Width="50" FilterEnabled="True"/>
+    <Property NameProperty="TipoDocumento_Nombre"  Header="Tipo documento" Key="True" Width="200" FilterEnabled="True" Wilcard="Both"/>
+    <Property NameProperty="Estatus_Nombre"  Header="Estatus" Key="True" Width="100" FilterEnabled="False" Wilcard="Both"/>
+    <Property NameProperty="Unidad_NumeroSerie"  Header="Unidad" Key="True" Width="100" FilterEnabled="False" Wilcard="Both"/>
+    <Property NameProperty="FechaPromesa"  Header="Fecha promesa" Key="True" Width="100" FilterEnabled="False" Wilcard="Both"/>
+  </Class>
+</Buscador>

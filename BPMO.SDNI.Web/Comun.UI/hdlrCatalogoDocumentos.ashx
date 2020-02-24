@@ -1,0 +1,1 @@
+﻿<%@ WebHandler Language="C#" CodeBehind="hdlrCatalogoDocumentos.ashx.cs" Class="BPMO.SDNI.Comun.UI.hdlrCatalogoDocumentos" %>

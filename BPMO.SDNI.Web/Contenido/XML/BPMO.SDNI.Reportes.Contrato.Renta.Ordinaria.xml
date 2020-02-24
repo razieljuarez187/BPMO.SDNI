@@ -1,0 +1,441 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ReporteContratoRentaOrdinaria>
+  <AceptacionYFirmas>
+    <![CDATA[
+    <p align="justify" style="margin:0px 0px 0px 0px;font-size: 7pt !important; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;">Por este medio declaro bajo formal protesta de decir verdad que recibo el original de la presente CARÁTULA que documenta la operación que en la misma se relaciona y que ha
+    recibido de LA ARRENDADORA toda la información relacionada con la operación y sus condiciones de aplicación de rentas y penalizaciones, así como las causas de incumplimiento y, en su caso, vencimiento anticipado y ejecución, para todos los efectos legales que procedan.</p>    
+    <p align="justify" style="margin:0px 0px 0px 0px;font-size: 7pt !important; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;">Firmado en la Ciudad de Mérida, Yucatán, México, por LA ARRENDADORA, en la ciudad de {CIUDAD_CLIENTE}, México por EL ARRENDATARIO, en {CIUDAD_OBLIGADOR_SOLIDARIO_AVAL}, México por EL OBLIGADO SOLIDARIO Y AVAL, en {CIUDAD_DEPOSITARIO}, México por EL DEPOSITARIO, en la fecha de inicio y/o suscripción.</p>
+    ]]>
+  </AceptacionYFirmas>
+  <Contrato>
+
+    <Declaraciones>
+      <![CDATA[<p align="justify" style="margin:0px 0px 0px 0px;font-size: 8pt !important; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;"><b>CONTRATO DE ARRENDAMIENTO DE BIENES MUEBLES (EN LO SUCESIVO “EL CONTRATO”) QUE CELEBRAN LA ARRENDADORA Y DE LA OTRA PARTE EL ARRENDATARIO; COMPARECIENDO ADEMÁS EL OBLIGADO SOLIDARIO Y AVAL Y EL DEPOSITARIO, TODOS LOS ANTERIORES COMO SE MENCIONAN EN LA CARATULA DEL PRESENTE CONTRATO Y EN CONJUNTO DENOMINADOS “LAS PARTES CONTRATANTES”; Y QUE HAN CONVENIDO EN FORMALIZAR DE CONFORMIDAD CON LO DISPUESTO EN LAS DECLARACIONES Y CLAUSULAS SIGUIENTES:</b></p>]]>
+      <![CDATA[<p align="center" style="margin:0px 0px 0px 0px;font-size: 8pt !important; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;"><b> DECLARACIONES </b></p>]]>
+      <![CDATA[
+      <div style="text-align:justify; font-size: 5.0pt !important; font-family: Verdana,Arial,'Helvetica Neue', Helvetica, sans-serif; margin:0px 0px 0px 0px;">
+      <br/>
+      <p style="margin:0px 0px 0px 0px;">I.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <u>Declara LA ARRENDADORA:</u></p>
+      <br/>
+      <p style="margin:0px 0px 0px 0px;text-indent: 0.8cm">I.1 Ser una Sociedad Mercantil constituida bajo las leyes mexicanas como consta en la escritura pública número setecientos doce, pasada en esta ciudad de Mérida, Yucatán el día veinticuatro de julio de mil novecientos ochenta y siete ante la fe del Licenciado en Derecho Francisco Javier Acevedo Menéndez, titular de la Notaría Pública número nueve del Estado de Yucatán, la cual se halla debidamente inscrita en el Registro Público de Propiedad y del Comercio del Estado de Yucatán.</p>
+      <p style="margin:0px 0px 0px 0px;text-indent: 0.8cm">I.2 Que su representante cuenta con las facultades y poderes suficientes para celebrar el presente CONTRATO.</p>
+      <p style="margin:0px 0px 0px 0px;text-indent: 0.8cm">I.3 Que ha pactado con EL ARRENDATARIO la celebración del presente CONTRATO, respecto del (los) bien (es) mueble (s), de su propiedad, que se describe (n) en el apartado 2 del Anexo 1 del presente instrumento, que forma parte integral del mismo.</p>
+      <br/>
+      <p style="margin:0px 0px 0px 0px;">II.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>Declara EL ARRENDATARIO</u> a través de su (s) apoderado (s) y/o representante (s) legal (es), bajo formal protesta de decir verdad:</p>
+      <br/>
+      <p style="margin:0px 0px 0px 0px;">II.1 Ser la persona física o moral indicada en la CARÁTULA cuyo domicilio y clave de Registro Federal de Contribuyentes son las ahí indicadas.</p>
+      <p style="margin:0px 0px 0px 0px;">II.1.2 EN CASO DE SER PERSONA MORAL: Se encuentra legalmente constituida de conformidad con las disposiciones legales que le son aplicables, debidamente inscrita en los registros correspondientes, cuenta con las licencias, concesiones y permisos, en su caso, necesarios para cumplir con su objeto social, así como que su(s) representante(s) se encuentra(n) debidamente facultado(s) y cuenta(n) con las autorizaciones necesarias (corporativas o de cualquier otra naturaleza) incluyéndose de manera textual la autorización para suscribir títulos de crédito, para celebrar el presente CONTRATO. El (Los) representante(s) manifiesta(n) bajo protesta de decir verdad, que las facultades con las que comparece(n) a la firma del presente CONTRATO no le(s) han sido revocadas, limitadas, ni modificadas en forma alguna.</p>
+      <p style="margin:0px 0px 0px 0px;">II.1.3 EN CASO DE SER PERSONA FISICA: Que cuenta con plena capacidad jurídica para obligarse y contratar en los términos del presente CONTRATO y que sus generales son las que constan en el apartado I.II de la CARÁTULA del presente CONTRATO.</p>
+      <p style="margin:0px 0px 0px 0px;">II.2. Tiene y mantendrá asegurados durante la vigencia de este CONTRATO sus activos por una suma no menor a la de su valor de reposición, de acuerdo a la naturaleza de sus negocios y la ubicación de dichos activos.</p>
+      <p style="margin:0px 0px 0px 0px;">II.3 En la fecha de suscripción del presente CONTRATO, no tiene conocimiento de que exista alguna situación o hecho de carácter contable o de procedimiento legal alguno de cualquier naturaleza, que se haya iniciado en su contra, ni de que existen demandas, acciones o procedimientos pendientes, incluyendo conflictos de carácter judicial, administrativo, arbitral, laboral, ambiental o de cualquier otra naturaleza, que afecten en forma adversa la situación financiera, operaciones, bienes o su propia existencia legal, en perjuicio de la legalidad, validez o exigibilidad de este CONTRATO; o bien, que pongan en riesgo su capacidad para dar cabal cumplimiento a todas las obligaciones establecidas en el presente CONTRATO.</p>
+      <p style="margin:0px 0px 0px 0px;">II.4 Se encuentra en cumplimiento en el pago de sus contribuciones, impuestos o cualquier otro adeudo fiscal a su cargo, incluyendo, en su caso, las cuotas correspondientes al Instituto Mexicano del Seguro Social, al Instituto del Fondo Nacional para la Vivienda de los Trabajadores y al Sistema de Ahorro para el Retiro.</p>
+      <p style="margin:0px 0px 0px 0px;">II.5 Que ha exhibido a LA ARRENDADORA copias de los documentos, que a continuación se relacionan:</p>
+      <p style="margin:0px 0px 0px 0px;">(i)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cédula de Identificación Fiscal.</p>
+      <p style="margin:0px 0px 0px 0px;">(ii)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Documento comprobatorio de su domicilio (boleta predial, recibo de luz, de teléfono).</p>
+      <p style="margin:0px 0px 0px 0px;">(iii)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Copia de la(s) identificación(es) oficial(es) de su(s) representante(s). En caso de ser extranjero(s), su(s) forma(s) migratoria(s) para acreditar su legal estancia en el país.</p>
+      <p style="margin:0px 0px 0px 0px;">(iv)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;EN CASO DE SER PERSONA MORAL: Testimonio inscrito de su escritura constitutiva, estatutos vigentes, o documentos constitutivos similares, en su caso, y el (los) poder(es) mediante el (los) cual(es) acredita las facultades de su(s) representante(s).</p>
+      <p style="margin:0px 0px 0px 0px;">II.6 Este CONTRATO, así como las obligaciones que expresamente deba asumir conforme al mismo, constituyen obligaciones válidas y exigibles y tiene conocimiento de que el incumplimiento de cualquiera de las obligaciones de hacer y no hacer del presente CONTRATO y la CARÁTULA, pueden producir efectos que repercutan en los costos de la renta, ya que en caso de darse alguno o algunos de estos supuestos, EL ARRENDATARIO tendrá que llevar a cabo diversas actividades administrativas y/o jurídicas imprevistas, para que cumpla con las obligaciones convenidas en el presente CONTRATO, en cuyo caso, podrán generarse costos para LA ARRENDADORA, los cuales se le cobrarán íntegramente a EL ARRENDATARIO.</p>
+      <p style="margin:0px 0px 0px 0px;">II.7 Que le indicó a LA ARRENDADORA su interés por arrendar el BIEN motivo de esta operación, mismo que se precisa en el ANEXO I, y que a la fecha de suscripción del presente CONTRATO, se encuentra en pleno cumplimiento de las obligaciones de hacer y no hacer previstas en el mismo y no tiene conocimiento de que se haya presentado ninguna de las causas de vencimiento anticipado.</p>
+      <p style="margin:0px 0px 0px 0px;">II.8 Que reconoce haber recibido de LA ARRENDADORA la CARÁTULA así como los anexos de este CONTRATO, en la que constan todos los elementos esenciales de la misma, incluyendo el plazo del CONTRATO que será obligatorio para ambas partes; el monto de las rentas y la forma de pago de las mismas.</p>
+      <p style="margin:0px 0px 0px 0px;">II.9 Que es y será el único beneficiario y propietario de los derechos que ampara el presente CONTRATO, así como que el origen de los recursos con los que cumplirá sus obligaciones de pago son y serán únicamente de procedencia lícita.</p>
+      <p style="margin:0px 0px 0px 0px;">II.10 Que previamente a la fecha de suscripción del presente CONTRATO LA ARRENDADORA hizo de su conocimiento de los derechos que ampara a su favor la Ley Federal de Protección de Datos Personales en Posesión de los Particulares. Para tal efecto, reconoce y acepta que LA ARRENDADORA ha puesto a su disposición el Aviso de Privacidad (“AVISO DE PRIVACIDAD”), para referir los derechos que en materia de protección de datos personales es titular por la celebración del presente CONTRATO.</p>
+      <p style="margin:0px 0px 0px 0px;"><b>II.11</b> Que cuenta con el personal profesional, técnico y calificado que se requiere para la operación del BIEN y está enterado de los requerimientos y cuidados mínimos que se requieren observar y que sus dependientes o terceros por ella contratados para el manejo u operación del BIEN, incluyendo los términos y condiciones aplicables a las pólizas de garantías otorgadas y/o expedidas por el proveedor y/o fabricante del BIEN, incluyéndose las causas de exclusión de garantía de las mismas; los cuales manifiesta que le han sido explicados y los ha comprendido en su totalidad, así como igualmente se le ha enterado del programa de mantenimiento preventivo y correctivo a que dicho BIEN deberá sujetarse y llevarse a cabo por LA ARRENDADORA durante el plazo de duración del presente CONTRATO.</p>
+      <br/>
+      <p style="margin:0px 0px 0px 0px;"><b>III.-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Declara EL OBLIGADO SOLIDARIO Y AVAL por su propio y personal derecho / a través de su (s) apoderado (s) y/o representante (s) legal (es), bajo formal protesta de decir verdad:</b></p>
+      <br/>
+      <p style="margin:0px 0px 0px 0px;"><b>III.1</b> EN CASO DE SER PERSONA(S) MORAL(ES): se encuentra legalmente constituida de conformidad con las disposiciones legales que le son aplicables, debidamente inscrita en los registros correspondientes, que comparece a la firma del presente CONTRATO con el carácter que se indica en la CARÁTULA, que dentro de su objeto social está facultada para constituir la garantía y/o asumir de cualquier forma obligaciones contraídas por terceros o para constituir fianza y/u obligarse solidariamente, según el caso, así como que su(s) representante(s) se encuentra(n) debidamente facultado(s) y cuenta(n) con las autorizaciones necesarias (corporativas o de cualquier otra naturaleza) incluyéndose de manera textual la autorización para suscribir títulos de crédito y para celebrar el presente CONTRATO. El (Los) representante(s) manifiesta(n) bajo protesta de decir verdad que las facultades con las que comparece(n) a la firma del presente CONTRATO no le(s) han sido revocadas, limitadas, ni modificadas en forma alguna.</p>
+      <p style="margin:0px 0px 0px 0px;"><b>III.2</b> EN CASO DE SER PERSONA(S) FÍSICA(S), que comparece(n) a la firma del presente CONTRATO con el carácter que se indica en la CARÁTULA, que cuenta(n) con la capacidad jurídica necesaria para ello.</p>
+      <p style="margin:0px 0px 0px 0px;"><b>III.3</b> Que ha(n) exhibido a LA ARRENDADORA copias de los documentos, que a continuación se relacionan:</p>
+      <p align="justify" style="margin:0px 0px 0px 8px;">i. &nbsp;&nbsp;&nbsp;&nbsp;Cédula de Identificación Fiscal.</p>
+      <p align="justify" style="margin:0px 0px 0px 8px;">ii. &nbsp;&nbsp;En caso de persona(s) moral(es), testimonio(s) inscrito(s) de su(s) escritura(s) constitutiva(s), estatutos vigentes, o documentos constitutivos similares, en su caso, y el (los) poder(es) mediante el (los) cual(es) acredita(n) la(s) facultad(es) de representación de su(s) representante(s).</p>
+      <p align="justify" style="margin:0px 0px 0px 8px;">iii.&nbsp;&nbsp;&nbsp;Documento(s) comprobatorio(s) de su domicilio (boleta predial, recibo de luz, de teléfono).</p>
+      <p align="justify" style="margin:0px 0px 0px 8px;">iv.&nbsp;&nbsp; Copia de su(s) identificación(es) oficial(es) y la(s) de su(s) representante(s), en su caso. En caso de ser extranjero(s), su(s) forma(s) migratoria(s) para acreditar su legal estancia en el país.</p>
+      <p style="margin:0px 0px 0px 0px;"><b>III.4</b> Que comparece(n) a la celebración de este CONTRATO para constituirse como deudor(es) OBLIGADO SOLIDARIO Y/O AVAL de todas y cada una de las obligaciones a cargo de EL ARRENDATARIO que contrae en el presente CONTRATO.</p>
+      <p style="margin:0px 0px 0px 0px;"><b>III.5</b> Que no se encuentran en incumplimiento de ningún término o condición de CONTRATO, convenio o documento alguno del que sea parte, cuyo incumplimiento pudiera acarrear consecuencias importantes adversas para sus operaciones, bienes o situación financiera.</p>
+      <p style="margin:0px 0px 0px 0px;"><b>III.6</b> Que a la fecha de celebración del presente CONTRATO se encuentra al corriente en el pago de sus obligaciones fiscales, laborales y de seguridad social; que no tiene instauradas demandas civiles, mercantiles, laborales, ni existen en su contra procedimientos administrativos iniciados o en proceso de iniciarse por autoridad alguna en cobro de contribuciones o prestaciones de seguridad social, ni existen a su cargo obligaciones de cualquier índole o naturaleza que puedan afectar su capacidad para cumplir las obligaciones que asumen en este CONTRATO como EL OBLIGADO SOLIDARIO Y AVAL de EL ARRENDATARIO respecto de la renta y demás obligaciones establecidas en el presente.</p>
+      <p style="margin:0px 0px 0px 0px;"><b>III.7</b> Que tiene pleno conocimiento que EL ARRENDATARIO ha solicitado a LA ARRENDADORA el arrendamiento del BIEN, haciéndose sabedor antes de la firma del presente CONTRATO, del contenido del mismo y de todos los documentos que serán suscritos como anexos, obligaciones, los cargos, comisiones y gastos que serán generados por la celebración del presente CONTRATO y demás penalizaciones que pudieran generarse; por lo que es su voluntad celebrar el presente CONTRATO, a fin de constituirse como OBLIGADO SOLIDARIO Y AVAL de EL ARRENDATARIO, para garantizar el exacto cumplimiento de todas y cada una de las obligaciones que ésta ha contraído en el presente CONTRATO.</p>
+      <p style="margin:0px 0px 0px 0px;"><b>III.8</b> <u>Declaraciones comunes.</u></p>
+      <p style="margin:0px 0px 0px 0px;">i) Que reconoce haber recibido de LA ARRENDADORA la “CARÁTULA” y sus ANEXOS de la presente operación, en la que constan todos los elementos esenciales de la misma, incluyendo el plazo del CONTRATO que será obligatorio para ambas partes; el monto de las rentas y la forma de pago de las mismas.</p>
+      <p style="margin:0px 0px 0px 0px;">ii) Que previamente a la fecha de suscripción del presente CONTRATO LA ARRENDADORA hizo de su conocimiento de los derechos que ampara a su favor la Ley Federal de Protección de Datos Personales en Posesión de los Particulares. Para tal efecto, reconoce y acepta que LA ARRENDADORA ha puesto a su disposición el Aviso de Privacidad (“AVISO DE PRIVACIDAD”), para referir los derechos que en materia de protección de datos personales es titular por la celebración del presente CONTRATO.</p>
+      <br/>
+      <p style="margin:0px 0px 0px 0px;"><b>IV.-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Declara “EL DEPOSITARIO, por su propio y personal derecho, bajo formal protesta de decir verdad:</b></p>
+      <br/>
+      <p style="margin:0px 0px 0px 0px;"><b>IV.1</b> Llamarse como ha quedado precisado en la CARATULA ser una persona física, mayor de edad legal, con plena capacidad jurídica para obligarse y contratar en los términos del presente CONTRATO.</p>
+      <p style="margin:0px 0px 0px 0px;"><b>IV.2</b> Que celebra el presente CONTRATO a fin de constituirse como DEPOSITARIO del BIEN.</p>
+      <br/>
+      <p style="margin:0px 0px 0px 0px;"><b>V.-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Declaran LA ARRENDADORA, EL ARRENDATARIO, OBLIGADO SOLIDARIO Y AVAL y DEPOSITARIO </b>, estar para todo lo relativo al presente CONTRATO, a las siguientes definiciones:</p>
+      <br/>
+      <p style="margin:0px 0px 0px 0px;"><b>ANEXO 1:</b> Se entenderá como tal al documento denominado ANEXO 1, mismo que se suscribe por LAS PARTES CONTRATANTES como constancia de conocimiento, aceptación y conformidad, y donde se describe el BIEN, rentas, UBICACIÓN y demás condiciones específicas del CONTRATO, la cual formará parte integrante del mismo.</p>
+      <p style="margin:0px 0px 0px 0px;"><b>CARÁTULA.- </b>Se entenderá como tal al documento denominado CARATULA, mismo que se suscribe por LA ARRENDADORA, EL ARRENDATARIO, OBLIGADO SOLIDARIO Y AVAL y DEPOSITARIO como constancia de conocimiento, aceptación y conformidad, a las condiciones específicas del CONTRATO, la cual formará parte integrante del mismo, y a la que LAS PARTES CONTRATANTES aceptan que cuando en el texto del presente CONTRATO se haga referencia a dicho término, se entenderán considerados de manera integral y conjunta los datos y condiciones asentados en la referida CARÁTULA, así como los demás términos y estipulaciones especificados en las declaraciones y cláusulas del CONTRATO.</p>
+      <p style="margin:0px 0px 0px 0px;"><b>DÍA HÁBIL.-</b> Se entenderá como tal cualquier día del año que no sea sábado ni domingo, así como cualquier día que no sea feriado de conformidad con la Ley Federal del Trabajo o por Decreto promulgado por el Poder Ejecutivo Federal.</p>
+      <p style="margin:0px 0px 0px 0px;"><b>IVA.-</b> Significa el Impuesto al Valor Agregado vigente, o, en su caso, el impuesto que conforme a las disposiciones fiscales aplicables y vigentes se cause por alguna de las obligaciones de pago previstas en el presente CONTRATO; impuesto o gravamen que será a cargo de EL ARRENDATARIO.</p>
+      <p style="margin:0px 0px 0px 0px;"><b>CONTRATO.-</b> Como tal se entenderá a este CONTRATO de arrendamiento considerando el conjunto de derechos y obligaciones que el mismo ampara, comprendiendo de manera integral y conjunta los términos y condiciones especificados en las declaraciones y cláusulas del presente CONTRATO, su CARATULA y sus ANEXOS.</p>
+      <p style="margin:0px 0px 0px 0px;"><b>DAÑO.-</b> Es todo detrimento imputable a EL ARRENDATARIO ocasionado por negligencia o mal manejo del BIEN, comprobable mediante diagnóstico técnico por los cuales se generará un cobro adicional por la reparación, acondicionamiento y movilizaciones que se generen durante la vigencia del CONTRATO.</p>
+      <p style="margin:0px 0px 0px 0px;"><b>HORAS ADICIONALES.-</b> Son las horas de consumo que se generan por operaciones adicionales al número de horas contratadas, calculadas según el Horómetro.</p>
+      <p style="margin:0px 0px 0px 0px;"><b>MANTENIMIENTO PREVENTIVO.-</b> Son las rutinas de revisión, reemplazo y ajuste obligatorias que deben realizarse de tiempo en tiempo según al programa de mantenimiento basado en las recomendaciones del manual del fabricante del BIEN, e informado al momento de la firma por LA ARRENDADORA para asegurar una operatividad constante evitando daños catastróficos o ingresos no programados al taller que puedan afectar la disponibilidad y productividad del BIEN.</p>
+      <p style="margin:0px 0px 0px 0px;"><b>MANTENIMIENTO CORRECTIVO.-</b> Son las correcciones a las fallas o desperfectos que pudiese presentar el BIEN, causadas por su propia operación.</p>
+      <p style="margin:0px 0px 0px 0px;"><b>FALSO FLETE.-</b> Se entenderá como tal a la solicitud de traslado que sea cancelada cuando el BIEN ya se encuentre fuera de las instalaciones de LA ARRENDADORA con motivo del traslado a la UBICACIÓN señalada por EL ARRENDATARIO.</p>
+      <p style="margin:0px 0px 0px 0px;"><b>UBICACIÓN:</b> El lugar señalado en el ANEXO 1, donde se enviará y deberá permanecer el BIEN durante toda la vigencia del CONTRATO.</p>
+      <br>
+      <p style="margin:0px 0px 0px 0px;">Expuesto lo anterior, las partes expresan que se reconocen mutuamente la personalidad con la que comparecen a la celebración del presente CONTRATO, y que es su intención y voluntad celebrarlo al tenor de las siguientes:</p>
+      <br>  
+      </div>]]>
+    </Declaraciones>
+    <Clausulas>
+      <Titulo><![CDATA[<p align="justify" style="margin:0px 0px 0px 0px;font-size: 8pt !important; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;"><b> CLÁUSULAS </b></p>]]></Titulo>
+      <InformacionAntesTabla>
+        <Informacion>
+          <![CDATA[<p align="center" style="margin:0px 0px 0px 0px;font-size: 8pt !important; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; letter-spacing: 2px;"><b> CLÁUSULAS </b></p>]]>
+          <br/>
+          <![CDATA[
+        <div style="text-align:justify; font-size: 5.0pt !important; font-family: Verdana,Arial,'Helvetica Neue', Helvetica, sans-serif; margin:0px 0px 0px 0px;">
+        <br/>
+      <p style="margin:0px 0px 0px 0px;"><b>PRIMERA.-<u> DEL OBJETO DEL CONTRATO</u>.-</b> Por virtud del presente CONTRATO, LA ARRENDADORA otorga en arrendamiento el BIEN a EL ARRENDATARIO, quien lo recibe en el mismo concepto, BIEN relacionado en el ANEXO I de este CONTRATO. En tal virtud EL ARRENDATARIO tendrá derecho a su uso y goce temporal durante la vigencia establecida en dicho anexo, mediante el pago de las contraprestaciones que en el mismo se consignan a favor de LA ARRENDADORA.</p>
+      <br/>
+      <p style="margin:0px 0px 0px 0px;">EL ARRENDATARIO declara que recibe el BIEN en óptimas condiciones de operación y con todos los accesorios con los que cuenta, que han sido previamente revisados por técnicos especializados en la materia, por lo cual se obliga a contratar operadores competentes que conserven y utilicen el BIEN en forma adecuada, haciendo constar que las relaciones obrero-patronales que surjan con tal motivo serán única y exclusivamente a cuenta de EL ARRENDATARIO, por lo que éste se obliga a sacar a salvo y en paz a de cualquier reclamación a LA ARRENDADORA, así como indemnizarla en caso de ser necesario.</p>
+        <br/>
+       <p style="margin:0px 0px 0px 0px;"><b>SEGUNDA.- <u>USO ESPECÍFICO DEL BIEN</u>.-</b> EL ARRENDATARIO acepta y se obliga a utilizar BIEN dado en arrendamiento exclusivamente para el uso que se indica en el ANEXO 1, y no podrá ser utilizado para fin distinto, tampoco para renta o subarrendamiento, ni podrá ser reinstalado, trasladado o enviado a UBICACIÓN diferente sin el previo aviso y consentimiento de LA ARRENDADORA; en caso contrario, EL ARRENDATARIO pagará a LA ARRENDADORA, independientemente del importe de las rentas a que está obligado, los daños, desgastes, costos de re traslado a su UBICACIÓN original ya se por utilizarlos para otro fin o re ubicación, más una pena equivalente al doble del monto de la renta pactada antes de IVA, como sanción o pena por su incumplimiento, sin perjuicio de que LA ARRENDADORA pueda dar por rescindido el presente CONTRATO. Independientemente de lo anterior, EL ARRENDATARIO quedará obligado a entregar el BIEN, sin necesidad de requerimiento judicial alguno, bastando simple requerimiento extrajudicial que para tal efecto le formule LA ARRENDADORA.</p>
+       <br/>
+        <p style="margin:0px 0px 0px 0px;">Las partes o accesorios que se instalen en el BIEN objeto de este CONTRATO, serán de exclusiva responsabilidad de EL ARRENDATARIO sobre todo si éstos invalidan la garantía que otorga el fabricante; dichos accesorios, si así conviene a los intereses de LA ARRENDADORA, se deberán quedar en el BIEN o EL ARRENDATARIO a solicitud de LA ARRENDADORA se compromete a devolver el mismo en su estado original.</p>
+        <br/>
+         <p style="margin:0px 0px 0px 0px;">LA ARRENDADORA estará facultada, en caso de incumplimiento a lo establecido en la presente cláusula, a obtener la posesión del BIEN, en las condiciones y estado en que se localice, siendo causal, este incumplimiento, de recisión del presente CONTRATO, por lo que EL ARRENDATARIO, será responsable de los gastos que se generen por la recuperación del BIEN arrendado.</p>
+         <br/>
+ <p style="margin:0px 0px 0px 0px;">A fin de que el BIEN sufra exclusivamente el deterioro causado por su funcionamiento en condiciones normales, conforme a su naturaleza y destino, EL ARRENDATARIO se obliga a tomar por su cuenta y cargo las providencias necesarias y, a efectuar los actos que para ello se requiera, y en especial a lo siguiente:</p>
+ <p style="margin:0px 0px 0px 0px;">a). A utilizarlo precisamente conforme a su naturaleza, destino y uso.</p>
+ <p style="margin:0px 0px 0px 0px;">b). A cumplir con las especificaciones de uso, funcionamiento y buen manejo.</p>
+ <p style="margin:0px 0px 0px 0px;">c). A emplear para su mantenimiento y servicio exclusivamente a LA ARRENDADORA.</p>
+ <p style="margin:0px 0px 0px 0px;">d). A responder durante el plazo del presente CONTRATO por los daños o perjuicios que se pudieran ocasionar al BIEN, con motivo de la falta de manejo adecuado o por cualquier otra causa, debiendo proceder a su inmediato resarcimiento.</p>
+ <p style="margin:0px 0px 0px 0px;">d) Que EL ARRENDATARIO no podrá subarrendar en todo ni en parte BIEN ni venderlo, darlo en comodato, pignorarlo, gravarlo o permitir que sean gravado en forma alguna, ni ceder o negociar en cualquier forma los derechos que ampara el presente CONTRATO.</p>
+ <p style="margin:0px 0px 0px 0px;">e) Los implementos y bienes que se acondicionen a BIEN objeto de este CONTRATO, se considerarán incorporados a él y consecuentemente sujetos a los términos del CONTRATO, pero LA ARRENDADORA podrá exigir y EL ARRENDATARIO estará obligada a devolver el BIEN en la forma original en que le fue entregado.</p>
+ <p style="margin:0px 0px 0px 0px;">f) A mantenerlo y devolverlo a la UBICACIÓN, misma que sebe ser un lugar seguro y de posible acceso para su devolución, siendo responsable del BIEN hasta que el mismo sea entregado a LA ARRENDADORA.</p>
+ <br/>
+ <p style="margin:0px 0px 0px 0px;">La falta de cumplimiento por parte de EL ARRENDATARIO de cualquiera de las obligaciones asumidas en esta cláusula dará lugar al vencimiento anticipado del presente CONTRATO, obligándose a la devolución inmediata del BIEN, sin necesidad de requerimiento, y al pago de las rentas y demás cantidades establecidas en concepto de pena en el CONTRATO.</p>
+ <br/>
+ <p style="margin:0px 0px 0px 0px;">EL ARRENDATARIO declara que conoce que el BIEN cuenta con <b><u>Servicio de LAS</u></b> (Servicio de Localización Automatizada Satelital), mediante el cual LA ARRENDADORA puede localizar vía remota el BIEN, en tiempo real, a través del uso de un sistema de posicionamiento global, sin costo extra, mismo que se encuentra instalado en el BIEN y que le permite a LA ARRENDADORA parar el BIEN en caso de que EL ARRENDATARIO haga uso indebido del mismo, o  bien por incumplimiento en el pago de las rentas o cualquier incumplimiento a las obligaciones de este CONTRATO. EL ARRENDATARIO por ningún motivo puede dañar, remover, inactivar el equipo del <b>Servicio de LAS</b> ni arrancar de manera manual nuevamente el BIEN, en caso de hacerlo dará motivo a las causales de incumplimiento y aplicación de penas correspondiente por rescisión por incumplimiento de EL ARRENDATARIO.</p>
+ <br />
+ <p style="margin:0px 0px 0px 0px;"><b>TERCERA.- <u>TRASLADOS, SEGUROS Y DEDUCIBLE</u>.-</b> Podrá válidamente establecerse que el BIEN arrendado sean trasladado por cuenta de EL ARRENDATARIO y con sus propios medios de transportación, viajando desde ese momento bajo su propia cuenta y riesgo. Cuando EL ARRENDATARIO no cuente con los medios para la transportación del BIEN, LA ARRENDADORA podrá, siempre que esté a su disposición, dar el servicio de transporte y entregar el BIEN a EL ARRENDATARIO en el lugar que ella determine; la entrega se entenderá realizada en el momento de la facturación, y LA ARRENDADORA realizará el transporte a la UBICACIÓN, soportando EL ARRENDATARIO los costos y riesgos del transporte hasta ese lugar.</p>
+ <br/>
+ <p style="margin:0px 0px 0px 0px;">Para cualquiera que sea el tipo de traslado por el que se opte, LAS PARTES CONTRATANTES expresamente convienen que una vez que el BIEN salga de las instalaciones de LA ARRENDADORA cualquier daño que sufra, incluyendo los sufridos en maniobras de traslado o en uso, así como cualquier daño a terceros, bienes o personas, será de exclusiva responsabilidad de EL ARRENDATARIO y por ende del pago de cualquier cantidad que al efecto deba pagarse.</p>
+ <br/>
+ <p style="margin:0px 0px 0px 0px;">Una vez que salga el BIEN de las instalaciones de LA ARRENDADORA, EL ARRENDATARIO no podrá retractarse en la contratación y traslado, bajo pena de perder el importe de la renta pagada, en caso que la misma haya sido cubierta de contado, o de que se le aplique la facturación de un mes de renta del BIEN, si la forma de pago fue a crédito, asimismo LAS PARTES CONTRATANTES acuerdan que EL ARRENDATARIO responderá por todos los gastos y daños que se generen en caso de existir un falso flete.</p>
+ <br/>
+ <p style="margin:0px 0px 0px 0px;">EL ARRENDATARIO reconoce que el BIEN ya cuenta con una póliza de seguro contratada por LA ARRENDADORA, LAS PARTES CONTRATANTES expresamente convienen que en caso de ocurrir algún siniestro, el deducible (o cualquier otra cantidad accesoria) del seguro contratado por LA ARRENDADORA en relación al BIEN, deberá ser cubierto, en su totalidad, por EL ARRENDATARIO en tiempo y forma. LAS PARTES CONTRATANTES reconocen que el seguro no cubre, entre otras cosas, el mal o imprudente uso del operador. LAS PARTES CONTRATANTES expresamente convienen que en caso que la compañía aseguradora, por cualquier razón no pague , el deducible del BIEN o su reparación, la responsabilidad de cubrir esa pérdida total o reparación, recaerá exclusivamente sobre EL ARRENDATARIO.</p>
+ <br/>
+ <p style="margin:0px 0px 0px 0px;"><b>CUARTA.- <u>CAMBIO DE EQUIPO</u>.-</b> LAS PARTES CONTRATANTES convienen en que podrá realizarse el cambio de BIEN bajo los siguientes supuestos:</p>
+ <p style="margin:0px 0px 0px 0px;">a)&nbsp;&nbsp;&nbsp;&nbsp;Cuando el BIEN sea inhabilitado para su operación por requerir su mantenimiento o reparación.</p>
+ <p style="margin:0px 0px 0px 0px;">b)&nbsp;&nbsp;&nbsp;&nbsp;Cuando LA ARRENDADORA considere que el BIEN requiere cambio.</p>
+ <br/>
+ <p style="margin:0px 0px 0px 0px;"><b>QUINTA.- <u>IMPORTE DEL ARRENDAMIENTO</u>.-</b> LAS PARTES CONTRATANTES convienen en que la renta total será la cantidad que quedó especificada en el ANEXO 1 del presente CONTRATO. En caso de que el plazo de este CONTRATO sea prorrogado, el importe de la renta se ajustará a los días que efectivamente se haya utilizado el BIEN, y será pagado de conformidad con los pagos establecidos en dicho anexo.</p>
+ <br/>
+ <p style="margin:0px 0px 0px 0px;">Queda expresamente pactado que al no realizar el pago en la fecha fijada, EL ARRENDATARIO será acreedor de una sanción equivalente al 3% (tres por ciento) adicional mensual más I.V.A. sobre el saldo total no pagado, durante todo el tiempo que dure la mora.</p>
+ <br/>
+ <p style="margin:0px 0px 0px 0px;">El pago del importe de las rentas no puede ser suspendido en ningún momento, ni tratándose de siniestro por accidente, robo, secuestros, retención del equipo, averías o mantenimientos predictivos, preventivos o correctivos, solo se suspenderá el pago hasta que la aseguradora correspondiente haya decretado el pago de la indemnización por pérdida total.</p>
+ <br/>
+ <p style="margin:0px 0px 0px 0px;"><b>SEXTA.- <u>VIGENCIA DEL CONTRATO</u>.-</b> La duración de este CONTRATO será el establecido en el ANEXO 1 del presente, contando a partir de su fecha de firma. LAS PARTES CONTRATANTES pactan que en tanto EL ARRENDATARIO no devuelva el BIEN a LA ARRENDADORA y ésta, los reciba, en las mismas condiciones en que los entregó (en óptimas condiciones), al finalizar el término del presente CONTRATO, éste se entenderá prorrogado y EL ARRENDATARIO pagará el importe de la renta correspondiente a LA ARRENDADORA por las horas extras o tiempo demás en que hubiere retenido el BIEN, importe que será tasado de acuerdo al precio de la renta pactada en el presente CONTRATO.</p>
+ <br/>
+ <p style="margin:0px 0px 0px 0px;"><b>SEPTIMA.-<u>COMPUTO DE HORAS TRABAJADAS</u>.-</b> LAS PARTES CONTRATANTES pactan expresamente que a efecto de determinar las horas trabajadas, se basarán en el horómetro con que cuenta el BIEN, en caso de descompostura del mismo, EL ARRENDATARIO se obliga a informar por escrito de manera inmediata cualquier desperfecto de dicho horómetro. En caso de no notificar inmediatamente se le cargará un 25% (veinticinco por ciento) más de renta sobre el total pactado.</p>
+ <br>
+ <p style="margin:0px 0px 0px 0px;"><b>OCTAVA.-<u>TARIFA</u>.-</b> Para efecto del cómputo de horas del presente CONTRATO se aplicarán las siguientes tablas, de acuerdo al uso del BIEN y a la tarifa contratada.</p>
+ <br>
+ <p style="margin:0px 0px 0px 0px;"></p>
+ <p style="margin:0px 0px 0px 0px;"></p>
+  <p style="margin:0px 0px 0px 0px;"></p>
+          <p style="margin:0px 0px 0px 0px;"></p>
+      
+      </div>
+      ]]>
+        </Informacion>
+      </InformacionAntesTabla>
+      <Tablas>
+
+        <Construccion>
+          <![CDATA[	        
+	        <Table style="font-weight: normal; position:absolute; width:100%; height:auto; text-align=center; font-size:8pt; font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;" align="center" border="1">
+	          <tr>
+              <td align="center" style="float:left; position:relative; vertical-align:top;" COLSPAN=4 >CONSTRUCCIÓN</td>		          
+	          </tr>
+	          <tr>
+		          <td align="center" style="float:left; position:relative; vertical-align:top;">                            
+              </td>
+		          <td align="center" style="float:left; position:relative; vertical-align:top;"> Tarifa Simple                           
+              </td>
+		          <td align="center" style="float:left; position:relative; vertical-align:top;"> Tarifa Doble                           
+              </td>
+		          <td align="center" style="float:left; position:relative; vertical-align:top;"> Tarifa Triple                          
+              </td>
+	          </tr>
+            <tr>
+		          <td align="center" style="float:left; position:relative; vertical-align:top;">   Día                         
+              </td>
+		          <td align="center" style="float:left; position:relative; vertical-align:top;">   8 horas                         
+              </td>
+		          <td align="center" style="float:left; position:relative; vertical-align:top;">   12 horas                         
+              </td>
+		          <td align="center" style="float:left; position:relative; vertical-align:top;">   16 horas                        
+              </td>
+            </tr>
+            <tr>
+		          <td align="center" style="float:left; position:relative; vertical-align:top;">    Semana                        
+              </td>
+		          <td align="center" style="float:left; position:relative; vertical-align:top;">    45 horas                        
+              </td>
+		          <td align="center" style="float:left; position:relative; vertical-align:top;">    68 horas                        
+              </td>
+		          <td align="center" style="float:left; position:relative; vertical-align:top;">    91 horas                        
+              </td>
+            </tr>
+            <tr>
+		          <td align="center" style="float:left; position:relative; vertical-align:top;">    Mes                        
+              </td>
+		          <td align="center" style="float:left; position:relative; vertical-align:top;">    200 horas                        
+              </td>
+		          <td align="center" style="float:left; position:relative; vertical-align:top;">    300 horas                        
+              </td>
+		          <td align="center" style="float:left; position:relative; vertical-align:top;">    400 horas                       
+              </td>
+            </tr>
+	        </Table>
+	        ]]>
+        </Construccion>
+
+        <Generacion>
+          <![CDATA[	        
+	        <Table style="font-weight: normal; position:absolute; width:100%; height:auto; text-align=center; font-size:8pt; font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;" align="center" border="1">
+	          <tr>
+              <td align="center" style="float:left; position:relative; vertical-align:top;" COLSPAN=6 >GENERACIÓN</td>		          
+	          </tr>
+	          <tr>
+		          <td align="center" style="float:left; position:relative; vertical-align:top;">                            
+              </td>
+		          <td align="center" style="float:left; position:relative; vertical-align:top;"> Tarifa Standby                           
+              </td>
+		          <td align="center" style="float:left; position:relative; vertical-align:top;"> Tarifa Simple                           
+              </td>
+		          <td align="center" style="float:left; position:relative; vertical-align:top;"> Tarifa Doble (12)
+              </td>
+		          <td align="center" style="float:left; position:relative; vertical-align:top;"> Tarifa Doble (16)
+              </td>
+		          <td align="center" style="float:left; position:relative; vertical-align:top;"> Tarifa Triple                          
+              </td>
+	          </tr>
+            <tr>
+		          <td align="center" style="float:left; position:relative; vertical-align:top;">   Día                         
+              </td>
+		          <td align="center" style="float:left; position:relative; vertical-align:top;">   1 horas                         
+              </td>
+		          <td align="center" style="float:left; position:relative; vertical-align:top;">   8 horas                         
+              </td>
+		          <td align="center" style="float:left; position:relative; vertical-align:top;">   12 horas                        
+              </td>
+		          <td align="center" style="float:left; position:relative; vertical-align:top;">   16 horas                          
+              </td>
+		          <td align="center" style="float:left; position:relative; vertical-align:top;">   24 horas                          
+              </td>
+            </tr>
+            <tr>
+		          <td align="center" style="float:left; position:relative; vertical-align:top;">    Semana                        
+              </td>
+		          <td align="center" style="float:left; position:relative; vertical-align:top;">    7 horas                        
+              </td>
+		          <td align="center" style="float:left; position:relative; vertical-align:top;">    56 horas                        
+              </td>
+		          <td align="center" style="float:left; position:relative; vertical-align:top;">    84 horas                        
+              </td>
+		          <td align="center" style="float:left; position:relative; vertical-align:top;">    112 horas                          
+              </td>
+		          <td align="center" style="float:left; position:relative; vertical-align:top;">    168 horas                          
+              </td>
+            </tr>
+            <tr>
+		          <td align="center" style="float:left; position:relative; vertical-align:top;">    Mes                        
+              </td>
+		          <td align="center" style="float:left; position:relative; vertical-align:top;">    28 horas                        
+              </td>
+		          <td align="center" style="float:left; position:relative; vertical-align:top;">    224 horas                        
+              </td>
+		          <td align="center" style="float:left; position:relative; vertical-align:top;">    336 horas                       
+              </td>
+		          <td align="center" style="float:left; position:relative; vertical-align:top;">    448 horas                          
+              </td>
+		          <td align="center" style="float:left; position:relative; vertical-align:top;">    672 horas                          
+              </td>
+            </tr>
+	        </Table>
+	        ]]>
+
+        </Generacion>
+		
+		<Equinova>
+          <![CDATA[	        
+	        <Table style="font-weight: normal; position:absolute; width:100%; height:auto; text-align=center; font-size:8pt; font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;" align="center" border="1">
+	          <tr>
+              <td align="center" style="float:left; position:relative; vertical-align:top;" COLSPAN=6 >GENERACIÓN</td>		          
+	          </tr>
+	          <tr>
+		          <td align="center" style="float:left; position:relative; vertical-align:top;">                            
+              </td>
+		          <td align="center" style="float:left; position:relative; vertical-align:top;"> Tarifa Standby                           
+              </td>
+		          <td align="center" style="float:left; position:relative; vertical-align:top;"> Tarifa Simple                           
+              </td>
+		          <td align="center" style="float:left; position:relative; vertical-align:top;"> Tarifa Doble (12)
+              </td>
+		          <td align="center" style="float:left; position:relative; vertical-align:top;"> Tarifa Doble (16)
+              </td>
+		          <td align="center" style="float:left; position:relative; vertical-align:top;"> Tarifa Triple                          
+              </td>
+	          </tr>
+            <tr>
+		          <td align="center" style="float:left; position:relative; vertical-align:top;">   Día                         
+              </td>
+		          <td align="center" style="float:left; position:relative; vertical-align:top;">   1 horas                         
+              </td>
+		          <td align="center" style="float:left; position:relative; vertical-align:top;">   8 horas                         
+              </td>
+		          <td align="center" style="float:left; position:relative; vertical-align:top;">   12 horas                        
+              </td>
+		          <td align="center" style="float:left; position:relative; vertical-align:top;">   16 horas                          
+              </td>
+		          <td align="center" style="float:left; position:relative; vertical-align:top;">   24 horas                          
+              </td>
+            </tr>
+            <tr>
+		          <td align="center" style="float:left; position:relative; vertical-align:top;">    Semana                        
+              </td>
+		          <td align="center" style="float:left; position:relative; vertical-align:top;">    7 horas                        
+              </td>
+		          <td align="center" style="float:left; position:relative; vertical-align:top;">    56 horas                        
+              </td>
+		          <td align="center" style="float:left; position:relative; vertical-align:top;">    84 horas                        
+              </td>
+		          <td align="center" style="float:left; position:relative; vertical-align:top;">    112 horas                          
+              </td>
+		          <td align="center" style="float:left; position:relative; vertical-align:top;">    168 horas                          
+              </td>
+            </tr>
+            <tr>
+		          <td align="center" style="float:left; position:relative; vertical-align:top;">    Mes                        
+              </td>
+		          <td align="center" style="float:left; position:relative; vertical-align:top;">    28 horas                        
+              </td>
+		          <td align="center" style="float:left; position:relative; vertical-align:top;">    224 horas                        
+              </td>
+		          <td align="center" style="float:left; position:relative; vertical-align:top;">    336 horas                       
+              </td>
+		          <td align="center" style="float:left; position:relative; vertical-align:top;">    448 horas                          
+              </td>
+		          <td align="center" style="float:left; position:relative; vertical-align:top;">    672 horas                          
+              </td>
+            </tr>
+	        </Table>
+	        ]]>
+
+        </Equinova>
+        
+      </Tablas>
+      <InformacionDespuesTablas>
+        <Informacion>
+          <![CDATA[  <div style="text-align:justify; font-size: 5.0pt !important; font-family: Verdana,Arial,'Helvetica Neue', Helvetica, sans-serif; margin:0px 0px 0px 0px;">
+          <p style="margin:0px 0px 0px 0px;"><b>NOVENA.- <u>OBLIGACIONES DE EL ARRENDATARIO</u>.-</b> Además de las que se desprenden de la Ley y de este CONTRATO, son obligaciones a cargo de EL ARRENDATARIO las siguientes:</p>
+          <p style="margin:0px 0px 0px 0px;">i) Realizar el pago de los mantenimientos que, en su caso, requiera el BIEN.</p>
+          <p style="margin:0px 0px 0px 0px;">ii) En general no utilizar el BIEN en forma diferente o uso distinto, y responsabilizarse de la posesión del mismo.</p>
+          <p style="margin:0px 0px 0px 0px;">iii) Será responsable de toda pérdida, daño o menoscabo que se ocasione al BIEN sin importar la causa que le dé origen.</p>
+          <p style="margin:0px 0px 0px 0px;">iv) En caso de siniestro, lo deberá notificar de inmediato a LA ARRENDADORA. Si la Compañía Aseguradora se niega efectuar el pago, por cualquier causa imputable a EL ARRENDATARIO, éste será responsable de los daños sufridos. En caso de no notificar de inmediato se le cargará un 25% (veinticinco por ciento) más de renta sobre el total pactado.</p>
+          <p style="margin:0px 0px 0px 0px;">v) Responder de conformidad con las disposiciones legales por: daños a terceros, daños a las personas y daños que sufra el BIEN en el tiempo que el mismo se encuentre en posesión física o legal de EL ARRENDATARIO.</p>
+          <br>
+          <p style="margin:0px 0px 0px 0px;">Si EL ARRENDATARIO no cubre las cantidades respectivas, LA ARRENDADORA podrá dar por rescindido el presente CONTRATO con todas sus legales consecuencias, ante dicho incumplimiento.</p>
+          <br>
+          <p style="margin:0px 0px 0px 0px;"><b>DÉCIMA.- <u>OBLIGACIONES DE LA ARRENDADORA</u>.-</b> Son obligaciones de LA ARRENDADORA:</p>
+          <p style="margin:0px 0px 0px 0px;">i) Entregar a EL ARRENDATARIO el BIEN para el uso y UBICACIÓN convenida en óptimas condiciones de operación.</p>
+          <p style="margin:0px 0px 0px 0px;">ii) No estorbar, ni privar de manera alguna el uso de BIEN, a no ser por causas derivadas de la Ley o incumplimiento a lo pactado en este CONTRATO, incluyendo la capacidad del paro remoto del BIEN.</p>
+          <br>
+          <p style="margin:0px 0px 0px 0px;"><b>DÉCIMA PRIMERA.- <u>MANTENIMIENTO Y RESPONSABILIDAD</u>.-</b> A partir de que el BIEN sea entregado por LA ARRENDADORA a EL ARRENDATARIO, cualquier riesgo, robo, destrucción, deterioro, pérdida o menoscabo de él mismo, así como las responsabilidades que surjan por el uso de éste, en daño o perjuicio de terceros (ya sea en su persona o en sus bienes) o del mismo BIEN, ya sean ocasionados por imprudencia, negligencia o por caso fortuito, serán responsabilidad única de EL ARRENDATARIO quien se obliga a pagar y/o reparar, de su propio peculio, los daños y perjuicios ocasionados.</p>
+          <br>
+          <p style="margin:0px 0px 0px 0px;">Igualmente y frente a las eventualidades señaladas en el párrafo anterior, EL ARRENDATARIO no quedará liberado del pago de la contraprestación pactada en este CONTRATO, debiendo cubrir la misma en los términos establecidos en este instrumento.</p>
+          <br>
+          <p style="margin:0px 0px 0px 0px;">EL ARRENDATARIO se obliga a pagar por su cuenta todos los gastos inherentes a la operación, guarda, mantenimiento y conservación de BIEN. EL ARRENDATARIO se compromete a realizar los servicios así como las reparaciones que requiera el BIEN durante todo el tiempo que dure el arrendamiento.</p>
+          <br>
+          <p style="margin:0px 0px 0px 0px;"><b>DÉCIMA SEGUNDA.- <u>VALOR DEL BIEN</u>.-</b> LAS PARTES CONTRATANTES reconocen que el BIEN tiene el valor determinado en el ANEXO 1 del presente CONTRATO.</p>
+          <br>
+          <p style="margin:0px 0px 0px 0px;"><b>DÉCIMA TERCERA.- <u>USO ESPECÍFICO</u>.-</b> LAS PARTES CONTRATANTES aceptan que el BIEN será utilizado exclusivamente para el uso y fin establecido en el ANEXO 1 del presente CONTRATO, en caso contrario EL ARRENDATARIO pagará a LA ARRENDADORA los daños y desgastes excesivos por utilizarlos en contravención a lo antes señalado.</p>
+          <br>
+          <p style="margin:0px 0px 0px 0px;"><b>DÉCIMA CUARTA.- <u>PROHIBICIONES DE SUBARRIENDO</u>.-</b> EL ARRENDATARIO se obliga y compromete a no subarrendar o permitir a terceros el uso del BIEN, ni a transferir los derechos y obligaciones derivados de este CONTRATO a terceras personas.</p>
+          <br>
+          <p style="margin:0px 0px 0px 0px;"><b>DÉCIMA QUINTA.- <u>RECLAMACIONES DE TERCEROS</u>.- </b>EL ARRENDATARIO se obliga a responder económicamente frente a terceros y, en su caso, a indemnizar y a dejar a salvo a LA ARRENDADORA, así como a comparecer a juicio que se entable en su caso en contra de LA ARRENDADORA, con motivo de cualquier reclamación o demanda o responsabilidad que se llegare a presentarse en su contra, por actos, hechos y omisiones del propio ARRENDATARIO y/o de las personas autorizadas por el para utilizar el BIEN, ocurrido desde la fecha de entrega a EL ARRENDATARIO hasta la devolución a LA ARRENDADORA.</p>
+          <br>
+          <p style="margin:0px 0px 0px 0px;">EL ARRENDATARIO será responsable de todas las obligaciones administrativas y legales derivadas del uso y tenencia del BIEN, así como de cualquier responsabilidad en que puedan incurrir los operadores o quienes hagan uso del mismo, y se obliga a indemnizar y dejar a salvo a LA ARRENDADORA y, en su caso, a comparecer al juicio que se llegara a entablar en contra de LA ARRENDADORA con motivo de toda clase de demandas y reclamaciones que los conductores autorizados por ella y/o terceros puedan entablar en su contra. Cualquier notificación que reciba EL ARRENDATARIO que se relacione con BIEN, deberá enterar inmediatamente a LA ARRENDADORA, en caso de que ésta incurra en gastos, honorarios, etc., será obligación de EL ARRENDATARIO, restituir las cantidades correspondientes en el plazo que para tal efecto se establezca en la factura correspondiente, o bien pudiendo LA ARRENDADORA tomar las cantidades correspondientes de la tarjeta o voucher otorgado por EL ARRENDATARIO en su caso.</p>
+          <br>
+          <p style="margin:0px 0px 0px 0px;">EL ARRENDATARIO se obliga a advertir en forma fehaciente a cualquier tercero que intente embargar o en cualquier otra forma gravar o ejercer alguna acción en contra del BIEN, que éste es propiedad de LA ARRENDADORA, así como mostrarle la documentación respectiva. En caso de que se trabe algún embargo u otro gravamen sobre alguno del BIEN, esta circunstancia no eximirá de su obligación de pago de rentas a EL ARRENDATARIO.</p>
+          <br>
+          <p style="margin:0px 0px 0px 0px;"><b>DÉCIMA SEXTA.- <u>AVISOS POR SINIESTROS</u>.-</b> Si durante la vigencia del presente CONTRATO, el BIEN sufriera algún accidente, daño causado por caso fortuito y/o fuerza mayor, secuestro o robo parcial o total, EL ARRENDATARIO deberá dar aviso el mismo día en que tal evento ocurriere o, en su caso, en el momento en que tenga conocimiento de los hechos a LA ARRENDADORA, quien dará aviso a las autoridades competentes que deban conocerlos, siendo obligación de EL ARRENDATARIO coadyuvar y permitir acceso a dichas autoridades si se requiere. El retardo en el aviso por parte de EL ARRENDATARIO se considera un incumplimiento del presente CONTRATO y genera a EL ARRENDATARIO la responsabilidad de indemnizar los daños que el BIEN haya sufrido por causa de dicho retardo.</p>
+          <p style="margin:0px 0px 0px 0px;">Para el caso de no recibir el aviso referido, LA ARRENDADORA no tendrá ninguna obligación al respecto y EL ARRENDATARIO asumirá la responsabilidad exclusiva respecto de las consecuencias de los eventos relacionados.</p>
+          <p style="margin:0px 0px 0px 0px;">La responsabilidad de EL ARRENDATARIO por causas imputables a el mismo, independientemente de lo estipulado en el párrafo anterior en
+            caso de robo total, si una vez cubierta la indemnización a LA ARRENDADORA por la Aseguradora, ésta no fuese suficiente para cubrir
+            íntegramente el importe del Valor de BIEN, así como cualquier otro adeudo a cargo de EL ARRENDATARIO, ésta queda obligada expresamente
+            a liquidar las diferencias resultantes, dándose por terminado el arrendamiento. LAS PARTES CONTRATANTES reconocen desde ahora que
+            por ningún concepto podrán reducirse o suspenderse en forma alguna las rentas pactadas en este CONTRATO.</p>
+          <br>
+          <p style="margin:0px 0px 0px 0px;"><b>DECIMA SEPTIMA. - <u>TERMINACIÓN ANTICIPADA DEL CONTRATO</u>.-</b> EL ARRENDATARIO podrá solicitar a LA ARRENDADORA la terminación anticipada del presente CONTRATO, previo aviso, por cualquier medio a LA ARRENDADORA, sin embargo no se dará por terminado hasta que se cumplan las dos siguientes obligaciones:</p>
+          <p style="margin:0px 0px 0px 0px;text-indent: 0.5cm">i)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hasta el momento de devolución del BIEN a LA ARRENDADORA, y</p>
+          <p style="margin:0px 0px 0px 0px;text-indent: 0.5cm">ii)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ii) cuando EL ARRENDATARIO salde el importe de todos los adeudos pendientes.</p>
+          <br>
+          <p style="margin:0px 0px 0px 0px;">Sin perjuicio de las obligaciones a cargo de EL ARRENDATARIO derivadas de la terminación anticipada, LAS PARTES CONTRATANTES acuerdan que EL ARRENDATARIO adicionalmente deberá entregar a LA ARRENDADORA, el BIEN, el cual al ser devuelto será diagnosticado por personal de LA ARRENDADORA, el cual en caso de arrojar daños o desperfectos, EL ARRENDATARIO se obliga a pagar, las reparaciones que sean necesarias realizar para que BIEN arrendados se encuentren en las mismas condiciones de operación en que se entregó, o bien pudiendo LA ARRENDADORA tomar las cantidades correspondientes de la tarjeta o voucher otorgado por EL ARRENDATARIO en su caso.</p>
+          <br>
+          <p style="margin:0px 0px 0px 0px;"><b>DECIMA OCTAVA.- <u>CAUSALES DE RESCISIÓN</u>.-</b> Además de quedar sujeto a las causas de rescisión establecidas por la ley, LAS PARTES CONTRATANTES convienen en que si por cualquier razón EL ARRENDATARIO incumpliera cualquiera de las obligaciones que se deriven de este CONTRATO respecto de uno o varios de los BIENES u ocurriere alguno de los supuestos que aquí se detallan, LA ARRENDADORA  podrá a su elección demandar la rescisión de este CONTRATO o exigir su cumplimiento forzoso, siendo dichos supuestos, los siguientes:</p>
+          <p style="margin:0px 0px 0px 0px;">i) Por no cubrir una de las rentas en la forma y términos convenidos.</p>
+          <p style="margin:0px 0px 0px 0px;">ii) Por destinar el BIEN a otro fin distinto al convenido en este CONTRATO. </p>
+          <p style="margin:0px 0px 0px 0px;">iii) La falta del mantenimiento adecuado del BIEN, su uso incorrecto o negligente, la pérdida de la posesión del mismo o su destrucción total o parcial. </p>
+          <p style="margin:0px 0px 0px 0px;">iv) Por no comunicar EL ARRENDATARIO a LA ARRENDADORA cualquier toma de posesión, embargo o secuestro que del BIEN efectúe cuales quiera autoridad judicial, administrativa o cualquier tercero. </p>
+          <p style="margin:0px 0px 0px 0px;">v) Por haber otorgado EL ARRENDATARIO en subarriendo, cesión de derechos, comodato y/o cualquier otra forma entregue la posesión de BIEN o permitir a terceros el uso del mismo. </p>
+          <p style="margin:0px 0px 0px 0px;">vi) Por cambiar de domicilio y ubicación el BIEN objeto del presente CONTRATO sin notificación y autorización de LA ARRENDADORA </p>
+          <p style="margin:0px 0px 0px 0px;">vii) Ser declarado en estado de concurso o quiebra. </p> 
+          <p style="margin:0px 0px 0px 0px;">viii) Ceder los derechos y obligaciones derivados del presente CONTRATO. </p>
+          <p style="margin:0px 0px 0px 0px;">ix) Incumplir con cualesquiera otra de las obligaciones que asume en el presente CONTRATO. </p> 
+          <br>
+          <p style="margin:0px 0px 0px 0px;">Independientemente de las acciones que tendrá LA ARRENDADORA, especificadas en el primer párrafo de la presente cláusula, ésta se reserva el derecho de aplicar las penas convencionales que se actualicen en los términos de lo previsto en el presente CONTRATO. </p>
+          <br>
+          <p style="margin:0px 0px 0px 0px;"><b>DECIMA NOVENA.- <u>RECUPERACIÓN DEL BIEN</u>.-</b> EL ARRENDATARIO se obliga con LA ARRENDADORA o quien sus derechos represente, a concederle la facultad irrevocable de tomar posesión material del BIEN en caso de terminación anticipada del presente CONTRATO o por haberse realizado cualquiera de los motivos de rescisión del mismo, donde quiera que los mismos se encuentren, incluso la autoriza a ingresar al domicilio donde se encuentre el BIEN según se indica en el ANEXO 1, previo mandamiento de autoridad, para recuperar el BIEN, sin que esto pueda tomarse como la comisión de algún delito, renunciando desde este momento EL ARRENDATARIO a ejercitar cualquier acción legal sea de tipo penal, civil, administrativa y/o las que pretenda por cualquier causa al tomar LA ARRENDADORA el BIEN. Independientemente de lo previsto en el presente párrafo, las obligaciones de EL ARRENDATARIO subsistirán hasta en tanto se liquiden los adeudos a LA ARRENDADORA.</p>
+          <br>
+          <p style="margin:0px 0px 0px 0px;">Ante la terminación anticipada del presente CONTRATO o la recisión del mismo, EL DEPOSITARIO se encuentra obligado a entregar en forma inmediata, por simple requerimiento que le haga LA ARRENDADORA el BIEN, en el entendido que al negarse a entregarlo comete el delito de Abuso de Confianza. </p>
+          <br>
+          <p style="margin:0px 0px 0px 0px;"><b>VIGÉSIMA.- <u>DEVOLUCIÓN DEL BIEN AL TÉRMINO DEL CONTRATO</u>.- </b>EL ARRENDATARIO o EL DEPOSITARIO en su caso quedan obligados a devolver el BIEN, en el domicilio de LA ARRENDADORA o en algún otro lugar que la misma designe. En caso contrario EL ARRENDATARIO deberá pagar con independencia de la renta que corresponda, el 3% (tres por ciento) adicional mensual de dicha renta más el impuesto al valor agregado (IVA), en concepto de pena convencional, a favor de LA ARRENDADORA por todo el tiempo que transcurra hasta efectuar la entrega material y jurídica del BIEN, sin que ello pueda interpretarse como una prórroga al CONTRATO. </p>
+          <br/>
+          <p style="margin:0px 0px 0px 0px;"><b>VIGÉSIMA PRIMERA.- <u>OBLIGACIÓN SOLIDARIA Y AVAL</u>.-</b> Son la (s) persona (s) física (s) y/o moral (es) precisada (s) en la CARATULA, quienes se constituyen en este acto como OBLIGADO SOLIDARIO y AVAL de todas y cada una de las obligaciones que en este CONTRATO contrae EL ARRENDATARIO, asumiendo la obligación de pagar íntegramente las obligaciones a cargo de EL ARRENDATARIO sin que por ello pueda ser divisible la deuda;" en este sentido, la solidaridad con la que EL OBLIGADO SOLIDARIO Y AVAL se constituye en este CONTRATO será de carácter pasiva, es decir, cada uno de por sí responderá de la totalidad de la obligación debida, en los términos previstos en el artículo 1987 (un mil novecientos ochenta y siete) del Código Civil Federal. </p>
+          <br>
+          <p style="margin:0px 0px 0px 0px;">Manifiesta EL OBLIGADO SOLIDARIO Y AVAL conocer el alcance y fuerza legal de las obligaciones que asume y que LA ARRENDADORA le ha explicado ampliamente todas y cada una de las mismas, por lo cual reconoce que su obligación no podrá cancelarse o concluirse, en tanto que subsistan las obligaciones a cargo de EL ARRENDATARIO, aun cuando el término del arrendamiento hubiese expirado.</p>
+          <br>
+          <p style="margin:0px 0px 0px 0px;"><b>VIGÉSIMA SEGUNDA.- <u>DEPOSITARÍA</u>.-</b> Se constituye en DEPOSITARIO a la persona que quedó señalada en la CARÁTULA del presente CONTRATO, mismo que acepta el nombramiento de DEPOSITARIO conferido a su favor y protesta su fiel y leal desempeño con todas sus legales consecuencias. En el ejercicio de su cargo EL DEPOSITARIO asume las responsabilidades civiles y penales inherentes a su cargo, obligándose a la guarda y conservación del BIEN. Asimismo se compromete a ejercer de los derechos y acciones que le correspondan por la custodia del BIEN, y renuncia expresamente al cobro de honorarios por el desempeño de su referido cargo. Finalmente, EL DEPOSITARIO se compromete a entregar el BIEN en forma inmediata, por simple requerimiento de LA ARRENDADORA, en el entendido que al negarse a entregarlos comete el delito de Abuso de Confianza. </p>
+          <br>
+          <p style="margin:0px 0px 0px 0px;"><b>VIGÉSIMA TERCERA.- <u>CESIÓN</u>.-</b> EL ARRENDATARIO manifiesta desde ahora su consentimiento y conformidad para que LA ARRENDADORA ceda parcial o totalmente los derechos que le derivan del presente CONTRATO sin que pueda oponer al adquirente, cesionario o acreedor, ninguna de las excepciones personales que pudiere tener en contra de LA ARRENDADORA. </p>
+          <br>
+          <p style="margin:0px 0px 0px 0px;"><b>VIGÉSIMA CUARTA.- <u>MODIFICACIONES</u>.-</b> LA ARRENDADORA  estará facultada para modificar los términos y condiciones del presente
+          CONTRATO, mediante aviso con acuse de recibo dado a EL ARRENDATARIO. En virtud de la modificación, EL ARRENDATARIO podrá
+          solicitar la Terminación Anticipada del presente CONTRATO sin incurrir en responsabilidad, y bajo las condiciones anteriores a la modificación,
+          en el entendido que las modificaciones al presente CONTRATO entrarán en vigor inmediatamente después del acuse de recibo. </p>
+          <br>
+          <p style="margin:0px 0px 0px 0px;"><b>VIGESIMA QUINTA.- <u>DOMICILIOS</u>.-</b> Las partes señalan como sus respectivos domicilios los establecidos en la CARATULA de este CONTRATO. </p>
+          <br>
+          <p style="margin:0px 0px 0px 0px;">Expresan LAS PARTES CONTRATANTES que para el efecto de recibir notificaciones, el domicilio que cada uno de ellos a que antes se hace referencia, es convencional, por lo que en los términos del artículo 1070 (un mil setenta) del Código de Comercio en vigor, están enteramente de acuerdo en que si se acude a su respectivo domicilio a practicar notificación personal, si dicho domicilio no les corresponde, se proceda a la notificación por edictos sin necesidad de que se recabe el informe señalado en el mencionado artículo. Mientras LAS PARTES CONTRATANTES no notifiquen por escrito a LA ARRENDADORA el cambio de sus respectivos domicilios, los emplazamientos y demás diligencias judiciales o extrajudiciales se practicarán en los domicilios a que se refiere el presente CONTRATO. </p>
+          <br> 
+          <p style="margin:0px 0px 0px 0px;"><b>VIGESIMA SEXTA.- <u>TÍTULOS DE LAS CLAUSULAS</u>.-</b> Las partes convienen en que los títulos de las cláusulas que aparecen en el presente instrumento, se han puesto con el exclusivo propósito de facilitar su lectura, por tanto no definen ni limitan el contenido de las mismas. Para efectos de interpretación de este CONTRATO, deberá atenderse al contenido de sus declaraciones y cláusulas, y de ninguna manera al título de éstas últimas. </p>
+          <br>
+          <p style="margin:0px 0px 0px 0px;"><b>VIGESIMA SEPTIMA.- <u>DE LA PROTOCOLIZACIÓN Y RATIFICACIÓN</u>.-</b> Las partes convienen en que cualquiera de ellas, sí así conviniera a sus intereses, queda autorizada para solicitar la protocolización y/o ratificación de firmas ante fedatario público del presente CONTRATO, bastando para ello la presentación de un ejemplar de este instrumento conteniendo las firmas autógrafas u originales de sus suscriptores y su comparecencia personal para formular tal solicitud. </p>
+          <br>
+          <p style="margin:0px 0px 0px 0px;"><b>VIGESIMA OCTAVA.- <u>TRATAMIENTO DE DATOS PERSONALES</u>.-</b> EL ARRENDATARIO así como EL OBLIGADO SOLIDARIO Y AVAL y EL DEPOSITARIO manifiestan que en virtud de que LA ARRENDADORA ha hecho de su conocimiento el Aviso de Privacidad otorgan su consentimiento en términos de los artículos 8 (ocho) y 9 (nueve) de la Ley Federal de Protección de Datos Personales en Posesión de los Particulares, en lo referente al tratamiento de los datos personales que constan en este instrumento y en el expediente respectivo y autorizan que los mismos puedan ser proporcionados a las autoridades competentes, entre ellas las tributarias, judiciales, registros públicos, al igual que a las personas que tengan interés legítimo en los mismos, para todos los efectos legales a que haya lugar. </p>
+          <br>
+          <p style="margin:0px 0px 0px 0px;"><b>VIGESIMA NOVENA. - <u>BUENA FE Y AUSENCIA DE VICIOS</u>.-</b></b> Las partes expresamente manifiestan que el presente CONTRATO contiene su fiel, espontánea y deliberada voluntad para celebrarlo y que el mismo no contiene error, dolo, omisión o vicio alguno del consentimiento o de la voluntad en su celebración, sin que pueda ser invalidado por tales causas ya que el mismo se celebra de buena fe por ambas partes. </p>
+          <br>
+          <p style="margin:0px 0px 0px 0px;">LAS PARTES CONTRATANTES, PREVIA LECTURA DECLARAN ESTAR PLENAMENTE ENTERADOS DE LOS TÉRMINOS Y CONDICIONES PACTADOS INCLUYENDO SIN LIMITAR, LOS CONTENIDOS EN LA CARÁTULA, CONTRATO Y ANEXOS, FORMAN PARTE INTEGRANTE DEL CONTRATO. EN VIRTUD DE LO ANTERIOR LAS PARTES FIRMAN EL PRESENTE MANIFESTANDO SU ENTERA CONFORMIDAD CON LOS TERMINOS PACTADOS EN EL MISMO, FIRMANDO EN TESTIMONIO DE SU FIRME VOLUNTAD</p>                  
+      </div>
+          ]]>
+        </Informacion>
+
+      </InformacionDespuesTablas>
+    </Clausulas>
+
+
+
+
+  </Contrato>
+
+</ReporteContratoRentaOrdinaria>

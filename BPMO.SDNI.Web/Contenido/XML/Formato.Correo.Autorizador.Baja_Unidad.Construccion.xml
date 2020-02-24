@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FormatoCorreo>
+  <Cuerpo>
+    <![CDATA[
+		<tr>
+			<td style='width: 200px; text-align: left; padding-right: 5px;'>
+				<br />
+			</td>
+		</tr>
+	]]>
+  </Cuerpo>
+</FormatoCorreo>

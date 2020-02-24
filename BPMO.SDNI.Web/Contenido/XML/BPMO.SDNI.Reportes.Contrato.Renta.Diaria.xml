@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--Esta archivo satisface los requerimientos del CU014 - Imprimir Contrato de Renta Diaria-->
+<ReporteContratoRentaDiaria>
+<ReporteAnverso>
+	<Titulo>
+		<![CDATA[<p align="center" style="font-size: 10pt !important; text-align:center;font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;"> CONTRATO DE RENTA DIARIA </p>]]>
+	</Titulo>
+  <leyenda>
+    <condiciones>
+      <![CDATA[<p align="center" style="font-size: 6pt !important; margin-top:5px;margin-bottom: 0px;margin-left: 0px;margin-right: 0px;font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;">ESTE CONTRATO ESTA SUJETO A LAS SIGUIENTES CONDICIONES DE RENTA 
+      Y LOS T&Eacute;RMINOS Y CONDICIONES IMPRESOS EN EL REVERSO DE ESTE DOCUMENTO</p>]]>
+    </condiciones>
+    <cargoCombustible>
+      <![CDATA[<p align="justify" style="margin:0px 0px 0px 0px;font-size: 6pt !important; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;"> Todo el combustible para el Vehículo será proporcionado a expensas del arrendatario.
+       El Arrendatario conviene en pagar la diferencia del combustible en litros cuando el Vehículo sea entregado con menos combustible con el que entregado al Arrendatario</p>]]>
+    </cargoCombustible>
+    <bitacora>
+      <![CDATA[<p align="justify" style="margin:0px 0px 0px 0px;font-size: 6pt !important; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;">Arrendatario deberá de completar y enviar al Arrendador una Bitácora de Viaje de Conductor</p> ]]> 
+    </bitacora>
+    <seguro>
+      <![CDATA[<p align="justify" style="margin:0px 0px 0px 0px;font-size: 6pt !important; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;"> EN CASO DE ACCIDENTE EL ARRENDATARIO CONVIENE EN PAGAR EL DEDUCIBLE CORRESPONDIENTE POR UN MONTO DE <span style="min-width:150px; border-bottom: 1px solid #000;"><u> {MONTODEDUCIBLE}</u> </span> O BIEN
+      SI EL MONTO DE LA REPARACIÓN DEL ACCIDENTE ES MENOR AL DEDUCIBLE DEL ARRENDATARIO, CONVIENE EN PAGAR DICHA REPARACIÓN, SI EL ACCIDENTE EXCEDE LA CANTIDAD ASEGURADA, EL ARRENDATARIO ES RESPONSABLE POR CUBRIR TODOS LOS GASTOS
+       EN EXCESO DE LA COBERTURA.</p>]]>
+    </seguro>
+    <arrendatarios>
+      <![CDATA[<p align="justify" style="margin:0px 0px 0px 0px;font-size: 6pt !important; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;">El Arrendatario conviene en que el y sus empleados, dependientes y agentes serán los únicos que operarán el Vehículo. El Arrendatario se obliga que los operadores tendrán por lo menos la edad de 18 años y
+       estarán debidamente certificados por el Arrendador y con licencia para operar el tipo de Vehículo que este arrendando. El arrendatario reconoce y conviene en que ningún seguro proporcionado por el Arrendador bajo este Contrato 
+       tendra efecto legal alguno a cualquier persona que no sea el Arrendatario, su empleado, dependiente o agente se encuentre operando el Vehículo al momento en que ocurra cualquier accidente de cualquier tipo.</p>]]>
+    </arrendatarios>
+    <operacion>
+      <![CDATA[
+      <p align="justify" style="margin:0px 0px 0px 0px;font-size: 6pt !important; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;">
+        Este Contrato prohíbe al conductor o a cualquier pasajero, la transportación de cualquier tipo de substancia ilegal o de contrabando. Cualquier costo de embargo y/o almacenamiento del Vehículo deberán ser responsables del Arrendatario y será cargado a su cuenta
+      </p>
+      <p align="justify" style="font-size: 6pt !important; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;">
+        El Arrendatario es responsable por todos los daños causados al Vehículo por operarlo de manera negligente (ej. operar el Vehículo sin el propio mantenimiento del liquido refrigerante, anticongelante, aceita, lubricantes y otros fluidos)
+      </p>
+      <p align="justify" style="font-size: 6pt !important; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;">
+        El Arrendador coopera con todos los oficiales de policía federales, estatales o locales, proporcionando la identidad de los clientes que operan este Vehículo de renta.
+      </p>
+      <p align="justify" style="font-size: 6pt !important; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;">
+        El Vehículo se renta bajo las condiciones arriba establecidas y al reveso de esta hoja. El arrendatario manifiesta que ha leído, entendido y conviene en obligarse con los términos y condiciones del presente Contrato.
+      </p>
+      ]]>
+    </operacion>
+    <inspeccion>
+      <![CDATA[
+      <p align="justify" style="font-size: 6pt !important; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; margin:0px 0px 0px 0px;">
+      LA OPERACIÓN DEL VEHÍCULO EN CONTRAVENCIÓN DE LAS LEYES APLICABLES O CON LOS TÉRMINOS Y CONDICIONES DE ESTE CONTRATO, PODRÁN LIMITAR O ANULAR EL SEGURO DEL ARRENDATARIO Y CONDICIONES DE ESTE CONTRATO, PODRAN LIMITAR O ANULAR EL SEGURO DEL ARRENDATARIO.
+       EL ARRENDATARIO ES RESPONSABLE POR LA CONDICIÓN DEL VEHÍCULO Y TODOS LOS DAÑOS AL MISMO SIN PERJUICIO DE CUALQUIER ARREGLO CON EL SEGURO. EN CASO DE ACCIDENTE, LOS CARGOS DEL ARRENDAMIENTO CONTINUARAN DURANTE EL TIEMPO QUE EL VEHÍCULO SE ENCUENTRE FUERA DE SERVICIO.
+      </p>
+      ]]>
+    </inspeccion>
+  </leyenda>
+</ReporteAnverso>
+<ReporteReverso>
+  <Titulo>
+    <![CDATA[<p style="margin:0px 0px; text-align:center; font-size: 5.5pt !important; text-align:center;font-family: Verdana,Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight:bold;"> CL&Aacute;USULAS </p>]]>
+  </Titulo>
+  <leyenda>
+    <datosEncabezado>
+      <![CDATA[
+      <p style=" text-align:center;font-size: 5.5pt !important; font-family: Verdana,Arial, 'Helvetica Neue', Helvetica, sans-serif; margin:0px 0px 0px 0px;font-weight:bold;">
+        T&Eacute;RMINOS Y CONDICIONES QUE RIGEN AL CONTRATO DE ARRENDAMIENTO No. {NUMEROCONTRATO}, CELEBRADO ENTRE 
+        <div> {ARRENDADOR} Y {ARRENDATARIO} </div>
+      </p>
+      ]]>
+    </datosEncabezado>
+    <clausulas>
+      <![CDATA[
+      <div style="text-align:justify; font-size: 5.0pt !important; font-family: Verdana,Arial,'Helvetica Neue', Helvetica, sans-serif; margin:0px 0px 0px 0px;">
+      <p style="margin:0px 0px 0px 0px;">1. El Arrendatario reconoce y conviene:</p>
+      <p style="margin:0px 0px 0px 0px;">a) Que el Arrendador puede rentar el Vehículo de una tercera persona (“Dueño”).</p>
+      <p style="margin:0px 0px 0px 0px;">b) Que el Arrendatario ha inspeccionado el Vehículo y que el mismo fue recibido en buenas condiciones mecánicas, de carrocería y en general de uso, obligándose a pagar a la Arrendadora al cierre del contrato y aprecio de mercado, el o los faltantes de accesorios y partes del Vehículo que recibe en el momento de la entrega del mismo.</p>
+      <p style="margin:0px 0px 0px 0px;">c) Que no se llevarán a cabo reparaciones, ajustes o reemplazos de ninguna de las partes del Vehículo sin la autorización por escrito del Arrendador.</p>
+      <p style="margin:0px 0px 0px 0px;">d) Que el Arrendatario no sacará el Vehículo del área de operación especificada en la Página 1, sin el consentimiento por escrito del Arrendador.</p>
+      <p style="margin:0px 0px 0px 0px;">e) Que el Vehículo sólo será operado bajo la dirección y control exclusivo del Arrendatario, y que ni el Arrendatario ni ningún conductor del Vehículo será considerado el agente, sirviente o empleado del Arrendador o del Dueño.</p>
+      <p style="margin:0px 0px 0px 0px;">f) Que el Arrendatario deberá pagar por cualquier licencia, permiso, impuesto o cuota que sea impuesta al mismo por la operación del Vehículo, asimismo deberá presentar o asistir al Arrendador en la presentación de todas y cada una de las declaraciones o informes que le requiera cualquier dependencia u órgano de gobierno, como resultado del uso de operación o del Vehículo.</p>
+      <p style="margin:0px 0px 0px 0px;">g) Que este Contrato se dará por concluido en la fecha indicada en la cláusula 12 y el Arrendatario deberá devolver dicho Vehículo al Arrendador en las mismas condiciones en que lo recibió, exceptuando el deterioro ordinario o normal causado por el uso del mismo.</p>
+      <p style="margin:0px 0px 0px 0px;">h) Que no obstante cualquier cobertura de seguro o el RDC, el Arrendatario será totalmente responsable por todas las pérdidas o daños si el Vehículo es usado, operado o conducido en violación a lo previsto en este Contrato; si la pérdido o el daño resulta de la colisión con cualquier otro Vehículo, daño a la estructura por paso a desnivel, daño a cualquier otro objeto; o si la pérdida o daño resulta del abuso intencional del Vehículo por parte del Arrendatario, sus empleados, agentes o cesionarios permitidos.</p>
+      <p style="margin:0px 0px 0px 0px;">2. El Arrendatario garantiza y conviene que el Vehículo no deberá ser operado:</p>
+      <p style="margin:0px 0px 0px 0px;">a) En violación a cualquier ley, reglamento, decreto o acuerdo de cualquier órgano o dependencia gubernamental.</p>
+      <p style="margin:0px 0px 0px 0px;">SI EL VEHICULO ES USADO PARA CARGAR CONTRABANDO O PARA CUALQUIER OTRO PROPOSITO ILEGAL, ESTE CONTRATO DEBERA TERMINARSE ANTICIPADAMENTE.</p>
+      <p style="margin:0px 0px 0px 0px;">b) Para empujar o remolcar cualquier otro Vehículo, para transportar personas por alquiler, o para transportar un peso mayor a la capacidad de carga permitida. c) Por ninguna persona que no sea el Arrendatario, sus empleados o personas regularmente empleadas por el Arrendatario previamente autorizados por el Arrendador.</p>
+      <p style="margin:0px 0px 0px 0px;">d) Por ninguna persona que:</p>
+      <p style="margin:0px 0px 0px 0px;">i) haya dado nombres ficticios y domicilios falsos;</p>
+      <p style="margin:0px 0px 0px 0px;"> ii) menor a los 18 años de edad;</p>
+      <p style="margin:0px 0px 0px 0px;">iii) no esté debidamente certificado por el Arrendador y con licencia para conducir el Vehículo expedida por las autoridades mexicanas competentes;</p>
+      <p style="margin:0px 0px 0px 0px;">iv) esté bajo la influencia de substancias tóxicas o drogas; o</p>
+      <p style="margin:0px 0px 0px 0px;">v) dentro de los tres años anteriores haya sido detenido por conducir con imprudencia o por manejar bajo la influencia de substancias tóxicas o drogas.</p>
+      <p style="margin:0px 0px 0px 0px;">e) Excediendo los límites de velocidad; de manera imprudente o abusiva; o en la participación con el Vehículo directa o indirectamente en carreras o pruebas de seguridad, resistencia o velocidad.</p>
+      <p style="margin:0px 0px 0px 0px;">f) Fuera de la esfera de acción del empleo del conductor y del curso normal de los negocios del Arrendatario.</p>
+      <p style="margin:0px 0px 0px 0px;">g) Para hacer uso del Vehículo con fines lucrativos sobre el mismo.</p>
+      <p style="margin:0px 0px 0px 0px;">h) En violación a los reglamentos de tránsito federal, estatal o local.</p>
+      <p style="margin:0px 0px 0px 0px;">i) En brechas o caminos no pavimentados respondiendo, en su caso, por los daños causados al mismo.</p>
+      <p style="margin:0px 0px 0px 0px;">j) Transportando en el interior del Vehículo drogas o estupefacientes, o cualquier otra sustancia prohibida.</p>
+      <p style="margin:0px 0px 0px 0px;">k) Utilizando el Vehículo en forma diferente o para fines distintos de las actividades usuales del Arrendatario.</p>
+      <p style="margin:0px 0px 0px 0px;">3. El Arrendatario conviene en notificar al Arrendador de cualquier cambio de conductor y de llevar a cabo un chequeo seguro sobre el conductor de reemplazo. A ningún conductor se le permitirá operar el Vehículo, a menos que se encuentre autorizado y certificado por el Arrendador.</p>
+      <p style="margin:0px 0px 0px 0px;">4. Queda expresamente prohibido ceder o subarrendar el Vehículo.</p>
+      <p style="margin:0px 0px 0px 0px;">5. El Arrendador no garantiza expresa o implícitamente bajo ninguna circunstancia, incluyendo de manera enunciativa mas no limitativa la condición del Vehículo, su comercialización, o su capacidad para cualquier propósito en particular. El Arrendatario en este acto, reconoce y acuerda que ni el Arrendador ni el Dueño deberán de ser responsables por ningún daño directo, indirecto, especial u otro daño en relación con la renta o uso del Vehículo. El Arrendador en la realización y celebración de este Contrato, no asume ni se hace responsable por el almacenamiento, daño o pérdida de los bienes propiedad del Arrendatario o cualquier otro bien cargado, transportado o localizado en el Vehículo. Está expresamente entendido y convenido que ni el Arrendador ni el Dueño deberán, en ningún caso o bajo ninguna circunstancia cualquiera que ésta sea, ser responsables por pérdida o por daño causado a cualquier bien o propiedad olvidada dentro o encima del Vehículo en cualquier momento o lugar, incluyendo el garage del Arrendador, su terminal o local, sin importar si dicha pérdida es por negligencia del Arrendador, Dueño o cualquiera de sus empleados o agentes.</p>
+      <p style="margin:0px 0px 0px 0px;">CARGOS PAGADEROS AL ARRENDADOR.</p>
+      <p style="margin:0px 0px 0px 0px;">6. Los cargos por arrendamiento establecidos en este Contrato, no se disminuirán pero continuarán en vigor y con toda su fuerza legal aunque el Vehículo no se encuentre en operación, se encuentre descompuesto, o de otra manera inhabilitado por cualquier razón que ésta sea. Todos los cargos deberán continuar en vigor hasta que el Vehículo se regrese al Arrendador, de conformidad con la cláusula 12. En adición a los cargos especificados en la página 1, el Arrendatario conviene en pagar al Arrendador a la vista:</p>
+      <p style="margin:0px 0px 0px 0px;">a) Un cargo adicional igual a la cantidad mayor de $ {CARGOHORASADICIONALES} pesos por hora, por cada hora que el Vehículo esté en posesión del Arrendador, o $ {DAÑOSODOMETRO} pesos si el odómetro (o hudobómetro) ha sido alterado, dañado, perdido o que haya sido desconectado.</p>
+      <p style="margin:0px 0px 0px 0px;">b) Todos los costos, incluyendo los honorarios pagados a un abogado o agencia de cobranzas incurridos en relación con el cobro de cualquier monto pagadero por el Arrendatario al Arrendador bajo cualquier  disposición de este Contrato, ya sea cobrado mediante una demanda o de cualquier otra forma.</p>
+      <p style="margin:0px 0px 0px 0px;">c) Un interés ordinario del {PORCENTAJEPOSTFACTURA}% anual sobre saldos insolutos, calculados desde {DIASPOSTFACTURA} días naturales posteriores a la fecha de facturación hasta la fecha en que efectivamente se realice el pago correspondiente.</p>
+            <p style="margin:0px 0px 0px 0px;">RESPONSABILIDAD SOBRE LOS SEGUROS</p>
+      <p style="margin:0px 0px 0px 0px;">7. Seguro proporcionado por el Arrendador. Si el Arrendatario no está de acuerdo en proporcionar la Cobertura de Responsabilidad Civil Mínima como se indica en la página 1, el Vehículo deberá estar cubierto bajo la póliza de seguros de responsabilidad del Arrendador, para lo cual existirá una copia de la misma en las oficinas principales del Arrendador a la disposición del Arrendatario para su inspección. El Arrendatario, siendo un asegurado bajo dicha póliza, conviene en cumplir con, y estar obligado en todos los términos, condiciones, limitaciones y restricciones ahí establecidos, mismos que se encuentran por referencia aquí incorporados, siendo parte integrante de este Contrato como si aquí se transcribieran, incluyendo aquellos términos, condiciones, limitaciones y restricciones de los cuales no se hiciera mención específica. El seguro de responsabilidad civil aquí previsto: a) excluye la cobertura del Arrendatario y del conductor mientras el Vehículo está siendo utilizado, operado o manejado en violación de cualquiera de las disposiciones de este Contrato; b) excluye la cobertura por pérdida o daño de los bienes o propiedades que sea dueño el Arrendatario o que se encuentren en su posesión; y c) puede excluir la cobertura por daños físicos de cualquier naturaleza que sufra el Arrendatario, sus agentes, empleados, invitados, miembros de su familia o cualquier otro ocupante del Vehículo. Ningún seguro será proporcionado por el Arrendador bajo este Contrato si el Vehículo es usado de otra forma que no sea en una renta diaria como está contemplado en el presente Contrato, o si el Arrendatario no cumple con cualquiera de los requisitos en su caso, establecidos en las cláusulas 8 y 9.</p>
+      <p style="margin:0px 0px 0px 0px;">8. El Arrendatario conviene en liberar, indemnizar y mantener al Arrendador, al Dueño, {UNIDADOPERATIVA}, libres de toda responsabilidad por reclamaciones, acciones que se deriven de la muerte o lesión de personas, o pérdida o daños materiales causados por la propiedad, mantenimiento, arrendamiento, reparación, posesión, uso u operación de cualquier Vehículo cubierto por este Contrato, incluyendo, pero no limitado a lo siguiente:</p>
+      <p style="margin:0px 0px 0px 0px;">a) Cualquier reclamación o acción derivada de los requerimientos estatutarios de seguros, mismo que el Arrendador no estaría obligado a pagar, de acuerdo con los términos aquí descritos.</p>
+
+      
+      <p style="margin:0px 0px 0px 0px;">b) Cualquiera y todas las pérdidas, daños, costos y gastos incurridos por lesión o daño sufrido por cualquier ocupante de dicho Vehículo, incluyendo de manera enunciativa más no limitativa al Arrendatario, sus empleados, agentes o representantes; así como los incurridos por pérdida o daños al cargamento o bienes que sean propiedad de, o en posesión del Arrendatario, sus empleados, agentes, representantes u ocupantes del Vehículo.</p>
+      <p style="margin:0px 0px 0px 0px;">c) Toda pérdida, daño, costo o gasto resultante de la violación por parte del Arrendatario, de cualquier término o condición de este Contrato, o del incumplimiento de las garantías del Arrendatario, tal como se expresa en el presente documento.</p>
+      <p style="margin:0px 0px 0px 0px;">d) El valor de todas las llantas, herramientas y accesorios perdidos, dañados o robados del Vehículo.</p>
+      <p style="margin:0px 0px 0px 0px;">e) Todo costo de reposición del Vehículo, incluyendo sin limitar los honorarios de abogados y gastos y costos del juicio.</p>
+      <p style="margin:0px 0px 0px 0px;">f) Cualquier multa o penalización, incluyendo el decomiso o el embargo, que resulte del uso del Vehículo.</p>
+      <p style="margin:0px 0px 0px 0px;">g) Todas las reclamaciones por daños que el Arrendatario, o cualquier otra persona sostenga como resultado de cualquier acción legal por parte del Arrendador bajo las cláusulas 13 y 14 descritas más adelante.</p>
+      <p style="margin:0px 0px 0px 0px;">h) Todos los costos de defensa y gastos de todo tipo, incluyendo los honorarios de abogados, que se incurran en relación con cualquier demanda o reclamación en términos de esta cláusula 10.</p>
+      <p style="margin:0px 0px 0px 0px;">9. El Arrendatario conviene en informar de cualquier accidente, pérdida o daño en el Vehículo al Arrendador inmediatamente y por escrito, dentro de las 24 horas siguientes a dicho accidente, pérdida o daño.</p>
+      <p style="margin:0px 0px 0px 0px;">10. Asimismo, el Arrendatario responderá ante el Arrendador del pago de los siguientes conceptos:</p>
+      <p style="margin:0px 0px 0px 0px;">a) El remanente de la reparación de los daños materiales a terceros, en sus bienes y/o en sus personas, que no sean cubiertos por las cantidades y términos previstos en la póliza de seguro contratada por la Arrendadora por el Vehículo arrendado.</p>
+      <p style="margin:0px 0px 0px 0px;">b) La reparación del daño o robo, parcial o total del Vehículo hasta por el valor total de los mismos. Para los efectos de la fijación del valor comercial del Vehículo, en caso de pérdida total, se estará a lo dispuesto por la Guía EBC (precio de venta), o en su defecto, por el dictamen de un perito valuador oficialmente habilitado para tal fin y designado por las partes en este contrato. En caso de que la Arrendataria no quisiera o no pudiera hacer esa designación, podrá hacerlo la Arrendadora unilateralmente, con plena validez jurídica. En prevención de posibles confusiones, las partes en este acto declaran conocer el contenido de la mencionada Guía EBC.</p>
+      <p style="margin:0px 0px 0px 0px;">c) La reparación de los daños por accidentes personales causados a los ocupantes del Vehículo hasta por el valor total de los gastos médicos, hospitalización, pensiones, indemnizaciones, etc. que de ello se deriven.</p>
+      <p style="margin:0px 0px 0px 0px;">11. La Arrendadora no es responsable por el uso que la Arrendataria dé al Vehículo, o su participación directa o indirecta en hechos delictivos o contrarios a las leyes, a la moral o a las buenas costumbres, mientras el Vehículo permanezca bajo la posesión real o jurídica de la Arrendataria.</p>
+      
+      <p style="margin:0px 0px 0px 0px;">DEVOLUCION DEL VEHICULO.</p>
+      <p style="margin:0px 0px 0px 0px;">12. El Arrendatario conviene en regresar el Vehículo al Arrendador, con todo el equipo original y accesorios, en el lugar en el cual el Vehículo fue proporcionado al Arrendatario, a menos que se designe un lugar diferente en la página 1 de este Contrato. El Arrendatario deberá regresar el Vehículo en la fecha determinada en la página 1, y nunca se considerará prorrogado por parte del Arrendador sin que aparezca la voluntad expresa del mismo; en la inteligencia de que si el Arrendador hace un requerimiento por escrito, enviado por correo certificado con porte pagado al Arrendatario a su domicilio, o mediante notificación personal al Arrendatario, a uno de sus representantes o dependientes, el Arrendatario deberá regresar el Vehículo al Arrendador en la fecha establecida en dicho requerimiento. Si no se determina ninguna fecha en la página 1 para la devolución del Vehículo, el Arrendatario conviene y se obliga en regresar el Vehículo en un plazo no mayor a siete días después de la fecha que se establezca en la sección de “Hora de salida” en la página 1. En el caso de que el Vehículo esté rentado por un plazo mayor a una semana, el Arrendatario deberá regresar el Vehículo al Arrendador para darle mantenimiento de rutina e inspección en las fechas solicitados por el Arrendador.</p>
+      <p style="margin:0px 0px 0px 0px;">13. En el caso de que el Arrendatario no cumpla en regresar el Vehículo al lugar especificado en este Contrato, dentro de los tres días siguientes a la fecha especificada en el presente contrato, o en cualquier fecha anterior especificada por el Arrendador en su requerimiento por escrito al Arrendatario, dicho incumplimiento constituirá una posesión, uso u operación indebida, y el arrendador podrá, por consiguiente, considerar dicho Vehículo como robado pudiendo llevar a cabo cualquier acción civil o penal que él considere razonable y necesaria para recuperar el Vehículo. Lo anterior, sin perjuicio de que el Vehículo no fuere devuelto en el lugar señalado en este Contrato, el Arrendatario pagará el kilometraje comprendido entre el lugar donde físicamente haya dejado el Vehículo y el lugar convenido para la devolución, más el importe que corresponda al tiempo normal de traslado del lugar en donde el Arrendatario haya dejado el Vehículo a la oficina donde convino entregarlo de acuerdo con este Contrato, aplicándose en todo las tarifas señaladas para tiempo y distancia en este documento, o en su defecto las aplicables en el mercado.</p>
+      <p style="margin:0px 0px 0px 0px;">14. El Arrendador se reserva el derecho de inspeccionar el Vehículo, donde sea que éste se encuentre, en cualquier momento durante el tiempo de este arrendamiento. En el caso de una violación o falta por parte del Arrendatario con respecto a cualquiera de los términos de este Contrato, el Arrendador podrá recuperar el Vehículo donde sea que se encuentre localizado y terminar anticipadamente el presente Contrato.</p>
+      <p style="margin:0px 0px 0px 0px;">15. La falta de entrega puntual del Vehículo obliga al Arrendatario al pago de una pena convencional equivalente a {ENTREGAIMPUNTUAL}, hasta la devolución del Vehículo a satisfacción del Arrendador, cantidad que se pagará independientemente de las sumas que el Arrendatario deba cubrir por concepto de renta de Vehículo y de las demás prestaciones a su cargo que se señalan en este Contrato.</p>
+      <p style="margin: 0px 0px;">COMPETENCIA</p>
+      <p style="margin:0px 0px 0px 0px;">16.- El Arrendador y el Arrendatario, reconocen expresamente que el contrato de arrendamiento que ahora celebran al tenor de lo dispuesto en los artículos Un mil quinientos sesenta y cuatro, Un mil quinientos sesenta ocho, y los demás relativos aplicables del Código Civil del Estado en vigor, define cualquier controversia presente o futura relacionada con el arrendamiento del bien que en este contrato se formaliza, y en consecuencia se establece que dicho contrato no existe ninguna de las causas de nulidad autorizadas por la ley y sí en cambio, celebran éste contrato de arrendamiento con pleno consentimiento y libre voluntad; sometiéndose a la jurisdicción y competencia de los Jueces y Tribunales del Primer Departamento Judicial del Estado de Yucatán, para todo lo relativo a su cumplimiento y ejecución, llegado el caso, renunciando desde hoy al fuero de cualquier otro domicilio o vecindad presente o futuro.</p>
+      <p style="margin:0px 0px 0px 0px;">DISPOSICIONES GENERALES</p>
+      <p style="margin:0px 0px 0px 0px;">17. El Arrendatario reconoce y conviene, por medio de su firma en la página 1 de este documento, que ha leído y está consciente de los términos y condiciones concernientes al uso, operación y posesión del Vehículo y por lo tanto, acepta su total responsabilidad como aquí se dispone. Este Contrato contiene el entero acuerdo de voluntades entre el Arrendatario y el Arrendador o sus representantes. Se conviene por las partes que estos términos son contractuales y no pueden ser modificados, extinguidos o alterados de manera alguna a menos que exista un acuerdo firmado y por escrito por las partes de este Contrato.</p>
+      <p style="margin:0px 0px 0px 0px;">18. Si cualquier disposición de este Contrato va en contra de cualquier ley del Estado en el cual el Vehículo es rentado, entonces dicha disposición deberá ser considerada como automáticamente reducida a la extensión necesaria para que cumpla con la ley, sin que invalide cualquier otro término o disposición del presente Contrato.</p>
+      <p style="margin:0px 0px 0px 0px;">19. El Arrendador es miembro de IDEALEASE OF NORTH AMERICA, INC., una asociación de arrendadores de camiones. Ni IDEALEASE OF NORTH AMERICA, INC., ni su subsidiaria IDEALEASE DE MEXICO, S.A. DE C.V. tendrán interés alguno sobre el Vehículo, ni recibirán ingreso alguno como resultado de este Contrato, ni son parte de este Contrato, así como tampoco asumen la responsabilidad alguna por el mismo.</p>
+      <p style="margin:0px 0px 0px 0px;">20. El representante del Arrendatario, se constituye como persona física por la firma del presente Contrato en obligado solidario del Arrendatario, y a favor del Arrendador y en consecuencia hace (n) suyas todas las obligaciones y prestaciones derivadas de este Contrato a cargo del primero, comprometiéndose a cumplirlas en su totalidad, en los términos de los artículos 1987, 1988, 1995 y demás relativos del Código Civil para el Distrito Federal y sus correlativos en los códigos civiles de los estados de la República Mexicana.</p>
+      <p style="margin:0px 0px 0px 0px;">21. Si con base en cualquier violación de parte del Arrendatario, el Arrendador diera por terminado el contrato, éste podrá recoger el Vehículo en el lugar que se encuentre, sin necesidad de requerimiento alguno. El Arrendador queda expresamente facultado por el Arrendatario de manera irrevocable para recoger por cualquier medio, en los supuestos a que se refiere el párrafo anterior de esta cláusula, el Vehículo arrendado donde quiera que se encuentre a quien quiera que lo detentase, aún en contra de su voluntad o de la voluntad de terceros, incurriendo el Arrendatario en todas las responsabilidades de un depositario infiel, pues se entiende que a partir de la violación que le sea imputable, éste conservará el Vehículo con tal carácter sin que pueda hacer uso o disponer del mismo en ningún caso.</p>
+      <p style="margin:0px 0px 0px 0px;">22. El Arrendatario será considerado como Depositario y podrá ser requerido de la entrega, con la condición que de no hacerlo cometerá delito de Abuso de Confianza.</p>
+      <p style="margin:0px 0px 0px 0px;">23. Las partes con renuncia expresa al fuero que pudiera corresponderles con motivo de sus domicilios presentes y futuros se someten a la jurisdicción y competencia de los tribunales comunes en el {UBICACIONTRIBUNALES}, y para todo lo relativo a cualquier controversia de las partes, este Contrato se interpretará de acuerdo a los códigos civiles y procesales del {UBICACIONTRIBUNALES}.</p>
+      </div>
+      ]]>
+      </clausulas>
+  </leyenda>
+</ReporteReverso>
+</ReporteContratoRentaDiaria>

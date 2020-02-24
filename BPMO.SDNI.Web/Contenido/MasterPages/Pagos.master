@@ -1,0 +1,144 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Contenido/MasterPages/Site.Master" AutoEventWireup="true"
+    CodeBehind="Pagos.master.cs" Inherits="BPMO.SDNI.Facturacion.AplicacionesFacturacion.UI.Pagos" %>
+
+<asp:Content ID="pagoHead" ContentPlaceHolderID="head" runat="server">
+    <link href="<%= Page.ResolveUrl("~/Contenido/Estilos/EstilosPagos.css")%>" rel="stylesheet" type="text/css" />
+    <script language="javascript" type="text/javascript">
+        initChild = function() {
+            var inicio = $('#<%= txtFechaInicio.ClientID %>');
+            var fin = $('#<%= txtFechaFin.ClientID %>');
+            ConfigurarRangoFechas(inicio, fin);
+        }
+        $(document).ready(initChild);
+
+    </script>
+    <script type="text/javascript">
+        function BtnBuscar(guid, xml) {
+            var width = ObtenerAnchoBuscador(xml);
+
+            $.BuscadorWeb({
+                xml: xml,
+                guid: guid,
+                btnSender: $("#<%=btnResult.ClientID %>"),
+                features: {
+                    dialogWidth: width,
+                    dialogHeight: '320px',
+                    center: 'yes',
+                    maximize: '0',
+                    minimize: 'no'
+                }
+            });
+        }
+    </script>
+    <asp:ContentPlaceHolder ID="childHead" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+
+<asp:Content ID="pagoContent" ContentPlaceHolderID="MainContent" runat="server">
+    <!-- Barra de localizacion -->
+    <div id="BarraUbicacion">
+        <span>
+            <asp:ContentPlaceHolder ID="childTitulo" runat="server">
+            </asp:ContentPlaceHolder>
+        </span>
+    </div>
+    <!-- Barra de Herramientas -->
+    <div id="BarraHerramientas">
+        <div id="subtitulo">
+        <asp:ContentPlaceHolder ID="childSubtitulo" runat="server">            
+        </asp:ContentPlaceHolder>
+        </div>
+        <div class="Ayuda" style="top: -22px">
+            <input id="btnAyuda" type="button" onclick="ShowHelp();" class="btnAyuda" />
+        </div>
+    </div>
+    <!-- Barra Estatica de Marcadores y Filtros -->
+    <div class="BarraEstatica">
+        <br />
+        <span>Por Facturar</span>
+        <div class="Marcador">
+            <asp:Button CssClass="btnMarcador" runat="server" ID="btnIrPagosFacturar" 
+                Text="99" onclick="btnIrPagosFacturar_Click">
+            </asp:Button>
+        </div>
+        <span>No Facturados</span>
+        <br />
+        <div class="Marcador">
+            <asp:Button CssClass="btnMarcador" runat="server" ID="btnIrPagosNoFacturados" 
+                onclick="btnIrPagosNoFacturados_Click"></asp:Button>
+            <br />
+            <asp:Button runat="server" ID="btnActualizarMarcadores" CssClass="btnActualizar"
+                OnClick="btnActualizarMarcadores_Click" />
+        </div>
+        <br />
+        <div class="buscador">
+            <div id="tituloBuscador" class="buscador">
+                <span>Buscador</span></div>
+            <span>Sucursal</span>
+            <br />
+            <asp:DropDownList ID="ddlSucursales" runat="server" Width="175px">
+                <asp:ListItem Text="" Value="0"></asp:ListItem>
+            </asp:DropDownList>
+            <br />
+            <span># Contrato</span>
+            <br />
+            <asp:TextBox ID="txtNumeroContrato" runat="server" CssClass="filtro" Enabled="True"></asp:TextBox>
+            <br />
+            <span>Cliente</span>
+            <br />
+            <asp:TextBox ID="txtNombreCuentaCliente" runat="server" CssClass="filtro" 
+                Enabled="true" ontextchanged="txtNombreCuentaCliente_TextChanged" AutoPostBack="True"></asp:TextBox>
+            <asp:ImageButton runat="server" ID="ibtnBuscarCliente" CommandName="VerCliente"
+                                ImageUrl="~/Contenido/Imagenes/Detalle.png" ToolTip="Consultar Clientes" CommandArgument=''
+                                OnClick="ibtnBuscarCliente_Click" />
+            <asp:HiddenField runat="server" ID="hdnCuentaClienteID" />
+            <br />
+            <span>Vin / # Económico</span>
+            <br />
+            <asp:TextBox ID="txtVinNumeroEconomico" runat="server" CssClass="filtro" Enabled="True"></asp:TextBox>
+            <br />
+            <span>Área/Departamento</span>
+            <br />
+            <asp:DropDownList runat="server" CssClass="filtro" ID="ddlAreaSeleccionada"/>
+            <br />
+            <span>Fecha Vencimiento Factura</span>
+            <br />
+            <div style="vertical-align: middle">
+                <table>
+                    <tr>
+                        <td valign="middle">
+                            <span>De</span>
+                        </td>
+                        <td>
+                            <asp:TextBox ID="txtFechaInicio" runat="server" CssClass="CampoFecha"></asp:TextBox>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td valign="middle">
+                            <span>A</span>
+                        </td>
+                        <td>
+                            <asp:TextBox ID="txtFechaFin" runat="server" CssClass="CampoFecha"></asp:TextBox>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div style="text-align: center">
+                <asp:Button runat="server" ID="btnConsultar" CssClass="btnBuscar" Text="" 
+                    onclick="btnConsultar_Click" />
+            </div>
+        </div>
+        <br />
+        <br/>
+    </div>
+    <div id="DatosCatalogo" class="GroupBody">
+        <div id="ControlesDatos">
+            <asp:ContentPlaceHolder ID="childContent" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </div>
+    <%--Campos ocultos--%>
+    <asp:HiddenField runat="server" ID="hdnSucursalSeleccionadaID" />
+    <asp:HiddenField runat="server" ID="hdnShowBuscador" value="0"/>
+    <asp:Button ID="btnResult" runat="server" Text="Button" OnClick="btnResult_Click" Style="display: none;" />
+</asp:Content>

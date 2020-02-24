@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Buscador xsi:schemaLocation="http://www.w3schools.com Buscador.Schema.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.w3schools.com">
+  <Class Assembly="BPMO.Facade.SDNI" NameClass="FacadeBR" Method="ConsultarEmpleado" TitleUI="Empleado">
+    <GridView AllowPaging="True" PageSize="5" AllowSorting="True" />
+    <Property NameProperty="Numero"  Header="Número" Key="True" Width="50" FilterEnabled="True" DataType="Int32"/>
+    <Property NameProperty="NombreCompleto"  Header="Empleado" Key="False" Width="200" FilterEnabled="True" Wilcard="Both"/>
+    <Property NameProperty="Email"  Header="Email"  Key="False" Width="120" FilterEnabled="True" Wilcard="Both"/>
+    <Property NameProperty="RFC" Header="RFC" Key="False" Width="100" FilterEnabled="True" Wilcard="Both"/>
+    <Property NameProperty="Activo"  Header="Estatus" Key="False" Width="40" FilterEnabled="True" DataType="Boolean"/>
+  </Class>
+</Buscador> 

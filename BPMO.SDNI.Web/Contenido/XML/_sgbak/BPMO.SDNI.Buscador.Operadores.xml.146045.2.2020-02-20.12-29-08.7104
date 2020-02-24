@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Buscador xsi:schemaLocation="http://www.w3schools.com ../XSD/Buscador.Schema.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.w3schools.com">
+  <Class Assembly="BPMO.SDNI.Comun" NameClass="OperadorBR" Method="Consultar" TitleUI="Operadores">
+    <GridView AllowPaging="True" PageSize="5" AllowSorting="True" />
+    <Property NameProperty="OperadorID" Width="50" Header="Id" Key="True" FilterEnabled="True" />
+    <Property NameProperty="Nombre" Width="210" DataType="String" Header="Nombre" Key="False" Required="False" FilterEnabled="True" Wilcard="Both" />
+    <Property NameProperty="Licencia_Numero" Width="100" DataType="String" Header="# Licencia" Key="False" Required="False" FilterEnabled="True" Wilcard="Both" />
+    <Property NameProperty="Licencia_FechaExpiracion" Width="100" DataType="String" Header="Expiración" Key="False" Required="False" FilterEnabled="True" Wilcard="Both" />
+    <Property NameProperty="Estatus" Header="Estatus" Key="False" Width="50" FilterEnabled="True" DataType="Boolean"/>
+  </Class>
+</Buscador>

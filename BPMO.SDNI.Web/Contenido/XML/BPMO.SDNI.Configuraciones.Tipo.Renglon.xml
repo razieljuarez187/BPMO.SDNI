@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Configuraciones>
+  <!--7 KILOMETRAJE-->
+  <KilometrosExcedidos>7</KilometrosExcedidos>
+  <!--7 KILOMETRAJE-->
+  <HorasExcedidas>7</HorasExcedidas>
+  <!--11 OTROS CARGOS RENTA-->
+  <Penalizaciones>11</Penalizaciones>
+  <!--6 RENTA-->
+  <RentaFija>6</RentaFija>
+  <!--8 COMBUSTIBLE-->
+  <Combustible>8</Combustible>
+  <!--11 OTROS CARGOS RENTA-->
+  <OtrosCargos>11</OtrosCargos>
+</Configuraciones>

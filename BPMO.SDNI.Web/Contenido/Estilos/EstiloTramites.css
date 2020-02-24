@@ -1,0 +1,20 @@
+﻿#MenuSecundario { float: left; }
+#BarraHerramientas { width: 835px; float: right; }
+.GroupBody { margin: 10px auto; width: 940px; }
+.GroupHeader { width: 100%;}
+#ControlesDatos { margin-top: 20px; margin-bottom: 10px; position: inherit; }
+
+.CampoFecha { width:85px; }
+.trAlinearDerecha
+{
+	width: 90% !Important;
+    margin-left: 30px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+.Grid { width: 95%; margin: 15px auto 20px auto; text-align:left;}
+
+#EncabezadoDatos { width: 985px; margin: 0px auto; }
+#DatosCatalogo { display: inline; font-size: 14px; }
+#DatosCatalogo input { font-size: 12px !important; }
+#ControlesDatos .GroupBody { margin-bottom: 0px; margin-top: 0px; }

@@ -1,0 +1,490 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Contenido/MasterPages/Site.Master" AutoEventWireup="true" CodeBehind="Reportes.master.cs" Inherits="BPMO.SDNI.Reportes.UI.Reportes" %>
+
+<%--Satisface al CU019 - Reporte de Flota Activa de RD Registrados--%>
+
+<asp:Content ID="pagoHead" ContentPlaceHolderID="head" runat="server">
+    <link href="../Contenido/Estilos/EstilosPagos.css" rel="stylesheet" type="text/css" />
+     <style type="text/css">
+        .GroupSection { width: 700px; margin: 0px auto; }        
+        .tdCentradoVertical { width:150px; white-space:nowrap; }        
+    </style>
+    <script type="text/javascript">      
+        $(document).ready(function() {            
+            Sys.Application.add_load(function(){
+                createDatePickers();
+            });
+        });
+
+        function createDatePickers() {
+            //Formato de Fechas
+            $(".CampoFecha").datepicker({
+                yearRange: '-100:+10',
+                changeYear: true,
+                changeMonth: true,
+                dateFormat: "dd/mm/yy",
+                buttonImage: '<%= this.ResolveUrl("~/Contenido/Imagenes/calendar.gif") %>',
+                buttonImageOnly: true,
+                toolTipText: "Seleccione una fecha",
+                showOn: 'button'              
+            })
+            .attr('readonly', true)
+            .keyup(function (e) {
+                if (e.keyCode == 8 || e.keyCode == 46) {
+                    $.datepicker._clearDate(this);
+                    e.stopPropagation();
+                }
+            });
+
+            $(".CampoFecha:enabled").datepicker("enable");
+            $(".CampoFecha:disabled").datepicker("disable");
+        }        
+      
+        function BtnBuscar(guid, xml) {
+            var width = ObtenerAnchoBuscador(xml);
+
+            $.BuscadorWeb({
+                xml: xml,
+                guid: guid,
+                btnSender: $("#<%=btnResult.ClientID %>"),
+                features: {
+                    dialogWidth: width,
+                    dialogHeight: '320px',
+                    center: 'yes',
+                    maximize: '0',
+                    minimize: 'no'
+                }
+            });
+        }
+
+        function ctmvtxtFechaInicioContrato_ClientValidate(sender, args) {
+            args.IsValid = validarRangoFechas('#<%= this.txtFechaInicioContrato1.ClientID %>', '#<%= this.txtFechaInicioContrato2.ClientID %>');
+        }
+
+        function ctmvtxtFechaFinContrato_ClientValidate(sender, args) {
+            args.IsValid = validarRangoFechas('#<%= this.txtFechaFinContrato1.ClientID %>', '#<%= this.txtFechaFinContrato2.ClientID %>');
+        }
+
+        function validarRangoFechas(inputId1, inputId2) {
+            var txtFechaInicio = $(inputId1).val().trim();
+            var txtFechaFin = $(inputId2).val().trim();
+
+            var val1 = $(inputId1).datepicker("getDate");
+            var val2 = $(inputId2).datepicker("getDate");
+
+            if (txtFechaInicio != "" && val1 == null) {
+                return false;
+            }
+
+            if (txtFechaFin != "" && val2 == null) {
+                return false;
+            }
+
+            if (val1 != null && val2 != null)
+                return val1 <= val2;
+
+            return true;            
+        }
+    </script>
+    <asp:ContentPlaceHolder ID="childHead" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+
+<asp:Content ID="pagoContent" ContentPlaceHolderID="MainContent" runat="server">
+    <!-- Barra de localización -->
+    <div id="BarraUbicacion">         
+         <asp:ContentPlaceHolder ID="encabezadoLeyenda" runat="server">
+            <asp:Label ID="lblEncabezadoLeyenda" runat="server">REPORTES - Reportes IDEALEASE</asp:Label>
+        </asp:ContentPlaceHolder>
+   </div>
+
+   <!--Navegación secundaria-->
+        <div id="Navegacion" style="height: 80px;">
+            <asp:ContentPlaceHolder ID="navegacionSecundaria" runat="server">            
+            </asp:ContentPlaceHolder>
+        </div>
+
+    <asp:Panel ID="pnlFormulario" CssClass="GroupSection" runat="server">
+            <div id="EncabezadoDatosCatalogo" class="GroupHeaderCollapsable">
+                <table>
+                    <tr>
+                        <td>
+                            <asp:ContentPlaceHolder ID="encabezadoFiltrosReporte" runat="server">
+                                <asp:Literal ID="lblTitulo" runat="server" Text="Filtros de Reporte"></asp:Literal>
+                            </asp:ContentPlaceHolder>
+                        </td>
+                        <td>                            
+                            &nbsp;
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="GroupContentCollapsable">                
+                <asp:Panel ID="pnlFiltros" runat="server" Width="100%" style="margin: 20px auto; ">
+                    <table class="trAlinearDerecha" style="width: 100%">
+                        <asp:ContentPlaceHolder ID="filtrosAdicionalesArriba" runat="server">
+                        
+                        </asp:ContentPlaceHolder>  
+
+                        <tr id="trModelo" runat="server">
+                            <td class="tdCentradoVertical">
+                                <asp:Label ID="lblModeloRequired" runat="server" Text="*" Visible="false" /><asp:Label ID="lblModelo" runat="server" AssociatedControlID="txtModelo" Text="Modelo"></asp:Label>
+                            </td>
+                            <td class="separadorCampo"></td>
+                            <td class="tdCentradoVertical">
+                                <asp:TextBox ID="txtModelo" runat="server" Width="275px" MaxLength="80" ValidationGroup="GenerarReporte" AutoPostBack="true" OnTextChanged="txtModelo_TextChanged"></asp:TextBox>
+                                <asp:ImageButton runat="server" ID="ImageButton1" CommandName="VerModelo"
+                                    ImageUrl="~/Contenido/Imagenes/Detalle.png" ToolTip="Consultar Modelo" CommandArgument=''
+                                    OnClick="btnBuscarModelo_Click" CausesValidation="False" />
+                                <asp:RequiredFieldValidator ID="rfvtxtModelo" runat="server" ValidationGroup="GenerarReporte" 
+                                    ErrorMessage="La sucursal es un dato requerido" Text="*" Visible="false"
+                                    ControlToValidate="txtModelo" Display="Dynamic" SetFocusOnError="True" 
+                                    ToolTip="El modelo es un dato requerido"></asp:RequiredFieldValidator>
+                                <asp:HiddenField ID="hdnModeloID" runat="server" Visible="False" />
+                            </td>
+                        </tr>
+
+                        <tr id="trSucursal" runat="server">
+                            <td class="tdCentradoVertical">
+                                <asp:Label ID="lblSucursalRequired" runat="server" Text="*" Visible="false"/><asp:Label ID="lblSucursal" runat="server" AssociatedControlID="txtSucursal" Text="Sucursal"></asp:Label>
+                            </td>
+                            <td class="separadorCampo"></td>
+                            <td class="tdCentradoVertical">
+                                <asp:TextBox ID="txtSucursal" runat="server" Width="275px" MaxLength="80" ValidationGroup="GenerarReporte" AutoPostBack="true" OnTextChanged="txtSucursal_TextChanged"></asp:TextBox>
+                                <asp:ImageButton runat="server" ID="btnBuscarSucursal" CommandName="VerSucursal"
+                                    ImageUrl="~/Contenido/Imagenes/Detalle.png" ToolTip="Consultar Sucursales" CommandArgument=''
+                                    OnClick="btnBuscarSucursal_Click" CausesValidation="False" />                               
+                                <asp:RequiredFieldValidator ID="rfvtxtSucursal" runat="server" ValidationGroup="GenerarReporte" 
+                                    ErrorMessage="La sucursal es un dato requerido" Text="*" Visible="false"
+                                    ControlToValidate="txtSucursal" Display="Dynamic" SetFocusOnError="True" 
+                                    ToolTip="La sucursal es un dato requerido"></asp:RequiredFieldValidator>
+                                 <asp:HiddenField ID="hdnSucursalID" runat="server" Visible="False" />                                 
+                            </td>
+                        </tr>   
+
+                        <tr id="trCliente" runat="server">
+                            <td class="tdCentradoVertical">
+                                <asp:Label ID="lblClienteRequired" runat="server" Text="*" Visible="false"/><asp:Label ID="lblCliente" runat="server" AssociatedControlID="txtCliente" Text="Cliente"></asp:Label>
+                            </td>
+                            <td style="width: 20px;">&nbsp;</td>
+                            <td class="tdCentradoVertical" style="width: 320px;">
+                                <asp:TextBox ID="txtCliente" runat="server" MaxLength="30" Width="275px" AutoPostBack="True"
+                                    OnTextChanged="txtCliente_TextChanged"></asp:TextBox>
+                                <asp:ImageButton runat="server" ID="btnBuscarClientes" CommandName="VerClientes"
+                                    ImageUrl="~/Contenido/Imagenes/Detalle.png" ToolTip="Consultar Clientes" CommandArgument=''
+                                    OnClick="btnBuscarClientes_Click" />
+
+                                <asp:RequiredFieldValidator ID="rfvtxtCliente" runat="server" ValidationGroup="GenerarReporte" 
+                                        ErrorMessage="El cliente es un dato requerido" Text="*" Visible="false"
+                                        ControlToValidate="txtCliente" Display="Dynamic" SetFocusOnError="True" 
+                                        ToolTip="El cliente es un dato requerido"></asp:RequiredFieldValidator>
+
+                                <asp:HiddenField ID="hdnClienteID" runat="server" />
+                                <asp:HiddenField ID="hdnCuentaClienteID" runat="server" />
+                            </td>
+                        </tr>
+                        <tr id="trVIN" runat="server">
+                            <td class = "tdCentradoVertical">
+                                <asp:Label ID="lblVINRequired" runat="server" Text="*" Visible="false"/>
+                                <asp:Label ID="lblVIN" runat="server" AssociatedControlID="txtNumeroSerie" Text="# SERIE"></asp:Label>
+                            </td>
+                            <td class="separadorCampo"></td>
+                            <td class="tdCentradoVertical">
+                                <asp:TextBox id="txtNumeroSerie" runat="server" Width="275px" 
+                                AutoPostBack="true" OnTextChanged="txtNumeroSerie_TextChanged"></asp:TextBox> 
+                                <asp:ImageButton runat="server" ID="btnBuscarVin" CommandName="VerVin" ImageUrl="~/Contenido/Imagenes/Detalle.png" ToolTip="Consultar VIN" CommandArgument='' onclick="btnBuscarVin_Click" />
+
+                                <asp:RequiredFieldValidator ID="rfvtxtNumeroSerie" runat="server" ValidationGroup="GenerarReporte" 
+                                        ErrorMessage="El VUN es un dato requerido" Text="*" Visible="false"
+                                        ControlToValidate="txtNumeroSerie" Display="Dynamic" SetFocusOnError="True" 
+                                        ToolTip="El VIN es un dato requerido"></asp:RequiredFieldValidator>
+
+                                <asp:HiddenField ID="hdnUnidadID" runat="server" Visible="False" />
+                            </td>
+                        </tr>
+                        <tr id="trTecnico" runat="server">
+                            <td class="tdCentradoVertical">
+                                <asp:Label ID="lblTecnicoRequired" runat="server" Text="*" Visible="false" /><asp:Label ID="lblTecnico" runat="server" AssociatedControlID="txtTecnico" Text="TÉCNICO"></asp:Label>
+                            </td>
+                            <td class="separadorCampo"></td>
+                            <td class="tdCentradoVertical">
+                                <asp:TextBox ID="txtTecnico" runat="server" Width="275px" MaxLength="80" 
+                                    ValidationGroup="GenerarReporte" AutoPostBack="true" 
+                                    ontextchanged="txtTecnico_TextChanged"></asp:TextBox>
+                                <asp:ImageButton runat="server" ID="imbTecnico" CommandName="VerTecnico" ImageUrl="~/Contenido/Imagenes/Detalle.png" 
+                                    ToolTip="Consultar Técnico" CommandArgument='' OnClick="btnBuscarTecnico_Click" CausesValidation="False" />
+                                <asp:RequiredFieldValidator ID="rfvtxtTecnico" runat="server" ValidationGroup="GenerarReporte" ErrorMessage="El técnico es un dato requerido" 
+                                    Text="*" Visible="false" ControlToValidate="txtTecnico" Display="Dynamic" SetFocusOnError="True" ToolTip="El técnico es un dato requerido">
+                                </asp:RequiredFieldValidator>
+                                <asp:HiddenField ID="hdnTecnicoID" runat="server" Visible="False" />
+                            </td>
+                        </tr>
+                         <tr id="trAreaDeparmaneto" runat="server">
+                            <td class="tdCentradoVertical"><asp:Label ID="lblDepartamentoRequired" runat="server" Text="*" Visible="false"/><asp:Label ID="lblDepartamento" runat="server" AssociatedControlID="ddlDepartamento" Text="Área/Depto"></asp:Label>
+                            </td>
+                            <td class="separadorCampo"></td>
+                            <td class="tdCentradoVertical">
+                                <asp:DropDownList ID="ddlDepartamento" DataValueField="Value" DataTextField="Text" runat="server">                                
+                                </asp:DropDownList>
+                                <asp:RequiredFieldValidator ID="rfvddlDepartamento" runat="server" ValidationGroup="GenerarReporte" 
+                                    ErrorMessage="El área/Departamento es un dato requerido" Text="*" Visible="false"
+                                    ControlToValidate="ddlDepartamento" Display="Dynamic" SetFocusOnError="True" 
+                                    ToolTip="El área/Departamento es un dato requerido" InitialValue="-1"></asp:RequiredFieldValidator>
+                            </td>
+                        </tr>
+                        <tr id="trAreaUnidad" runat="server">
+                            <td class="tdCentradoVertical"><asp:Label ID="lblAreaUnidadRequired" runat="server" Text="*" Visible="false"/><asp:Label ID="lblAreaUnidad" runat="server" AssociatedControlID="ddlAreaUnidad" Text="Área"></asp:Label>
+                            </td>
+                            <td class="separadorCampo"></td>
+                            <td class="tdCentradoVertical">
+                                <asp:DropDownList ID="ddlAreaUnidad" DataValueField="Value" DataTextField="Text" runat="server">                                
+                                </asp:DropDownList>
+                                <asp:RequiredFieldValidator ID="rfvddlAreaUnidad" runat="server" ValidationGroup="GenerarReporte" 
+                                    ErrorMessage="El área/departamento es un dato requerido" Text="*" Visible="false"
+                                    ControlToValidate="ddlAreaUnidad" Display="Dynamic" SetFocusOnError="True" 
+                                    ToolTip="El área/departamento es un dato requerido" InitialValue="-1"></asp:RequiredFieldValidator>
+                            </td>
+                        </tr>
+                        <tr id="trTipoReporte" runat="server">
+                            <td class="tdCentradoVertical">
+                                <asp:Label ID="lblTipoReporteRequired" runat="server" Text="*" Visible="false"/><asp:Label ID="lblTipoReporte" runat="server" AssociatedControlID="rblsTipoReporte" Text="Tipo Reporte"></asp:Label>
+                            </td>
+                            <td class="separadorCampo"></td>
+                            <td class="tdCentradoVertical">
+                                <asp:RadioButtonList ID="rblsTipoReporte" runat="server" AutoPostBack="True" 
+                                     DataValueField="Value" DataTextField="Text"
+                                    RepeatDirection="Horizontal" 
+                                    onselectedindexchanged="rblsTipoReporte_SelectedIndexChanged" 
+                                    RepeatLayout="Flow">                                    
+                                </asp:RadioButtonList>
+                                &nbsp;
+                                <asp:ImageButton ID="imgBtnTipoReporteClear" ImageAlign="AbsMiddle" Visible="false" ToolTip="Limpiar seleccion de tipo de reporte"
+                                    ImageUrl="~/Contenido/Imagenes/ELIMINAR-ICO.png" CausesValidation="false" runat="server" 
+                                    onclick="imgBtnTipoReporteClear_Click" />
+
+                                <asp:RequiredFieldValidator ID="rfvrblsTipoReporte" runat="server" ValidationGroup="GenerarReporte" 
+                                    ErrorMessage="El tipo de reporte es un dato requerido" Text="*" Visible="false"
+                                    ControlToValidate="rblsTipoReporte" Display="Dynamic" SetFocusOnError="True" 
+                                    ToolTip="El tipo de reporte es un dato requerido" InitialValue="-1">
+                                </asp:RequiredFieldValidator>
+                            </td>
+                        </tr>
+
+                        <tr id="trPeriodoReporte" runat="server">
+                            <td class="tdCentradoVertical">
+                                <asp:Label ID="lblPeriodoReporteRequired" runat="server" Text="*" Visible="false"/><asp:Label ID="lblPeriodoReporte" runat="server" AssociatedControlID="ddlPeriodoReporte" Text="Periodo Reporte"></asp:Label>
+                            </td>
+                            <td class="separadorCampo"></td>
+                            <td class="tdCentradoVertical">                                
+                                <asp:DropDownList ID="ddlPeriodoReporte" DataValueField="Value" DataTextField="Text" runat="server">
+                                </asp:DropDownList>
+                                    
+                                <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ValidationGroup="GenerarReporte" 
+                                    ErrorMessage="El tipo de reporte es un dato requerido" Text="*" Visible="false"
+                                    ControlToValidate="rblsTipoReporte" Display="Dynamic" SetFocusOnError="True" 
+                                    ToolTip="El tipo de reporte es un dato requerido" InitialValue="-1">
+                                </asp:RequiredFieldValidator>
+                            </td>
+                        </tr>
+
+                        <tr id="trAnio" runat="server">
+                            <td class="tdCentradoVertical">
+                                <asp:Label ID="lblAnioRequired" runat="server" Text="*" Visible="false"/><asp:Label ID="lblAnio" runat="server" AssociatedControlID="ddlAnio" Text="Año de Unidad"></asp:Label>
+                            </td>
+                            <td class="separadorCampo"></td>
+                            <td class="tdCentradoVertical">
+                                <asp:DropDownList ID="ddlAnio" runat="server" DataValueField="Value" DataTextField="Text">
+                                </asp:DropDownList>                               
+
+                                <asp:RequiredFieldValidator ID="rfvtxtAnio" runat="server" ValidationGroup="GenerarReporte" 
+                                    ErrorMessage="El año es un dato requerido" Text="*" Visible="false"
+                                    ControlToValidate="ddlAnio" Display="Dynamic" SetFocusOnError="True" 
+                                    ToolTip="El año es un dato requerido">
+                                </asp:RequiredFieldValidator>
+                            </td>
+                        </tr>
+
+                        <tr id="trMes" runat="server">
+                            <td class="tdCentradoVertical">
+                                <asp:Label ID="lblMesRequired" runat="server" Text="*" Visible="false"/><asp:Label ID="lblMes" runat="server" AssociatedControlID="ddlMes" Text="Mes"></asp:Label>
+                            </td>
+                            <td class="separadorCampo"></td>
+                            <td class="tdCentradoVertical">
+                                <asp:DropDownList ID="ddlMes" DataValueField="Value" DataTextField="Text" runat="server">
+                                </asp:DropDownList>               
+
+                                <asp:RequiredFieldValidator ID="rfvtxtMes" runat="server" ValidationGroup="GenerarReporte" 
+                                    ErrorMessage="El mes es un dato requerido" Text="*" Visible="false"
+                                    ControlToValidate="ddlMes" Display="Dynamic" SetFocusOnError="True" 
+                                    ToolTip="El mes es un dato requerido">
+                                </asp:RequiredFieldValidator>
+                            </td>
+                        </tr>
+
+                        <tr id="trDiaCorte" runat="server">
+                            <td class="tdCentradoVertical">
+                                <asp:Label ID="lblDiaCorteRequired" runat="server" Text="*" Visible="false"/><asp:Label ID="lblDiaCorte" runat="server" AssociatedControlID="txtDiaCorte" Text="Día Corte"></asp:Label>
+                            </td>
+                            <td class="separadorCampo"></td>
+                            <td class="tdCentradoVertical">
+                                <asp:TextBox ID="txtDiaCorte" runat="server"></asp:TextBox>
+                                <asp:RangeValidator ID="rgvtxtDiaCorte" runat="server" MinimumValue="1" MaximumValue="2147483647"
+                                     ErrorMessage="El valor no representa un dia de corte válido" 
+                                     SetFocusOnError="True" ControlToValidate="txtDiaCorte" ValidationGroup="GenerarReporte"
+                                     Display="Dynamic" ToolTip="El valor no representa un dia de corte válido" 
+                                    Type="Integer">**
+                                </asp:RangeValidator>
+
+                                <asp:RequiredFieldValidator ID="rfvtxtDiaCorte" runat="server" ValidationGroup="GenerarReporte" 
+                                    ErrorMessage="El día de corte es un dato requerido" Text="*" Visible="false"
+                                    ControlToValidate="txtDiaCorte" Display="Dynamic" SetFocusOnError="True" 
+                                    ToolTip="El día de corte es un dato requerido">
+                                </asp:RequiredFieldValidator>
+                            </td>
+                        </tr>
+
+                        <tr id="trFechaInicioContrato" runat="server">
+                            <td class="tdCentradoVertical">
+                                <asp:Label ID="lblFechaInicioContratoRequired" runat="server" Text="*" Visible="false"/><asp:Label ID="lblFechaInicioContrato" runat="server" AssociatedControlID="txtFechaInicioContrato1" Text="Fecha Inicio Contrato"></asp:Label>
+                            </td>
+                            <td class="separadorCampo"></td>
+                            <td class="tdCentradoVertical">
+                                <asp:TextBox ID="txtFechaInicioContrato1" runat="server" CssClass="CampoFecha"></asp:TextBox>
+                                <asp:RequiredFieldValidator ID="rfvtxtFechaInicioContrato1" runat="server" ValidationGroup="GenerarReporte" 
+                                    ErrorMessage="La fecha es un dato requerido" Text="*" Visible="false"
+                                    ControlToValidate="txtFechaInicioContrato1" Display="Dynamic" SetFocusOnError="True" 
+                                    ToolTip="La fecha es un dato requerido">
+                                </asp:RequiredFieldValidator>
+                                <asp:CustomValidator ID="ctmvtxtFechaInicioContrato1" runat="server" ValidationGroup="GenerarReporte" 
+                                    ErrorMessage="Las fechas no son válidas o los rangos no son válidos" Text="*"
+                                    ControlToValidate="txtFechaInicioContrato1" ClientValidationFunction="ctmvtxtFechaInicioContrato_ClientValidate"
+                                    ToolTip="Las fechas no son válidas o los rangos no son válidos" 
+                                    Display="Dynamic" SetFocusOnError="true" 
+                                    onservervalidate="ctmvtxtFechaInicioContrato1_ServerValidate">
+                                </asp:CustomValidator>
+                                &nbsp;
+                                <asp:TextBox ID="txtFechaInicioContrato2" runat="server" CssClass="CampoFecha"></asp:TextBox>
+                                <asp:RequiredFieldValidator ID="rfvtxtFechaInicioContrato2" runat="server" ValidationGroup="GenerarReporte" 
+                                    ErrorMessage="La fecha es un dato requerido" Text="*" Visible="false"
+                                    ControlToValidate="txtFechaInicioContrato2" Display="Dynamic" SetFocusOnError="True" 
+                                    ToolTip="La fecha es un dato requerido">
+                                </asp:RequiredFieldValidator>                                
+
+                                <asp:CustomValidator ID="ctmvtxtFechaInicioContrato2" runat="server" ValidationGroup="GenerarReporte" 
+                                    ErrorMessage="Las fechas no son válidas o los rangos no son válidos" Text="*"
+                                    ControlToValidate="txtFechaInicioContrato2" ClientValidationFunction="ctmvtxtFechaInicioContrato_ClientValidate"
+                                    ToolTip="Las fechas no son válidas o los rangos no son válidos" 
+                                    Display="Dynamic" SetFocusOnError="true" 
+                                    onservervalidate="ctmvtxtFechaInicioContrato1_ServerValidate">
+                                </asp:CustomValidator>
+                            </td>
+                        </tr>
+
+                        <tr id="trFechaFinContrato" runat="server">
+                            <td class="tdCentradoVertical">
+                                <asp:Label ID="lblFechaFinContratoRequired" runat="server" Text="*" Visible="false"/><asp:Label ID="lblFechaFinContrato" runat="server" AssociatedControlID="txtFechaFinContrato1" Text="Fecha Fin Contrato"></asp:Label>
+                            </td>
+                            <td class="separadorCampo"></td>
+                            <td class="tdCentradoVertical">
+                                <asp:TextBox ID="txtFechaFinContrato1" runat="server" CssClass="CampoFecha"></asp:TextBox>
+                                <asp:RequiredFieldValidator ID="rfvtxtFechaFinContrato1" runat="server" ValidationGroup="GenerarReporte" 
+                                    ErrorMessage="La fecha es un dato requerido" Text="*" Visible="false"
+                                    ControlToValidate="txtFechaFinContrato1" Display="Dynamic" SetFocusOnError="True" 
+                                    ToolTip="La fecha es un dato requerido">
+                                </asp:RequiredFieldValidator>
+
+                                <asp:CustomValidator ID="ctmvtxtFechaFinContrato1" runat="server" ValidationGroup="GenerarReporte" 
+                                    ErrorMessage="Las fechas no son válidas o los rangos no son válidos" Text="*"
+                                    ControlToValidate="txtFechaInicioContrato1" ClientValidationFunction="ctmvtxtFechaFinContrato_ClientValidate"
+                                    ToolTip="Las fechas no son válidas o los rangos no son válidos" 
+                                    Display="Dynamic" SetFocusOnError="true" 
+                                    onservervalidate="ctmvtxtFechaFinContrato1_ServerValidate">
+                                </asp:CustomValidator>
+
+                                &nbsp;
+                                <asp:TextBox ID="txtFechaFinContrato2" runat="server" CssClass="CampoFecha"></asp:TextBox>
+                                <asp:RequiredFieldValidator ID="rfvtxtFechaFinContrato2" runat="server" ValidationGroup="GenerarReporte" 
+                                    ErrorMessage="La fecha es un dato requerido" Text="*" Visible="false"
+                                    ControlToValidate="txtFechaFinContrato2" Display="Dynamic" SetFocusOnError="True" 
+                                    ToolTip="La fecha es un dato requerido">
+                                </asp:RequiredFieldValidator>
+
+                                <asp:CustomValidator ID="ctmvtxtFechaFinContrato2" runat="server" ValidationGroup="GenerarReporte" 
+                                    ErrorMessage="Las fechas no son válidas o los rangos no son válidos" Text="*"
+                                    ControlToValidate="txtFechaInicioContrato1" ClientValidationFunction="ctmvtxtFechaFinContrato_ClientValidate"
+                                    ToolTip="Las fechas no son válidas o los rangos no son válidos" 
+                                    Display="Dynamic" SetFocusOnError="true" 
+                                    onservervalidate="ctmvtxtFechaFinContrato1_ServerValidate">
+                                </asp:CustomValidator>
+                            </td>
+                        </tr>
+
+                        <tr id="trFechaInicio" runat="server">
+                            <td class="tdCentradoVertical">
+                                <asp:Label ID="lblFechaInicioRequired" runat="server" Text="*" Visible="false"/><asp:Label ID="lblFechaInicio" runat="server" AssociatedControlID="ddlAnioFechaInicio" Text="Fecha Inicio"></asp:Label>
+                            </td>
+                            <td class="separadorCampo"></td>
+                            <td class="tdCentradoVertical">
+                                <asp:DropDownList ID="ddlAnioFechaInicio" DataValueField="Value" DataTextField="Text" runat="server">
+                                </asp:DropDownList>
+                                <asp:RequiredFieldValidator ID="rfvddlAnioFechaInicio" runat="server" ValidationGroup="GenerarReporte" 
+                                    ErrorMessage="El año es un dato requerido" Text="*" Visible="false"
+                                    ControlToValidate="ddlAnioFechaInicio" Display="Dynamic" SetFocusOnError="True" 
+                                    ToolTip="El año es un dato requerido">
+                                </asp:RequiredFieldValidator>
+                                &nbsp;
+                                <asp:DropDownList ID="ddlMesFechaInicio" DataValueField="Value" DataTextField="Text" runat="server">
+                                </asp:DropDownList>
+                                <asp:RequiredFieldValidator ID="rfvddlMesFechaInicio" runat="server" ValidationGroup="GenerarReporte" 
+                                    ErrorMessage="El mes es un dato requerido" Text="*" Visible="false"
+                                    ControlToValidate="ddlMesFechaInicio" Display="Dynamic" SetFocusOnError="True" 
+                                    ToolTip="El mes es un dato requerido">
+                                </asp:RequiredFieldValidator>
+                            </td>
+                        </tr>
+
+                        <tr id="trFechaFin" runat="server">
+                            <td class="tdCentradoVertical">
+                                <asp:Label ID="lblFechaFinRequired" runat="server" Text="*" Visible="false"/><asp:Label ID="lblFechaFin" runat="server" AssociatedControlID="ddlAnioFechaFin" Text="Fecha Fin"></asp:Label>
+                            </td>
+                            <td class="separadorCampo"></td>
+                            <td class="tdCentradoVertical">
+                                <asp:DropDownList ID="ddlAnioFechaFin" DataValueField="Value" DataTextField="Text" runat="server">
+                                </asp:DropDownList>
+                                <asp:RequiredFieldValidator ID="rfvddlAnioFechaFin" runat="server" ValidationGroup="GenerarReporte" 
+                                    ErrorMessage="El año es un dato requerido" Text="*" Visible="false"
+                                    ControlToValidate="ddlAnioFechaFin" Display="Dynamic" SetFocusOnError="True" 
+                                    ToolTip="El año es un dato requerido">
+                                </asp:RequiredFieldValidator>
+                                &nbsp;
+                                <asp:DropDownList ID="ddlMesFechaFin" DataValueField="Value" DataTextField="Text" runat="server">
+                                </asp:DropDownList>
+                                <asp:RequiredFieldValidator ID="rfvddlMesFechaFin" runat="server" ValidationGroup="GenerarReporte" 
+                                    ErrorMessage="La fecha es un dato requerido" Text="*" Visible="false"
+                                    ControlToValidate="ddlMesFechaFin" Display="Dynamic" SetFocusOnError="True" 
+                                    ToolTip="La fecha es un dato requerido">
+                                </asp:RequiredFieldValidator>
+                            </td>
+                        </tr>
+
+                        <asp:ContentPlaceHolder ID="filtrosAdicionalesAbajo" runat="server">
+                        
+                        </asp:ContentPlaceHolder>              
+                    </table>
+                    
+                </asp:Panel>                     
+                 <asp:Button runat="server" ID="btnConsultar" ValidationGroup="GenerarReporte"  onclick="btnConsultar_Click" Text="Consultar" CssClass="btnComando" style=" margin: 20px auto 0 auto; display: inherit;" />
+                                       
+                <div class="ContenedorMensajes">
+                    <span class="Requeridos"></span>
+                    <br />
+                    <span class="FormatoIncorrecto"></span>
+                </div>                          
+            </div>
+        </asp:Panel>
+
+        <asp:ContentPlaceHolder ID="ResultadosAbajo" runat="server"></asp:ContentPlaceHolder>
+
+    <%--Campos ocultos--%>
+    <asp:HiddenField runat="server" ID="hdnShowBuscador" value="0"/>
+    <asp:Button ID="btnResult" runat="server" Text="Button" OnClick="btnResult_Click" CausesValidation="false" UseSubmitBehavior="false" Style="display: none;" />
+</asp:Content>

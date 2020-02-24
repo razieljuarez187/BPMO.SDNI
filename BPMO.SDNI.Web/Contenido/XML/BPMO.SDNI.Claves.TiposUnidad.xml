@@ -1,0 +1,47 @@
+﻿<TiposListadoVerificacionPSL>
+  
+  <!--Compresores portátiles-->
+  <Unidad ClaveUnidad="COM" ID="1" Name="LV_COMPRESOR" />
+  <!--Compresores portátiles-->
+
+  <!--Montacargas-->
+  <Unidad ClaveUnidad="MONCAR" ID="2" Name="LV_MONTACARGA" />
+  <!--Montacargas-->
+
+  <!--MOTONIVELADORA-->
+  <Unidad ClaveUnidad="MNV" ID="3" Name="LV_MOTONIVELADORA" />
+  <!--MOTONIVELADORA-->
+
+  <!--Minicargador-->
+  <Unidad ClaveUnidad="MC" ID="4" Name="LV_MINICARGADOR" />
+  <!--Minicargador-->
+
+  <!--Martillos hidráulicos-->
+  <Unidad ClaveUnidad="MRT" ID="5" Name="LV_MARTILLO_HIDRAULICO" />
+  <!--Martillos hidráulicos-->
+
+  <!--Excavadoras-->
+  <Unidad ClaveUnidad="EXC" ID="7" Name="LV_EXCAVADORA" />
+  <!--Excavadoras-->
+
+  <!--TORRES DE LUZ-->
+  <Unidad ClaveUnidad="TORRE" ID="9" Name="LV_TORRES_LUZ" />
+  <!--TORRES DE LUZ-->
+
+  <!--PLATAFORMA DE TIJERAS-->
+  <Unidad ClaveUnidad="PLATAFORA" ID="10" Name="LV_PLATAFORMA_TIJERAS" />
+  <!--PLATAFORMA DE TIJERAS-->
+
+  <!--RETROEXCAVADORAS-->
+  <Unidad ClaveUnidad="RTEX" ID="11" Name="LV_RETRO_EXCAVADORA" />
+  <!--RETROEXCAVADORAS-->
+
+  <!--VIBROCOMPACTADOR-->
+  <Unidad ClaveUnidad="VIV" ID="12" Name="LV_VIBRO_COMPACTADOR" />
+  <!--VIBROCOMPACTADOR-->
+  
+  <!--Pistolas neumáticas-->
+  <Unidad ClaveUnidad="PER" ID="13" Name="LV_PISTOLA_NEUMATICA" />
+  <!--Pistolas neumáticas-->
+  
+</TiposListadoVerificacionPSL>

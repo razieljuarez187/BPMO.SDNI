@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FormatoCorreo>
+  <Cuerpo>
+    <![CDATA[
+		<tr>
+			<td style='width: 200px; text-align: left; padding-right: 5px;'>
+				<p>Buen día.</p>
+				<br />
+				<p>Se envía documento de checklist de entrega de la unidad con número de serie {serieUnidad}.</p>
+				<br />
+				<p>Saludos.</p>
+				<br />
+			</td>
+		</tr>
+	]]>
+  </Cuerpo>
+</FormatoCorreo>

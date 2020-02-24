@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Buscador xsi:schemaLocation="http://www.w3schools.com ../xsd/Buscador.Schema.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.w3schools.com">
+  <Class  TitleUI="Equipos Aliados" Assembly="BPMO.SDNI.Equipos" NameClass="EquipoAliadoBR" Method="Consultar" >
+    <GridView AllowPaging="True" PageSize="5" AllowSorting="True" />
+    <Property NameProperty="EquipoAliadoID"  Header="Id" Key="True" Width="50" FilterEnabled="True" DataType="Int32"/>
+    <Property NameProperty="NumeroSerie"  Header="Número Serie" Key="False" Width="150" FilterEnabled="True" Wilcard="Both"/>
+    <Property NameProperty="Anio"  Header="Año" Key="False" Width="80" FilterEnabled="True" Wilcard="Both"/>
+    <Property NameProperty="Fabricante"  Header="Fabricante" Key="False" Width="150" FilterEnabled="True" Wilcard="Both"/>
+    <Property NameProperty="TipoEquipoServicio_Nombre" Header="Tipo" Key="False" Width="100" FilterEnabled="True" Wilcard="Both"/>
+    <Property NameProperty="Dimension" Header="Dimensión" Key="False" Width="150" DataType="String" FilterEnabled="False"/>
+    <Property NameProperty="EstatusText" Header="Estatus Actual" Key="False" Width="100" FilterEnabled="False" DataType="String" Wilcard="Both"/>
+  </Class>
+</Buscador>

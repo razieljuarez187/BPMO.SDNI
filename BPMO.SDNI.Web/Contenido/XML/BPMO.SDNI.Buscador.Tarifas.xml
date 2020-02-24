@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Buscador xsi:schemaLocation="http://www.w3schools.com Buscador.Schema.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.w3schools.com">
+  <Class Assembly="BPMO.SDNI.Contratos.RD" NameClass="TarifaRDBR" Method="ConsultarDisponibles" TitleUI="Tarifas de Renta Diaria">
+    <GridView AllowPaging="True" PageSize="5" AllowSorting="True" />
+    <Property NameProperty="TarifaID" Header="Id" Key="True" Width="50" FilterEnabled="True" DataType="Int32"/>
+    <Property NameProperty="Descripcion"  Header="Descripción" Key="False" Width="180" FilterEnabled="True" Wilcard="Both" DataType="String"/>
+    <Property NameProperty="TipoText" Header="Tipo"  Key="False" Width="150" FilterEnabled="True" Wilcard="Both"/>
+    <Property NameProperty="Activo" Header="Activo" Key="False" Width="50" FilterEnabled="True" DataType="Boolean"/>
+  </Class>
+</Buscador>
